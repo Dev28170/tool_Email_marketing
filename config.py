@@ -39,6 +39,11 @@ class Config:
     OPENAI_MODEL = os.getenv('OPENAI_MODEL', 'gpt-4o-mini')
     OPENAI_MAX_TOKENS = int(os.getenv('OPENAI_MAX_TOKENS', 200))
     
+    # Email Validation Configuration
+    DEBOUNCE_API_KEY = os.getenv('DEBOUNCE_API_KEY')
+    DEBOUNCE_BATCH_SIZE = int(os.getenv('DEBOUNCE_BATCH_SIZE', 100))
+    DEBOUNCE_TIMEOUT = int(os.getenv('DEBOUNCE_TIMEOUT', 30))
+    
     # Concurrency Settings - Optimized for Speed
     MAX_CONCURRENT_ACCOUNTS = int(os.getenv('MAX_CONCURRENT_ACCOUNTS', 500))  # Increased from 200
     MAX_CONCURRENT_PER_PROVIDER = int(os.getenv('MAX_CONCURRENT_PER_PROVIDER', 100))  # Increased from 50

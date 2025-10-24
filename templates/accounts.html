@@ -130,6 +130,11 @@
                                                         title="Download Expanded People Data">
                                                     <i class="fas fa-download"></i>
                                                 </button>
+                                                <button class="btn btn-outline-primary"
+                                                        onclick="downloadProcessedContacts('{{ account.email }}')"
+                                                        title="Download Processed Contacts (Office365, GSuite, Others)">
+                                                    <i class="fas fa-file-archive"></i>
+                                                </button>
                                                 <button class="btn btn-outline-info" 
                                                         onclick="viewCookieAccountDetails('{{ account.email }}')"
                                                         title="View Details">
@@ -156,6 +161,11 @@
                                                         onclick="downloadExpandedPeople('{{ account.email }}')"
                                                         title="Download Expanded People Data">
                                                     <i class="fas fa-download"></i>
+                                                </button>
+                                                <button class="btn btn-outline-primary"
+                                                        onclick="downloadProcessedContacts('{{ account.email }}')"
+                                                        title="Download Processed Contacts (Office365, GSuite, Others)">
+                                                    <i class="fas fa-file-archive"></i>
                                                 </button>
                                                 <button class="btn btn-outline-info" 
                                                         onclick="viewAccountDetails({{ account.id }})"
@@ -362,6 +372,40 @@ function downloadExpandedPeople(email) {
         .catch(err => {
             console.error('Export error:', err);
             showAlert('error', err.message || 'Failed to download expanded people data');
+        })
+        .finally(() => {
+            if (overlay) overlay.classList.add('d-none');
+        });
+}
+
+function downloadProcessedContacts(email) {
+    const overlay = document.getElementById('exportLoading');
+    if (overlay) overlay.classList.remove('d-none');
+    const url = `/office365/accounts/${encodeURIComponent(email)}/export-processed-contacts`;
+    const filename = `${email.replace('@', '_at_').replace('.', '_')}-processed-contacts.zip`;
+
+    fetch(url)
+        .then(async res => {
+            if (!res.ok) {
+                const data = await res.json().catch(() => ({}));
+                throw new Error(data.error || `Processed export failed with status ${res.status}`);
+            }
+            return res.blob();
+        })
+        .then(blob => {
+            const link = document.createElement('a');
+            const objectUrl = window.URL.createObjectURL(blob);
+            link.href = objectUrl;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+            window.URL.revokeObjectURL(objectUrl);
+            showAlert('success', `Downloading processed contacts: ${filename}`);
+        })
+        .catch(err => {
+            console.error('Processed export error:', err);
+            showAlert('error', err.message || 'Failed to download processed contacts');
         })
         .finally(() => {
             if (overlay) overlay.classList.add('d-none');

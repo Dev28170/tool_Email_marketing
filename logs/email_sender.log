@@ -1,931 +1,163 @@
-2025-10-23 20:39:11 | INFO | File uploaded successfully: leads_export_20251013_103036_1761223151884.txt
-2025-10-23 20:39:11 | INFO | === MASS EMAIL SEND STARTED ===
-2025-10-23 20:39:11 | INFO | Mass email request - Subject: Proxy[rand]123, File: emails.txt
-2025-10-23 20:39:12 | INFO | HTML content sanitized successfully
-2025-10-23 20:39:12 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-23 20:39:12 | INFO | Email HTML validation completed successfully
-2025-10-23 20:39:12 | INFO | HTML content sanitized successfully
-2025-10-23 20:39:12 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-23 20:39:12 | INFO | Parsed 1 emails from uploaded file
-2025-10-23 20:39:12 | INFO | Created progress session ade55ef0-8428-44fd-b0d7-b754244a290c for campaign -1 with 1 emails
-2025-10-23 20:39:12 | INFO | Starting progress stream for session ade55ef0-8428-44fd-b0d7-b754244a290c
-2025-10-23 20:39:12 | INFO | Started progress session ade55ef0-8428-44fd-b0d7-b754244a290c
-2025-10-23 20:39:12 | INFO | Progress update 1: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 20:39:12 | INFO | Starting mass email sending with 1 recipients in batches of 50
-2025-10-23 20:39:12 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
-2025-10-23 20:39:12 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy27494123
-2025-10-23 20:39:13 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
-2025-10-23 20:39:13 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
-2025-10-23 20:39:13 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
-2025-10-23 20:39:13 | INFO | Progress update 2: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 20:39:14 | INFO | Progress update 3: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 20:39:17 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose?to=accounts%40performanceelevator.org&bcc=tom0692174%40outlook.com&subject=Proxy27494123
-2025-10-23 20:39:17 | INFO | ⏱️ Using adaptive compose timeout: 120000ms for proxy: none
-2025-10-23 20:39:18 | INFO | 🔄 Waiting for compose page to fully load...
-2025-10-23 20:39:25 | INFO | ✅ Compose page fully loaded in 7403.9ms
-2025-10-23 20:39:25 | INFO | 🧹 Clearing compose window for clean state...
-2025-10-23 20:39:25 | INFO | ✅ Compose window cleared successfully
-2025-10-23 20:39:25 | INFO | 📧 Ensuring TO field is populated with sender email: accounts@performanceelevator.org
-2025-10-23 20:39:25 | WARNING | Could not find TO field, trying fallback methods...
-2025-10-23 20:39:25 | WARNING | ⚠️ Could not find TO field to populate
-2025-10-23 20:39:38 | INFO | HTML content sanitized successfully
-2025-10-23 20:39:38 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 20:39:38 | INFO | Email HTML validation completed successfully
-2025-10-23 20:39:38 | INFO | HTML content sanitized successfully
-2025-10-23 20:39:38 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 20:39:38 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-23 20:39:38 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-23 20:39:38 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-23 20:39:38 | INFO | Attempting to set HTML content via innerHTML
-2025-10-23 20:39:38 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-23 20:39:39 | INFO | HTML content set successfully via innerHTML
-2025-10-23 20:39:39 | INFO | Email body field filled with HTML content successfully
-2025-10-23 20:39:39 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-23 20:39:39 | INFO | 📎 Preparing to upload 1 attachments...
-2025-10-23 20:39:48 | INFO | ✅ Clicked Insert button: button:has-text("Insert")
-2025-10-23 20:39:49 | INFO | ✅ Found Attach file button: button[aria-label*="Attach file"]
-2025-10-23 20:39:49 | INFO | 📎 Attaching file 1/1: E:\a_Work\tele\test\tool-version\uploads\leads_export_20251013_103036_1761223151884.txt
-2025-10-23 20:39:50 | INFO | ✅ Clicked 'Browse this computer': button:has-text("Browse this computer")
-2025-10-23 20:39:50 | INFO | ⏳ Uploading file: E:\a_Work\tele\test\tool-version\uploads\leads_export_20251013_103036_1761223151884.txt
-2025-10-23 20:39:51 | INFO | ✅ Upload complete. Current attachment count: 0
-2025-10-23 20:39:51 | INFO | 📸 Screenshot saved: screenshots/attachments/attachment_1_done.png
-2025-10-23 20:39:51 | INFO | 🎉 All 1 files uploaded successfully!
-2025-10-23 20:39:51 | INFO | Basic email fields filled successfully with HTML support
-2025-10-23 20:39:51 | INFO | 📸 Screenshot saved: compose_page_after_basic_fields_1761223191.png
-2025-10-23 20:39:51 | INFO | === YOUR PERFECT BCC APPROACH: 1 BCC recipients ===
-2025-10-23 20:39:55 | INFO | BCC reveal result: SUCCESS
-2025-10-23 20:39:55 | INFO | BCC reveal result: SUCCESS
-2025-10-23 20:39:55 | INFO | Looking for BCC input field after reveal...
-2025-10-23 20:39:55 | INFO | Found 14 total input fields on page
-2025-10-23 20:40:00 | INFO | Debugging BCC field detection...
-2025-10-23 20:40:00 | INFO | Found 1 BCC-related elements on page
-2025-10-23 20:40:00 | INFO | BCC element 1: DIV, aria-label='Bcc', role='presentation', contenteditable='true'
-2025-10-23 20:40:00 | INFO | Found BCC input target with selector: div[class*="fui-"] [contenteditable="true"][aria-label*="Bcc"]
-2025-10-23 20:40:01 | INFO | Bulk pasting BCC emails: tom0692174@outlook.com
-2025-10-23 20:40:02 | INFO | ✅ Cleared existing body content with multiple methods
-2025-10-23 20:40:02 | WARNING | ⚠️ Content may not have been set properly
-2025-10-23 20:40:02 | INFO | Bulk paste tokenized with Enter
-2025-10-23 20:40:04 | INFO | Bulk paste result: 1 chips created
-2025-10-23 20:40:04 | INFO | 📸 Screenshot after BCC reveal: compose_page_after_bcc_reveal_1761223204.png
-2025-10-23 20:40:04 | INFO | Bulk paste result: 1/1 chips created
-2025-10-23 20:40:04 | INFO | Final BCC chips created: 1/1
-2025-10-23 20:40:04 | INFO | 📸 Final screenshot: compose_page_final_bcc_state_1761223204.png
-2025-10-23 20:40:04 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
-2025-10-23 20:40:17 | INFO | HTML content sanitized successfully
-2025-10-23 20:40:17 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 20:40:17 | INFO | Email HTML validation completed successfully
-2025-10-23 20:40:17 | INFO | HTML content sanitized successfully
-2025-10-23 20:40:17 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 20:40:17 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-23 20:40:17 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-23 20:40:17 | INFO | 🧹 Clearing existing body content: hello bro@...
-2025-10-23 20:40:18 | INFO | ✅ Existing body content cleared successfully
-2025-10-23 20:40:18 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-23 20:40:18 | INFO | Attempting to set HTML content via innerHTML
-2025-10-23 20:40:18 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-23 20:40:18 | INFO | HTML content set successfully via innerHTML
-2025-10-23 20:40:18 | INFO | Email body field filled with HTML content successfully
-2025-10-23 20:40:18 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-23 20:40:18 | INFO | 📎 Preparing to upload 1 attachments...
-2025-10-23 20:40:27 | INFO | ✅ Clicked Insert button: button:has-text("Insert")
-2025-10-23 20:40:28 | INFO | ✅ Found Attach file button: button[aria-label*="Attach file"]
-2025-10-23 20:40:28 | INFO | 📎 Attaching file 1/1: E:\a_Work\tele\test\tool-version\uploads\leads_export_20251013_103036_1761223151884.txt
-2025-10-23 20:40:29 | INFO | ✅ Clicked 'Browse this computer': button:has-text("Browse this computer")
-2025-10-23 20:40:30 | INFO | ⏳ Uploading file: E:\a_Work\tele\test\tool-version\uploads\leads_export_20251013_103036_1761223151884.txt
-2025-10-23 20:40:31 | INFO | ✅ Upload complete. Current attachment count: 0
-2025-10-23 20:40:31 | INFO | 📸 Screenshot saved: screenshots/attachments/attachment_1_done.png
-2025-10-23 20:40:31 | INFO | 🎉 All 1 files uploaded successfully!
-2025-10-23 20:40:31 | INFO | Basic email fields filled successfully with HTML support
-2025-10-23 20:40:31 | INFO | 📤 Sending email via keyboard shortcut only...
-2025-10-23 20:40:32 | INFO | Successfully focused: input[placeholder*='subject']
-2025-10-23 20:40:32 | INFO | ✅ Send successful on first attempt
-2025-10-23 20:40:32 | INFO | 🔍 Verifying send confirmation...
-2025-10-23 20:40:41 | INFO | ✅ Network idle after send - platform processed
-2025-10-23 20:40:41 | INFO | ✅ Send confirmed via success indicators
-2025-10-23 20:40:41 | INFO | Successfully sent batch to accounts@performanceelevator.org with 1 BCC recipients
-2025-10-23 20:40:41 | INFO | Successfully sent batch 1/1 with 1 recipients
-2025-10-23 20:40:41 | INFO | Progress updated: 1 sent, 0 failed
-2025-10-23 20:40:41 | INFO | Completing progress session ade55ef0-8428-44fd-b0d7-b754244a290c with status 'completed'
-2025-10-23 20:40:41 | INFO | Completed progress session ade55ef0-8428-44fd-b0d7-b754244a290c with status completed
-2025-10-23 20:40:41 | INFO | Mass email sending completed successfully: 1 emails sent
-2025-10-23 20:40:42 | INFO | Progress update 4: Status=completed, Progress=100.0%, Sent=1, Failed=0
-2025-10-23 20:40:42 | INFO | Session ade55ef0-8428-44fd-b0d7-b754244a290c completed with status: completed
-2025-10-23 20:40:42 | INFO | Progress stream ended for session ade55ef0-8428-44fd-b0d7-b754244a290c after 4 updates
-2025-10-23 20:49:31 | INFO | File uploaded successfully: test_attachment_1761223771149.txt
-2025-10-23 20:49:31 | INFO | === MASS EMAIL SEND STARTED ===
-2025-10-23 20:49:31 | INFO | Mass email request - Subject: Proxy[rand]123, File: emails.txt
-2025-10-23 20:49:31 | INFO | HTML content sanitized successfully
-2025-10-23 20:49:31 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-23 20:49:31 | INFO | Email HTML validation completed successfully
-2025-10-23 20:49:31 | INFO | HTML content sanitized successfully
-2025-10-23 20:49:31 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-23 20:49:31 | INFO | Parsed 1 emails from uploaded file
-2025-10-23 20:49:32 | INFO | Created progress session 71f4c787-1248-4a90-a30d-7b33a61df0ba for campaign -1 with 1 emails
-2025-10-23 20:49:32 | INFO | Starting progress stream for session 71f4c787-1248-4a90-a30d-7b33a61df0ba
-2025-10-23 20:49:32 | INFO | Started progress session 71f4c787-1248-4a90-a30d-7b33a61df0ba
-2025-10-23 20:49:32 | INFO | Progress update 1: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 20:49:32 | INFO | Starting mass email sending with 1 recipients in batches of 50
-2025-10-23 20:49:32 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
-2025-10-23 20:49:32 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy86945123
-2025-10-23 20:49:33 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
-2025-10-23 20:49:33 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
-2025-10-23 20:49:33 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
-2025-10-23 20:49:33 | INFO | Progress update 2: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 20:49:34 | INFO | Progress update 3: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 20:49:37 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose?to=accounts%40performanceelevator.org&bcc=tom0692174%40outlook.com&subject=Proxy86945123
-2025-10-23 20:49:37 | INFO | ⏱️ Using adaptive compose timeout: 120000ms for proxy: none
-2025-10-23 20:49:38 | INFO | 🔄 Waiting for compose page to fully load...
-2025-10-23 20:49:44 | INFO | ✅ Compose page fully loaded in 6062.1ms
-2025-10-23 20:49:44 | INFO | 🧹 Clearing compose window for clean state...
-2025-10-23 20:49:44 | INFO | ✅ Compose window cleared successfully
-2025-10-23 20:49:44 | INFO | 📧 Ensuring TO field is populated with sender email: accounts@performanceelevator.org
-2025-10-23 20:49:44 | WARNING | Could not find TO field, trying fallback methods...
-2025-10-23 20:49:44 | WARNING | ⚠️ Could not find TO field to populate
-2025-10-23 20:49:57 | INFO | HTML content sanitized successfully
-2025-10-23 20:49:57 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 20:49:57 | INFO | Email HTML validation completed successfully
-2025-10-23 20:49:57 | INFO | HTML content sanitized successfully
-2025-10-23 20:49:57 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 20:49:57 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-23 20:49:57 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-23 20:49:57 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-23 20:49:57 | INFO | Attempting to set HTML content via innerHTML
-2025-10-23 20:49:57 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-23 20:49:58 | INFO | HTML content set successfully via innerHTML
-2025-10-23 20:49:58 | INFO | Email body field filled with HTML content successfully
-2025-10-23 20:49:58 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-23 20:49:58 | INFO | 📎 Starting upload of 1 attachment(s)...
-2025-10-23 20:50:07 | INFO | ✅ Clicked Insert tab (button:has-text("Insert"))
-2025-10-23 20:50:08 | INFO | ✅ Found Attach File button: button[aria-label="Attach file"]
-2025-10-23 20:50:08 | INFO | 📎 Uploading attachment 1/1: E:\a_Work\tele\test\tool-version\uploads\test_attachment_1761223771149.txt
-2025-10-23 20:50:09 | INFO | ✅ Clicked 'Browse this computer' (button:has-text("Browse this computer"))
-2025-10-23 20:50:10 | INFO | 🔍 Looking for correct file input element...
-2025-10-23 20:50:11 | INFO | ✅ Found correct file input: <input type="file" class="JzkXe" multiple="" data-testid="local-computer-filein" value="">
-2025-10-23 20:50:11 | INFO | ⏳ Upload started for: E:\a_Work\tele\test\tool-version\uploads\test_attachment_1761223771149.txt
-2025-10-23 20:50:11 | INFO | ✅ Upload complete. Attachments visible: 0
-2025-10-23 20:50:11 | INFO | 📸 Screenshot saved: screenshots/attachments/test_attachment_1761223771149_done.png
-2025-10-23 20:50:11 | INFO | 🎉 All 1 attachments uploaded successfully.
-2025-10-23 20:50:11 | INFO | Basic email fields filled successfully with HTML support
-2025-10-23 20:50:11 | INFO | 📸 Screenshot saved: compose_page_after_basic_fields_1761223811.png
-2025-10-23 20:50:11 | INFO | === YOUR PERFECT BCC APPROACH: 1 BCC recipients ===
-2025-10-23 20:50:15 | INFO | BCC reveal result: SUCCESS
-2025-10-23 20:50:15 | INFO | BCC reveal result: SUCCESS
-2025-10-23 20:50:15 | INFO | Looking for BCC input field after reveal...
-2025-10-23 20:50:15 | INFO | Found 14 total input fields on page
-2025-10-23 20:50:20 | INFO | Debugging BCC field detection...
-2025-10-23 20:50:20 | INFO | Found 1 BCC-related elements on page
-2025-10-23 20:50:20 | INFO | BCC element 1: DIV, aria-label='Bcc', role='presentation', contenteditable='true'
-2025-10-23 20:50:20 | INFO | Found BCC input target with selector: div[class*="fui-"] [contenteditable="true"][aria-label*="Bcc"]
-2025-10-23 20:50:21 | INFO | Bulk pasting BCC emails: tom0692174@outlook.com
-2025-10-23 20:50:22 | INFO | ✅ Cleared existing body content with multiple methods
-2025-10-23 20:50:22 | WARNING | ⚠️ Content may not have been set properly
-2025-10-23 20:50:23 | INFO | Bulk paste tokenized with Tab
-2025-10-23 20:50:25 | INFO | Bulk paste result: 1 chips created
-2025-10-23 20:50:26 | INFO | 📸 Screenshot after BCC reveal: compose_page_after_bcc_reveal_1761223825.png
-2025-10-23 20:50:26 | INFO | Bulk paste result: 1/1 chips created
-2025-10-23 20:50:26 | INFO | Final BCC chips created: 1/1
-2025-10-23 20:50:26 | INFO | 📸 Final screenshot: compose_page_final_bcc_state_1761223826.png
-2025-10-23 20:50:26 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
-2025-10-23 20:50:38 | INFO | HTML content sanitized successfully
-2025-10-23 20:50:38 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 20:50:38 | INFO | Email HTML validation completed successfully
-2025-10-23 20:50:38 | INFO | HTML content sanitized successfully
-2025-10-23 20:50:38 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 20:50:38 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-23 20:50:38 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-23 20:50:38 | INFO | 🧹 Clearing existing body content: hello bro@...
-2025-10-23 20:50:39 | INFO | ✅ Existing body content cleared successfully
-2025-10-23 20:50:39 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-23 20:50:39 | INFO | Attempting to set HTML content via innerHTML
-2025-10-23 20:50:39 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-23 20:50:40 | INFO | HTML content set successfully via innerHTML
-2025-10-23 20:50:40 | INFO | Email body field filled with HTML content successfully
-2025-10-23 20:50:40 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-23 20:50:40 | INFO | 📎 Starting upload of 1 attachment(s)...
-2025-10-23 20:50:49 | INFO | ✅ Clicked Insert tab (button:has-text("Insert"))
-2025-10-23 20:50:50 | INFO | ✅ Found Attach File button: button[aria-label="Attach file"]
-2025-10-23 20:50:50 | INFO | 📎 Uploading attachment 1/1: E:\a_Work\tele\test\tool-version\uploads\test_attachment_1761223771149.txt
-2025-10-23 20:50:51 | INFO | ✅ Clicked 'Browse this computer' (button:has-text("Browse this computer"))
-2025-10-23 20:50:52 | INFO | 🔍 Looking for correct file input element...
-2025-10-23 20:50:53 | INFO | ✅ Found correct file input: <input type="file" class="JzkXe" multiple="" data-testid="local-computer-filein" value="" style="">
-2025-10-23 20:50:53 | INFO | ⏳ Upload started for: E:\a_Work\tele\test\tool-version\uploads\test_attachment_1761223771149.txt
-2025-10-23 20:50:54 | INFO | ✅ Upload complete. Attachments visible: 0
-2025-10-23 20:50:54 | INFO | 📸 Screenshot saved: screenshots/attachments/test_attachment_1761223771149_done.png
-2025-10-23 20:50:54 | INFO | 🎉 All 1 attachments uploaded successfully.
-2025-10-23 20:50:54 | INFO | Basic email fields filled successfully with HTML support
-2025-10-23 20:50:54 | INFO | 📤 Sending email via keyboard shortcut only...
-2025-10-23 20:50:55 | INFO | Successfully focused: input[placeholder*='subject']
-2025-10-23 20:50:55 | INFO | ✅ Send successful on first attempt
-2025-10-23 20:50:55 | INFO | 🔍 Verifying send confirmation...
-2025-10-23 20:51:04 | INFO | ✅ Network idle after send - platform processed
-2025-10-23 20:51:04 | INFO | ✅ Send confirmed via success indicators
-2025-10-23 20:51:05 | INFO | Successfully sent batch to accounts@performanceelevator.org with 1 BCC recipients
-2025-10-23 20:51:05 | INFO | Successfully sent batch 1/1 with 1 recipients
-2025-10-23 20:51:05 | INFO | Progress updated: 1 sent, 0 failed
-2025-10-23 20:51:05 | INFO | Completing progress session 71f4c787-1248-4a90-a30d-7b33a61df0ba with status 'completed'
-2025-10-23 20:51:05 | INFO | Completed progress session 71f4c787-1248-4a90-a30d-7b33a61df0ba with status completed
-2025-10-23 20:51:05 | INFO | Mass email sending completed successfully: 1 emails sent
-2025-10-23 20:51:05 | INFO | Progress update 4: Status=completed, Progress=100.0%, Sent=1, Failed=0
-2025-10-23 20:51:05 | INFO | Session 71f4c787-1248-4a90-a30d-7b33a61df0ba completed with status: completed
-2025-10-23 20:51:05 | INFO | Progress stream ended for session 71f4c787-1248-4a90-a30d-7b33a61df0ba after 4 updates
-2025-10-23 21:16:33 | INFO | === MASS EMAIL SEND STARTED ===
-2025-10-23 21:16:33 | INFO | Mass email request - Subject: Proxy[rand]123, File: emails.txt
-2025-10-23 21:16:34 | INFO | HTML content sanitized successfully
-2025-10-23 21:16:34 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-23 21:16:34 | INFO | Email HTML validation completed successfully
-2025-10-23 21:16:34 | INFO | HTML content sanitized successfully
-2025-10-23 21:16:34 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-23 21:16:34 | INFO | Parsed 1 emails from uploaded file
-2025-10-23 21:16:34 | INFO | Created progress session 5f246415-8e72-4b25-8185-00e5bdd279a3 for campaign -1 with 1 emails
-2025-10-23 21:16:34 | INFO | Starting progress stream for session 5f246415-8e72-4b25-8185-00e5bdd279a3
-2025-10-23 21:16:34 | INFO | Started progress session 5f246415-8e72-4b25-8185-00e5bdd279a3
-2025-10-23 21:16:34 | INFO | Progress update 1: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 21:16:34 | INFO | Starting mass email sending with 1 recipients in batches of 50
-2025-10-23 21:16:34 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
-2025-10-23 21:16:34 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy86976123
-2025-10-23 21:16:35 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
-2025-10-23 21:16:35 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
-2025-10-23 21:16:35 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
-2025-10-23 21:16:35 | INFO | Progress update 2: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 21:16:36 | INFO | Progress update 3: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 21:16:38 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose?to=accounts%40performanceelevator.org&bcc=tom0692174%40outlook.com&subject=Proxy86976123
-2025-10-23 21:16:38 | INFO | ⏱️ Using adaptive compose timeout: 120000ms for proxy: none
-2025-10-23 21:16:39 | INFO | 🔄 Waiting for compose page to fully load...
-2025-10-23 21:16:44 | INFO | ⏳ Still loading... (5046ms elapsed)
-2025-10-23 21:16:48 | INFO | ✅ Compose page fully loaded in 8911.4ms
-2025-10-23 21:16:48 | INFO | 🧹 Clearing compose window for clean state...
-2025-10-23 21:16:48 | INFO | ✅ Compose window cleared successfully
-2025-10-23 21:16:48 | INFO | 📧 Ensuring TO field is populated with sender email: accounts@performanceelevator.org
-2025-10-23 21:16:48 | WARNING | Could not find TO field, trying fallback methods...
-2025-10-23 21:16:48 | WARNING | ⚠️ Could not find TO field to populate
-2025-10-23 21:17:01 | INFO | HTML content sanitized successfully
-2025-10-23 21:17:01 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:17:01 | INFO | Email HTML validation completed successfully
-2025-10-23 21:17:01 | INFO | HTML content sanitized successfully
-2025-10-23 21:17:01 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:17:01 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-23 21:17:01 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-23 21:17:01 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-23 21:17:01 | INFO | Attempting to set HTML content via innerHTML
-2025-10-23 21:17:01 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-23 21:17:02 | INFO | HTML content set successfully via innerHTML
-2025-10-23 21:17:02 | INFO | Email body field filled with HTML content successfully
-2025-10-23 21:17:02 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-23 21:17:02 | INFO | Basic email fields filled successfully with HTML support
-2025-10-23 21:17:02 | INFO | 📸 Screenshot saved: compose_page_after_basic_fields_1761225422.png
-2025-10-23 21:17:02 | INFO | === YOUR PERFECT BCC APPROACH: 1 BCC recipients ===
-2025-10-23 21:17:05 | INFO | BCC reveal result: SUCCESS
-2025-10-23 21:17:05 | INFO | BCC reveal result: SUCCESS
-2025-10-23 21:17:05 | INFO | Looking for BCC input field after reveal...
-2025-10-23 21:17:05 | INFO | Found 16 total input fields on page
-2025-10-23 21:17:11 | INFO | Debugging BCC field detection...
-2025-10-23 21:17:11 | INFO | Found 1 BCC-related elements on page
-2025-10-23 21:17:11 | INFO | BCC element 1: DIV, aria-label='Bcc', role='presentation', contenteditable='true'
-2025-10-23 21:17:11 | INFO | Found BCC input target with selector: div[class*="fui-"] [contenteditable="true"][aria-label*="Bcc"]
-2025-10-23 21:17:11 | INFO | Bulk pasting BCC emails: tom0692174@outlook.com
-2025-10-23 21:17:12 | INFO | ✅ Cleared existing body content with multiple methods
-2025-10-23 21:17:12 | WARNING | ⚠️ Content may not have been set properly
-2025-10-23 21:17:14 | INFO | Bulk paste tokenized with Tab
-2025-10-23 21:17:16 | INFO | Bulk paste result: 1 chips created
-2025-10-23 21:17:16 | INFO | 📸 Screenshot after BCC reveal: compose_page_after_bcc_reveal_1761225436.png
-2025-10-23 21:17:16 | INFO | Bulk paste result: 1/1 chips created
-2025-10-23 21:17:16 | INFO | Final BCC chips created: 1/1
-2025-10-23 21:17:16 | INFO | 📸 Final screenshot: compose_page_final_bcc_state_1761225436.png
-2025-10-23 21:17:16 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
-2025-10-23 21:17:29 | INFO | HTML content sanitized successfully
-2025-10-23 21:17:29 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:17:29 | INFO | Email HTML validation completed successfully
-2025-10-23 21:17:29 | INFO | HTML content sanitized successfully
-2025-10-23 21:17:29 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:17:29 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-23 21:17:29 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-23 21:17:29 | INFO | 🧹 Clearing existing body content: hello bro@...
-2025-10-23 21:17:30 | INFO | ✅ Existing body content cleared successfully
-2025-10-23 21:17:30 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-23 21:17:30 | INFO | Attempting to set HTML content via innerHTML
-2025-10-23 21:17:30 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-23 21:17:30 | INFO | HTML content set successfully via innerHTML
-2025-10-23 21:17:30 | INFO | Email body field filled with HTML content successfully
-2025-10-23 21:17:30 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-23 21:17:30 | INFO | Basic email fields filled successfully with HTML support
-2025-10-23 21:17:30 | INFO | 📤 Sending email via keyboard shortcut only...
-2025-10-23 21:17:31 | INFO | Successfully focused: input[placeholder*='subject']
-2025-10-23 21:17:32 | INFO | ✅ Send successful on first attempt
-2025-10-23 21:17:32 | INFO | 🔍 Verifying send confirmation...
-2025-10-23 21:17:40 | INFO | ✅ Network idle after send - platform processed
-2025-10-23 21:17:40 | INFO | ✅ Send confirmed via success indicators
-2025-10-23 21:17:40 | INFO | Successfully sent batch to accounts@performanceelevator.org with 1 BCC recipients
-2025-10-23 21:17:40 | INFO | Successfully sent batch 1/1 with 1 recipients
-2025-10-23 21:17:41 | INFO | Progress updated: 1 sent, 0 failed
-2025-10-23 21:17:41 | INFO | Completing progress session 5f246415-8e72-4b25-8185-00e5bdd279a3 with status 'completed'
-2025-10-23 21:17:41 | INFO | Completed progress session 5f246415-8e72-4b25-8185-00e5bdd279a3 with status completed
-2025-10-23 21:17:41 | INFO | Mass email sending completed successfully: 1 emails sent
-2025-10-23 21:17:41 | INFO | Progress update 4: Status=completed, Progress=100.0%, Sent=1, Failed=0
-2025-10-23 21:17:41 | INFO | Session 5f246415-8e72-4b25-8185-00e5bdd279a3 completed with status: completed
-2025-10-23 21:17:41 | INFO | Progress stream ended for session 5f246415-8e72-4b25-8185-00e5bdd279a3 after 4 updates
-2025-10-23 21:23:31 | INFO | File uploaded successfully: leads_export_20251013_103036_1761225811192.txt
-2025-10-23 21:23:31 | INFO | === MASS EMAIL SEND STARTED ===
-2025-10-23 21:23:31 | INFO | Mass email request - Subject: Proxy[rand]123, File: emails.txt
-2025-10-23 21:23:31 | INFO | HTML content sanitized successfully
-2025-10-23 21:23:31 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-23 21:23:31 | INFO | Email HTML validation completed successfully
-2025-10-23 21:23:31 | INFO | HTML content sanitized successfully
-2025-10-23 21:23:31 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-23 21:23:31 | INFO | Parsed 1 emails from uploaded file
-2025-10-23 21:23:31 | INFO | Created progress session 76264db1-1476-4318-9a8f-8c596b334f93 for campaign -1 with 1 emails
-2025-10-23 21:23:31 | INFO | Starting progress stream for session 76264db1-1476-4318-9a8f-8c596b334f93
-2025-10-23 21:23:31 | INFO | Started progress session 76264db1-1476-4318-9a8f-8c596b334f93
-2025-10-23 21:23:31 | INFO | Progress update 1: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 21:23:31 | INFO | Starting mass email sending with 1 recipients in batches of 50
-2025-10-23 21:23:31 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
-2025-10-23 21:23:31 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy98880123
-2025-10-23 21:23:32 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
-2025-10-23 21:23:32 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
-2025-10-23 21:23:32 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
-2025-10-23 21:23:32 | INFO | Progress update 2: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 21:23:33 | INFO | Progress update 3: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 21:23:36 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose?to=accounts%40performanceelevator.org&bcc=tom0692174%40outlook.com&subject=Proxy98880123
-2025-10-23 21:23:36 | INFO | ⏱️ Using adaptive compose timeout: 120000ms for proxy: none
-2025-10-23 21:23:36 | INFO | 🔄 Waiting for compose page to fully load...
-2025-10-23 21:23:42 | INFO | ✅ Compose page fully loaded in 5745.6ms
-2025-10-23 21:23:42 | INFO | 🧹 Clearing compose window for clean state...
-2025-10-23 21:23:42 | INFO | ✅ Compose window cleared successfully
-2025-10-23 21:23:42 | INFO | 📧 Ensuring TO field is populated with sender email: accounts@performanceelevator.org
-2025-10-23 21:23:42 | WARNING | Could not find TO field, trying fallback methods...
-2025-10-23 21:23:42 | WARNING | ⚠️ Could not find TO field to populate
-2025-10-23 21:24:00 | INFO | HTML content sanitized successfully
-2025-10-23 21:24:00 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:24:00 | INFO | Email HTML validation completed successfully
-2025-10-23 21:24:00 | INFO | HTML content sanitized successfully
-2025-10-23 21:24:00 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:24:00 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-23 21:24:00 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-23 21:24:00 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-23 21:24:00 | INFO | Attempting to set HTML content via innerHTML
-2025-10-23 21:24:00 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-23 21:24:00 | INFO | HTML content set successfully via innerHTML
-2025-10-23 21:24:00 | INFO | Email body field filled with HTML content successfully
-2025-10-23 21:24:00 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-23 21:24:00 | INFO | Basic email fields filled successfully with HTML support
-2025-10-23 21:24:00 | INFO | 📎 Starting upload of 1 attachment(s)...
-2025-10-23 21:24:09 | INFO | ✅ Clicked Insert tab (button:has-text("Insert"))
-2025-10-23 21:24:10 | INFO | ✅ Found Attach File button: button[aria-label="Attach file"]
-2025-10-23 21:24:10 | INFO | 📎 Uploading attachment 1/1: E:\a_Work\tele\test\tool-version\uploads\leads_export_20251013_103036_1761225811192.txt
-2025-10-23 21:24:11 | INFO | ✅ Clicked 'Browse this computer' (button:has-text("Browse this computer"))
-2025-10-23 21:24:12 | INFO | 🔍 Looking for correct file input element...
-2025-10-23 21:24:13 | INFO | ✅ Found correct file input: <input type="file" class="JzkXe" multiple="" data-testid="local-computer-filein" value="">
-2025-10-23 21:24:13 | INFO | ⏳ Upload started for: E:\a_Work\tele\test\tool-version\uploads\leads_export_20251013_103036_1761225811192.txt
-2025-10-23 21:24:14 | INFO | ✅ Upload complete. Attachments visible: 0
-2025-10-23 21:24:14 | INFO | 📸 Screenshot saved: screenshots/attachments/leads_export_20251013_103036_1761225811192_done.png
-2025-10-23 21:24:14 | INFO | 🎉 All 1 attachments uploaded successfully.
-2025-10-23 21:24:14 | INFO | 📸 Screenshot saved: compose_page_after_basic_fields_1761225854.png
-2025-10-23 21:24:14 | INFO | === YOUR PERFECT BCC APPROACH: 1 BCC recipients ===
-2025-10-23 21:24:17 | INFO | BCC reveal result: SUCCESS
-2025-10-23 21:24:17 | INFO | BCC reveal result: SUCCESS
-2025-10-23 21:24:17 | INFO | Looking for BCC input field after reveal...
-2025-10-23 21:24:17 | INFO | Found 14 total input fields on page
-2025-10-23 21:24:22 | INFO | Debugging BCC field detection...
-2025-10-23 21:24:22 | INFO | Found 1 BCC-related elements on page
-2025-10-23 21:24:22 | INFO | BCC element 1: DIV, aria-label='Bcc', role='presentation', contenteditable='true'
-2025-10-23 21:24:23 | INFO | Found BCC input target with selector: div[class*="fui-"] [contenteditable="true"][aria-label*="Bcc"]
-2025-10-23 21:24:23 | INFO | Bulk pasting BCC emails: tom0692174@outlook.com
-2025-10-23 21:24:24 | INFO | ✅ Cleared existing body content with multiple methods
-2025-10-23 21:24:24 | WARNING | ⚠️ Content may not have been set properly
-2025-10-23 21:24:24 | INFO | Bulk paste tokenized with Enter
-2025-10-23 21:24:26 | INFO | Bulk paste result: 1 chips created
-2025-10-23 21:24:26 | INFO | 📸 Screenshot after BCC reveal: compose_page_after_bcc_reveal_1761225866.png
-2025-10-23 21:24:26 | INFO | Bulk paste result: 1/1 chips created
-2025-10-23 21:24:26 | INFO | Final BCC chips created: 1/1
-2025-10-23 21:24:27 | INFO | 📸 Final screenshot: compose_page_final_bcc_state_1761225866.png
-2025-10-23 21:24:27 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
-2025-10-23 21:24:39 | INFO | HTML content sanitized successfully
-2025-10-23 21:24:39 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:24:39 | INFO | Email HTML validation completed successfully
-2025-10-23 21:24:39 | INFO | HTML content sanitized successfully
-2025-10-23 21:24:39 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:24:39 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-23 21:24:39 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-23 21:24:39 | INFO | 🧹 Clearing existing body content: hello bro@...
-2025-10-23 21:24:40 | INFO | ✅ Existing body content cleared successfully
-2025-10-23 21:24:40 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-23 21:24:40 | INFO | Attempting to set HTML content via innerHTML
-2025-10-23 21:24:40 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-23 21:24:40 | INFO | HTML content set successfully via innerHTML
-2025-10-23 21:24:40 | INFO | Email body field filled with HTML content successfully
-2025-10-23 21:24:41 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-23 21:24:41 | INFO | Basic email fields filled successfully with HTML support
-2025-10-23 21:24:41 | INFO | 📤 Sending email via keyboard shortcut only...
-2025-10-23 21:24:42 | INFO | Successfully focused: input[placeholder*='subject']
-2025-10-23 21:24:42 | INFO | ✅ Send successful on first attempt
-2025-10-23 21:24:42 | INFO | 🔍 Verifying send confirmation...
-2025-10-23 21:24:50 | INFO | ✅ Network idle after send - platform processed
-2025-10-23 21:24:51 | INFO | ✅ Send confirmed via success indicators
-2025-10-23 21:24:51 | INFO | Successfully sent batch to accounts@performanceelevator.org with 1 BCC recipients
-2025-10-23 21:24:51 | INFO | Successfully sent batch 1/1 with 1 recipients
-2025-10-23 21:24:51 | INFO | Progress updated: 1 sent, 0 failed
-2025-10-23 21:24:51 | INFO | Completing progress session 76264db1-1476-4318-9a8f-8c596b334f93 with status 'completed'
-2025-10-23 21:24:51 | INFO | Completed progress session 76264db1-1476-4318-9a8f-8c596b334f93 with status completed
-2025-10-23 21:24:51 | INFO | Mass email sending completed successfully: 1 emails sent
-2025-10-23 21:24:51 | INFO | Progress update 4: Status=completed, Progress=100.0%, Sent=1, Failed=0
-2025-10-23 21:24:51 | INFO | Session 76264db1-1476-4318-9a8f-8c596b334f93 completed with status: completed
-2025-10-23 21:24:51 | INFO | Progress stream ended for session 76264db1-1476-4318-9a8f-8c596b334f93 after 4 updates
-2025-10-23 21:29:16 | INFO | File uploaded successfully: test_attachment_1761226156682.txt
-2025-10-23 21:29:16 | INFO | === MASS EMAIL SEND STARTED ===
-2025-10-23 21:29:16 | INFO | Mass email request - Subject: Proxy[rand]123, File: emails.txt
-2025-10-23 21:29:17 | INFO | HTML content sanitized successfully
-2025-10-23 21:29:17 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-23 21:29:17 | INFO | Email HTML validation completed successfully
-2025-10-23 21:29:17 | INFO | HTML content sanitized successfully
-2025-10-23 21:29:17 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-23 21:29:17 | INFO | Parsed 1 emails from uploaded file
-2025-10-23 21:29:17 | INFO | Created progress session 91fe7d4d-dbb9-4a7e-948f-d1e48bf0a13d for campaign -1 with 1 emails
-2025-10-23 21:29:17 | INFO | Starting progress stream for session 91fe7d4d-dbb9-4a7e-948f-d1e48bf0a13d
-2025-10-23 21:29:17 | INFO | Started progress session 91fe7d4d-dbb9-4a7e-948f-d1e48bf0a13d
-2025-10-23 21:29:17 | INFO | Progress update 1: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 21:29:17 | INFO | Starting mass email sending with 1 recipients in batches of 50
-2025-10-23 21:29:17 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
-2025-10-23 21:29:17 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy17753123
-2025-10-23 21:29:18 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
-2025-10-23 21:29:18 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
-2025-10-23 21:29:18 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
-2025-10-23 21:29:18 | INFO | Progress update 2: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 21:29:19 | INFO | Progress update 3: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-23 21:29:21 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose?to=accounts%40performanceelevator.org&bcc=tom0692174%40outlook.com&subject=Proxy17753123
-2025-10-23 21:29:21 | INFO | ⏱️ Using adaptive compose timeout: 120000ms for proxy: none
-2025-10-23 21:29:22 | INFO | 🔄 Waiting for compose page to fully load...
-2025-10-23 21:29:31 | INFO | ✅ Compose page fully loaded in 9579.5ms
-2025-10-23 21:29:31 | INFO | 🧹 Clearing compose window for clean state...
-2025-10-23 21:29:31 | INFO | ✅ Compose window cleared successfully
-2025-10-23 21:29:31 | INFO | 📧 Ensuring TO field is populated with sender email: accounts@performanceelevator.org
-2025-10-23 21:29:32 | WARNING | Could not find TO field, trying fallback methods...
-2025-10-23 21:29:32 | WARNING | ⚠️ Could not find TO field to populate
-2025-10-23 21:29:44 | INFO | HTML content sanitized successfully
-2025-10-23 21:29:44 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:29:44 | INFO | Email HTML validation completed successfully
-2025-10-23 21:29:44 | INFO | HTML content sanitized successfully
-2025-10-23 21:29:44 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:29:44 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-23 21:29:45 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-23 21:29:45 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-23 21:29:45 | INFO | Attempting to set HTML content via innerHTML
-2025-10-23 21:29:45 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-23 21:29:45 | INFO | HTML content set successfully via innerHTML
-2025-10-23 21:29:45 | INFO | Email body field filled with HTML content successfully
-2025-10-23 21:29:45 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-23 21:29:45 | INFO | Basic email fields filled successfully with HTML support
-2025-10-23 21:29:45 | INFO | 📎 Starting upload of 1 attachment(s)...
-2025-10-23 21:29:54 | INFO | ✅ Clicked Insert tab (button:has-text("Insert"))
-2025-10-23 21:29:55 | INFO | ✅ Found Attach File button: button[aria-label="Attach file"]
-2025-10-23 21:29:55 | INFO | 📎 Uploading attachment 1/1: E:\a_Work\tele\test\tool-version\uploads\test_attachment_1761226156682.txt
-2025-10-23 21:29:56 | INFO | ✅ Clicked 'Browse this computer' (button:has-text("Browse this computer"))
-2025-10-23 21:29:57 | INFO | 🔍 Looking for correct file input element...
-2025-10-23 21:29:58 | INFO | ✅ Found correct file input: <input type="file" class="JzkXe" multiple="" data-testid="local-computer-filein" value="">
-2025-10-23 21:29:59 | INFO | ⏳ Upload started for: E:\a_Work\tele\test\tool-version\uploads\test_attachment_1761226156682.txt
-2025-10-23 21:29:59 | INFO | ✅ Upload complete. Attachments visible: 0
-2025-10-23 21:29:59 | INFO | 📸 Screenshot saved: screenshots/attachments/test_attachment_1761226156682_done.png
-2025-10-23 21:29:59 | INFO | 🎉 All 1 attachments uploaded successfully.
-2025-10-23 21:29:59 | INFO | 📸 Screenshot saved: compose_page_after_basic_fields_1761226199.png
-2025-10-23 21:29:59 | INFO | === YOUR PERFECT BCC APPROACH: 1 BCC recipients ===
-2025-10-23 21:30:02 | INFO | BCC reveal result: SUCCESS
-2025-10-23 21:30:02 | INFO | BCC reveal result: SUCCESS
-2025-10-23 21:30:02 | INFO | Looking for BCC input field after reveal...
-2025-10-23 21:30:02 | INFO | Found 14 total input fields on page
-2025-10-23 21:30:07 | INFO | Debugging BCC field detection...
-2025-10-23 21:30:07 | INFO | Found 1 BCC-related elements on page
-2025-10-23 21:30:07 | INFO | BCC element 1: DIV, aria-label='Bcc', role='presentation', contenteditable='true'
-2025-10-23 21:30:07 | INFO | Found BCC input target with selector: div[class*="fui-"] [contenteditable="true"][aria-label*="Bcc"]
-2025-10-23 21:30:08 | INFO | Bulk pasting BCC emails: tom0692174@outlook.com
-2025-10-23 21:30:09 | INFO | ✅ Cleared existing body content with multiple methods
-2025-10-23 21:30:09 | WARNING | ⚠️ Content may not have been set properly
-2025-10-23 21:30:10 | INFO | Bulk paste tokenized with Tab
-2025-10-23 21:30:12 | INFO | Bulk paste result: 1 chips created
-2025-10-23 21:30:12 | INFO | 📸 Screenshot after BCC reveal: compose_page_after_bcc_reveal_1761226212.png
-2025-10-23 21:30:12 | INFO | Bulk paste result: 1/1 chips created
-2025-10-23 21:30:12 | INFO | Final BCC chips created: 1/1
-2025-10-23 21:30:12 | INFO | 📸 Final screenshot: compose_page_final_bcc_state_1761226212.png
-2025-10-23 21:30:12 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
-2025-10-23 21:30:25 | INFO | HTML content sanitized successfully
-2025-10-23 21:30:25 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:30:25 | INFO | Email HTML validation completed successfully
-2025-10-23 21:30:25 | INFO | HTML content sanitized successfully
-2025-10-23 21:30:25 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:30:25 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-23 21:30:25 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-23 21:30:25 | INFO | 🧹 Clearing existing body content: hello bro@123...
-2025-10-23 21:30:26 | INFO | ✅ Existing body content cleared successfully
-2025-10-23 21:30:26 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-23 21:30:26 | INFO | Attempting to set HTML content via innerHTML
-2025-10-23 21:30:26 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-23 21:30:26 | INFO | HTML content set successfully via innerHTML
-2025-10-23 21:30:26 | INFO | Email body field filled with HTML content successfully
-2025-10-23 21:30:26 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-23 21:30:26 | INFO | Basic email fields filled successfully with HTML support
-2025-10-23 21:30:26 | INFO | 📤 Sending email via keyboard shortcut only...
-2025-10-23 21:30:28 | INFO | Successfully focused: input[placeholder*='subject']
-2025-10-23 21:30:28 | INFO | ✅ Send successful on first attempt
-2025-10-23 21:30:28 | INFO | 🔍 Verifying send confirmation...
-2025-10-23 21:30:36 | INFO | ✅ Network idle after send - platform processed
-2025-10-23 21:30:36 | INFO | ✅ Send confirmed via success indicators
-2025-10-23 21:30:37 | INFO | Successfully sent batch to accounts@performanceelevator.org with 1 BCC recipients
-2025-10-23 21:30:37 | INFO | Successfully sent batch 1/1 with 1 recipients
-2025-10-23 21:30:37 | INFO | Progress updated: 1 sent, 0 failed
-2025-10-23 21:30:37 | INFO | Completing progress session 91fe7d4d-dbb9-4a7e-948f-d1e48bf0a13d with status 'completed'
-2025-10-23 21:30:37 | INFO | Completed progress session 91fe7d4d-dbb9-4a7e-948f-d1e48bf0a13d with status completed
-2025-10-23 21:30:37 | INFO | Mass email sending completed successfully: 1 emails sent
-2025-10-23 21:30:37 | INFO | Progress update 4: Status=completed, Progress=100.0%, Sent=1, Failed=0
-2025-10-23 21:30:37 | INFO | Session 91fe7d4d-dbb9-4a7e-948f-d1e48bf0a13d completed with status: completed
-2025-10-23 21:30:37 | INFO | Progress stream ended for session 91fe7d4d-dbb9-4a7e-948f-d1e48bf0a13d after 4 updates
-2025-10-23 21:31:16 | INFO | File uploaded successfully: test_attachment_1761226276866.txt
-2025-10-23 21:31:16 | INFO | === TEST EMAIL SEND STARTED ===
-2025-10-23 21:31:16 | INFO | Test email request data: {'test_email': 'tom0692174@outlook.com', 'subject': 'Proxy[rand]123', 'body': '<h1>hello bro@123</h1>', 'selected_accounts': ['accounts@performanceelevator.org'], 'attachments': ['E:\\a_Work\\tele\\test\\tool-version\\uploads\\test_attachment_1761226276866.txt']}
-2025-10-23 21:31:16 | INFO | Using sender account for test: accounts@performanceelevator.org
-2025-10-23 21:31:16 | INFO | HTML content sanitized successfully
-2025-10-23 21:31:16 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-23 21:31:16 | INFO | Email HTML validation completed successfully
-2025-10-23 21:31:16 | INFO | HTML content sanitized successfully
-2025-10-23 21:31:16 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-23 21:31:16 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy32795123
-2025-10-23 21:31:17 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
-2025-10-23 21:31:17 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
-2025-10-23 21:31:17 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
-2025-10-23 21:31:21 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose?to=accounts%40performanceelevator.org&bcc=tom0692174%40outlook.com&subject=Proxy32795123
-2025-10-23 21:31:21 | INFO | ⏱️ Using adaptive compose timeout: 120000ms for proxy: none
-2025-10-23 21:31:22 | INFO | 🔄 Waiting for compose page to fully load...
-2025-10-23 21:31:28 | INFO | ✅ Compose page fully loaded in 6249.1ms
-2025-10-23 21:31:28 | INFO | 🧹 Clearing compose window for clean state...
-2025-10-23 21:31:28 | INFO | ✅ Compose window cleared successfully
-2025-10-23 21:31:28 | INFO | 📧 Ensuring TO field is populated with sender email: accounts@performanceelevator.org
-2025-10-23 21:31:28 | WARNING | Could not find TO field, trying fallback methods...
-2025-10-23 21:31:28 | WARNING | ⚠️ Could not find TO field to populate
-2025-10-23 21:31:41 | INFO | HTML content sanitized successfully
-2025-10-23 21:31:41 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:31:41 | INFO | Email HTML validation completed successfully
-2025-10-23 21:31:41 | INFO | HTML content sanitized successfully
-2025-10-23 21:31:41 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:31:41 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-23 21:31:41 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-23 21:31:41 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-23 21:31:41 | INFO | Attempting to set HTML content via innerHTML
-2025-10-23 21:31:41 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-23 21:31:42 | INFO | HTML content set successfully via innerHTML
-2025-10-23 21:31:42 | INFO | Email body field filled with HTML content successfully
-2025-10-23 21:31:42 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-23 21:31:42 | INFO | Basic email fields filled successfully with HTML support
-2025-10-23 21:31:42 | INFO | 📎 Starting upload of 1 attachment(s)...
-2025-10-23 21:31:51 | INFO | ✅ Clicked Insert tab (button:has-text("Insert"))
-2025-10-23 21:31:52 | INFO | ✅ Found Attach File button: button[aria-label="Attach file"]
-2025-10-23 21:31:52 | INFO | 📎 Uploading attachment 1/1: E:\a_Work\tele\test\tool-version\uploads\test_attachment_1761226276866.txt
-2025-10-23 21:31:53 | INFO | ✅ Clicked 'Browse this computer' (button:has-text("Browse this computer"))
-2025-10-23 21:31:54 | INFO | 🔍 Looking for correct file input element...
-2025-10-23 21:31:55 | INFO | ✅ Found correct file input: <input type="file" class="JzkXe" multiple="" data-testid="local-computer-filein" value="">
-2025-10-23 21:31:55 | INFO | ⏳ Upload started for: E:\a_Work\tele\test\tool-version\uploads\test_attachment_1761226276866.txt
-2025-10-23 21:31:55 | INFO | ✅ Upload complete. Attachments visible: 0
-2025-10-23 21:31:55 | INFO | 📸 Screenshot saved: screenshots/attachments/test_attachment_1761226276866_done.png
-2025-10-23 21:31:55 | INFO | 🎉 All 1 attachments uploaded successfully.
-2025-10-23 21:31:55 | INFO | 📸 Screenshot saved: compose_page_after_basic_fields_1761226315.png
-2025-10-23 21:31:55 | INFO | === YOUR PERFECT BCC APPROACH: 1 BCC recipients ===
-2025-10-23 21:31:58 | INFO | BCC reveal result: SUCCESS
-2025-10-23 21:31:58 | INFO | BCC reveal result: SUCCESS
-2025-10-23 21:31:58 | INFO | Looking for BCC input field after reveal...
-2025-10-23 21:31:58 | INFO | Found 14 total input fields on page
-2025-10-23 21:32:04 | INFO | Debugging BCC field detection...
-2025-10-23 21:32:04 | INFO | Found 1 BCC-related elements on page
-2025-10-23 21:32:04 | INFO | BCC element 1: DIV, aria-label='Bcc', role='presentation', contenteditable='true'
-2025-10-23 21:32:04 | INFO | Found BCC input target with selector: div[class*="fui-"] [contenteditable="true"][aria-label*="Bcc"]
-2025-10-23 21:32:04 | INFO | Bulk pasting BCC emails: tom0692174@outlook.com
-2025-10-23 21:32:05 | INFO | ✅ Cleared existing body content with multiple methods
-2025-10-23 21:32:05 | WARNING | ⚠️ Content may not have been set properly
-2025-10-23 21:32:06 | INFO | Bulk paste tokenized with Tab
-2025-10-23 21:32:09 | INFO | Bulk paste result: 1 chips created
-2025-10-23 21:32:09 | INFO | 📸 Screenshot after BCC reveal: compose_page_after_bcc_reveal_1761226329.png
-2025-10-23 21:32:09 | INFO | Bulk paste result: 1/1 chips created
-2025-10-23 21:32:09 | INFO | Final BCC chips created: 1/1
-2025-10-23 21:32:09 | INFO | 📸 Final screenshot: compose_page_final_bcc_state_1761226329.png
-2025-10-23 21:32:09 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
-2025-10-23 21:32:21 | INFO | HTML content sanitized successfully
-2025-10-23 21:32:21 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:32:21 | INFO | Email HTML validation completed successfully
-2025-10-23 21:32:21 | INFO | HTML content sanitized successfully
-2025-10-23 21:32:21 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:32:21 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-23 21:32:22 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-23 21:32:22 | INFO | 🧹 Clearing existing body content: hello bro@123...
-2025-10-23 21:32:22 | INFO | ✅ Existing body content cleared successfully
-2025-10-23 21:32:22 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-23 21:32:22 | INFO | Attempting to set HTML content via innerHTML
-2025-10-23 21:32:22 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-23 21:32:23 | INFO | HTML content set successfully via innerHTML
-2025-10-23 21:32:23 | INFO | Email body field filled with HTML content successfully
-2025-10-23 21:32:23 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-23 21:32:23 | INFO | Basic email fields filled successfully with HTML support
-2025-10-23 21:32:23 | INFO | 📤 Sending email via keyboard shortcut only...
-2025-10-23 21:32:24 | INFO | Successfully focused: input[placeholder*='subject']
-2025-10-23 21:32:24 | INFO | ✅ Send successful on first attempt
-2025-10-23 21:32:24 | INFO | 🔍 Verifying send confirmation...
-2025-10-23 21:32:33 | INFO | ✅ Network idle after send - platform processed
-2025-10-23 21:32:33 | INFO | ✅ Send confirmed via success indicators
-2025-10-23 21:32:33 | INFO | Test email sent successfully to tom0692174@outlook.com
-2025-10-23 21:34:00 | INFO | File uploaded successfully: images_2_1761226440413.jpeg
-2025-10-23 21:34:00 | INFO | === TEST EMAIL SEND STARTED ===
-2025-10-23 21:34:00 | INFO | Test email request data: {'test_email': 'tom0692174@outlook.com', 'subject': 'Proxy[rand]123', 'body': '<h1>hello bro@123</h1>', 'selected_accounts': ['accounts@performanceelevator.org'], 'attachments': ['E:\\a_Work\\tele\\test\\tool-version\\uploads\\images_2_1761226440413.jpeg']}
-2025-10-23 21:34:00 | INFO | Using sender account for test: accounts@performanceelevator.org
-2025-10-23 21:34:00 | INFO | HTML content sanitized successfully
-2025-10-23 21:34:00 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-23 21:34:00 | INFO | Email HTML validation completed successfully
-2025-10-23 21:34:00 | INFO | HTML content sanitized successfully
-2025-10-23 21:34:00 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-23 21:34:00 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy58772123
-2025-10-23 21:34:00 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
-2025-10-23 21:34:01 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
-2025-10-23 21:34:01 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
-2025-10-23 21:34:06 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose?to=accounts%40performanceelevator.org&bcc=tom0692174%40outlook.com&subject=Proxy58772123
-2025-10-23 21:34:06 | INFO | ⏱️ Using adaptive compose timeout: 120000ms for proxy: none
-2025-10-23 21:34:07 | INFO | 🔄 Waiting for compose page to fully load...
-2025-10-23 21:34:12 | INFO | ⏳ Still loading... (5032ms elapsed)
-2025-10-23 21:34:15 | INFO | ✅ Compose page fully loaded in 8031.9ms
-2025-10-23 21:34:15 | INFO | 🧹 Clearing compose window for clean state...
-2025-10-23 21:34:15 | INFO | ✅ Compose window cleared successfully
-2025-10-23 21:34:15 | INFO | 📧 Ensuring TO field is populated with sender email: accounts@performanceelevator.org
-2025-10-23 21:34:15 | WARNING | Could not find TO field, trying fallback methods...
-2025-10-23 21:34:15 | WARNING | ⚠️ Could not find TO field to populate
-2025-10-23 21:34:28 | INFO | HTML content sanitized successfully
-2025-10-23 21:34:28 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:34:28 | INFO | Email HTML validation completed successfully
-2025-10-23 21:34:28 | INFO | HTML content sanitized successfully
-2025-10-23 21:34:28 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:34:28 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-23 21:34:28 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-23 21:34:28 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-23 21:34:28 | INFO | Attempting to set HTML content via innerHTML
-2025-10-23 21:34:28 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-23 21:34:29 | INFO | HTML content set successfully via innerHTML
-2025-10-23 21:34:29 | INFO | Email body field filled with HTML content successfully
-2025-10-23 21:34:29 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-23 21:34:29 | INFO | Basic email fields filled successfully with HTML support
-2025-10-23 21:34:29 | INFO | 📎 Starting upload of 1 attachment(s)...
-2025-10-23 21:34:38 | INFO | ✅ Clicked Insert tab (button:has-text("Insert"))
-2025-10-23 21:34:39 | INFO | ✅ Found Attach File button: button[aria-label="Attach file"]
-2025-10-23 21:34:39 | INFO | 📎 Uploading attachment 1/1: E:\a_Work\tele\test\tool-version\uploads\images_2_1761226440413.jpeg
-2025-10-23 21:34:40 | INFO | ✅ Clicked 'Browse this computer' (button:has-text("Browse this computer"))
-2025-10-23 21:34:41 | INFO | 🔍 Looking for correct file input element...
-2025-10-23 21:34:42 | INFO | ✅ Found correct file input: <input type="file" class="JzkXe" multiple="" data-testid="local-computer-filein" value="">
-2025-10-23 21:34:42 | INFO | ⏳ Upload started for: E:\a_Work\tele\test\tool-version\uploads\images_2_1761226440413.jpeg
-2025-10-23 21:34:42 | INFO | ✅ Upload complete. Attachments visible: 0
-2025-10-23 21:34:42 | INFO | 📸 Screenshot saved: screenshots/attachments/images_2_1761226440413_done.png
-2025-10-23 21:34:42 | INFO | 🎉 All 1 attachments uploaded successfully.
-2025-10-23 21:34:42 | INFO | 📸 Screenshot saved: compose_page_after_basic_fields_1761226482.png
-2025-10-23 21:34:42 | INFO | === YOUR PERFECT BCC APPROACH: 1 BCC recipients ===
-2025-10-23 21:34:45 | INFO | BCC reveal result: SUCCESS
-2025-10-23 21:34:45 | INFO | BCC reveal result: SUCCESS
-2025-10-23 21:34:46 | INFO | Looking for BCC input field after reveal...
-2025-10-23 21:34:46 | INFO | Found 14 total input fields on page
-2025-10-23 21:34:51 | INFO | Debugging BCC field detection...
-2025-10-23 21:34:51 | INFO | Found 1 BCC-related elements on page
-2025-10-23 21:34:51 | INFO | BCC element 1: DIV, aria-label='Bcc', role='presentation', contenteditable='true'
-2025-10-23 21:34:51 | INFO | Found BCC input target with selector: div[class*="fui-"] [contenteditable="true"][aria-label*="Bcc"]
-2025-10-23 21:34:51 | INFO | Bulk pasting BCC emails: tom0692174@outlook.com
-2025-10-23 21:34:52 | INFO | ✅ Cleared existing body content with multiple methods
-2025-10-23 21:34:52 | WARNING | ⚠️ Content may not have been set properly
-2025-10-23 21:34:54 | INFO | Bulk paste tokenized with Tab
-2025-10-23 21:34:56 | INFO | Bulk paste result: 1 chips created
-2025-10-23 21:34:56 | INFO | 📸 Screenshot after BCC reveal: compose_page_after_bcc_reveal_1761226496.png
-2025-10-23 21:34:56 | INFO | Bulk paste result: 1/1 chips created
-2025-10-23 21:34:56 | INFO | Final BCC chips created: 1/1
-2025-10-23 21:34:56 | INFO | 📸 Final screenshot: compose_page_final_bcc_state_1761226496.png
-2025-10-23 21:34:56 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
-2025-10-23 21:35:09 | INFO | HTML content sanitized successfully
-2025-10-23 21:35:09 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:35:09 | INFO | Email HTML validation completed successfully
-2025-10-23 21:35:09 | INFO | HTML content sanitized successfully
-2025-10-23 21:35:09 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-23 21:35:09 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-23 21:35:09 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-23 21:35:09 | INFO | 🧹 Clearing existing body content: hello bro@123...
-2025-10-23 21:35:09 | INFO | ✅ Existing body content cleared successfully
-2025-10-23 21:35:09 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-23 21:35:09 | INFO | Attempting to set HTML content via innerHTML
-2025-10-23 21:35:09 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-23 21:35:10 | INFO | HTML content set successfully via innerHTML
-2025-10-23 21:35:10 | INFO | Email body field filled with HTML content successfully
-2025-10-23 21:35:10 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-23 21:35:10 | INFO | Basic email fields filled successfully with HTML support
-2025-10-23 21:35:10 | INFO | 📤 Sending email via keyboard shortcut only...
-2025-10-23 21:35:11 | INFO | Successfully focused: input[placeholder*='subject']
-2025-10-23 21:35:11 | INFO | ✅ Send successful on first attempt
-2025-10-23 21:35:11 | INFO | 🔍 Verifying send confirmation...
-2025-10-23 21:35:11 | INFO | ✅ Network idle after send - platform processed
-2025-10-23 21:35:11 | INFO | ✅ Send confirmed via success indicators
-2025-10-23 21:35:12 | INFO | Test email sent successfully to tom0692174@outlook.com
-2025-10-24 00:29:25 | INFO | File uploaded successfully: DennySantosaNewResume_1761236965012.pdf
-2025-10-24 00:29:25 | INFO | === MASS EMAIL SEND STARTED ===
-2025-10-24 00:29:25 | INFO | Mass email request - Subject: Proxy[rand]123, File: emails.txt
-2025-10-24 00:29:25 | INFO | HTML content sanitized successfully
-2025-10-24 00:29:25 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-24 00:29:25 | INFO | Email HTML validation completed successfully
-2025-10-24 00:29:25 | INFO | HTML content sanitized successfully
-2025-10-24 00:29:25 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-24 00:29:25 | INFO | Parsed 1 emails from uploaded file
-2025-10-24 00:29:25 | INFO | Created progress session deba44f2-13fe-4546-9c5d-be2fce31d6ba for campaign -1 with 1 emails
-2025-10-24 00:29:25 | INFO | Starting progress stream for session deba44f2-13fe-4546-9c5d-be2fce31d6ba
-2025-10-24 00:29:25 | INFO | Started progress session deba44f2-13fe-4546-9c5d-be2fce31d6ba
-2025-10-24 00:29:25 | INFO | Progress update 1: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-24 00:29:25 | INFO | Starting mass email sending with 1 recipients in batches of 50
-2025-10-24 00:29:25 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
-2025-10-24 00:29:25 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy20672123
-2025-10-24 00:29:26 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
-2025-10-24 00:29:26 | INFO | Progress update 2: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-24 00:29:26 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
-2025-10-24 00:29:26 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
-2025-10-24 00:29:27 | INFO | Progress update 3: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-24 00:29:30 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose?to=accounts%40performanceelevator.org&bcc=tom0692174%40outlook.com&subject=Proxy20672123
-2025-10-24 00:29:30 | INFO | ⏱️ Using adaptive compose timeout: 120000ms for proxy: none
-2025-10-24 00:29:31 | INFO | 🔄 Waiting for compose page to fully load...
-2025-10-24 00:29:36 | INFO | ⏳ Waiting for compose elements... (5028ms elapsed)
-2025-10-24 00:29:37 | INFO | ✅ Compose page fully loaded in 6838.2ms
-2025-10-24 00:29:37 | INFO | 🧹 Clearing compose window for clean state...
-2025-10-24 00:29:37 | INFO | ✅ Compose window cleared successfully
-2025-10-24 00:29:37 | INFO | 📧 Ensuring TO field is populated with sender email: accounts@performanceelevator.org
-2025-10-24 00:29:38 | WARNING | Could not find TO field, trying fallback methods...
-2025-10-24 00:29:38 | WARNING | ⚠️ Could not find TO field to populate
-2025-10-24 00:29:50 | INFO | HTML content sanitized successfully
-2025-10-24 00:29:50 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-24 00:29:50 | INFO | Email HTML validation completed successfully
-2025-10-24 00:29:50 | INFO | HTML content sanitized successfully
-2025-10-24 00:29:50 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-24 00:29:50 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-24 00:29:50 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-24 00:29:50 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-24 00:29:50 | INFO | Attempting to set HTML content via innerHTML
-2025-10-24 00:29:50 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-24 00:29:51 | INFO | HTML content set successfully via innerHTML
-2025-10-24 00:29:51 | INFO | Email body field filled with HTML content successfully
-2025-10-24 00:29:51 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-24 00:29:51 | INFO | Basic email fields filled successfully with HTML support
-2025-10-24 00:29:51 | INFO | 📎 Starting upload of 1 attachment(s)...
-2025-10-24 00:30:00 | INFO | ✅ Clicked Insert tab (button:has-text("Insert"))
-2025-10-24 00:30:01 | INFO | ✅ Found Attach File button: button[aria-label="Attach file"]
-2025-10-24 00:30:01 | INFO | 📎 Uploading attachment 1/1: E:\a_Work\tele\test\tool-version\uploads\DennySantosaNewResume_1761236965012.pdf
-2025-10-24 00:30:02 | INFO | ✅ Clicked 'Browse this computer' (button:has-text("Browse this computer"))
-2025-10-24 00:30:03 | INFO | 🔍 Looking for correct file input element...
-2025-10-24 00:30:04 | INFO | ✅ Found correct file input: <input type="file" class="JzkXe" multiple="" data-testid="local-computer-filein" value="">
-2025-10-24 00:30:04 | INFO | ⏳ Upload started for: E:\a_Work\tele\test\tool-version\uploads\DennySantosaNewResume_1761236965012.pdf
-2025-10-24 00:30:04 | INFO | ✅ Upload complete. Attachments visible: 0
-2025-10-24 00:30:04 | INFO | 📸 Screenshot saved: screenshots/attachments/DennySantosaNewResume_1761236965012_done.png
-2025-10-24 00:30:04 | INFO | 🎉 All 1 attachments uploaded successfully.
-2025-10-24 00:30:04 | INFO | 📸 Screenshot saved: compose_page_after_basic_fields_1761237004.png
-2025-10-24 00:30:04 | INFO | === YOUR PERFECT BCC APPROACH: 1 BCC recipients ===
-2025-10-24 00:30:08 | INFO | BCC reveal result: SUCCESS
-2025-10-24 00:30:08 | INFO | BCC reveal result: SUCCESS
-2025-10-24 00:30:08 | INFO | Looking for BCC input field after reveal...
-2025-10-24 00:30:08 | INFO | Found 14 total input fields on page
-2025-10-24 00:30:13 | INFO | Debugging BCC field detection...
-2025-10-24 00:30:13 | INFO | Found 1 BCC-related elements on page
-2025-10-24 00:30:13 | INFO | BCC element 1: DIV, aria-label='Bcc', role='presentation', contenteditable='true'
-2025-10-24 00:30:13 | INFO | Found BCC input target with selector: div[class*="fui-"] [contenteditable="true"][aria-label*="Bcc"]
-2025-10-24 00:30:14 | INFO | Bulk pasting BCC emails: tom0692174@outlook.com
-2025-10-24 00:30:15 | INFO | ✅ Cleared existing body content with multiple methods
-2025-10-24 00:30:15 | WARNING | ⚠️ Content may not have been set properly
-2025-10-24 00:30:16 | INFO | Bulk paste tokenized with Tab
-2025-10-24 00:30:18 | INFO | Bulk paste result: 1 chips created
-2025-10-24 00:30:18 | INFO | 📸 Screenshot after BCC reveal: compose_page_after_bcc_reveal_1761237018.png
-2025-10-24 00:30:18 | INFO | Bulk paste result: 1/1 chips created
-2025-10-24 00:30:18 | INFO | Final BCC chips created: 1/1
-2025-10-24 00:30:18 | INFO | 📸 Final screenshot: compose_page_final_bcc_state_1761237018.png
-2025-10-24 00:30:18 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
-2025-10-24 00:30:31 | INFO | HTML content sanitized successfully
-2025-10-24 00:30:31 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-24 00:30:31 | INFO | Email HTML validation completed successfully
-2025-10-24 00:30:31 | INFO | HTML content sanitized successfully
-2025-10-24 00:30:31 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-24 00:30:31 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-24 00:30:31 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-24 00:30:31 | INFO | 🧹 Clearing existing body content: hello bro@123...
-2025-10-24 00:30:32 | INFO | ✅ Existing body content cleared successfully
-2025-10-24 00:30:32 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-24 00:30:32 | INFO | Attempting to set HTML content via innerHTML
-2025-10-24 00:30:32 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-24 00:30:32 | INFO | HTML content set successfully via innerHTML
-2025-10-24 00:30:32 | INFO | Email body field filled with HTML content successfully
-2025-10-24 00:30:32 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-24 00:30:32 | INFO | Basic email fields filled successfully with HTML support
-2025-10-24 00:30:32 | INFO | 📤 Sending email via keyboard shortcut only...
-2025-10-24 00:30:33 | INFO | Successfully focused: input[placeholder*='subject']
-2025-10-24 00:30:33 | INFO | ✅ Send successful on first attempt
-2025-10-24 00:30:33 | INFO | 🔍 Verifying send confirmation...
-2025-10-24 00:30:33 | INFO | ✅ Network idle after send - platform processed
-2025-10-24 00:30:34 | INFO | ✅ Send confirmed via success indicators
-2025-10-24 00:30:34 | INFO | Successfully sent batch to accounts@performanceelevator.org with 1 BCC recipients
-2025-10-24 00:30:34 | INFO | Successfully sent batch 1/1 with 1 recipients
-2025-10-24 00:30:34 | INFO | Progress updated: 1 sent, 0 failed
-2025-10-24 00:30:34 | INFO | Completing progress session deba44f2-13fe-4546-9c5d-be2fce31d6ba with status 'completed'
-2025-10-24 00:30:34 | INFO | Completed progress session deba44f2-13fe-4546-9c5d-be2fce31d6ba with status completed
-2025-10-24 00:30:34 | INFO | Mass email sending completed successfully: 1 emails sent
-2025-10-24 00:30:34 | INFO | Progress update 4: Status=completed, Progress=100.0%, Sent=1, Failed=0
-2025-10-24 00:30:34 | INFO | Session deba44f2-13fe-4546-9c5d-be2fce31d6ba completed with status: completed
-2025-10-24 00:30:34 | INFO | Progress stream ended for session deba44f2-13fe-4546-9c5d-be2fce31d6ba after 4 updates
-2025-10-24 00:35:27 | INFO | File uploaded successfully: test_1761237327470.pdf
-2025-10-24 00:35:27 | INFO | === MASS EMAIL SEND STARTED ===
-2025-10-24 00:35:27 | INFO | Mass email request - Subject: Proxy[rand]123, File: emails.txt
-2025-10-24 00:35:28 | INFO | HTML content sanitized successfully
-2025-10-24 00:35:28 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-24 00:35:28 | INFO | Email HTML validation completed successfully
-2025-10-24 00:35:28 | INFO | HTML content sanitized successfully
-2025-10-24 00:35:28 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
-2025-10-24 00:35:28 | INFO | Parsed 1 emails from uploaded file
-2025-10-24 00:35:28 | INFO | Created progress session 96b8235c-2c85-4914-ba43-6a332e17dd69 for campaign -1 with 1 emails
-2025-10-24 00:35:28 | INFO | Starting progress stream for session 96b8235c-2c85-4914-ba43-6a332e17dd69
-2025-10-24 00:35:28 | INFO | Started progress session 96b8235c-2c85-4914-ba43-6a332e17dd69
-2025-10-24 00:35:28 | INFO | Progress update 1: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-24 00:35:28 | INFO | Starting mass email sending with 1 recipients in batches of 50
-2025-10-24 00:35:28 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
-2025-10-24 00:35:28 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy89038123
-2025-10-24 00:35:29 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
-2025-10-24 00:35:29 | INFO | Progress update 2: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-24 00:35:29 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
-2025-10-24 00:35:29 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
-2025-10-24 00:35:30 | INFO | Progress update 3: Status=running, Progress=0.0%, Sent=0, Failed=0
-2025-10-24 00:35:32 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose?to=accounts%40performanceelevator.org&bcc=tom0692174%40outlook.com&subject=Proxy89038123
-2025-10-24 00:35:32 | INFO | ⏱️ Using adaptive compose timeout: 120000ms for proxy: none
-2025-10-24 00:35:33 | INFO | 🔄 Waiting for compose page to fully load...
-2025-10-24 00:35:38 | INFO | ✅ Compose page fully loaded in 5465.4ms
-2025-10-24 00:35:38 | INFO | 🧹 Clearing compose window for clean state...
-2025-10-24 00:35:38 | INFO | ✅ Compose window cleared successfully
-2025-10-24 00:35:38 | INFO | 📧 Ensuring TO field is populated with sender email: accounts@performanceelevator.org
-2025-10-24 00:35:38 | WARNING | Could not find TO field, trying fallback methods...
-2025-10-24 00:35:38 | WARNING | ⚠️ Could not find TO field to populate
-2025-10-24 00:35:56 | INFO | HTML content sanitized successfully
-2025-10-24 00:35:56 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-24 00:35:56 | INFO | Email HTML validation completed successfully
-2025-10-24 00:35:56 | INFO | HTML content sanitized successfully
-2025-10-24 00:35:56 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-24 00:35:56 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-24 00:35:56 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-24 00:35:56 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-24 00:35:56 | INFO | Attempting to set HTML content via innerHTML
-2025-10-24 00:35:56 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-24 00:35:56 | INFO | HTML content set successfully via innerHTML
-2025-10-24 00:35:56 | INFO | Email body field filled with HTML content successfully
-2025-10-24 00:35:56 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-24 00:35:56 | INFO | Basic email fields filled successfully with HTML support
-2025-10-24 00:35:56 | INFO | 📎 Starting upload of 1 attachment(s)...
-2025-10-24 00:36:05 | INFO | ✅ Clicked Insert tab (button:has-text("Insert"))
-2025-10-24 00:36:06 | INFO | ✅ Found Attach File button: button[aria-label="Attach file"]
-2025-10-24 00:36:06 | INFO | 📎 Uploading attachment 1/1: E:\a_Work\tele\test\tool-version\uploads\test_1761237327470.pdf
-2025-10-24 00:36:08 | INFO | ✅ Clicked 'Browse this computer' (button:has-text("Browse this computer"))
-2025-10-24 00:36:09 | INFO | 🔍 Looking for correct file input element...
-2025-10-24 00:36:10 | INFO | ✅ Found correct file input: <input type="file" class="JzkXe" multiple="" data-testid="local-computer-filein" value="">
-2025-10-24 00:36:10 | INFO | ⏳ Upload started for: E:\a_Work\tele\test\tool-version\uploads\test_1761237327470.pdf
-2025-10-24 00:36:10 | INFO | ✅ Upload complete. Attachments visible: 0
-2025-10-24 00:36:10 | INFO | 📸 Screenshot saved: screenshots/attachments/test_1761237327470_done.png
-2025-10-24 00:36:10 | INFO | 🎉 All 1 attachments uploaded successfully.
-2025-10-24 00:36:10 | INFO | 📸 Screenshot saved: compose_page_after_basic_fields_1761237370.png
-2025-10-24 00:36:10 | INFO | === YOUR PERFECT BCC APPROACH: 1 BCC recipients ===
-2025-10-24 00:36:13 | INFO | BCC reveal result: SUCCESS
-2025-10-24 00:36:13 | INFO | BCC reveal result: SUCCESS
-2025-10-24 00:36:13 | INFO | Looking for BCC input field after reveal...
-2025-10-24 00:36:13 | INFO | Found 14 total input fields on page
-2025-10-24 00:36:18 | INFO | Debugging BCC field detection...
-2025-10-24 00:36:18 | INFO | Found 1 BCC-related elements on page
-2025-10-24 00:36:18 | INFO | BCC element 1: DIV, aria-label='Bcc', role='presentation', contenteditable='true'
-2025-10-24 00:36:19 | INFO | Found BCC input target with selector: div[class*="fui-"] [contenteditable="true"][aria-label*="Bcc"]
-2025-10-24 00:36:19 | INFO | Bulk pasting BCC emails: tom0692174@outlook.com
-2025-10-24 00:36:20 | INFO | ✅ Cleared existing body content with multiple methods
-2025-10-24 00:36:20 | WARNING | ⚠️ Content may not have been set properly
-2025-10-24 00:36:20 | INFO | Bulk paste tokenized with Enter
-2025-10-24 00:36:22 | INFO | Bulk paste result: 1 chips created
-2025-10-24 00:36:22 | INFO | 📸 Screenshot after BCC reveal: compose_page_after_bcc_reveal_1761237382.png
-2025-10-24 00:36:22 | INFO | Bulk paste result: 1/1 chips created
-2025-10-24 00:36:22 | INFO | Final BCC chips created: 1/1
-2025-10-24 00:36:22 | INFO | 📸 Final screenshot: compose_page_final_bcc_state_1761237382.png
-2025-10-24 00:36:22 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
-2025-10-24 00:36:35 | INFO | HTML content sanitized successfully
-2025-10-24 00:36:35 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-24 00:36:35 | INFO | Email HTML validation completed successfully
-2025-10-24 00:36:35 | INFO | HTML content sanitized successfully
-2025-10-24 00:36:35 | INFO | HTML validation completed: 2 allowed tags, 0 disallowed tags
-2025-10-24 00:36:35 | INFO | ⏱️ Using adaptive body field timeout: 10000ms for proxy: none
-2025-10-24 00:36:35 | INFO | Found valid body field with selector: div[aria-label="Message body"]
-2025-10-24 00:36:35 | INFO | 🧹 Clearing existing body content: hello bro@123...
-2025-10-24 00:36:36 | INFO | ✅ Existing body content cleared successfully
-2025-10-24 00:36:36 | INFO | 📝 Setting new body content after clearing existing content
-2025-10-24 00:36:36 | INFO | Attempting to set HTML content via innerHTML
-2025-10-24 00:36:36 | INFO | ⏱️ Using adaptive evaluate timeout: 10000ms for proxy: none
-2025-10-24 00:36:36 | INFO | HTML content set successfully via innerHTML
-2025-10-24 00:36:36 | INFO | Email body field filled with HTML content successfully
-2025-10-24 00:36:36 | INFO | HTML tags detected in body field - HTML rendering successful
-2025-10-24 00:36:36 | INFO | Basic email fields filled successfully with HTML support
-2025-10-24 00:36:36 | INFO | 📤 Sending email via keyboard shortcut only...
-2025-10-24 00:36:37 | INFO | Successfully focused: input[placeholder*='subject']
-2025-10-24 00:36:38 | INFO | ✅ Send successful on first attempt
-2025-10-24 00:36:38 | INFO | 🔍 Verifying send confirmation...
-2025-10-24 00:36:46 | INFO | ✅ Network idle after send - platform processed
-2025-10-24 00:36:46 | INFO | ✅ Send confirmed via success indicators
-2025-10-24 00:36:47 | INFO | Successfully sent batch to accounts@performanceelevator.org with 1 BCC recipients
-2025-10-24 00:36:47 | INFO | Successfully sent batch 1/1 with 1 recipients
-2025-10-24 00:36:47 | INFO | Progress updated: 1 sent, 0 failed
-2025-10-24 00:36:47 | INFO | Completing progress session 96b8235c-2c85-4914-ba43-6a332e17dd69 with status 'completed'
-2025-10-24 00:36:47 | INFO | Completed progress session 96b8235c-2c85-4914-ba43-6a332e17dd69 with status completed
-2025-10-24 00:36:47 | INFO | Mass email sending completed successfully: 1 emails sent
-2025-10-24 00:36:47 | INFO | Progress update 4: Status=completed, Progress=100.0%, Sent=1, Failed=0
-2025-10-24 00:36:47 | INFO | Session 96b8235c-2c85-4914-ba43-6a332e17dd69 completed with status: completed
-2025-10-24 00:36:47 | INFO | Progress stream ended for session 96b8235c-2c85-4914-ba43-6a332e17dd69 after 4 updates
+2025-10-24 21:25:41 | INFO | [EXPORT] Start export for accounts@performanceelevator.org
+2025-10-24 21:25:41 | INFO | [EXPORT] Cookie account present: False
+2025-10-24 21:25:42 | INFO | [EXPORT] Launching Chromium (headless)
+2025-10-24 21:25:42 | INFO | [EXPORT] Storage file: sessions\office365_accounts_at_performanceelevator_org.json (exists=True)
+2025-10-24 21:25:42 | INFO | [EXPORT] Using storage_state session
+2025-10-24 21:25:42 | INFO | [EXPORT] Navigate: https://outlook.office.com/mail/
+2025-10-24 21:25:46 | INFO | [EXPORT] Navigate: https://outlook.office.com/mail/options/general/export
+2025-10-24 21:25:47 | INFO | [EXPORT] Locating download control
+2025-10-24 21:25:47 | INFO | [EXPORT] Try selector (main): text=Download my expanded people data
+2025-10-24 21:25:52 | INFO | [EXPORT] Try selector (main): button:has-text('Download my expanded people data')
+2025-10-24 21:25:57 | INFO | [EXPORT] Try selector (main): a:has-text('Download my expanded people data')
+2025-10-24 21:26:02 | INFO | [EXPORT] Try selector (main): text=Download expanded people data
+2025-10-24 21:26:07 | INFO | [EXPORT] Try selector (main): text=Download my people data
+2025-10-24 21:26:12 | INFO | [EXPORT] Frames found: 1
+2025-10-24 21:26:12 | INFO | [EXPORT] Checking frame url=https://outlook.office.com/mail/options/general/export
+2025-10-24 21:26:12 | INFO | [EXPORT] Try selector (frame): text=Download my expanded people data
+2025-10-24 21:26:14 | INFO | [EXPORT] Download event captured (frame)
+2025-10-24 21:26:14 | INFO | [EXPORT] Try selector (frame): button:has-text('Download my expanded people data')
+2025-10-24 21:26:15 | INFO | [EXPORT] Download event captured (frame)
+2025-10-24 21:26:15 | INFO | [EXPORT] Try selector (frame): a:has-text('Download my expanded people data')
+2025-10-24 21:26:20 | INFO | [EXPORT] Try selector (frame): text=Download expanded people data
+2025-10-24 21:26:25 | INFO | [EXPORT] Try selector (frame): text=Download my people data
+2025-10-24 21:26:30 | INFO | [EXPORT] Success. Bytes=834 File=export_from_accounts@performanceelevator.org.txt
+2025-10-24 21:35:55 | INFO | [EXPORT] Start export for accounts@performanceelevator.org
+2025-10-24 21:35:55 | INFO | [EXPORT] Cookie account present: False
+2025-10-24 21:35:55 | INFO | [EXPORT] Launching Chromium (headless)
+2025-10-24 21:35:55 | INFO | [EXPORT] Storage file: sessions\office365_accounts_at_performanceelevator_org.json (exists=True)
+2025-10-24 21:35:55 | INFO | [EXPORT] Using storage_state session
+2025-10-24 21:35:55 | INFO | [EXPORT] Navigate: https://outlook.office.com/mail/
+2025-10-24 21:35:59 | INFO | [EXPORT] Navigate: https://outlook.office.com/mail/options/general/export
+2025-10-24 21:36:00 | INFO | [EXPORT] Locating download control
+2025-10-24 21:36:00 | INFO | [EXPORT] Try selector (main): text=Download my expanded people data
+2025-10-24 21:36:05 | INFO | [EXPORT] Try selector (main): button:has-text('Download my expanded people data')
+2025-10-24 21:36:10 | INFO | [EXPORT] Try selector (main): a:has-text('Download my expanded people data')
+2025-10-24 21:36:15 | INFO | [EXPORT] Try selector (main): text=Download expanded people data
+2025-10-24 21:36:20 | INFO | [EXPORT] Try selector (main): text=Download my people data
+2025-10-24 21:36:25 | INFO | [EXPORT] Frames found: 1
+2025-10-24 21:36:25 | INFO | [EXPORT] Checking frame url=https://outlook.office.com/mail/options/general/export
+2025-10-24 21:36:25 | INFO | [EXPORT] Try selector (frame): text=Download my expanded people data
+2025-10-24 21:36:27 | INFO | [EXPORT] Download event captured (frame)
+2025-10-24 21:36:27 | INFO | [EXPORT] Try selector (frame): button:has-text('Download my expanded people data')
+2025-10-24 21:36:28 | INFO | [EXPORT] Download event captured (frame)
+2025-10-24 21:36:28 | INFO | [EXPORT] Try selector (frame): a:has-text('Download my expanded people data')
+2025-10-24 21:36:33 | INFO | [EXPORT] Try selector (frame): text=Download expanded people data
+2025-10-24 21:36:38 | INFO | [EXPORT] Try selector (frame): text=Download my people data
+2025-10-24 21:36:43 | INFO | [EXPORT] Success. Bytes=834 File=export_from_accounts@performanceelevator.org.txt
+2025-10-24 22:20:04 | INFO | [PROCESSED_EXPORT] Start processed export for accounts@performanceelevator.org
+2025-10-24 22:20:05 | INFO | [PROCESSED_EXPORT] Cookie account present: False
+2025-10-24 22:20:05 | INFO | [PROCESSED_EXPORT] Launching Chromium (headless)
+2025-10-24 22:20:05 | INFO | [PROCESSED_EXPORT] Storage file: sessions\office365_accounts_at_performanceelevator_org.json (exists=True)
+2025-10-24 22:20:05 | INFO | [PROCESSED_EXPORT] Using storage_state session
+2025-10-24 22:20:05 | INFO | [PROCESSED_EXPORT] Navigate: https://outlook.office.com/mail/
+2025-10-24 22:20:09 | INFO | [PROCESSED_EXPORT] Navigate: https://outlook.office.com/mail/options/general/export
+2025-10-24 22:20:10 | INFO | [PROCESSED_EXPORT] Locating download control
+2025-10-24 22:20:37 | INFO | [PROCESSED_EXPORT] Download event captured (frame)
+2025-10-24 22:20:37 | INFO | [PROCESSED_EXPORT] Processing downloaded contacts
+2025-10-24 22:20:37 | INFO | Processing export file for account: accounts@performanceelevator.org
+2025-10-24 22:20:48 | INFO | Extracted 20 valid emails from text
+2025-10-24 22:20:48 | INFO | Categorized emails - Office365: 4, GSuite: 0, Others: 16
+2025-10-24 22:20:48 | INFO | Processing office365 emails: 4
+2025-10-24 22:20:48 | WARNING | Debounce.io API key not provided, skipping validation
+2025-10-24 22:20:48 | INFO | Generated office365 file: accounts_at_performanceelevator_org-office365.txt with 4 emails
+2025-10-24 22:20:48 | INFO | Processing others emails: 16
+2025-10-24 22:20:48 | WARNING | Debounce.io API key not provided, skipping validation
+2025-10-24 22:20:48 | INFO | Generated others file: accounts_at_performanceelevator_org-others.txt with 16 emails
+2025-10-24 22:20:49 | INFO | [PROCESSED_EXPORT] Added accounts_at_performanceelevator_org-office365.txt to ZIP (4 emails)
+2025-10-24 22:20:49 | INFO | [PROCESSED_EXPORT] Added accounts_at_performanceelevator_org-others.txt to ZIP (16 emails)
+2025-10-24 22:20:49 | INFO | [PROCESSED_EXPORT] Success. ZIP file: accounts_at_performanceelevator_org-processed-contacts.zip
+2025-10-24 23:26:27 | INFO | === TEST EMAIL SEND STARTED ===
+2025-10-24 23:26:27 | INFO | Test email request data: {'test_email': 'crystoffharris@gmail.com', 'subject': 'Proxy[rand]123', 'body': '<h1>hello bro@123</h1>', 'selected_accounts': ['accounts@performanceelevator.org'], 'attachments': []}
+2025-10-24 23:26:27 | INFO | Using sender account for test: accounts@performanceelevator.org
+2025-10-24 23:26:28 | INFO | HTML content sanitized successfully
+2025-10-24 23:26:28 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
+2025-10-24 23:26:28 | INFO | Email HTML validation completed successfully
+2025-10-24 23:26:28 | INFO | HTML content sanitized successfully
+2025-10-24 23:26:28 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
+2025-10-24 23:26:28 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy43810123
+2025-10-24 23:26:28 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-24 23:26:29 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-24 23:26:29 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
+2025-10-24 23:26:59 | ERROR | ❌ Send failed with unexpected error: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-10-24 23:26:59 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-24 23:26:59 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-10-24 23:27:00 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy43810123
+2025-10-24 23:27:01 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-24 23:27:01 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-24 23:27:01 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
+2025-10-24 23:27:31 | ERROR | ❌ Send failed with unexpected error: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-10-24 23:27:31 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-24 23:27:31 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-10-24 23:27:33 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy43810123
+2025-10-24 23:27:34 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-24 23:27:34 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-24 23:27:34 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
+2025-10-24 23:27:40 | ERROR | ❌ Proxy connection failed: Page.goto: net::ERR_CONNECTION_CLOSED at https://outlook.office.com/mail/
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-10-24 23:27:40 | WARNING | 🔄 This appears to be a proxy server issue, not a code problem
+2025-10-24 23:27:40 | INFO | 💡 Attempting automatic fallback to direct connection...
+2025-10-24 23:27:40 | INFO | 🔄 Retrying without proxy...
+2025-10-24 23:27:40 | INFO | 🌐 Launched browser without proxy
+2025-10-24 23:28:11 | ERROR | ❌ Fallback to direct connection also failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-10-24 23:28:11 | ERROR | ❌ Send failed with unexpected error: Both proxy and direct connection failed. Proxy error: Page.goto: net::ERR_CONNECTION_CLOSED at https://outlook.office.com/mail/
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+, Direct error: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-10-24 23:28:11 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-24 23:28:11 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-10-24 23:28:15 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy43810123
+2025-10-24 23:28:16 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-24 23:28:16 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-24 23:28:16 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
+2025-10-24 23:28:46 | ERROR | ❌ Send failed with unexpected error: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-10-24 23:28:46 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-24 23:28:46 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-10-24 23:28:54 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy43810123
+2025-10-24 23:28:55 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-24 23:28:55 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-24 23:28:55 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
+2025-10-24 23:29:25 | ERROR | ❌ Send failed with unexpected error: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-10-24 23:29:25 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-24 23:29:25 | ERROR | Test email failed to crystoffharris@gmail.com
+2025-10-24 23:30:07 | INFO | === TEST EMAIL SEND STARTED ===
+2025-10-24 23:30:07 | INFO | Test email request data: {'test_email': 'crystoffharris@gmail.com', 'subject': 'Proxy[rand]123', 'body': '<h1>hello bro@123</h1>', 'selected_accounts': ['accounts@performanceelevator.org'], 'attachments': []}
+2025-10-24 23:30:07 | INFO | Using sender account for test: accounts@performanceelevator.org
+2025-10-24 23:30:07 | INFO | HTML content sanitized successfully
+2025-10-24 23:30:07 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
+2025-10-24 23:30:07 | INFO | Email HTML validation completed successfully
+2025-10-24 23:30:07 | INFO | HTML content sanitized successfully
+2025-10-24 23:30:07 | INFO | HTML validation completed: 1 allowed tags, 0 disallowed tags
+2025-10-24 23:30:07 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy40167123
+2025-10-24 23:30:08 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-24 23:30:08 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-24 23:30:08 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none
+2025-10-24 23:30:39 | ERROR | ❌ Send failed with unexpected error: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-10-24 23:30:39 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-24 23:30:39 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-10-24 23:30:40 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 1 recipients | Proxy40167123
+2025-10-24 23:30:41 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-24 23:30:41 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-24 23:30:41 | INFO | ⏱️ Using adaptive timeout: 30000ms for proxy: none

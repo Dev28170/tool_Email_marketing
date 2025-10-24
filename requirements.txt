@@ -10,6 +10,9 @@ aiohttp>=3.8.0
 requests>=2.31.0
 httpx>=0.25.0
 
+# Email Validation
+email-validator>=2.0.0
+
 # Authentication
 msal>=1.24.0
 google-auth>=2.23.0

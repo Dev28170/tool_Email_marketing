@@ -908,6 +908,252 @@ def export_office365_expanded_people(email):
         logger.exception(f"[EXPORT] Error for {email}: {e}")
         return jsonify({'success': False, 'error': str(e)}), 500
 
+@app.route('/office365/accounts/<path:email>/export-processed-contacts', methods=['GET'])
+@login_required
+def export_processed_contacts(email):
+    """Download and process Outlook contacts, returning 3 categorized files.
+    
+    Returns a ZIP file containing:
+    - {email}-office365.txt (Microsoft 365 emails)
+    - {email}-gsuite.txt (Google Workspace emails)  
+    - {email}-others.txt (Other email providers)
+    """
+    try:
+        logger.info(f"[PROCESSED_EXPORT] Start processed export for {email}")
+        
+        # Import required modules
+        from pathlib import Path as _Path
+        import zipfile
+        import io
+        from utils.email_processor import email_processor
+        
+        # Get account info
+        account = cookie_manager.get_account(email)
+        logger.info(f"[PROCESSED_EXPORT] Cookie account present: {bool(account)}")
+
+        from playwright.sync_api import sync_playwright
+        from automation.office365_fast import _outlook_host_for_email, _inject_cookies_to_context, _storage_path
+
+        with sync_playwright() as p:
+            logger.info("[PROCESSED_EXPORT] Launching Chromium (headless)")
+            browser = p.chromium.launch(headless=True)
+
+            # Authentication setup (same as original export)
+            context = None
+            outlook_host = _outlook_host_for_email(email)
+
+            # Primary: saved storage_state
+            storage_file = _storage_path(email)
+            logger.info(f"[PROCESSED_EXPORT] Storage file: {storage_file} (exists={storage_file.exists()})")
+            if storage_file.exists():
+                logger.info("[PROCESSED_EXPORT] Using storage_state session")
+                context = browser.new_context(accept_downloads=True, storage_state=str(storage_file))
+            elif account and (account.get('cookies') or []):
+                logger.info("[PROCESSED_EXPORT] Using cookie injection fallback")
+                context = browser.new_context(accept_downloads=True)
+                cookies = account.get('cookies') or []
+                _inject_cookies_to_context(context, cookies, f'.{outlook_host}')
+            else:
+                logger.error("[PROCESSED_EXPORT] No session or cookies available")
+                browser.close()
+                return jsonify({'success': False, 'error': f'No saved session or cookies found for {email}. Please log in once from automation login.'}), 404
+
+            page = context.new_page()
+            
+            # Navigate to export settings (same logic as original)
+            mailbox_url = f"https://{outlook_host}/mail/"
+            logger.info(f"[PROCESSED_EXPORT] Navigate: {mailbox_url}")
+            page.goto(mailbox_url, wait_until="domcontentloaded")
+            
+            if not DynamicTiming.wait_for_page_load(page, "mail", max_wait=3000):
+                logger.warning("Mailbox page load timeout")
+            
+            settings_url = f"https://{outlook_host}/mail/options/general/export"
+            logger.info(f"[PROCESSED_EXPORT] Navigate: {settings_url}")
+            page.goto(settings_url, wait_until="domcontentloaded")
+            
+            try:
+                page.wait_for_load_state('networkidle', timeout=15000)
+            except Exception:
+                pass
+            
+            if not DynamicTiming.wait_for_page_load(page, "export", max_wait=3000):
+                logger.warning("Settings page load timeout")
+
+            # Handle authentication redirect (same as original)
+            if 'login' in page.url.lower() or 'signin' in page.url.lower():
+                logger.warning(f"[PROCESSED_EXPORT] Direct URL triggered login; trying in-UI settings navigation")
+                page.goto(mailbox_url, wait_until="domcontentloaded")
+                
+                # UI navigation logic (simplified version of original)
+                try:
+                    page.wait_for_load_state('networkidle', timeout=15000)
+                except Exception:
+                    pass
+                
+                # Click Settings gear
+                gear_selectors = [
+                    "button[aria-label='Settings']",
+                    "button[title='Settings']",
+                    "button:has([data-icon-name='Settings'])",
+                    "button:has-text('Settings')"
+                ]
+                
+                clicked_gear = False
+                for gs in gear_selectors:
+                    try:
+                        btn = page.locator(gs).first
+                        btn.wait_for(state='visible', timeout=5000)
+                        btn.click()
+                        clicked_gear = True
+                        break
+                    except Exception:
+                        continue
+                
+                if not clicked_gear:
+                    browser.close()
+                    return jsonify({'success': False, 'error': 'Unable to open Settings gear in Outlook UI'}), 500
+
+                # Click "View all Outlook settings"
+                view_all_selectors = [
+                    "text=View all Outlook settings",
+                    "a:has-text('View all Outlook settings')",
+                    "button:has-text('View all Outlook settings')"
+                ]
+                
+                opened_all = False
+                for vs in view_all_selectors:
+                    try:
+                        item = page.locator(vs).first
+                        item.scroll_into_view_if_needed(timeout=3000)
+                        item.wait_for(state='visible', timeout=5000)
+                        item.click()
+                        opened_all = True
+                        break
+                    except Exception:
+                        continue
+                
+                if not opened_all:
+                    browser.close()
+                    return jsonify({'success': False, 'error': "Couldn't open 'View all Outlook settings'"}), 500
+
+                # Navigate to General -> Privacy and data
+                try:
+                    page.locator("role=tab[name='General']").first.click(timeout=5000)
+                except Exception:
+                    try:
+                        page.locator("text=General").first.click(timeout=5000)
+                    except Exception:
+                        pass
+                
+                try:
+                    page.locator("text=Privacy and data").first.click(timeout=6000)
+                except Exception:
+                    pass
+
+            # Find and click export control
+            candidates = [
+                "text=Download my expanded people data",
+                "button:has-text('Download my expanded people data')",
+                "a:has-text('Download my expanded people data')",
+                "text=Download expanded people data",
+                "text=Download my people data"
+            ]
+
+            download = None
+            logger.info("[PROCESSED_EXPORT] Locating download control")
+            
+            # Try main page first
+            for sel in candidates:
+                try:
+                    loc = page.locator(sel).first
+                    loc.scroll_into_view_if_needed(timeout=5000)
+                    loc.wait_for(state='visible', timeout=5000)
+                    if loc.is_visible():
+                        with page.expect_download(timeout=30000) as dl_info:
+                            loc.click()
+                        download = dl_info.value
+                        logger.info("[PROCESSED_EXPORT] Download event captured (main)")
+                        break
+                except Exception:
+                    continue
+
+            # Try iframes if not found on main page
+            if not download:
+                try:
+                    frames = page.frames
+                    for f in frames:
+                        for sel in candidates:
+                            try:
+                                floc = f.locator(sel).first
+                                floc.scroll_into_view_if_needed(timeout=5000)
+                                floc.wait_for(state='visible', timeout=5000)
+                                if floc.is_visible():
+                                    with page.expect_download(timeout=30000) as dl_info:
+                                        floc.click()
+                                    download = dl_info.value
+                                    logger.info("[PROCESSED_EXPORT] Download event captured (frame)")
+                                    raise Exception("__EXPORT_FOUND__")
+                            except Exception as sel_err2:
+                                if str(sel_err2) == "__EXPORT_FOUND__":
+                                    raise
+                                continue
+                except Exception as breaker:
+                    if str(breaker) != "__EXPORT_FOUND__":
+                        pass
+
+            if not download:
+                browser.close()
+                return jsonify({'success': False, 'error': 'Could not locate export control on Outlook page.'}), 500
+
+            # Get downloaded file content
+            temp_path = download.path()
+            content_bytes = b""
+            if temp_path:
+                with open(temp_path, 'rb') as f:
+                    content_bytes = f.read()
+            else:
+                content_bytes = download.content()
+
+            browser.close()
+
+            # Process the downloaded content
+            logger.info("[PROCESSED_EXPORT] Processing downloaded contacts")
+            file_content = content_bytes.decode('utf-8', errors='ignore')
+            
+            # Process emails using EmailProcessor
+            processed_files = email_processor.process_export_file(file_content, email)
+            
+            if not processed_files:
+                return jsonify({'success': False, 'error': 'No valid emails found in export file'}), 400
+
+            # Create ZIP file with processed contacts
+            zip_buffer = io.BytesIO()
+            
+            with zipfile.ZipFile(zip_buffer, 'w', zipfile.ZIP_DEFLATED) as zip_file:
+                for category, file_data in processed_files.items():
+                    zip_file.writestr(file_data['filename'], file_data['content'])
+                    logger.info(f"[PROCESSED_EXPORT] Added {file_data['filename']} to ZIP ({file_data['count']} emails)")
+
+            zip_buffer.seek(0)
+            
+            # Generate ZIP filename
+            safe_email = email.replace('@', '_at_').replace('.', '_')
+            zip_filename = f"{safe_email}-processed-contacts.zip"
+            
+            # Return ZIP file
+            from flask import make_response
+            response = make_response(zip_buffer.getvalue())
+            response.headers.set('Content-Type', 'application/zip')
+            response.headers.set('Content-Disposition', f'attachment; filename="{zip_filename}"')
+            
+            logger.info(f"[PROCESSED_EXPORT] Success. ZIP file: {zip_filename}")
+            return response
+
+    except Exception as e:
+        logger.exception(f"[PROCESSED_EXPORT] Error for {email}: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
 @app.route('/campaigns/<int:campaign_id>/progress')
 @login_required
 def get_campaign_progress(campaign_id):
