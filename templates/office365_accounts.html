@@ -1,0 +1,366 @@
+{% extends "base.html" %}
+
+{% block title %}Office 365 Accounts Management{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h4 class="mb-0">
+                        <i class="fas fa-microsoft me-2"></i>Office 365 Accounts
+                    </h4>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addAccountModal">
+                        <i class="fas fa-plus me-1"></i>Add Account
+                    </button>
+                </div>
+                <div class="card-body">
+                    {% if accounts %}
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Email</th>
+                                        <th>Account Type</th>
+                                        <th>Status</th>
+                                        <th>Added</th>
+                                        <th>Last Used</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for email, account in accounts.items() %}
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-envelope me-2"></i>{{ email }}
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-{{ 'success' if account.account_type == 'paid' else 'info' }}">
+                                                {{ account.account_type.title() }}
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-{{ 'success' if account.status == 'active' else 'warning' if account.status == 'expired' else 'danger' }}">
+                                                {{ account.status.title() }}
+                                            </span>
+                                        </td>
+                                        <td>{{ account.added_at[:19] if account.added_at else 'N/A' }}</td>
+                                        <td>{{ account.last_used[:19] if account.last_used else 'Never' }}</td>
+                                        <td>
+                                            <div class="btn-group" role="group">
+                                                <button class="btn btn-sm btn-outline-primary" onclick="testAccount('{{ email }}')">
+                                                    <i class="fas fa-play"></i> Test
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-warning" onclick="editAccount('{{ email }}')">
+                                                    <i class="fas fa-edit"></i> Edit
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger" onclick="deleteAccount('{{ email }}')">
+                                                    <i class="fas fa-trash"></i> Delete
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <div class="text-center py-5">
+                            <i class="fas fa-microsoft fa-3x text-muted mb-3"></i>
+                            <h5 class="text-muted">No Office 365 Accounts</h5>
+                            <p class="text-muted">Add your first Office 365 account to start sending emails</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addAccountModal">
+                                <i class="fas fa-plus me-1"></i>Add Account
+                            </button>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Account Modal -->
+<div class="modal fade" id="addAccountModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="fas fa-plus me-2"></i>Add Office 365 Account
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form id="addAccountForm">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="accountEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="accountEmail" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="accountType" class="form-label">Account Type</label>
+                                <select class="form-select" id="accountType" required>
+                                    <option value="free">Free Account</option>
+                                    <option value="paid">Paid Account</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="cookieData" class="form-label">Cookie Data</label>
+                        <textarea class="form-control" id="cookieData" rows="8" 
+                                  placeholder="Paste your Office 365 authentication cookies here..."></textarea>
+                        <div class="form-text">
+                            <strong>How to get cookies:</strong>
+                            <ol class="mb-0 mt-2">
+                                <li>Log in to <a href="https://outlook.office.com" target="_blank">Outlook</a> in your browser</li>
+                                <li>Open Developer Tools (F12)</li>
+                                <li>Go to Application/Storage → Cookies → https://login.microsoftonline.com</li>
+                                <li>Copy the cookie values for ESTSAUTHPERSISTENT, ESTSAUTH, and ESTSAUTHLIGHT</li>
+                                <li>Format as JSON array and paste above</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Cookie Format Example:</strong>
+                        <pre class="mb-0 mt-2"><code>[
+  {
+    "name": "ESTSAUTHPERSISTENT",
+    "value": "your_token_here",
+    "domain": ".login.microsoftonline.com",
+    "expirationDate": 1790110703262,
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "none"
+  }
+]</code></pre>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-1"></i>Add Account
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Account Modal -->
+<div class="modal fade" id="editAccountModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="fas fa-edit me-2"></i>Edit Office 365 Account
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form id="editAccountForm">
+                <div class="modal-body">
+                    <input type="hidden" id="editAccountEmail">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="editAccountEmailDisplay" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="editAccountEmailDisplay" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="editAccountType" class="form-label">Account Type</label>
+                                <select class="form-select" id="editAccountType" required>
+                                    <option value="free">Free Account</option>
+                                    <option value="paid">Paid Account</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="editCookieData" class="form-label">Cookie Data</label>
+                        <textarea class="form-control" id="editCookieData" rows="8"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-1"></i>Update Account
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+// Add Account Form
+document.getElementById('addAccountForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('accountEmail').value;
+    const accountType = document.getElementById('accountType').value;
+    const cookieData = document.getElementById('cookieData').value;
+    
+    if (!email || !cookieData) {
+        showAlert('Please fill in all required fields', 'danger');
+        return;
+    }
+    
+    try {
+        const response = await fetch('/office365/accounts', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email: email,
+                account_type: accountType,
+                cookie_data: cookieData
+            })
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            showAlert('Account added successfully!', 'success');
+            location.reload();
+        } else {
+            showAlert(result.message || 'Failed to add account', 'danger');
+        }
+    } catch (error) {
+        showAlert('Error adding account: ' + error.message, 'danger');
+    }
+});
+
+// Edit Account
+function editAccount(email) {
+    // Get account data and populate edit form
+    fetch(`/office365/accounts/${encodeURIComponent(email)}`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                document.getElementById('editAccountEmail').value = email;
+                document.getElementById('editAccountEmailDisplay').value = email;
+                document.getElementById('editAccountType').value = data.account.account_type;
+                document.getElementById('editCookieData').value = JSON.stringify(data.account.cookies, null, 2);
+                
+                new bootstrap.Modal(document.getElementById('editAccountModal')).show();
+            } else {
+                showAlert('Failed to load account data', 'danger');
+            }
+        })
+        .catch(error => {
+            showAlert('Error loading account: ' + error.message, 'danger');
+        });
+}
+
+// Update Account Form
+document.getElementById('editAccountForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('editAccountEmail').value;
+    const accountType = document.getElementById('editAccountType').value;
+    const cookieData = document.getElementById('editCookieData').value;
+    
+    try {
+        const response = await fetch(`/office365/accounts/${encodeURIComponent(email)}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                account_type: accountType,
+                cookie_data: cookieData
+            })
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            showAlert('Account updated successfully!', 'success');
+            location.reload();
+        } else {
+            showAlert(result.message || 'Failed to update account', 'danger');
+        }
+    } catch (error) {
+        showAlert('Error updating account: ' + error.message, 'danger');
+    }
+});
+
+// Delete Account
+function deleteAccount(email) {
+    if (confirm(`Are you sure you want to delete the account ${email}?`)) {
+        fetch(`/office365/accounts/${encodeURIComponent(email)}`, {
+            method: 'DELETE'
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                showAlert('Account deleted successfully!', 'success');
+                location.reload();
+            } else {
+                showAlert(data.message || 'Failed to delete account', 'danger');
+            }
+        })
+        .catch(error => {
+            showAlert('Error deleting account: ' + error.message, 'danger');
+        });
+    }
+}
+
+// Test Account
+function testAccount(email) {
+    showAlert('Testing account...', 'info');
+    
+    fetch(`/office365/accounts/${encodeURIComponent(email)}/test`, {
+        method: 'POST'
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showAlert('Account test successful!', 'success');
+        } else {
+            showAlert(data.message || 'Account test failed', 'danger');
+        }
+    })
+    .catch(error => {
+        showAlert('Error testing account: ' + error.message, 'danger');
+    });
+}
+
+// Show alert function
+function showAlert(message, type) {
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
+    alertDiv.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    
+    document.body.insertBefore(alertDiv, document.body.firstChild);
+    
+    // Auto remove after 5 seconds
+    setTimeout(() => {
+        if (alertDiv.parentNode) {
+            alertDiv.parentNode.removeChild(alertDiv);
+        }
+    }, 5000);
+}
+</script>
+{% endblock %}
+
+
+
+
+
+
+

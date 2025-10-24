@@ -1,0 +1,95 @@
+2025-09-27 23:54:14 | INFO | Testing authentication for cfenimore@craneguys.com with cookies...
+2025-09-27 23:54:14 | INFO | Testing cookie authentication for cfenimore@craneguys.com
+2025-09-27 23:54:25 | ERROR | Cookie authentication test failed for cfenimore@craneguys.com: BrowserContext.add_cookies: cookies[0].sameSite: expected one of (Strict|Lax|None)
+2025-09-27 23:54:25 | WARNING | Authentication failed for cfenimore@craneguys.com: Authentication test failed: BrowserContext.add_cookies: cookies[0].sameSite: expected one of (Strict|Lax|None)
+2025-09-27 23:57:31 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-27 23:57:31 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-27 23:57:32 | ERROR | Cookie authentication test failed for tracy@altitudemanagement.com: BrowserContext.add_cookies: cookies[0].sameSite: expected one of (Strict|Lax|None)
+2025-09-27 23:57:33 | WARNING | Authentication failed for tracy@altitudemanagement.com: Authentication test failed: BrowserContext.add_cookies: cookies[0].sameSite: expected one of (Strict|Lax|None)
+2025-09-28 00:01:47 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-28 00:01:47 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-28 00:01:49 | ERROR | Cookie authentication test failed for tracy@altitudemanagement.com: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:01:49 | WARNING | Authentication failed for tracy@altitudemanagement.com: Authentication test failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:03:24 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-28 00:03:24 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-28 00:03:24 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNIB...
+2025-09-28 00:03:24 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNI...
+2025-09-28 00:03:24 | INFO | Cookie 3: ESTSAUTHLIGHT =  +008d7ad9-16a9-3c90-2fd0-d8738879d79b...
+2025-09-28 00:03:24 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-28 00:03:24 | INFO | Prepared cookie: ESTSAUTHPERSISTENT
+2025-09-28 00:03:24 | INFO | Prepared cookie: ESTSAUTH
+2025-09-28 00:03:24 | INFO | Prepared cookie: ESTSAUTHLIGHT
+2025-09-28 00:03:24 | ERROR | Cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:03:25 | WARNING | Authentication failed for tracy@altitudemanagement.com: Cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:04:38 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-28 00:04:38 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-28 00:04:38 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNIB...
+2025-09-28 00:04:38 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNI...
+2025-09-28 00:04:38 | INFO | Cookie 3: ESTSAUTHLIGHT = +008d7ad9-16a9-3c90-2fd0-d8738879d79b...
+2025-09-28 00:04:38 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-28 00:04:39 | INFO | Prepared cookie: ESTSAUTHPERSISTENT
+2025-09-28 00:04:39 | INFO | Prepared cookie: ESTSAUTH
+2025-09-28 00:04:39 | INFO | Prepared cookie: ESTSAUTHLIGHT
+2025-09-28 00:04:39 | ERROR | Cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:04:39 | WARNING | Authentication failed for tracy@altitudemanagement.com: Cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:04:59 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-28 00:04:59 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-28 00:04:59 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNIB...
+2025-09-28 00:04:59 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNI...
+2025-09-28 00:04:59 | INFO | Cookie 3: ESTSAUTHLIGHT = +008d7ad9-16a9-3c90-2fd0-d8738879d79b...
+2025-09-28 00:04:59 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-28 00:04:59 | INFO | Prepared cookie: ESTSAUTHPERSISTENT
+2025-09-28 00:04:59 | INFO | Prepared cookie: ESTSAUTH
+2025-09-28 00:04:59 | INFO | Prepared cookie: ESTSAUTHLIGHT
+2025-09-28 00:04:59 | ERROR | Cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:05:00 | WARNING | Authentication failed for tracy@altitudemanagement.com: Cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:09:53 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-28 00:09:53 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-28 00:09:53 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNIB...
+2025-09-28 00:09:53 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNI...
+2025-09-28 00:09:53 | INFO | Cookie 3: ESTSAUTHLIGHT =  +008d7ad9-16a9-3c90-2fd0-d8738879d79b...
+2025-09-28 00:09:53 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-28 00:09:54 | INFO | Prepared cookie: ESTSAUTHPERSISTENT
+2025-09-28 00:09:54 | INFO | Prepared cookie: ESTSAUTH
+2025-09-28 00:09:54 | INFO | Prepared cookie: ESTSAUTHLIGHT
+2025-09-28 00:09:54 | WARNING | Batch cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:09:54 | ERROR | Single cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:09:54 | ERROR | Minimal cookie injection failed: BrowserContext.add_cookies: Cookie should have a url or a domain/path pair
+2025-09-28 00:09:55 | WARNING | Authentication failed for tracy@altitudemanagement.com: All cookie injection strategies failed. Last error: BrowserContext.add_cookies: Cookie should have a url or a domain/path pair
+2025-09-28 00:12:24 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-28 00:12:24 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-28 00:12:24 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNIB...
+2025-09-28 00:12:24 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNI...
+2025-09-28 00:12:24 | INFO | Cookie 3: ESTSAUTHLIGHT =  +008d7ad9-16a9-3c90-2fd0-d8738879d79b...
+2025-09-28 00:12:24 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-28 00:12:24 | INFO | Prepared cookie: ESTSAUTHPERSISTENT
+2025-09-28 00:12:24 | INFO | Prepared cookie: ESTSAUTH
+2025-09-28 00:12:24 | INFO | Prepared cookie: ESTSAUTHLIGHT
+2025-09-28 00:12:24 | WARNING | Batch cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:12:24 | ERROR | Single cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:12:25 | ERROR | URL-based cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:12:41 | ERROR | JavaScript cookie injection failed: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2025-09-28 00:12:42 | WARNING | Authentication failed for tracy@altitudemanagement.com: All cookie injection strategies failed. Last error: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2025-09-28 00:15:46 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-28 00:15:46 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-28 00:15:46 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNIB...
+2025-09-28 00:15:46 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNI...
+2025-09-28 00:15:46 | INFO | Cookie 3: ESTSAUTHLIGHT =  +008d7ad9-16a9-3c90-2fd0-d8738879d79b...
+2025-09-28 00:15:46 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-28 00:15:46 | INFO | Original cookie data: {'name': 'ESTSAUTHPERSISTENT', 'value': '1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNIBACAIAA.AgABFwQAAABVrSpeuWamRam2jAF1XRQEAwDs_wUA9P80RPLe4KYTeGT7m_yLaRaxuBaCHf8EwupfjVu0bxLA5PmRs54Lv5-22cw22oiyDEovHlq3hy29tRQO41tL4DBmZ-asmbqUwe12LmQw-53IWxLCm5EIh9KQTIKb6ev_GOcUtdcXmY8CuSXexJsRXkgEgr-kJQwphtbS8tDzy_WkLvzSsUnb74staOoxgZnBdKnuQHpxGpJKPS_mmhaweuUPtAC4GI5VVgcAhUJuww4FdY1rX9k52okmsAJvT5jtaOej0Uz1E3SVHEcWUeGYpHGoxKzkz1rcNbLeK0k2QFU9DhUHQSVtKpggiUKi5ZY_qeyrHh-82fcHIplOY-8__myXOHiFMGq73YIBtOmP7jAoa1luh9eo55wrsvFh2u58bqN_ssHW4s79yInM4-H0D4-pHlyWdv1M1GoQK3zsp6_rserxxi5V1rKEOWFaY6ffksGnvONXZxPUyszUrE-no-isJCELDCZksGOwp0Rs8VjpeTheMS9IUR9O-xedAHF5AOtZ-JwJytD8wYgvY2bsf4bxGrPxtjn2T3A_y-YGw19v_I1LYLB3i33HEznUbPRxqpU4tY9cZLPL3jg1CHZmmyijsH6z4AIjJpHLGpC4svHsIchrrP2SIcPMnhbFLZX8LRW1XrMklYlOALQ7ajwQT15uLD1SOwZ_g-VXlSqxgP1HAlKzOdXOpPbo-BOG-CJhrDYqIAD0Rg9dKYHH8OOay1_8ETcKSrGsFSvaMZl6eYfrTUPpzfyMjqDWGg4Z4KQAfIw6GZmsWKtbmFigQ47JyCBv8oZmadbwnHpKtufRmP0H1y3Z4XC3HMMMjN73N-2w3R-hO5U8zcaUQ9LL_v5CdNo7E7yst0ndLrNAMUDjGK01qiJ3nyNaiYsJ5SGXV0BEUtx-rJry3OYWebf03p0UKDhb0wDiBBH', 'domain': '.login.microsoftonline.com', 'expirationDate': 1759076146259, 'secure': True, 'httpOnly': True, 'sameSite': 'none'}
+2025-09-28 00:15:46 | INFO | Prepared cookie: {'name': 'ESTSAUTHPERSISTENT', 'value': '1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNIBACAIAA.AgABFwQAAABVrSpeuWamRam2jAF1XRQEAwDs_wUA9P80RPLe4KYTeGT7m_yLaRaxuBaCHf8EwupfjVu0bxLA5PmRs54Lv5-22cw22oiyDEovHlq3hy29tRQO41tL4DBmZ-asmbqUwe12LmQw-53IWxLCm5EIh9KQTIKb6ev_GOcUtdcXmY8CuSXexJsRXkgEgr-kJQwphtbS8tDzy_WkLvzSsUnb74staOoxgZnBdKnuQHpxGpJKPS_mmhaweuUPtAC4GI5VVgcAhUJuww4FdY1rX9k52okmsAJvT5jtaOej0Uz1E3SVHEcWUeGYpHGoxKzkz1rcNbLeK0k2QFU9DhUHQSVtKpggiUKi5ZY_qeyrHh-82fcHIplOY-8__myXOHiFMGq73YIBtOmP7jAoa1luh9eo55wrsvFh2u58bqN_ssHW4s79yInM4-H0D4-pHlyWdv1M1GoQK3zsp6_rserxxi5V1rKEOWFaY6ffksGnvONXZxPUyszUrE-no-isJCELDCZksGOwp0Rs8VjpeTheMS9IUR9O-xedAHF5AOtZ-JwJytD8wYgvY2bsf4bxGrPxtjn2T3A_y-YGw19v_I1LYLB3i33HEznUbPRxqpU4tY9cZLPL3jg1CHZmmyijsH6z4AIjJpHLGpC4svHsIchrrP2SIcPMnhbFLZX8LRW1XrMklYlOALQ7ajwQT15uLD1SOwZ_g-VXlSqxgP1HAlKzOdXOpPbo-BOG-CJhrDYqIAD0Rg9dKYHH8OOay1_8ETcKSrGsFSvaMZl6eYfrTUPpzfyMjqDWGg4Z4KQAfIw6GZmsWKtbmFigQ47JyCBv8oZmadbwnHpKtufRmP0H1y3Z4XC3HMMMjN73N-2w3R-hO5U8zcaUQ9LL_v5CdNo7E7yst0ndLrNAMUDjGK01qiJ3nyNaiYsJ5SGXV0BEUtx-rJry3OYWebf03p0UKDhb0wDiBBH', 'domain': '.outlook.office.com', 'path': '/'}
+2025-09-28 00:15:46 | INFO | Prepared cookie: ESTSAUTHPERSISTENT
+2025-09-28 00:15:46 | INFO | Original cookie data: {'name': 'ESTSAUTH', 'value': ' 1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNIBACAIAA.AgABFwQAAABVrSpeuWamRam2jAF1XRQEAwDs_wUA9P_7WXVVByC5yFNLCZWYTkC5k0094zwKDnlUScg2MOL4o58hpRE5WtA822mZN_08JHLFsKLQO5Z6r2ZH', 'domain': '.login.microsoftonline.com', 'expirationDate': 1759076146259, 'secure': True, 'httpOnly': True, 'sameSite': 'none'}
+2025-09-28 00:15:46 | INFO | Prepared cookie: {'name': 'ESTSAUTH', 'value': ' 1.AQgAo0-4YaazY0ebj8Ot2M1kd9fqWYwD1ydKnlXJagBUyNIBACAIAA.AgABFwQAAABVrSpeuWamRam2jAF1XRQEAwDs_wUA9P_7WXVVByC5yFNLCZWYTkC5k0094zwKDnlUScg2MOL4o58hpRE5WtA822mZN_08JHLFsKLQO5Z6r2ZH', 'domain': '.outlook.office.com', 'path': '/'}
+2025-09-28 00:15:46 | INFO | Prepared cookie: ESTSAUTH
+2025-09-28 00:15:46 | INFO | Original cookie data: {'name': 'ESTSAUTHLIGHT', 'value': ' +008d7ad9-16a9-3c90-2fd0-d8738879d79b', 'domain': '.login.microsoftonline.com', 'expirationDate': 1759076146259, 'secure': True, 'httpOnly': True, 'sameSite': 'none'}
+2025-09-28 00:15:46 | INFO | Prepared cookie: {'name': 'ESTSAUTHLIGHT', 'value': ' +008d7ad9-16a9-3c90-2fd0-d8738879d79b', 'domain': '.outlook.office.com', 'path': '/'}
+2025-09-28 00:15:46 | INFO | Prepared cookie: ESTSAUTHLIGHT
+2025-09-28 00:15:46 | WARNING | Batch cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:15:46 | ERROR | Single cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:15:46 | ERROR | URL-based cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-28 00:15:51 | WARNING | Failed to set cookie ESTSAUTHPERSISTENT via JS: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2025-09-28 00:15:51 | INFO | Set cookie via JS: ESTSAUTH
+2025-09-28 00:15:51 | INFO | Set cookie via JS: ESTSAUTHLIGHT
+2025-09-28 00:15:51 | INFO | Successfully set 3 cookies via JavaScript
+2025-09-28 00:15:58 | WARNING | Authentication failed for tracy@altitudemanagement.com: Cookies are invalid or expired - authentication required

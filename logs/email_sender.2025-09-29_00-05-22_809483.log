@@ -1,0 +1,838 @@
+2025-09-29 00:05:22 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 00:05:22 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 00:05:22 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 00:05:22 | INFO | Cookie 2: ESTSAUTH = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 00:05:22 | INFO | Cookie 3: ESTSAUTHLIGHT =  +008d7ad9-16a9-3c90-2fd0-d8738879d79b...
+2025-09-29 00:05:22 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 00:05:40 | INFO | Original cookie data: {'name': 'ESTSAUTHPERSISTENT', 'value': '1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gBACAIAA.AgABFwQAAABVrSpeuWamRam2jAF1XRQEAwDs_wUA9P-fmQnQ-455M4ZzTi2M_4IJN-1rDMTXI-cd9LJPGe_208-enfRFZ4td772ncMPr_DnYBTchSy-u0D2GHyPnrlZcL-uv5B2tE0_N5_CXYJSbTXZwJpzq1FspL0dcZkh_FDES0TX2ZTk202Zje2PA8SJd90cUg9tuxtbKybID2ic9hjodHgIMahs7FIqsvqG5S4rtrPo5MJ0P21Qt1kSyLeDsR5lWZ8C9vDmSl_oMAaruG323WHXdRuc5QV71QWyo9W9snPiiT6orOQ4SRkYjV_g_iKWPlBIJCLO8EGA6KiEYnGKYZ3r8VBluEQVFxGHtaaKtuD41jYP6Li1jsTwoFor5oYZ-jWq6c4809yAzo7kMHe6dHyCGmP5EtZR3reiiBvT4XDdwIUVoNU8JBPh7CXgkjTUN51sOBtIVYr_bkTLZobttRk5jznw04HcYku0AzW6EJk_R5RucfwGBdduOVMWtbH8Tq9wRCJ6JcwYH-CRSLwoKV1zBI1EVXeZH7Xip0z3ZltWSJwon3xh7e1wEcs8-a6v-h2POjDaS02Cdu-ykzCkPPBafs13NZy6DXN4aYYahlwEPKByzv2C3BPjc8p1eiHdzQZ8wPyfREA0UYvSr8WtbUiVW6gx6DhU-QS8rh4BHzNpmHkXCQW3R0Pe6N92zrMKp0EVzWWPYoY7mZ42WS_OcaMz5hMqidVpcYLyAmSJIrqVRtF2IPAvRAzEnhTzHZFkvpL9xBY-Dq9SytaXjeAGoDESj7hKvrj9jwIeyH3WU_nBN4N8D7qDkmH4D4QjOI-VWhzZPx5sYIZPyIVHL6pCoSrWrxiKVCQnilg2VkJcRuHO3Mn_aGi_XJk4kKpKgxY5CMtHvH9IK0VIa58Vr--iNUKdU67EgqXTkkbEZfOOzlT4HpDKXVlfACsD3KnpQvshDb1kDfP_MWAXKFc4vJ2VFQI670ZA', 'domain': '.login.microsoftonline.com', 'expirationDate': 1759161922730, 'secure': True, 'httpOnly': True, 'sameSite': 'none'}
+2025-09-29 00:05:40 | INFO | Prepared cookie: {'name': 'ESTSAUTHPERSISTENT', 'value': '1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gBACAIAA.AgABFwQAAABVrSpeuWamRam2jAF1XRQEAwDs_wUA9P-fmQnQ-455M4ZzTi2M_4IJN-1rDMTXI-cd9LJPGe_208-enfRFZ4td772ncMPr_DnYBTchSy-u0D2GHyPnrlZcL-uv5B2tE0_N5_CXYJSbTXZwJpzq1FspL0dcZkh_FDES0TX2ZTk202Zje2PA8SJd90cUg9tuxtbKybID2ic9hjodHgIMahs7FIqsvqG5S4rtrPo5MJ0P21Qt1kSyLeDsR5lWZ8C9vDmSl_oMAaruG323WHXdRuc5QV71QWyo9W9snPiiT6orOQ4SRkYjV_g_iKWPlBIJCLO8EGA6KiEYnGKYZ3r8VBluEQVFxGHtaaKtuD41jYP6Li1jsTwoFor5oYZ-jWq6c4809yAzo7kMHe6dHyCGmP5EtZR3reiiBvT4XDdwIUVoNU8JBPh7CXgkjTUN51sOBtIVYr_bkTLZobttRk5jznw04HcYku0AzW6EJk_R5RucfwGBdduOVMWtbH8Tq9wRCJ6JcwYH-CRSLwoKV1zBI1EVXeZH7Xip0z3ZltWSJwon3xh7e1wEcs8-a6v-h2POjDaS02Cdu-ykzCkPPBafs13NZy6DXN4aYYahlwEPKByzv2C3BPjc8p1eiHdzQZ8wPyfREA0UYvSr8WtbUiVW6gx6DhU-QS8rh4BHzNpmHkXCQW3R0Pe6N92zrMKp0EVzWWPYoY7mZ42WS_OcaMz5hMqidVpcYLyAmSJIrqVRtF2IPAvRAzEnhTzHZFkvpL9xBY-Dq9SytaXjeAGoDESj7hKvrj9jwIeyH3WU_nBN4N8D7qDkmH4D4QjOI-VWhzZPx5sYIZPyIVHL6pCoSrWrxiKVCQnilg2VkJcRuHO3Mn_aGi_XJk4kKpKgxY5CMtHvH9IK0VIa58Vr--iNUKdU67EgqXTkkbEZfOOzlT4HpDKXVlfACsD3KnpQvshDb1kDfP_MWAXKFc4vJ2VFQI670ZA', 'domain': '.outlook.office.com', 'path': '/'}
+2025-09-29 00:05:40 | INFO | Prepared cookie: ESTSAUTHPERSISTENT
+2025-09-29 00:05:40 | INFO | Original cookie data: {'name': 'ESTSAUTH', 'value': '1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gBACAIAA.AgABFwQAAABVrSpeuWamRam2jAF1XRQEAwDs_wUA9P-4LmsrKpMJqHg_r9LAk0zRtxpBV5PnHD0_C1ONWJ4-2jhpX07VujUoigje9ePxYlQZTbPdDngufKEj', 'domain': '.login.microsoftonline.com', 'expirationDate': 1759161922730, 'secure': True, 'httpOnly': True, 'sameSite': 'none'}
+2025-09-29 00:05:40 | INFO | Prepared cookie: {'name': 'ESTSAUTH', 'value': '1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gBACAIAA.AgABFwQAAABVrSpeuWamRam2jAF1XRQEAwDs_wUA9P-4LmsrKpMJqHg_r9LAk0zRtxpBV5PnHD0_C1ONWJ4-2jhpX07VujUoigje9ePxYlQZTbPdDngufKEj', 'domain': '.outlook.office.com', 'path': '/'}
+2025-09-29 00:05:40 | INFO | Prepared cookie: ESTSAUTH
+2025-09-29 00:05:40 | INFO | Original cookie data: {'name': 'ESTSAUTHLIGHT', 'value': ' +008d7ad9-16a9-3c90-2fd0-d8738879d79b', 'domain': '.login.microsoftonline.com', 'expirationDate': 1759161922730, 'secure': True, 'httpOnly': True, 'sameSite': 'none'}
+2025-09-29 00:05:40 | INFO | Prepared cookie: {'name': 'ESTSAUTHLIGHT', 'value': ' +008d7ad9-16a9-3c90-2fd0-d8738879d79b', 'domain': '.outlook.office.com', 'path': '/'}
+2025-09-29 00:05:40 | INFO | Prepared cookie: ESTSAUTHLIGHT
+2025-09-29 00:05:40 | WARNING | Batch cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-29 00:05:40 | ERROR | Single cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-29 00:05:41 | ERROR | URL-based cookie injection failed: BrowserContext.add_cookies: Protocol error (Storage.setCookies): Invalid cookie fields
+2025-09-29 00:05:49 | WARNING | Failed to set cookie ESTSAUTHPERSISTENT via JS: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2025-09-29 00:05:49 | INFO | Set cookie via JS: ESTSAUTH
+2025-09-29 00:05:49 | INFO | Set cookie via JS: ESTSAUTHLIGHT
+2025-09-29 00:05:55 | INFO | Successfully set 3 cookies via JavaScript
+2025-09-29 00:06:00 | INFO | Current URL after navigation: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=e96468c2-a7f1-d5ba-f870-81285f7091cf&response_mode=fragment&client_info=1&prompt=select_account&nonce=01999112-da0a-7ece-9149-767852f15f18&state=eyjpzci6ijaxotk5mteylwrhmgetn2fhny1hzgqylwu1ywi5nzvmzji0zcisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=delnkbguajfofylbpe7-cn31do7lbgivl_0vvbdsgyq&code_challenge_method=s256
+2025-09-29 00:06:00 | WARNING | Authentication check failed - redirected to: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=e96468c2-a7f1-d5ba-f870-81285f7091cf&response_mode=fragment&client_info=1&prompt=select_account&nonce=01999112-da0a-7ece-9149-767852f15f18&state=eyjpzci6ijaxotk5mteylwrhmgetn2fhny1hzgqylwu1ywi5nzvmzji0zcisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=delnkbguajfofylbpe7-cn31do7lbgivl_0vvbdsgyq&code_challenge_method=s256
+2025-09-29 00:06:01 | WARNING | Authentication failed for tracy@altitudemanagement.com: Cookies are invalid or expired - authentication required
+2025-09-29 00:21:32 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 00:21:32 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 00:21:32 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 00:21:32 | INFO | Cookie 2: ESTSAUTH = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 00:21:32 | INFO | Cookie 3: ESTSAUTHLIGHT =  +008d7ad9-16a9-3c90-2fd0-d8738879d79b...
+2025-09-29 00:21:32 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 00:21:33 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 00:21:33 | INFO | Prepared cookie: ESTSAUTHPERSISTENT for domain: .outlook.office.com
+2025-09-29 00:21:33 | INFO | Prepared cookie: ESTSAUTH for domain: .outlook.office.com
+2025-09-29 00:21:33 | INFO | Prepared cookie: ESTSAUTHLIGHT for domain: .outlook.office.com
+2025-09-29 00:21:33 | INFO | Successfully injected 3 cookies to context
+2025-09-29 00:21:33 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-09-29 00:21:40 | INFO | Current URL after navigation: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=a1bce31c-5c1e-9f97-75ba-e67027b8d9c1&response_mode=fragment&client_info=1&prompt=select_account&nonce=01999121-3a69-732b-885b-0c313c55182c&state=eyjpzci6ijaxotk5mtixltnhnjktn2qzos05ownhltmxywi2m2eyzjvhmsisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=qa1awn3er6uissf6aoiy9_ztv0ez6ssjtrhhzap39dw&code_challenge_method=s256
+2025-09-29 00:21:40 | WARNING | Authentication check failed - redirected to login: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=a1bce31c-5c1e-9f97-75ba-e67027b8d9c1&response_mode=fragment&client_info=1&prompt=select_account&nonce=01999121-3a69-732b-885b-0c313c55182c&state=eyjpzci6ijaxotk5mtixltnhnjktn2qzos05ownhltmxywi2m2eyzjvhmsisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=qa1awn3er6uissf6aoiy9_ztv0ez6ssjtrhhzap39dw&code_challenge_method=s256
+2025-09-29 00:21:40 | WARNING | Authentication failed for tracy@altitudemanagement.com: Cookies are invalid or expired - authentication required
+2025-09-29 00:24:58 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 00:24:58 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 00:24:58 | INFO | Cookie 2: ESTSAUTH = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 00:24:58 | INFO | Cookie 3: ESTSAUTHLIGHT =  +008d7ad9-16a9-3c90-2fd0-d8738879d79b...
+2025-09-29 00:24:58 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 00:24:58 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 00:24:58 | INFO | Prepared cookie: ESTSAUTHPERSISTENT for domains: .login.microsoftonline.com, .outlook.office.com, login.microsoftonline.com, outlook.office.com
+2025-09-29 00:24:58 | INFO | Prepared cookie: ESTSAUTH for domains: .login.microsoftonline.com, .outlook.office.com, login.microsoftonline.com, outlook.office.com
+2025-09-29 00:24:58 | INFO | Prepared cookie: ESTSAUTHLIGHT for domains: .login.microsoftonline.com, .outlook.office.com, login.microsoftonline.com, outlook.office.com
+2025-09-29 00:24:58 | INFO | Successfully injected 12 cookies to context
+2025-09-29 00:24:58 | INFO | Step 1: Visiting login domain to establish auth context
+2025-09-29 00:25:02 | INFO | Successfully visited login domain: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+2025-09-29 00:25:02 | INFO | Step 2: Navigating to Outlook mail: https://outlook.office.com/mail/
+2025-09-29 00:25:08 | INFO | Successfully navigated to Outlook mail
+2025-09-29 00:25:08 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-09-29 00:25:41 | INFO | Found compose element with selector: [role="button"]
+2025-09-29 00:25:41 | INFO | Cookie authentication successful for tracy@altitudemanagement.com - compose interface found
+2025-09-29 00:26:04 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 00:26:04 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 00:26:04 | INFO | Cookie 2: ESTSAUTH = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 00:26:04 | INFO | Cookie 3: ESTSAUTHLIGHT =  +008d7ad9-16a9-3c90-2fd0-d8738879d79b...
+2025-09-29 00:26:04 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 00:26:04 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 00:26:04 | INFO | Prepared cookie: ESTSAUTHPERSISTENT for domains: .login.microsoftonline.com, .outlook.office.com, login.microsoftonline.com, outlook.office.com
+2025-09-29 00:26:04 | INFO | Prepared cookie: ESTSAUTH for domains: .login.microsoftonline.com, .outlook.office.com, login.microsoftonline.com, outlook.office.com
+2025-09-29 00:26:04 | INFO | Prepared cookie: ESTSAUTHLIGHT for domains: .login.microsoftonline.com, .outlook.office.com, login.microsoftonline.com, outlook.office.com
+2025-09-29 00:26:04 | INFO | Successfully injected 12 cookies to context
+2025-09-29 00:26:04 | INFO | Step 1: Visiting login domain to establish auth context
+2025-09-29 00:26:09 | INFO | Successfully visited login domain: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+2025-09-29 00:26:09 | INFO | Step 2: Navigating to Outlook mail: https://outlook.office.com/mail/
+2025-09-29 00:26:16 | INFO | Successfully navigated to Outlook mail
+2025-09-29 00:26:16 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-09-29 00:26:49 | INFO | Found compose element with selector: [role="button"]
+2025-09-29 00:26:49 | INFO | Cookie authentication successful for tracy@altitudemanagement.com - compose interface found
+2025-09-29 00:28:09 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 00:28:09 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 00:28:09 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 00:28:09 | INFO | Cookie 2: ESTSAUTH = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 00:28:09 | INFO | Cookie 3: ESTSAUTHLIGHT = +008d7ad9-16a9-3c90-2fd0-d8738879d79b...
+2025-09-29 00:28:09 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 00:28:10 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 00:28:10 | INFO | Prepared cookie: ESTSAUTHPERSISTENT for domains: .login.microsoftonline.com, .outlook.office.com, login.microsoftonline.com, outlook.office.com
+2025-09-29 00:28:10 | INFO | Prepared cookie: ESTSAUTH for domains: .login.microsoftonline.com, .outlook.office.com, login.microsoftonline.com, outlook.office.com
+2025-09-29 00:28:10 | INFO | Prepared cookie: ESTSAUTHLIGHT for domains: .login.microsoftonline.com, .outlook.office.com, login.microsoftonline.com, outlook.office.com
+2025-09-29 00:28:10 | INFO | Successfully injected 12 cookies to context
+2025-09-29 00:28:10 | INFO | Step 1: Visiting login domain to establish auth context
+2025-09-29 00:28:13 | INFO | Successfully visited login domain: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+2025-09-29 00:28:13 | INFO | Step 2: Navigating to Outlook mail: https://outlook.office.com/mail/
+2025-09-29 00:28:20 | INFO | Successfully navigated to Outlook mail
+2025-09-29 00:28:20 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-09-29 00:28:53 | INFO | Found compose element with selector: [role="button"]
+2025-09-29 00:28:53 | INFO | Cookie authentication successful for tracy@altitudemanagement.com - compose interface found
+2025-09-29 00:28:53 | INFO | Authentication successful for tracy@altitudemanagement.com, saving account...
+2025-09-29 00:28:54 | INFO | Added paid Office 365 account to database: tracy@altitudemanagement.com
+2025-09-29 00:28:54 | ERROR | Accounts page error: '__main__.MockAccount object' has no attribute 'created_at'
+2025-09-29 00:32:41 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 00:32:41 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 00:32:41 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 00:32:41 | INFO | Cookie 2: ESTSAUTH = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 00:32:41 | INFO | Cookie 3: ESTSAUTHLIGHT = +008d7ad9-16a9-3c90-2fd0-d8738879d79b...
+2025-09-29 00:32:41 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 00:32:42 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 00:32:42 | INFO | Prepared cookie: ESTSAUTHPERSISTENT for domains: .login.microsoftonline.com, .outlook.office.com, login.microsoftonline.com, outlook.office.com
+2025-09-29 00:32:42 | INFO | Prepared cookie: ESTSAUTH for domains: .login.microsoftonline.com, .outlook.office.com, login.microsoftonline.com, outlook.office.com
+2025-09-29 00:32:42 | INFO | Prepared cookie: ESTSAUTHLIGHT for domains: .login.microsoftonline.com, .outlook.office.com, login.microsoftonline.com, outlook.office.com
+2025-09-29 00:32:42 | INFO | Successfully injected 12 cookies to context
+2025-09-29 00:32:42 | INFO | Step 1: Visiting login domain to establish auth context
+2025-09-29 00:32:46 | INFO | Successfully visited login domain: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+2025-09-29 00:32:46 | INFO | Step 2: Navigating to Outlook mail: https://outlook.office.com/mail/
+2025-09-29 00:32:52 | INFO | Successfully navigated to Outlook mail
+2025-09-29 00:32:52 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-09-29 00:33:25 | INFO | Found compose element with selector: [role="button"]
+2025-09-29 00:33:25 | INFO | Cookie authentication successful for tracy@altitudemanagement.com - compose interface found
+2025-09-29 00:33:26 | INFO | Authentication successful for tracy@altitudemanagement.com, saving account...
+2025-09-29 00:33:26 | INFO | Added paid Office 365 account to database: tracy@altitudemanagement.com
+2025-09-29 00:35:06 | ERROR | Send compose error: Session not found. Run login first for this account.
+2025-09-29 00:36:52 | ERROR | Send compose error: Session not found. Run login first for this account.
+2025-09-29 00:51:00 | INFO | Using database account: tracy@altitudemanagement.com
+2025-09-29 00:51:00 | ERROR | Send compose error: Session not found. Run login first for this account.
+2025-09-29 08:20:33 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 08:20:33 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 08:20:33 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 08:20:33 | INFO | Cookie 2: ESTSAUTH = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 08:20:33 | INFO | Cookie 3: ESTSAUTHLIGHT =  +008d7ad9-16a9-3c90-2fd0-d8738879d79b...
+2025-09-29 08:20:33 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 08:20:43 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 08:20:43 | INFO | Injected 3 cookies for authentication
+2025-09-29 08:21:29 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 08:21:29 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 08:21:29 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 08:21:29 | INFO | Cookie 2: ESTSAUTH = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 08:21:29 | INFO | Cookie 3: ESTSAUTHLIGHT =  +008d7ad9-16a9-3c90-2fd0-d8738879d79b...
+2025-09-29 08:21:29 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 08:21:30 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 08:21:30 | INFO | Injected 3 cookies for authentication
+2025-09-29 08:21:31 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-09-29 08:21:39 | INFO | Current URL after navigation: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=d6d99e07-5606-f153-797f-5f82652a9686&response_mode=fragment&client_info=1&prompt=select_account&nonce=019992d8-aadb-7409-aaee-f05139154279&state=eyjpzci6ijaxotk5mmq4lwfhzgitnzviys1hmzm5ltuxotu2mgizmdjhmyisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=7sghxwobys00ar42jckeadpwvpvxcq5qwrxai4jgkr4&code_challenge_method=s256
+2025-09-29 08:21:39 | WARNING | Authentication check failed - redirected to login: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=d6d99e07-5606-f153-797f-5f82652a9686&response_mode=fragment&client_info=1&prompt=select_account&nonce=019992d8-aadb-7409-aaee-f05139154279&state=eyjpzci6ijaxotk5mmq4lwfhzgitnzviys1hmzm5ltuxotu2mgizmdjhmyisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=7sghxwobys00ar42jckeadpwvpvxcq5qwrxai4jgkr4&code_challenge_method=s256
+2025-09-29 08:21:39 | WARNING | Authentication failed for tracy@altitudemanagement.com: Cookies are invalid or expired - authentication required
+2025-09-29 18:29:46 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 18:29:46 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 18:29:46 | INFO | Cookie 1: ESTSAUTHPERSISTENT =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 18:29:46 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 18:29:46 | INFO | Cookie 3: ESTSAUTHLIGHT =   +008dc8f9-40f4-cdf1-bfe3-d119ba68d663...
+2025-09-29 18:29:46 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 18:30:16 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 18:30:17 | INFO | Injected 3 cookies for authentication
+2025-09-29 18:30:21 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-09-29 18:30:29 | INFO | Current URL after navigation: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=b4e6ab88-4ec1-9f21-cff7-3ab6b0f1e9c1&response_mode=fragment&client_info=1&prompt=select_account&nonce=01999506-1043-74b6-b29a-d220ea61a357&state=eyjpzci6ijaxotk5nta2ltewndmtnzy5zi05owq0ltqyzgjizwq5ytnjzcisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=rqoxtz_x7jnnqmigqxrl7jt9wsth5oegw4kgufgz2se&code_challenge_method=s256
+2025-09-29 18:30:29 | WARNING | Authentication check failed - redirected to login: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=b4e6ab88-4ec1-9f21-cff7-3ab6b0f1e9c1&response_mode=fragment&client_info=1&prompt=select_account&nonce=01999506-1043-74b6-b29a-d220ea61a357&state=eyjpzci6ijaxotk5nta2ltewndmtnzy5zi05owq0ltqyzgjizwq5ytnjzcisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=rqoxtz_x7jnnqmigqxrl7jt9wsth5oegw4kgufgz2se&code_challenge_method=s256
+2025-09-29 18:30:29 | WARNING | Authentication failed for tracy@altitudemanagement.com: Cookies are invalid or expired - authentication required
+2025-09-29 18:31:04 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 18:31:04 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 18:31:04 | INFO | Cookie 1: ESTSAUTHPERSISTENT =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 18:31:04 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 18:31:04 | INFO | Cookie 3: ESTSAUTHLIGHT =   +008dc8f9-40f4-cdf1-bfe3-d119ba68d663...
+2025-09-29 18:31:04 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 18:31:04 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 18:31:04 | INFO | Injected 3 cookies for authentication
+2025-09-29 18:31:05 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-09-29 18:31:11 | INFO | Current URL after navigation: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=66f855cb-0899-419c-7d9e-fec693c88d1e&response_mode=fragment&client_info=1&prompt=select_account&nonce=01999506-b2eb-7c62-bcf3-c919001efb86&state=eyjpzci6ijaxotk5nta2lwiyzwitnzc3nc1in2iwlwjhodkyotiwoddkzcisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=9pvzvhnix9ufyo4_iuu11ka9g5ir02wi8rgrengbx4k&code_challenge_method=s256
+2025-09-29 18:31:11 | WARNING | Authentication check failed - redirected to login: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=66f855cb-0899-419c-7d9e-fec693c88d1e&response_mode=fragment&client_info=1&prompt=select_account&nonce=01999506-b2eb-7c62-bcf3-c919001efb86&state=eyjpzci6ijaxotk5nta2lwiyzwitnzc3nc1in2iwlwjhodkyotiwoddkzcisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=9pvzvhnix9ufyo4_iuu11ka9g5ir02wi8rgrengbx4k&code_challenge_method=s256
+2025-09-29 18:31:11 | WARNING | Authentication failed for tracy@altitudemanagement.com: Cookies are invalid or expired - authentication required
+2025-09-29 18:40:22 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 18:40:22 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 18:40:22 | INFO | Cookie 1: ESTSAUTHPERSISTENT =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 18:40:22 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 18:40:22 | INFO | Cookie 3: ESTSAUTHLIGHT =   +008dc8f9-40f4-cdf1-bfe3-d119ba68d663...
+2025-09-29 18:40:22 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 18:40:23 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 18:40:23 | INFO | Injected 12 cookies for authentication
+2025-09-29 18:40:23 | INFO | Visiting login domain to establish auth context
+2025-09-29 18:40:27 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-09-29 18:40:33 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-09-29 18:41:07 | INFO | Found compose element with selector: [role="button"]
+2025-09-29 18:41:07 | INFO | Cookie authentication successful for tracy@altitudemanagement.com - compose interface found
+2025-09-29 18:41:07 | WARNING | Could not save browser session: 'BrowserContext' object has no attribute 'save_storage_state'
+2025-09-29 18:41:07 | INFO | Authentication successful for tracy@altitudemanagement.com, saving account...
+2025-09-29 18:41:07 | INFO | Added paid Office 365 account to database: tracy@altitudemanagement.com
+2025-09-29 18:41:56 | INFO | Using cookie-based account with saved session: tracy@altitudemanagement.com
+2025-09-29 18:41:56 | ERROR | Send compose error: Session not found. Run login first for this account.
+2025-09-29 18:51:04 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 18:51:04 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 18:51:04 | INFO | Cookie 1: ESTSAUTHPERSISTENT =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 18:51:04 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 18:51:04 | INFO | Cookie 3: ESTSAUTHLIGHT =   +008dc8f9-40f4-cdf1-bfe3-d119ba68d663...
+2025-09-29 18:51:04 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 18:51:05 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 18:51:05 | INFO | Injected 12 cookies for authentication
+2025-09-29 18:51:05 | INFO | Visiting login domain to establish auth context
+2025-09-29 18:51:09 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-09-29 18:51:15 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-09-29 18:51:49 | INFO | Found compose element with selector: [role="button"]
+2025-09-29 18:51:49 | INFO | Cookie authentication successful for tracy@altitudemanagement.com - compose interface found
+2025-09-29 18:51:49 | INFO | Saved browser session to: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 18:51:49 | WARNING | Could not save browser session: 'tracy@altitudemanagement.com'
+2025-09-29 18:51:49 | INFO | Authentication successful for tracy@altitudemanagement.com, saving account...
+2025-09-29 18:51:49 | INFO | Added paid Office 365 account to database: tracy@altitudemanagement.com
+2025-09-29 19:58:10 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 19:58:10 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 19:58:10 | INFO | Cookie 1: ESTSAUTHPERSISTENT =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 19:58:10 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 19:58:10 | INFO | Cookie 3: ESTSAUTHLIGHT =   +008dc8f9-40f4-cdf1-bfe3-d119ba68d663...
+2025-09-29 19:58:10 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 19:58:11 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 19:58:11 | INFO | Injected 12 cookies for authentication
+2025-09-29 19:58:11 | INFO | Visiting login domain to establish auth context
+2025-09-29 19:58:15 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-09-29 19:58:21 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-09-29 19:58:55 | INFO | Found compose element with selector: [role="button"]
+2025-09-29 19:58:55 | INFO | Cookie authentication successful for tracy@altitudemanagement.com - compose interface found
+2025-09-29 19:58:55 | INFO | Saved browser session to: E:\a_Work\tele\New folder - Copy\sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 19:58:55 | INFO | Authentication successful for tracy@altitudemanagement.com, saving account...
+2025-09-29 19:58:55 | INFO | Office 365 account already exists in database: tracy@altitudemanagement.com
+2025-09-29 19:59:10 | INFO | Using cookie-based account with saved session: tracy@altitudemanagement.com
+2025-09-29 19:59:10 | INFO | 📁 Session file: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 19:59:10 | INFO | 📁 Session file size: 90136 bytes
+2025-09-29 19:59:10 | INFO | 📁 Session file age: 0:00:14.913103
+2025-09-29 19:59:10 | INFO | 🚀 FAST SEND: tracy@altitudemanagement.com → ['lion0692121@outlook.com'] | aaaa
+2025-09-29 19:59:10 | INFO | 🔧 Loading session from: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 19:59:11 | INFO | 🔍 Testing authentication status...
+2025-09-29 19:59:14 | INFO | 🔍 Auth test URL: https://outlook.office.com/mail/
+2025-09-29 19:59:15 | INFO | 📸 Auth test screenshot saved
+2025-09-29 19:59:15 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-29 19:59:15 | INFO | 🔗 Generated compose URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfasdfasdfsadf
+2025-09-29 19:59:15 | INFO | 📧 Opening compose...
+2025-09-29 19:59:16 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-29 19:59:47 | ERROR | ❌ Send failed with unexpected error
+Traceback (most recent call last):
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 995, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000168D93A47C0>
+    └ <Thread(Thread-6 (process_request_thread), started daemon 53036)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x00000168D93A44A0>
+    └ <Thread(Thread-6 (process_request_thread), started daemon 53036)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-6 (process_request_thread), started daemon 53036)>
+    │    │        │    └ (<socket.socket fd=1640, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 53388)>, ('127.0.0.1', 533...
+    │    │        └ <Thread(Thread-6 (process_request_thread), started daemon 53036)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x00000168DE5FF410>>
+    └ <Thread(Thread-6 (process_request_thread), started daemon 53036)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 53388)
+    │    │              └ <socket.socket fd=1640, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 53388)>
+    │    └ <function BaseServer.finish_request at 0x00000168DB4C0220>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000168DE5FF410>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000168DE5FF410>
+    │    │                   │        └ ('127.0.0.1', 53388)
+    │    │                   └ <socket.socket fd=1640, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 53388)>
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000168DE5FF410>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x00000168DBF5CB80>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x00000168DE7B0790>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 398, in handle
+    super().handle()
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 431, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x00000168DB620220>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x00000168DE7B0790>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 419, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x00000168DE7B0790>>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <Flask 'main'>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000168DE5FF410>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x00000168DE7B0790>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x00000168DEA67A60>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+                       │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x00000168D93A5C60>
+                       │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1640>, 'wsgi.errors': <_io.TextIOW...
+                       └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x00000168D93A5C60>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1640>, 'wsgi.errors': <_io.TextIOW...
+           │    └ <function Flask.wsgi_app at 0x00000168DC4022A0>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x00000168DC4019E0>
+               └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x00000168DC401940>
+         └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'send_compose'
+           │    │           │    │              └ <Rule '/compose/send' (POST, OPTIONS) -> send_compose>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x00000168DDF66700>, 'dashboard': <function dashboard at 0x00000168D...
+           │    │           └ <Flask 'main'>
+           │    └ <function Flask.ensure_sync at 0x00000168DC401BC0>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           │                       │      │       └ {}
+           │                       │      └ ()
+           │                       └ <function send_compose at 0x00000168DE59E480>
+           └ <Flask 'main'>
+
+  File "E:\a_Work\tele\New folder - Copy\main.py", line 771, in send_compose
+    success = fast_send_email(
+              └ <function fast_send_email at 0x00000168DE49CA40>
+
+> File "E:\a_Work\tele\New folder - Copy\automation\office365_fast.py", line 443, in fast_send_email
+    page.wait_for_load_state('networkidle', timeout=30000)
+    │    └ <function Page.wait_for_load_state at 0x00000168DE46BE20>
+    └ <Page url='https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfasdfasdf...
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\sync_api\_generated.py", line 9117, in wait_for_load_state
+    self._sync(self._impl_obj.wait_for_load_state(state=state, timeout=timeout))
+    │    │     │    │         │                         │              └ 30000
+    │    │     │    │         │                         └ 'networkidle'
+    │    │     │    │         └ <function Page.wait_for_load_state at 0x00000168DE41B4C0>
+    │    │     │    └ <Page url='https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfasdfasdf...
+    │    │     └ <Page url='https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfasdfasdf...
+    │    └ <function SyncBase._sync at 0x00000168DE447060>
+    └ <Page url='https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfasdfasdf...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           │    └ <method 'result' of '_asyncio.Task' objects>
+           └ <Task finished name='Task-40' coro=<Page.wait_for_load_state() done, defined at C:\Users\TIGER\AppData\Local\Programs\Python\...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_page.py", line 576, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+                 │    │           │                     └ <function locals_to_params at 0x00000168DE3407C0>
+                 │    │           └ <function Frame.wait_for_load_state at 0x00000168DE3FD260>
+                 │    └ <Frame name= url='https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfa...
+                 └ <Page url='https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfasdfasdf...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_frame.py", line 273, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+                 │    │                         │      └ 30000
+                 │    │                         └ 'networkidle'
+                 │    └ <function Frame._wait_for_load_state_impl at 0x00000168DE3FD300>
+                 └ <Frame name= url='https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfa...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_frame.py", line 301, in _wait_for_load_state_impl
+    await waiter.result()
+          │      └ <function Waiter.result at 0x00000168DE39C680>
+          └ <playwright._impl._waiter.Waiter object at 0x00000168DEB6B410>
+
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+2025-09-29 20:00:27 | INFO | Using cookie-based account with saved session: tracy@altitudemanagement.com
+2025-09-29 20:00:27 | INFO | 📁 Session file: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 20:00:27 | INFO | 📁 Session file size: 90136 bytes
+2025-09-29 20:00:27 | INFO | 📁 Session file age: 0:01:32.361083
+2025-09-29 20:00:27 | INFO | 🚀 FAST SEND: tracy@altitudemanagement.com → ['lion0692121@outlook.com'] | aaaa
+2025-09-29 20:00:28 | INFO | 🔧 Loading session from: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 20:00:28 | INFO | 🔍 Testing authentication status...
+2025-09-29 20:00:31 | INFO | 🔍 Auth test URL: https://outlook.office.com/mail/
+2025-09-29 20:00:31 | INFO | 📸 Auth test screenshot saved
+2025-09-29 20:00:31 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-29 20:00:31 | INFO | 🔗 Generated compose URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfasdfasdfsadf
+2025-09-29 20:00:31 | INFO | 📧 Opening compose...
+2025-09-29 20:00:32 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-29 20:01:03 | ERROR | ❌ Send failed with unexpected error
+Traceback (most recent call last):
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 995, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000168D93A47C0>
+    └ <Thread(Thread-8 (process_request_thread), started daemon 28480)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x00000168D93A44A0>
+    └ <Thread(Thread-8 (process_request_thread), started daemon 28480)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-8 (process_request_thread), started daemon 28480)>
+    │    │        │    └ (<socket.socket fd=1692, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 53665)>, ('127.0.0.1', 536...
+    │    │        └ <Thread(Thread-8 (process_request_thread), started daemon 28480)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x00000168DE5FF410>>
+    └ <Thread(Thread-8 (process_request_thread), started daemon 28480)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 53665)
+    │    │              └ <socket.socket fd=1692, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 53665)>
+    │    └ <function BaseServer.finish_request at 0x00000168DB4C0220>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000168DE5FF410>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000168DE5FF410>
+    │    │                   │        └ ('127.0.0.1', 53665)
+    │    │                   └ <socket.socket fd=1692, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 53665)>
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000168DE5FF410>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x00000168DBF5CB80>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x00000168DEB6F390>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 398, in handle
+    super().handle()
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 431, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x00000168DB620220>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x00000168DEB6F390>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 419, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x00000168DEB6F390>>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <Flask 'main'>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000168DE5FF410>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x00000168DEB6F390>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x00000168DEA64AE0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+                       │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x00000168DEA64720>
+                       │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1692>, 'wsgi.errors': <_io.TextIOW...
+                       └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x00000168DEA64720>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1692>, 'wsgi.errors': <_io.TextIOW...
+           │    └ <function Flask.wsgi_app at 0x00000168DC4022A0>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x00000168DC4019E0>
+               └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x00000168DC401940>
+         └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'send_compose'
+           │    │           │    │              └ <Rule '/compose/send' (POST, OPTIONS) -> send_compose>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x00000168DDF66700>, 'dashboard': <function dashboard at 0x00000168D...
+           │    │           └ <Flask 'main'>
+           │    └ <function Flask.ensure_sync at 0x00000168DC401BC0>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           │                       │      │       └ {}
+           │                       │      └ ()
+           │                       └ <function send_compose at 0x00000168DE59E480>
+           └ <Flask 'main'>
+
+  File "E:\a_Work\tele\New folder - Copy\main.py", line 771, in send_compose
+    success = fast_send_email(
+              └ <function fast_send_email at 0x00000168DE49CA40>
+
+> File "E:\a_Work\tele\New folder - Copy\automation\office365_fast.py", line 443, in fast_send_email
+    page.wait_for_load_state('networkidle', timeout=30000)
+    │    └ <function Page.wait_for_load_state at 0x00000168DE46BE20>
+    └ <Page url='https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfasdfasdf...
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\sync_api\_generated.py", line 9117, in wait_for_load_state
+    self._sync(self._impl_obj.wait_for_load_state(state=state, timeout=timeout))
+    │    │     │    │         │                         │              └ 30000
+    │    │     │    │         │                         └ 'networkidle'
+    │    │     │    │         └ <function Page.wait_for_load_state at 0x00000168DE41B4C0>
+    │    │     │    └ <Page url='https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfasdfasdf...
+    │    │     └ <Page url='https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfasdfasdf...
+    │    └ <function SyncBase._sync at 0x00000168DE447060>
+    └ <Page url='https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfasdfasdf...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           │    └ <method 'result' of '_asyncio.Task' objects>
+           └ <Task finished name='Task-59' coro=<Page.wait_for_load_state() done, defined at C:\Users\TIGER\AppData\Local\Programs\Python\...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_page.py", line 576, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+                 │    │           │                     └ <function locals_to_params at 0x00000168DE3407C0>
+                 │    │           └ <function Frame.wait_for_load_state at 0x00000168DE3FD260>
+                 │    └ <Frame name= url='https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfa...
+                 └ <Page url='https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfasdfasdf...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_frame.py", line 273, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+                 │    │                         │      └ 30000
+                 │    │                         └ 'networkidle'
+                 │    └ <function Frame._wait_for_load_state_impl at 0x00000168DE3FD300>
+                 └ <Frame name= url='https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=aaaa&body=asdfasdfa...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_frame.py", line 301, in _wait_for_load_state_impl
+    await waiter.result()
+          │      └ <function Waiter.result at 0x00000168DE39C680>
+          └ <playwright._impl._waiter.Waiter object at 0x00000168DEA5A310>
+
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+2025-09-29 20:15:35 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 20:15:35 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 20:15:35 | INFO | Cookie 1: ESTSAUTHPERSISTENT =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 20:15:35 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 20:15:35 | INFO | Cookie 3: ESTSAUTHLIGHT =  +008dc8f9-40f4-cdf1-bfe3-d119ba68d663...
+2025-09-29 20:15:35 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 20:15:36 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 20:15:36 | INFO | Injected 12 cookies for authentication
+2025-09-29 20:15:36 | INFO | Visiting login domain to establish auth context
+2025-09-29 20:15:40 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-09-29 20:15:46 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-09-29 20:18:57 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 20:18:57 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 20:18:57 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 20:18:57 | INFO | Cookie 2: ESTSAUTH = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 20:18:57 | INFO | Cookie 3: ESTSAUTHLIGHT = +008dc8f9-40f4-cdf1-bfe3-d119ba68d663...
+2025-09-29 20:18:57 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 20:18:58 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 20:18:58 | INFO | Injected 12 cookies for authentication
+2025-09-29 20:18:58 | INFO | Visiting login domain to establish auth context
+2025-09-29 20:19:02 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-09-29 20:19:08 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-09-29 20:19:41 | INFO | Found compose element with selector: [role="button"]
+2025-09-29 20:19:41 | INFO | Cookie authentication successful for tracy@altitudemanagement.com - compose interface found
+2025-09-29 20:19:41 | INFO | Saved browser session to: E:\a_Work\tele\New folder - Copy\sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 20:21:28 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 20:21:28 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 20:21:28 | INFO | Cookie 1: ESTSAUTHPERSISTENT =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 20:21:28 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 20:21:28 | INFO | Cookie 3: ESTSAUTHLIGHT =  +008dc8f9-40f4-cdf1-bfe3-d119ba68d663...
+2025-09-29 20:21:28 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 20:21:29 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 20:21:29 | INFO | Injected 12 cookies for authentication
+2025-09-29 20:21:29 | INFO | Visiting login domain to establish auth context
+2025-09-29 20:21:34 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-09-29 20:21:41 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-09-29 20:22:14 | INFO | Found compose element with selector: [role="button"]
+2025-09-29 20:22:14 | INFO | Cookie authentication successful for tracy@altitudemanagement.com - compose interface found
+2025-09-29 20:22:14 | INFO | Saved browser session to: E:\a_Work\tele\New folder - Copy\sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 20:22:14 | INFO | Authentication successful for tracy@altitudemanagement.com, saving account...
+2025-09-29 20:22:14 | INFO | Added paid Office 365 account to database: tracy@altitudemanagement.com
+2025-09-29 20:24:44 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 20:24:44 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 20:24:44 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 20:24:44 | INFO | Cookie 2: ESTSAUTH = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-09-29 20:24:44 | INFO | Cookie 3: ESTSAUTHLIGHT = +008dc8f9-40f4-cdf1-bfe3-d119ba68d663...
+2025-09-29 20:24:44 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 20:24:44 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 20:24:44 | INFO | Injected 12 cookies for authentication
+2025-09-29 20:24:44 | INFO | Visiting login domain to establish auth context
+2025-09-29 20:24:48 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-09-29 20:25:18 | ERROR | Cookie authentication test failed for tracy@altitudemanagement.com: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-09-29 20:25:19 | WARNING | Authentication failed for tracy@altitudemanagement.com: Authentication test failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-09-29 20:26:34 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 20:26:34 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 20:26:34 | INFO | Cookie 1: ESTSAUTHPERSISTENT =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 20:26:34 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 20:26:34 | INFO | Cookie 3: ESTSAUTHLIGHT =  +008dc8f9-40f4-cdf1-bfe3-d119ba68d663...
+2025-09-29 20:26:34 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 20:26:35 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 20:26:35 | INFO | Injected 12 cookies for authentication
+2025-09-29 20:26:35 | INFO | Visiting login domain to establish auth context
+2025-09-29 20:26:39 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-09-29 20:26:45 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-09-29 20:27:18 | INFO | Found compose element with selector: [role="button"]
+2025-09-29 20:27:18 | INFO | Cookie authentication successful for tracy@altitudemanagement.com - compose interface found
+2025-09-29 20:27:18 | INFO | Saved browser session to: E:\a_Work\tele\New folder - Copy\sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 20:27:18 | INFO | Authentication successful for tracy@altitudemanagement.com, saving account...
+2025-09-29 20:27:18 | INFO | Added paid Office 365 account to database: tracy@altitudemanagement.com
+2025-09-29 20:29:37 | INFO | Using cookie-based account with saved session: tracy@altitudemanagement.com
+2025-09-29 20:29:37 | INFO | 📁 Session file: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 20:29:37 | INFO | 📁 Session file size: 103959 bytes
+2025-09-29 20:29:37 | INFO | 📁 Session file age: 0:02:18.585907
+2025-09-29 20:29:37 | INFO | 🚀 FAST SEND: tracy@altitudemanagement.com → ['lion0692121@outlook.com'] | Hi 
+2025-09-29 20:29:37 | INFO | 🔧 Loading session from: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 20:29:37 | INFO | 🔍 Testing authentication status...
+2025-09-29 20:29:40 | INFO | 🔍 Auth test URL: https://outlook.office.com/mail/
+2025-09-29 20:29:40 | INFO | 📸 Auth test screenshot saved
+2025-09-29 20:29:40 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-29 20:29:40 | INFO | 🔗 Generated compose URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20&body=Hello%20bro%0Athis%20test%20is%20to%20send%20message%20by%20paid%20outlook%20email
+2025-09-29 20:29:40 | INFO | 📧 Opening compose...
+2025-09-29 20:29:41 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-29 20:30:11 | WARNING | ⚠️ networkidle timeout; using domcontentloaded fallback
+2025-09-29 20:30:13 | INFO | 🔍 Current URL after navigation: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20&body=Hello%20bro%0Athis%20test%20is%20to%20send%20message%20by%20paid%20outlook%20email
+2025-09-29 20:30:13 | INFO | ✅ Compose page URL confirmed
+2025-09-29 20:30:13 | INFO | ✅ Compose UI visible with selector: button:has-text('Send')
+2025-09-29 20:30:13 | INFO | ✅ Send button is visible
+2025-09-29 20:30:15 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-29 20:30:15 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-29 20:30:15 | INFO | Current URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20&body=Hello%20bro%0Athis%20test%20is%20to%20send%20message%20by%20paid%20outlook%20email
+2025-09-29 20:30:15 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-29 20:30:18 | INFO | 🔍 Looking for Send button...
+2025-09-29 20:30:18 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 2 elements)
+2025-09-29 20:30:18 | INFO |   Element 1: visible, text='LoopcomponentsSend a component that everyone in the mail can edit inline.'
+2025-09-29 20:30:18 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-29 20:30:18 | INFO | ✅ Send button detection successful
+2025-09-29 20:30:18 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-29 20:30:18 | INFO | 📤 Sending email...
+2025-09-29 20:30:18 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-29 20:30:18 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-29 20:30:18 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-29 20:30:18 | INFO | 🔄 Send button is ready - clicking...
+2025-09-29 20:30:34 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-09-29 20:30:34 | INFO | ✅ Sent via alternative button
+2025-09-29 20:30:34 | INFO | 🔍 Verifying send confirmation...
+2025-09-29 20:30:54 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-09-29 20:50:44 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-09-29 20:50:44 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-09-29 20:50:44 | INFO | Cookie 1: ESTSAUTHPERSISTENT =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 20:50:44 | INFO | Cookie 2: ESTSAUTH =  1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70g...
+2025-09-29 20:50:44 | INFO | Cookie 3: ESTSAUTHLIGHT =  +008dc8f9-40f4-cdf1-bfe3-d119ba68d663...
+2025-09-29 20:50:44 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-09-29 20:50:44 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-09-29 20:50:44 | INFO | Injected 12 cookies for authentication
+2025-09-29 20:50:44 | INFO | Visiting login domain to establish auth context
+2025-09-29 20:50:49 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-09-29 20:51:15 | INFO | Using database account: tracy@altitudemanagement.com
+2025-09-29 20:51:15 | INFO | 📁 Session file: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 20:51:15 | INFO | 📁 Session file size: 103959 bytes
+2025-09-29 20:51:15 | INFO | 📁 Session file age: 0:23:57.369771
+2025-09-29 20:51:15 | INFO | 🚀 FAST SEND: tracy@altitudemanagement.com → ['lion0692121@outlook.com'] | adf
+2025-09-29 20:51:16 | INFO | 🔧 Loading session from: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 20:51:16 | INFO | 🔍 Testing authentication status...
+2025-09-29 20:51:19 | INFO | 🔍 Auth test URL: https://outlook.office.com/mail/
+2025-09-29 20:51:20 | INFO | 📸 Auth test screenshot saved
+2025-09-29 20:51:20 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-29 20:51:20 | INFO | 🔗 Generated compose URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=adf&body=adfasdfasdfasdf
+2025-09-29 20:51:20 | INFO | 📧 Opening compose...
+2025-09-29 20:51:20 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-29 20:51:50 | WARNING | ⚠️ networkidle timeout; using domcontentloaded fallback
+2025-09-29 20:51:52 | INFO | 🔍 Current URL after navigation: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=adf&body=adfasdfasdfasdf
+2025-09-29 20:51:52 | INFO | ✅ Compose page URL confirmed
+2025-09-29 20:51:52 | INFO | ✅ Compose UI visible with selector: button:has-text('Send')
+2025-09-29 20:51:52 | INFO | ✅ Send button is visible
+2025-09-29 20:51:54 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-29 20:51:54 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-29 20:51:54 | INFO | Current URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=adf&body=adfasdfasdfasdf
+2025-09-29 20:51:54 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-29 20:51:57 | INFO | 🔍 Looking for Send button...
+2025-09-29 20:51:57 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 2 elements)
+2025-09-29 20:51:57 | INFO |   Element 1: visible, text='LoopcomponentsSend a component that everyone in the mail can edit inline.'
+2025-09-29 20:51:57 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-29 20:51:57 | INFO | ✅ Send button detection successful
+2025-09-29 20:51:57 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-29 20:51:57 | INFO | 📤 Sending email...
+2025-09-29 20:51:57 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-29 20:51:57 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-29 20:51:57 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-29 20:51:57 | INFO | 🔄 Send button is ready - clicking...
+2025-09-29 20:52:12 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-09-29 20:52:12 | INFO | ✅ Sent via alternative button
+2025-09-29 20:52:13 | INFO | 🔍 Verifying send confirmation...
+2025-09-29 20:52:33 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-09-29 21:17:37 | INFO | Using database account: tracy@altitudemanagement.com
+2025-09-29 21:17:37 | INFO | 📁 Session file: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 21:17:37 | INFO | 📁 Session file size: 103959 bytes
+2025-09-29 21:17:37 | INFO | 📁 Session file age: 0:50:18.760923
+2025-09-29 21:17:37 | INFO | 🚀 FAST SEND: tracy@altitudemanagement.com → ['lion0692121@outlook.com'] | Hi 
+2025-09-29 21:17:37 | INFO | 🔧 Loading session from: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 21:17:38 | INFO | 🔍 Testing authentication status...
+2025-09-29 21:17:44 | INFO | 🔍 Auth test URL: https://outlook.office.com/mail/
+2025-09-29 21:17:44 | INFO | 📸 Auth test screenshot saved
+2025-09-29 21:17:44 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-29 21:17:44 | INFO | 🔗 Generated compose URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20&body=Hello%20bro%2C%20this%20test%20is%20to%20send%20message%20by%20paid%20account
+2025-09-29 21:17:44 | INFO | 📧 Opening compose...
+2025-09-29 21:17:48 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-29 21:18:18 | WARNING | ⚠️ networkidle timeout; using domcontentloaded fallback
+2025-09-29 21:18:20 | INFO | 🔍 Current URL after navigation: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20&body=Hello%20bro%2C%20this%20test%20is%20to%20send%20message%20by%20paid%20account
+2025-09-29 21:18:20 | INFO | ✅ Compose page URL confirmed
+2025-09-29 21:18:20 | INFO | ✅ Compose UI visible with selector: button:has-text('Send')
+2025-09-29 21:18:20 | INFO | ✅ Send button is visible
+2025-09-29 21:18:22 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-29 21:18:22 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-29 21:18:22 | INFO | Current URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20&body=Hello%20bro%2C%20this%20test%20is%20to%20send%20message%20by%20paid%20account
+2025-09-29 21:18:22 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-29 21:18:25 | INFO | 🔍 Looking for Send button...
+2025-09-29 21:18:25 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 2 elements)
+2025-09-29 21:18:25 | INFO |   Element 1: visible, text='LoopcomponentsSend a component that everyone in the mail can edit inline.'
+2025-09-29 21:18:25 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-29 21:18:25 | INFO | ✅ Send button detection successful
+2025-09-29 21:18:25 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-29 21:18:25 | INFO | 📤 Sending email...
+2025-09-29 21:18:25 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-29 21:18:25 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-29 21:18:25 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-29 21:18:25 | INFO | 🔄 Send button is ready - clicking...
+2025-09-29 21:18:49 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-09-29 21:18:49 | INFO | ✅ Sent via alternative button
+2025-09-29 21:18:50 | INFO | 🔍 Verifying send confirmation...
+2025-09-29 21:19:10 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-09-29 21:20:21 | INFO | Using database account: tracy@altitudemanagement.com
+2025-09-29 21:20:21 | INFO | 📁 Session file: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 21:20:21 | INFO | 📁 Session file size: 103959 bytes
+2025-09-29 21:20:21 | INFO | 📁 Session file age: 0:53:03.329992
+2025-09-29 21:20:21 | INFO | 🚀 FAST SEND: tracy@altitudemanagement.com → ['lion0692121@outlook.com'] | Hi 
+2025-09-29 21:20:22 | INFO | 🔧 Loading session from: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 21:20:22 | INFO | 🔍 Testing authentication status...
+2025-09-29 21:20:29 | INFO | 🔍 Auth test URL: https://outlook.office.com/mail/
+2025-09-29 21:20:29 | INFO | 📸 Auth test screenshot saved
+2025-09-29 21:20:29 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-29 21:20:29 | INFO | 🔗 Generated compose URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20&body=there%3F
+2025-09-29 21:20:29 | INFO | 📧 Opening compose...
+2025-09-29 21:20:34 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-29 21:21:04 | WARNING | ⚠️ networkidle timeout; using domcontentloaded fallback
+2025-09-29 21:21:06 | INFO | 🔍 Current URL after navigation: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20&body=there%3F
+2025-09-29 21:21:06 | INFO | ✅ Compose page URL confirmed
+2025-09-29 21:21:06 | INFO | ✅ Compose UI visible with selector: button:has-text('Send')
+2025-09-29 21:21:06 | INFO | ✅ Send button is visible
+2025-09-29 21:21:08 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-29 21:21:08 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-29 21:21:08 | INFO | Current URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20&body=there%3F
+2025-09-29 21:21:08 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-29 21:21:11 | INFO | 🔍 Looking for Send button...
+2025-09-29 21:21:11 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 2 elements)
+2025-09-29 21:21:11 | INFO |   Element 1: visible, text='LoopcomponentsSend a component that everyone in the mail can edit inline.'
+2025-09-29 21:21:11 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-29 21:21:11 | INFO | ✅ Send button detection successful
+2025-09-29 21:21:11 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-29 21:21:11 | INFO | 📤 Sending email...
+2025-09-29 21:21:11 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-29 21:21:11 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-29 21:21:11 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-29 21:21:11 | INFO | 🔄 Send button is ready - clicking...
+2025-09-29 21:21:21 | WARNING | ⚠️ Send button click failed: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("button:has-text('Send')").first
+    - locator resolved to <button type="button" tabindex="-1" aria-disabled="true" data-is-focusable="true" data-ktp-target="ktp-m-l-p" aria-label="Loop components" data-automation-type="RibbonButton" data-ktp-execute-target="ktp-m-l-p" class="ms-Button is-disabled root-374" aria-describedby="id__178  ktp-layer-id ktp-m-l-p" id="7000_21_0_8f73d5a8-fba6-38a2-9c02-41f974ea3e97" data-unique-id="Ribbon-7000_21_0_8f73d5a8-fba6-38a2-9c02-41f974ea3e97">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    17 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+  - element was detached from the DOM, retrying
+    - locator resolved to <button type="button" tabindex="-1" aria-disabled="true" data-is-focusable="true" data-ktp-target="ktp-m-l-p" aria-label="Loop components" data-automation-type="RibbonButton" data-ktp-execute-target="ktp-m-l-p" class="ms-Button is-disabled root-374" aria-describedby="id__461  ktp-layer-id ktp-m-l-p" id="7000_21_0_8f73d5a8-fba6-38a2-9c02-41f974ea3e97" data-unique-id="Ribbon-7000_21_0_8f73d5a8-fba6-38a2-9c02-41f974ea3e97">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is not enabled
+  - retrying click action
+    - waiting 500ms
+
+2025-09-29 21:21:24 | INFO | ✅ Sent via alternative button
+2025-09-29 21:21:24 | INFO | 🔍 Verifying send confirmation...
+2025-09-29 21:21:44 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-09-29 22:21:04 | INFO | Using database account: tracy@altitudemanagement.com
+2025-09-29 22:21:04 | INFO | 📁 Session file: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 22:21:04 | INFO | 📁 Session file size: 103959 bytes
+2025-09-29 22:21:04 | INFO | 📁 Session file age: 1:53:45.865335
+2025-09-29 22:21:04 | INFO | 🚀 FAST SEND: tracy@altitudemanagement.com → ['lion0692121@outlook.com'] | 12222222
+2025-09-29 22:21:05 | INFO | 🔧 Loading session from: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 22:21:05 | INFO | 🔍 Testing authentication status...
+2025-09-29 22:21:16 | INFO | 🔍 Auth test URL: https://outlook.office.com/mail/
+2025-09-29 22:21:17 | INFO | 📸 Auth test screenshot saved
+2025-09-29 22:21:17 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-29 22:21:17 | INFO | 🔗 Generated compose URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=12222222&body=asdfasdfasdfasdfasdf
+2025-09-29 22:21:17 | INFO | 📧 Opening compose...
+2025-09-29 22:21:21 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-29 22:21:51 | WARNING | ⚠️ networkidle timeout; using domcontentloaded fallback
+2025-09-29 22:21:52 | INFO | 🔍 Current URL after navigation: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=12222222&body=asdfasdfasdfasdfasdf
+2025-09-29 22:21:52 | INFO | ✅ Compose page URL confirmed
+2025-09-29 22:21:52 | INFO | ✅ Compose UI visible with selector: button:has-text('Send')
+2025-09-29 22:21:52 | INFO | ✅ Send button is visible
+2025-09-29 22:21:54 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-29 22:21:54 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-29 22:21:54 | INFO | Current URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=12222222&body=asdfasdfasdfasdfasdf
+2025-09-29 22:21:54 | INFO | 📝 Prefill missing; filling fields manually
+2025-09-29 22:22:20 | INFO | Email fields filled successfully
+2025-09-29 22:22:20 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-29 22:22:23 | INFO | 🔍 Looking for Send button...
+2025-09-29 22:22:23 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 2 elements)
+2025-09-29 22:22:23 | INFO |   Element 1: visible, text='LoopcomponentsSend a component that everyone in the mail can edit inline.'
+2025-09-29 22:22:23 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-29 22:22:23 | INFO | ✅ Send button detection successful
+2025-09-29 22:22:23 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-29 22:22:23 | INFO | 📤 Sending email...
+2025-09-29 22:22:23 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-29 22:22:23 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-09-29 22:22:23 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-09-29 22:22:23 | INFO | 🔄 Send button is ready - clicking...
+2025-09-29 22:22:38 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-09-29 22:22:38 | INFO | 🔄 Trying Ctrl+Enter...
+2025-09-29 22:22:42 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-29 22:22:42 | INFO | 🔍 Verifying send confirmation...
+2025-09-29 22:23:02 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-09-29 22:29:13 | INFO | Using database account: tracy@altitudemanagement.com
+2025-09-29 22:29:13 | INFO | 📁 Session file: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 22:29:13 | INFO | 📁 Session file size: 103959 bytes
+2025-09-29 22:29:13 | INFO | 📁 Session file age: 2:01:54.573071
+2025-09-29 22:29:13 | INFO | 🚀 FAST SEND: tracy@altitudemanagement.com → ['lion0692121@outlook.com'] | Hello
+2025-09-29 22:29:13 | INFO | 🔧 Loading session from: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-09-29 22:29:13 | INFO | 🔍 Testing authentication status...
+2025-09-29 22:29:26 | INFO | 🔍 Auth test URL: https://outlook.office.com/mail/
+2025-09-29 22:29:26 | INFO | 📸 Auth test screenshot saved
+2025-09-29 22:29:26 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-29 22:29:26 | INFO | 🔗 Generated compose URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hello&body=This%20test%20is%20to%20send%20message%20by%20paid%20account
+2025-09-29 22:29:26 | INFO | 📧 Opening compose...
+2025-09-29 22:29:30 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-29 22:30:00 | WARNING | ⚠️ networkidle timeout; using domcontentloaded fallback
+2025-09-29 22:30:01 | INFO | 🔍 Current URL after navigation: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hello&body=This%20test%20is%20to%20send%20message%20by%20paid%20account
+2025-09-29 22:30:01 | INFO | ✅ Compose page URL confirmed
+2025-09-29 22:30:01 | INFO | ✅ Compose UI visible with selector: button:has-text('Send')
+2025-09-29 22:30:01 | INFO | ✅ Send button is visible
+2025-09-29 22:30:03 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-29 22:30:03 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-29 22:30:03 | INFO | Current URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hello&body=This%20test%20is%20to%20send%20message%20by%20paid%20account
+2025-09-29 22:30:03 | INFO | 📝 Prefill missing; filling fields manually
+2025-09-29 22:30:29 | INFO | Email fields filled successfully
+2025-09-29 22:30:29 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-29 22:30:32 | INFO | 🔍 Looking for Send button...
+2025-09-29 22:30:32 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 2 elements)
+2025-09-29 22:30:32 | INFO |   Element 1: visible, text='LoopcomponentsSend a component that everyone in the mail can edit inline.'
+2025-09-29 22:30:32 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-29 22:30:32 | INFO | ✅ Send button detection successful
+2025-09-29 22:30:32 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-29 22:30:32 | INFO | 📤 Sending email...
+2025-09-29 22:30:32 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-29 22:30:32 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-09-29 22:30:32 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-09-29 22:30:32 | INFO | 🔄 Send button is ready - clicking...
+2025-09-29 22:30:47 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-09-29 22:30:47 | INFO | 🔄 Trying Ctrl+Enter...
+2025-09-29 22:30:51 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-29 22:30:51 | INFO | 🔍 Verifying send confirmation...
+2025-09-29 22:31:11 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.

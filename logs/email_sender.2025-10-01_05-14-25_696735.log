@@ -1,0 +1,860 @@
+2025-10-01 05:14:25 | INFO | Using user-selected account: tracy@altitudemanagement.com
+2025-10-01 05:14:25 | WARNING | ⚠️ Session is 1 day, 2:52:19.899304 old, may need refresh
+2025-10-01 05:14:25 | INFO | 📁 Session file: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-10-01 05:14:25 | INFO | 📁 Session file size: 7484 bytes
+2025-10-01 05:14:25 | INFO | 📁 Session file age: 1 day, 2:52:19.899304
+2025-10-01 05:14:25 | INFO | 🚀 FAST SEND: tracy@altitudemanagement.com → ['lion0692121@outlook.com'] | FFFF@@@@@@@
+2025-10-01 05:14:38 | INFO | 🔧 Loading session from: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-10-01 05:14:40 | INFO | 🔍 Testing authentication status...
+2025-10-01 05:14:45 | INFO | 🔍 Auth test URL: https://outlook.office.com/mail/
+2025-10-01 05:14:45 | INFO | 📸 Auth test screenshot saved
+2025-10-01 05:14:45 | INFO | ✅ Authentication appears successful - no sign in button
+2025-10-01 05:14:45 | INFO | 🔗 Generated compose URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=FFFF%40%40%40%40%40%40%40&body=Hi%20Adeeb%21%0A%0AI%20hope%20you%20don%27t%20mind%20me%20jumping%20in%20here%2C%20Bryan%20is%20currently%20in%20the%20U.K.%2C%20back%20Oct.%207th%C2%A0but%20I%20wanted%20to%20send%20you%20some%20availability%20to%20have%20this%20call%20scheduled%20in%20the%20calendars.%20If%20any%20of%20these%20work%20for%20you%20please%20let%20me%20know%20and%20I%27ll%20send%20over%20an%20invite.%0A%0AOct.%208%20-%2010%3A00am%2C%2010%3A30am%2C%202%3A30pm%2C%203%3A30pm%2C%204%3A00pm%0AOct.%209%20-%20Anytime%20between%2011%3A00am-2%3A30pm%2C%20or%20after%203%3A00pm%0AOct.%2010%20-%2010%3A30am%2C%20anytime%20between%201%3A00-3%3A30pm%0AOct.%2014%20-%2010%3A00am%2C%2010%3A30am%2C%201%3A00pm%2C%202%3A30pm%2C%203%3A00pm%0AOct.%2015%20-%2010%3A00am%2C%2010%3A30am%2C%202%3A00pm%2C%202%3A30pm%0AOct.%2016%20-%2010%3A30am%2C%2011%3A00am%2C%203%3A00pm%2C%203%3A30pm%0AOct.%2017%20-%201%3A00pm%2C%201%3A30pm%2C%203%3A00pm%2C%204%3A00pm
+2025-10-01 05:14:45 | INFO | 📧 Opening compose...
+2025-10-01 05:15:15 | WARNING | ⚠️ compose goto domcontentloaded timed out; proceeding with selector waits
+2025-10-01 05:15:15 | INFO | ⏳ Waiting for platform to finish loading...
+2025-10-01 05:15:45 | WARNING | ⚠️ networkidle timeout; using domcontentloaded fallback
+2025-10-01 05:15:55 | WARNING | ⚠️ domcontentloaded also timed out; proceeding with selector waits
+2025-10-01 05:15:56 | INFO | 🔍 Current URL after navigation: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=FFFF%40%40%40%40%40%40%40&body=Hi%20Adeeb%21%0A%0AI%20hope%20you%20don%27t%20mind%20me%20jumping%20in%20here%2C%20Bryan%20is%20currently%20in%20the%20U.K.%2C%20back%20Oct.%207th%C2%A0but%20I%20wanted%20to%20send%20you%20some%20availability%20to%20have%20this%20call%20scheduled%20in%20the%20calendars.%20If%20any%20of%20these%20work%20for%20you%20please%20let%20me%20know%20and%20I%27ll%20send%20over%20an%20invite.%0A%0AOct.%208%20-%2010%3A00am%2C%2010%3A30am%2C%202%3A30pm%2C%203%3A30pm%2C%204%3A00pm%0AOct.%209%20-%20Anytime%20between%2011%3A00am-2%3A30pm%2C%20or%20after%203%3A00pm%0AOct.%2010%20-%2010%3A30am%2C%20anytime%20between%201%3A00-3%3A30pm%0AOct.%2014%20-%2010%3A00am%2C%2010%3A30am%2C%201%3A00pm%2C%202%3A30pm%2C%203%3A00pm%0AOct.%2015%20-%2010%3A00am%2C%2010%3A30am%2C%202%3A00pm%2C%202%3A30pm%0AOct.%2016%20-%2010%3A30am%2C%2011%3A00am%2C%203%3A00pm%2C%203%3A30pm%0AOct.%2017%20-%201%3A00pm%2C%201%3A30pm%2C%203%3A00pm%2C%204%3A00pm
+2025-10-01 05:15:56 | INFO | ✅ Compose page URL confirmed
+2025-10-01 05:16:31 | WARNING | ⚠️ Compose UI not detected; trying alternate compose URL for host
+2025-10-01 05:16:31 | INFO | 🔁 Navigating to alternate compose URL: https://outlook.office.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=FFFF%40%40%40%40%40%40%40&body=Hi%20Adeeb%21%0A%0AI%20hope%20you%20don%27t%20mind%20me%20jumping%20in%20here%2C%20Bryan%20is%20currently%20in%20the%20U.K.%2C%20back%20Oct.%207th%C2%A0but%20I%20wanted%20to%20send%20you%20some%20availability%20to%20have%20this%20call%20scheduled%20in%20the%20calendars.%20If%20any%20of%20these%20work%20for%20you%20please%20let%20me%20know%20and%20I%27ll%20send%20over%20an%20invite.%0A%0AOct.%208%20-%2010%3A00am%2C%2010%3A30am%2C%202%3A30pm%2C%203%3A30pm%2C%204%3A00pm%0AOct.%209%20-%20Anytime%20between%2011%3A00am-2%3A30pm%2C%20or%20after%203%3A00pm%0AOct.%2010%20-%2010%3A30am%2C%20anytime%20between%201%3A00-3%3A30pm%0AOct.%2014%20-%2010%3A00am%2C%2010%3A30am%2C%201%3A00pm%2C%202%3A30pm%2C%203%3A00pm%0AOct.%2015%20-%2010%3A00am%2C%2010%3A30am%2C%202%3A00pm%2C%202%3A30pm%0AOct.%2016%20-%2010%3A30am%2C%2011%3A00am%2C%203%3A00pm%2C%203%3A30pm%0AOct.%2017%20-%201%3A00pm%2C%201%3A30pm%2C%203%3A00pm%2C%204%3A00pm
+2025-10-01 05:16:43 | INFO | ✅ Compose UI visible with selector: [aria-label*='Send']
+2025-10-01 05:16:43 | INFO | ✅ Compose UI visible with selector: button:has-text('Send')
+2025-10-01 05:16:43 | INFO | ✅ Send button is visible
+2025-10-01 05:16:45 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-10-01 05:16:45 | INFO | ⚡ Checking if fields are pre-filled...
+2025-10-01 05:16:45 | INFO | Current URL: https://outlook.office.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=FFFF%40%40%40%40%40%40%40&body=Hi%20Adeeb%21%0A%0AI%20hope%20you%20don%27t%20mind%20me%20jumping%20in%20here%2C%20Bryan%20is%20currently%20in%20the%20U.K.%2C%20back%20Oct.%207th%C2%A0but%20I%20wanted%20to%20send%20you%20some%20availability%20to%20have%20this%20call%20scheduled%20in%20the%20calendars.%20If%20any%20of%20these%20work%20for%20you%20please%20let%20me%20know%20and%20I%27ll%20send%20over%20an%20invite.%0A%0AOct.%208%20-%2010%3A00am%2C%2010%3A30am%2C%202%3A30pm%2C%203%3A30pm%2C%204%3A00pm%0AOct.%209%20-%20Anytime%20between%2011%3A00am-2%3A30pm%2C%20or%20after%203%3A00pm%0AOct.%2010%20-%2010%3A30am%2C%20anytime%20between%201%3A00-3%3A30pm%0AOct.%2014%20-%2010%3A00am%2C%2010%3A30am%2C%201%3A00pm%2C%202%3A30pm%2C%203%3A00pm%0AOct.%2015%20-%2010%3A00am%2C%2010%3A30am%2C%202%3A00pm%2C%202%3A30pm%0AOct.%2016%20-%2010%3A30am%2C%2011%3A00am%2C%203%3A00pm%2C%203%3A30pm%0AOct.%2017%20-%201%3A00pm%2C%201%3A30pm%2C%203%3A00pm%2C%204%3A00pm
+2025-10-01 05:16:45 | INFO | 📝 Prefill missing; filling fields manually
+2025-10-01 05:17:11 | INFO | Email fields filled successfully
+2025-10-01 05:17:11 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-10-01 05:17:14 | INFO | 🔍 Looking for Send button...
+2025-10-01 05:17:14 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 2 elements)
+2025-10-01 05:17:14 | INFO |   Element 1: visible, text='LoopcomponentsSend a component that everyone in the mail can edit inline.'
+2025-10-01 05:17:14 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-10-01 05:17:14 | INFO | ✅ Send button detection successful
+2025-10-01 05:17:14 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-10-01 05:17:14 | INFO | 📤 Sending email...
+2025-10-01 05:17:14 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-01 05:17:14 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-01 05:17:14 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-01 05:17:14 | INFO | ⏳ Ensuring all attachments finished uploading...
+2025-10-01 05:17:14 | INFO | 🔄 Send button is ready - clicking...
+2025-10-01 05:17:29 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-01 05:17:29 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-01 05:17:33 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-01 05:17:33 | INFO | 🔍 Verifying send confirmation...
+2025-10-01 05:17:53 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-01 11:48:25 | INFO | Using user-selected account: lion0692172@outlook.com
+2025-10-01 11:48:25 | INFO | 📁 Session file: sessions\office365_lion0692172_at_outlook_com.json
+2025-10-01 11:48:25 | INFO | 📁 Session file size: 12431 bytes
+2025-10-01 11:48:25 | INFO | 📁 Session file age: 14:30:15.690323
+2025-10-01 11:48:25 | INFO | 🚀 FAST SEND: lion0692172@outlook.com → ['lion0692121@outlook.com'] | Hello bro
+2025-10-01 11:48:25 | INFO | 🌐 Using proxy: ://None:None
+2025-10-01 11:48:25 | ERROR | ❌ Send failed with unexpected error
+Traceback (most recent call last):
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 995, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000019CC03EC7C0>
+    └ <Thread(Thread-14 (process_request_thread), started daemon 54416)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x0000019CC03EC4A0>
+    └ <Thread(Thread-14 (process_request_thread), started daemon 54416)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-14 (process_request_thread), started daemon 54416)>
+    │    │        │    └ (<socket.socket fd=1368, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 65506)>, ('127.0.0.1', 655...
+    │    │        └ <Thread(Thread-14 (process_request_thread), started daemon 54416)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x0000019CC56A05D0>>
+    └ <Thread(Thread-14 (process_request_thread), started daemon 54416)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 65506)
+    │    │              └ <socket.socket fd=1368, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 65506)>
+    │    └ <function BaseServer.finish_request at 0x0000019CC2480220>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x0000019CC56A05D0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x0000019CC56A05D0>
+    │    │                   │        └ ('127.0.0.1', 65506)
+    │    │                   └ <socket.socket fd=1368, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 65506)>
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x0000019CC56A05D0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x0000019CC2F0CB80>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x0000019CC5797490>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 398, in handle
+    super().handle()
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 431, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x0000019CC25C0220>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x0000019CC5797490>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 419, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x0000019CC5797490>>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <Flask 'main'>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x0000019CC56A05D0>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x0000019CC5797490>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x0000019CC56F7EC0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+                       │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x0000019CC56F7E20>
+                       │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1368>, 'wsgi.errors': <_io.TextIOW...
+                       └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x0000019CC56F7E20>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1368>, 'wsgi.errors': <_io.TextIOW...
+           │    └ <function Flask.wsgi_app at 0x0000019CC33F62A0>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x0000019CC33F59E0>
+               └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x0000019CC33F5940>
+         └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'send_compose'
+           │    │           │    │              └ <Rule '/compose/send' (POST, OPTIONS) -> send_compose>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x0000019CC4FB6700>, 'dashboard': <function dashboard at 0x0000019CC...
+           │    │           └ <Flask 'main'>
+           │    └ <function Flask.ensure_sync at 0x0000019CC33F5BC0>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           │                       │      │       └ {}
+           │                       │      └ ()
+           │                       └ <function send_compose at 0x0000019CC563EA20>
+           └ <Flask 'main'>
+
+  File "E:\a_Work\tele\New folder - Copy\main.py", line 792, in send_compose
+    success = fast_send_email(
+              └ <function fast_send_email at 0x0000019CC5540F40>
+
+> File "E:\a_Work\tele\New folder - Copy\automation\office365_fast.py", line 513, in fast_send_email
+    browser = browser_type.launch(**launch_kwargs)
+              │            │        └ {'headless': True, 'proxy': {'server': '://None:None'}}
+              │            └ <function BrowserType.launch at 0x0000019CC552DD00>
+              └ <BrowserType name=chromium executable_path=C:\Users\TIGER\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe>
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\sync_api\_generated.py", line 14502, in launch
+    self._sync(
+    │    └ <function SyncBase._sync at 0x0000019CC54EB420>
+    └ <BrowserType name=chromium executable_path=C:\Users\TIGER\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           │    └ <method 'result' of '_asyncio.Task' objects>
+           └ <Task finished name='Task-4' coro=<BrowserType.launch() done, defined at C:\Users\TIGER\AppData\Local\Programs\Python\Python3...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_browser_type.py", line 98, in launch
+    await self._channel.send(
+          │    │        └ <function Channel.send at 0x0000019CC53E9760>
+          │    └ <playwright._impl._connection.Channel object at 0x0000019CC57C7110>
+          └ <BrowserType name=chromium executable_path=C:\Users\TIGER\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+                 │    │           └ <function Connection.wrap_api_call at 0x0000019CC53EB7E0>
+                 │    └ <playwright._impl._connection.Connection object at 0x0000019CC57CB910>
+                 └ <playwright._impl._connection.Channel object at 0x0000019CC57C7110>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+          └ <function rewrite_error at 0x0000019CC52FF2E0>
+
+playwright._impl._errors.Error: BrowserType.launch: Invalid URL
+2025-10-01 11:50:45 | INFO | Using user-selected account: tracy@altitudemanagement.com
+2025-10-01 11:50:45 | WARNING | ⚠️ Session is 1 day, 9:28:39.710598 old, may need refresh
+2025-10-01 11:50:45 | INFO | 📁 Session file: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-10-01 11:50:45 | INFO | 📁 Session file size: 7484 bytes
+2025-10-01 11:50:45 | INFO | 📁 Session file age: 1 day, 9:28:39.710598
+2025-10-01 11:50:45 | INFO | 🚀 FAST SEND: tracy@altitudemanagement.com → ['lion0692121@outlook.com'] | Hi 
+2025-10-01 11:50:46 | INFO | 🌐 Using proxy: ://None:None
+2025-10-01 11:50:46 | ERROR | ❌ Send failed with unexpected error
+Traceback (most recent call last):
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 995, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000213DE98C7C0>
+    └ <Thread(Thread-5 (process_request_thread), started daemon 1332)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x00000213DE98C4A0>
+    └ <Thread(Thread-5 (process_request_thread), started daemon 1332)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-5 (process_request_thread), started daemon 1332)>
+    │    │        │    └ (<socket.socket fd=1236, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 49431)>, ('127.0.0.1', 494...
+    │    │        └ <Thread(Thread-5 (process_request_thread), started daemon 1332)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x00000213E3C30A10>>
+    └ <Thread(Thread-5 (process_request_thread), started daemon 1332)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 49431)
+    │    │              └ <socket.socket fd=1236, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 49431)>
+    │    └ <function BaseServer.finish_request at 0x00000213E0A00220>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000213E3C30A10>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000213E3C30A10>
+    │    │                   │        └ ('127.0.0.1', 49431)
+    │    │                   └ <socket.socket fd=1236, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 49431)>
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000213E3C30A10>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x00000213E149CB80>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x00000213E3D27390>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 398, in handle
+    super().handle()
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 431, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x00000213E0B40220>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x00000213E3D27390>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 419, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x00000213E3D27390>>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <Flask 'main'>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000213E3C30A10>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x00000213E3D27390>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x00000213E3C5C860>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+                       │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x00000213E3C5C7C0>
+                       │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1236>, 'wsgi.errors': <_io.TextIOW...
+                       └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x00000213E3C5C7C0>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1236>, 'wsgi.errors': <_io.TextIOW...
+           │    └ <function Flask.wsgi_app at 0x00000213E19862A0>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x00000213E19859E0>
+               └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x00000213E1985940>
+         └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'send_compose'
+           │    │           │    │              └ <Rule '/compose/send' (POST, OPTIONS) -> send_compose>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x00000213E3546700>, 'dashboard': <function dashboard at 0x00000213E...
+           │    │           └ <Flask 'main'>
+           │    └ <function Flask.ensure_sync at 0x00000213E1985BC0>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           │                       │      │       └ {}
+           │                       │      └ ()
+           │                       └ <function send_compose at 0x00000213E3BCEA20>
+           └ <Flask 'main'>
+
+  File "E:\a_Work\tele\New folder - Copy\main.py", line 792, in send_compose
+    success = fast_send_email(
+              └ <function fast_send_email at 0x00000213E3AD0F40>
+
+> File "E:\a_Work\tele\New folder - Copy\automation\office365_fast.py", line 513, in fast_send_email
+    browser = browser_type.launch(**launch_kwargs)
+              │            │        └ {'headless': True, 'proxy': {'server': '://None:None'}}
+              │            └ <function BrowserType.launch at 0x00000213E3ABDD00>
+              └ <BrowserType name=chromium executable_path=C:\Users\TIGER\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe>
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\sync_api\_generated.py", line 14502, in launch
+    self._sync(
+    │    └ <function SyncBase._sync at 0x00000213E3A7B420>
+    └ <BrowserType name=chromium executable_path=C:\Users\TIGER\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           │    └ <method 'result' of '_asyncio.Task' objects>
+           └ <Task finished name='Task-4' coro=<BrowserType.launch() done, defined at C:\Users\TIGER\AppData\Local\Programs\Python\Python3...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_browser_type.py", line 98, in launch
+    await self._channel.send(
+          │    │        └ <function Channel.send at 0x00000213E3975760>
+          │    └ <playwright._impl._connection.Channel object at 0x00000213E3D83850>
+          └ <BrowserType name=chromium executable_path=C:\Users\TIGER\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+                 │    │           └ <function Connection.wrap_api_call at 0x00000213E39777E0>
+                 │    └ <playwright._impl._connection.Connection object at 0x00000213E3D56110>
+                 └ <playwright._impl._connection.Channel object at 0x00000213E3D83850>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+          └ <function rewrite_error at 0x00000213E388F2E0>
+
+playwright._impl._errors.Error: BrowserType.launch: Invalid URL
+2025-10-01 11:59:10 | INFO | Using user-selected account: lion0692172@outlook.com
+2025-10-01 11:59:10 | INFO | 📁 Session file: sessions\office365_lion0692172_at_outlook_com.json
+2025-10-01 11:59:10 | INFO | 📁 Session file size: 12431 bytes
+2025-10-01 11:59:10 | INFO | 📁 Session file age: 14:41:00.900250
+2025-10-01 11:59:10 | INFO | 🚀 FAST SEND: lion0692172@outlook.com → ['lion0692121@outlook.com'] | Hi 
+2025-10-01 11:59:10 | WARNING | SOCKS proxies with username/password are not supported by browsers. Use an HTTP/HTTPS proxy or IP-auth SOCKS.
+2025-10-01 11:59:10 | INFO | Proceeding without proxy due to unsupported SOCKS authentication.
+2025-10-01 11:59:11 | INFO | 🔧 Loading session from: sessions\office365_lion0692172_at_outlook_com.json
+2025-10-01 11:59:11 | INFO | 🔍 Testing authentication status...
+2025-10-01 11:59:14 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-10-01 11:59:14 | INFO | 📸 Auth test screenshot saved
+2025-10-01 11:59:14 | INFO | ✅ Authentication appears successful - no sign in button
+2025-10-01 11:59:14 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20&body=Hello%20bro%2C%20this%20test%20is%20to%20send%20message%20using%20proxy
+2025-10-01 11:59:14 | INFO | 📧 Opening compose...
+2025-10-01 11:59:15 | INFO | ⏳ Waiting for platform to finish loading...
+2025-10-01 11:59:17 | INFO | ✅ Network idle - no more requests
+2025-10-01 11:59:17 | INFO | 🔍 Current URL after navigation: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Hi%20&body=Hello%20bro%2C%20this%20test%20is%20to%20send%20message%20using%20proxy
+2025-10-01 11:59:17 | INFO | ✅ Compose page URL confirmed
+2025-10-01 11:59:27 | INFO | ✅ Compose UI visible with selector: [aria-label*='Send']
+2025-10-01 11:59:27 | INFO | ✅ Compose UI visible with selector: button:has-text('Send')
+2025-10-01 11:59:27 | INFO | ✅ Send button is visible
+2025-10-01 11:59:29 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-10-01 11:59:29 | INFO | ⚡ Checking if fields are pre-filled...
+2025-10-01 11:59:29 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Hi%20&body=Hello%20bro%2C%20this%20test%20is%20to%20send%20message%20using%20proxy
+2025-10-01 11:59:29 | INFO | 📝 Prefill missing; filling fields manually
+2025-10-01 11:59:54 | INFO | Email fields filled successfully
+2025-10-01 11:59:54 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-10-01 11:59:57 | INFO | 🔍 Looking for Send button...
+2025-10-01 11:59:57 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-10-01 11:59:57 | INFO |   Element 1: visible, text='Send'
+2025-10-01 11:59:57 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-10-01 11:59:57 | INFO | ✅ Send button detection successful
+2025-10-01 11:59:57 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-10-01 11:59:57 | INFO | 📤 Sending email...
+2025-10-01 11:59:57 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-01 11:59:57 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-01 11:59:57 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-01 11:59:57 | INFO | ⏳ Ensuring all attachments finished uploading...
+2025-10-01 11:59:57 | INFO | 🔄 Send button is ready - clicking...
+2025-10-01 11:59:57 | INFO | ✅ Sent via Send button
+2025-10-01 11:59:57 | INFO | 🔍 Verifying send confirmation...
+2025-10-01 11:59:58 | INFO | ✅ Network idle after send - platform processed
+2025-10-01 12:00:00 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Hi%20&body=Hello%20bro%2C%20this%20test%20is%20to%20send%20message%20using%20proxy
+2025-10-01 12:00:20 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-10-01 12:01:35 | INFO | Using user-selected account: lion0692172@outlook.com
+2025-10-01 12:01:35 | INFO | 📁 Session file: sessions\office365_lion0692172_at_outlook_com.json
+2025-10-01 12:01:35 | INFO | 📁 Session file size: 12431 bytes
+2025-10-01 12:01:35 | INFO | 📁 Session file age: 14:43:26.633969
+2025-10-01 12:01:35 | INFO | 🚀 FAST SEND: lion0692172@outlook.com → ['lion0692121@outlook.com'] | Hi 
+2025-10-01 12:01:36 | WARNING | SOCKS proxies with username/password are not supported by browsers. Use an HTTP/HTTPS proxy or IP-auth SOCKS.
+2025-10-01 12:01:36 | INFO | Proceeding without proxy due to unsupported SOCKS authentication.
+2025-10-01 12:01:36 | INFO | 🔧 Loading session from: sessions\office365_lion0692172_at_outlook_com.json
+2025-10-01 12:01:36 | INFO | 🔍 Testing authentication status...
+2025-10-01 12:01:39 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-10-01 12:01:41 | INFO | 📸 Auth test screenshot saved
+2025-10-01 12:01:41 | INFO | ✅ Authentication appears successful - no sign in button
+2025-10-01 12:01:41 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20&body=Hello%20Bro%0AThis%20test%20is%20to%20send%20message%20using%20proxy
+2025-10-01 12:01:41 | INFO | 📧 Opening compose...
+2025-10-01 12:01:45 | INFO | ⏳ Waiting for platform to finish loading...
+2025-10-01 12:01:47 | INFO | ✅ Network idle - no more requests
+2025-10-01 12:01:47 | INFO | 🔍 Current URL after navigation: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Hi%20&body=Hello%20Bro%0AThis%20test%20is%20to%20send%20message%20using%20proxy
+2025-10-01 12:01:47 | INFO | ✅ Compose page URL confirmed
+2025-10-01 12:01:56 | INFO | ✅ Compose UI visible with selector: [aria-label*='Send']
+2025-10-01 12:01:56 | INFO | ✅ Compose UI visible with selector: button:has-text('Send')
+2025-10-01 12:01:56 | INFO | ✅ Send button is visible
+2025-10-01 12:01:58 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-10-01 12:01:58 | INFO | ⚡ Checking if fields are pre-filled...
+2025-10-01 12:01:58 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Hi%20&body=Hello%20Bro%0AThis%20test%20is%20to%20send%20message%20using%20proxy
+2025-10-01 12:01:58 | INFO | 📝 Prefill missing; filling fields manually
+2025-10-01 12:02:23 | INFO | Email fields filled successfully
+2025-10-01 12:02:23 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-10-01 12:02:26 | INFO | 🔍 Looking for Send button...
+2025-10-01 12:02:26 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-10-01 12:02:26 | INFO |   Element 1: visible, text='Send'
+2025-10-01 12:02:26 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-10-01 12:02:26 | INFO | ✅ Send button detection successful
+2025-10-01 12:02:26 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-10-01 12:02:26 | INFO | 📤 Sending email...
+2025-10-01 12:02:26 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-01 12:02:26 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-01 12:02:26 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-01 12:02:26 | INFO | ⏳ Ensuring all attachments finished uploading...
+2025-10-01 12:02:26 | INFO | 🔄 Send button is ready - clicking...
+2025-10-01 12:02:26 | INFO | ✅ Sent via Send button
+2025-10-01 12:02:26 | INFO | 🔍 Verifying send confirmation...
+2025-10-01 12:02:26 | INFO | ✅ Network idle after send - platform processed
+2025-10-01 12:02:28 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Hi%20&body=Hello%20Bro%0AThis%20test%20is%20to%20send%20message%20using%20proxy
+2025-10-01 12:02:49 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-10-01 12:54:08 | INFO | Testing authentication for homidi-shal@corenic-cg.com with cookies...
+2025-10-01 12:54:08 | INFO | Parsed 3 cookies for homidi-shal@corenic-cg.com
+2025-10-01 12:54:08 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 12:54:08 | INFO | Cookie 2: ESTSAUTH = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 12:54:08 | INFO | Cookie 3: ESTSAUTHLIGHT = +008c4259-d974-7650-202c-7a0958aabf7c...
+2025-10-01 12:54:08 | INFO | Testing cookie authentication for homidi-shal@corenic-cg.com
+2025-10-01 12:54:16 | INFO | Using domain: outlook.office.com for email: homidi-shal@corenic-cg.com
+2025-10-01 12:54:16 | INFO | Injected 3 cookies for authentication [ESTSAUTHPERSISTENT@outlook.office.com, ESTSAUTH@outlook.office.com, ESTSAUTHLIGHT@outlook.office.com]
+2025-10-01 12:54:17 | INFO | Visiting login domain to establish auth context
+2025-10-01 12:54:37 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-10-01 12:54:48 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-10-01 12:55:30 | INFO | Cookie authentication successful for homidi-shal@corenic-cg.com - compose page accessible
+2025-10-01 12:55:30 | INFO | Saved browser session to: E:\a_Work\tele\New folder - Copy\sessions\office365_homidi-shal_at_corenic-cg_com.json
+2025-10-01 12:55:31 | INFO | Authentication successful for homidi-shal@corenic-cg.com, saving account...
+2025-10-01 12:55:31 | INFO | Added paid Office 365 account to database: homidi-shal@corenic-cg.com
+2025-10-01 12:56:02 | INFO | Using user-selected account: homidi-shal@corenic-cg.com
+2025-10-01 12:56:02 | INFO | 📁 Session file: sessions\office365_homidi-shal_at_corenic-cg_com.json
+2025-10-01 12:56:02 | INFO | 📁 Session file size: 3122 bytes
+2025-10-01 12:56:02 | INFO | 📁 Session file age: 0:00:31.781996
+2025-10-01 12:56:02 | INFO | 🚀 FAST SEND: homidi-shal@corenic-cg.com → ['lion0692121@outlook.com'] | Hi 123
+2025-10-01 12:56:03 | INFO | 🔧 Loading session from: sessions\office365_homidi-shal_at_corenic-cg_com.json
+2025-10-01 12:56:03 | INFO | 🔍 Testing authentication status...
+2025-10-01 12:56:09 | INFO | 🔍 Auth test URL: https://outlook.office.com/mail/
+2025-10-01 12:56:10 | INFO | 📸 Auth test screenshot saved
+2025-10-01 12:56:10 | INFO | ✅ Authentication appears successful - no sign in button
+2025-10-01 12:56:10 | INFO | 🔗 Generated compose URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20123&body=asdfasdfasdfasdfasdf
+2025-10-01 12:56:10 | INFO | 📧 Opening compose...
+2025-10-01 12:56:12 | INFO | ⏳ Waiting for platform to finish loading...
+2025-10-01 12:56:22 | INFO | ✅ Network idle - no more requests
+2025-10-01 12:56:22 | INFO | 🔍 Current URL after navigation: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20123&body=asdfasdfasdfasdfasdf
+2025-10-01 12:56:22 | INFO | ✅ Compose page URL confirmed
+2025-10-01 12:57:06 | WARNING | ⚠️ Compose UI not detected; trying alternate compose URL for host
+2025-10-01 12:57:06 | INFO | 🔁 Navigating to alternate compose URL: https://outlook.office.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20123&body=asdfasdfasdfasdfasdf
+2025-10-01 12:57:53 | INFO | 🔁 Navigating to alternate compose URL: https://outlook.office.com/owa/?path=/mail/action/compose?to=lion0692121%40outlook.com&subject=Hi%20123&body=asdfasdfasdfasdfasdf
+2025-10-01 12:59:03 | WARNING | ⚠️ Compose UI still not detected
+2025-10-01 12:59:05 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-10-01 12:59:05 | INFO | ⚡ Checking if fields are pre-filled...
+2025-10-01 12:59:05 | INFO | Current URL: chrome-error://chromewebdata/
+2025-10-01 12:59:05 | INFO | 📝 Prefill missing; filling fields manually
+2025-10-01 13:00:05 | INFO | Email fields filled successfully
+2025-10-01 13:00:05 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-10-01 13:00:08 | INFO | 🔍 Looking for Send button...
+2025-10-01 13:00:08 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 0 elements)
+2025-10-01 13:00:08 | INFO | 🔍 Trying selector 2: button[aria-label='Send'] (found 0 elements)
+2025-10-01 13:00:08 | INFO | 🔍 Trying selector 3: button[data-icon-name='Send'] (found 0 elements)
+2025-10-01 13:00:08 | INFO | 🔍 Trying selector 4: button[name='Send'] (found 0 elements)
+2025-10-01 13:00:08 | INFO | 🔍 Trying selector 5: div[role='button']:has-text('Send') (found 0 elements)
+2025-10-01 13:00:08 | INFO | 🔍 Trying selector 6: span:has-text('Send') (found 0 elements)
+2025-10-01 13:00:08 | INFO | 🔍 Trying selector 7: button (found 0 elements)
+2025-10-01 13:00:08 | WARNING | ⚠️ No send button found with any selector
+2025-10-01 13:00:08 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-10-01 13:00:08 | INFO | 📤 Sending email...
+2025-10-01 13:00:08 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-01 13:00:08 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-01 13:00:18 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-01 13:00:28 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']:not([aria-disabled='true'])
+2025-10-01 13:00:38 | INFO | ⏳ Ensuring all attachments finished uploading...
+2025-10-01 13:00:43 | WARNING | ⚠️ Send button click failed: Locator.wait_for: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("button[data-icon-name='Send']:not([aria-disabled='true'])").first
+
+2025-10-01 13:00:43 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-01 13:00:47 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-01 13:00:47 | INFO | 🔍 Verifying send confirmation...
+2025-10-01 13:00:47 | INFO | ✅ Network idle after send - platform processed
+2025-10-01 13:00:49 | INFO | URL after send attempt: chrome-error://chromewebdata/
+2025-10-01 13:00:49 | INFO | ✅ Send confirmed - no longer on compose page
+2025-10-01 13:00:49 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-10-01 13:20:58 | INFO | Testing authentication for homidi-shal@corenic-cg.com with cookies...
+2025-10-01 13:20:58 | INFO | Parsed 3 cookies for homidi-shal@corenic-cg.com
+2025-10-01 13:20:58 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 13:20:58 | INFO | Cookie 2: ESTSAUTH = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 13:20:58 | INFO | Cookie 3: ESTSAUTHLIGHT = +008c4259-d974-7650-202c-7a0958aabf7c...
+2025-10-01 13:20:58 | INFO | Testing cookie authentication for homidi-shal@corenic-cg.com
+2025-10-01 13:20:59 | INFO | Using domain: outlook.office.com for email: homidi-shal@corenic-cg.com
+2025-10-01 13:20:59 | INFO | Injected 3 cookies for authentication [ESTSAUTHPERSISTENT@outlook.office.com, ESTSAUTH@outlook.office.com, ESTSAUTHLIGHT@outlook.office.com]
+2025-10-01 13:20:59 | INFO | Visiting login domain to establish auth context
+2025-10-01 13:21:19 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-10-01 13:21:26 | INFO | Current URL after navigation: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=8933e41b-7ea2-4386-c482-aeb8d83083e0&response_mode=fragment&client_info=1&prompt=select_account&nonce=01999e37-dd01-7725-8f43-fdf31a3958a5&state=eyjpzci6ijaxotk5ztm3lwrkmdetn2i4mc05ztnkltq5odq2mzqzngyzmiisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=mviswlpjdfqqrtas8g62xzrzthfrvul-3angkngijgs&code_challenge_method=s256
+2025-10-01 13:21:26 | WARNING | Authentication check failed - redirected to login: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=8933e41b-7ea2-4386-c482-aeb8d83083e0&response_mode=fragment&client_info=1&prompt=select_account&nonce=01999e37-dd01-7725-8f43-fdf31a3958a5&state=eyjpzci6ijaxotk5ztm3lwrkmdetn2i4mc05ztnkltq5odq2mzqzngyzmiisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=mviswlpjdfqqrtas8g62xzrzthfrvul-3angkngijgs&code_challenge_method=s256
+2025-10-01 13:21:26 | WARNING | Authentication failed for homidi-shal@corenic-cg.com: Cookies are invalid or expired - authentication required
+2025-10-01 13:22:13 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-10-01 13:22:13 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-10-01 13:22:13 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 13:22:13 | INFO | Cookie 2: ESTSAUTH = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 13:22:13 | INFO | Cookie 3: ESTSAUTHLIGHT = +008c4259-d974-7650-202c-7a0958aabf7c...
+2025-10-01 13:22:13 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-10-01 13:22:14 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-10-01 13:22:14 | INFO | Injected 3 cookies for authentication [ESTSAUTHPERSISTENT@outlook.office.com, ESTSAUTH@outlook.office.com, ESTSAUTHLIGHT@outlook.office.com]
+2025-10-01 13:22:14 | INFO | Visiting login domain to establish auth context
+2025-10-01 13:22:18 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-10-01 13:22:25 | INFO | Current URL after navigation: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=8c05b859-1fff-4d2f-5b2e-aa837f8f3c68&response_mode=fragment&client_info=1&prompt=select_account&nonce=01999e38-c28f-7d2b-ac95-accf2d601ebc&state=eyjpzci6ijaxotk5ztm4lwmyogytnzi0nc05mzzkltjhmje2njixnzgxmiisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=rqbpgeg6slpy7fsfo_a-rzf0y009wzkvvtffviwr9vy&code_challenge_method=s256
+2025-10-01 13:22:25 | WARNING | Authentication check failed - redirected to login: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=8c05b859-1fff-4d2f-5b2e-aa837f8f3c68&response_mode=fragment&client_info=1&prompt=select_account&nonce=01999e38-c28f-7d2b-ac95-accf2d601ebc&state=eyjpzci6ijaxotk5ztm4lwmyogytnzi0nc05mzzkltjhmje2njixnzgxmiisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=rqbpgeg6slpy7fsfo_a-rzf0y009wzkvvtffviwr9vy&code_challenge_method=s256
+2025-10-01 13:22:25 | WARNING | Authentication failed for tracy@altitudemanagement.com: Cookies are invalid or expired - authentication required
+2025-10-01 13:28:24 | INFO | Testing authentication for cfenimore@craneguys.com with cookies...
+2025-10-01 13:28:24 | INFO | Parsed 3 cookies for cfenimore@craneguys.com
+2025-10-01 13:28:24 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 13:28:24 | INFO | Cookie 2: ESTSAUTH = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 13:28:24 | INFO | Cookie 3: ESTSAUTHLIGHT = +008c4259-d974-7650-202c-7a0958aabf7c...
+2025-10-01 13:28:24 | INFO | Testing cookie authentication for cfenimore@craneguys.com
+2025-10-01 13:28:24 | INFO | Using domain: outlook.office.com for email: cfenimore@craneguys.com
+2025-10-01 13:28:24 | INFO | Injected 3 cookies for authentication [ESTSAUTHPERSISTENT@outlook.office.com, ESTSAUTH@outlook.office.com, ESTSAUTHLIGHT@outlook.office.com]
+2025-10-01 13:28:24 | INFO | Visiting login domain to establish auth context
+2025-10-01 13:28:28 | INFO | Navigating to: https://outlook.office.com/mail/
+2025-10-01 13:28:35 | INFO | Current URL after navigation: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=ed18bdbe-ae9e-bc0b-0036-55f455044def&response_mode=fragment&client_info=1&prompt=select_account&nonce=01999e3e-6731-7a13-aedf-f5d0f289b90e&state=eyjpzci6ijaxotk5ztnllty3mzetn2u4ns04mgy5ltljm2u4ymuwodm3nyisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=ikyvky17sw9xfcvbec6m0jwgnljefumoq7qen-1ay7i&code_challenge_method=s256
+2025-10-01 13:28:35 | WARNING | Authentication check failed - redirected to login: https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default%20openid%20profile%20offline_access&redirect_uri=https%3a%2f%2foutlook.office.com%2fmail%2f&client-request-id=ed18bdbe-ae9e-bc0b-0036-55f455044def&response_mode=fragment&client_info=1&prompt=select_account&nonce=01999e3e-6731-7a13-aedf-f5d0f289b90e&state=eyjpzci6ijaxotk5ztnllty3mzetn2u4ns04mgy5ltljm2u4ymuwodm3nyisim1ldgeionsiaw50zxjhy3rpb25uexblijoicmvkaxjly3qifx0%3d%7cahr0chm6ly9vdxrsb29rlm9mzmljzs5jb20vbwfpbc8&claims=%7b%22access_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22cp1%22%5d%7d%7d%7d&x-client-sku=msal.js.browser&x-client-ver=4.14.0&response_type=code&code_challenge=ikyvky17sw9xfcvbec6m0jwgnljefumoq7qen-1ay7i&code_challenge_method=s256
+2025-10-01 13:28:35 | WARNING | Authentication failed for cfenimore@craneguys.com: Cookies are invalid or expired - authentication required
+2025-10-01 14:00:01 | INFO | Testing authentication for homidi-shal@corenic-cg.com with cookies...
+2025-10-01 14:00:01 | INFO | Parsed 3 cookies for homidi-shal@corenic-cg.com
+2025-10-01 14:00:01 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 14:00:01 | INFO | Cookie 2: ESTSAUTH = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 14:00:01 | INFO | Cookie 3: ESTSAUTHLIGHT = +008c4259-d974-7650-202c-7a0958aabf7c...
+2025-10-01 14:00:01 | INFO | Testing cookie authentication for homidi-shal@corenic-cg.com
+2025-10-01 14:00:01 | INFO | Using domain: outlook.office.com for email: homidi-shal@corenic-cg.com
+2025-10-01 14:00:01 | INFO | Injected 6 cookies for authentication [ESTSAUTHPERSISTENT@login.microsoftonline.com, ESTSAUTHPERSISTENT@outlook.office.com, ESTSAUTH@login.microsoftonline.com, ESTSAUTH@outlook.office.com, ESTSAUTHLIGHT@login.microsoftonline.com, ESTSAUTHLIGHT@outlook.office.com]
+2025-10-01 14:00:02 | INFO | Visiting Microsoft login domain to establish auth context
+2025-10-01 14:00:07 | INFO | Still on login page - cookies may need time to take effect
+2025-10-01 14:00:09 | INFO | Attempting to access protected resource to trigger authentication
+2025-10-01 14:00:15 | INFO | Navigating to Outlook mail: https://outlook.office.com/mail/
+2025-10-01 14:00:20 | INFO | Current URL after navigation: https://outlook.office.com/mail/?bo=4&msalauthredirect=true
+2025-10-01 14:00:20 | WARNING | Authentication check failed - redirected to login: https://outlook.office.com/mail/?bo=4&msalauthredirect=true
+2025-10-01 14:00:21 | WARNING | Authentication failed for homidi-shal@corenic-cg.com: Cookies are invalid or expired - authentication required
+2025-10-01 14:00:59 | INFO | Testing authentication for homidi-shal@corenic-cg.com with cookies...
+2025-10-01 14:00:59 | INFO | Parsed 3 cookies for homidi-shal@corenic-cg.com
+2025-10-01 14:00:59 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 14:00:59 | INFO | Cookie 2: ESTSAUTH = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 14:00:59 | INFO | Cookie 3: ESTSAUTHLIGHT = +008c4259-d974-7650-202c-7a0958aabf7c...
+2025-10-01 14:00:59 | INFO | Testing cookie authentication for homidi-shal@corenic-cg.com
+2025-10-01 14:00:59 | INFO | Using domain: outlook.office.com for email: homidi-shal@corenic-cg.com
+2025-10-01 14:00:59 | INFO | Injected 6 cookies for authentication [ESTSAUTHPERSISTENT@login.microsoftonline.com, ESTSAUTHPERSISTENT@outlook.office.com, ESTSAUTH@login.microsoftonline.com, ESTSAUTH@outlook.office.com, ESTSAUTHLIGHT@login.microsoftonline.com, ESTSAUTHLIGHT@outlook.office.com]
+2025-10-01 14:00:59 | INFO | Visiting Microsoft login domain to establish auth context
+2025-10-01 14:01:05 | INFO | Still on login page - cookies may need time to take effect
+2025-10-01 14:01:07 | INFO | Attempting to access protected resource to trigger authentication
+2025-10-01 14:01:12 | INFO | Navigating to Outlook mail: https://outlook.office.com/mail/
+2025-10-01 14:01:17 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-10-01 14:01:21 | WARNING | Outlook interface not detected - may not be authenticated
+2025-10-01 14:01:21 | WARNING | Authentication failed for homidi-shal@corenic-cg.com: Outlook interface not accessible - authentication may have failed
+2025-10-01 14:07:39 | INFO | Testing authentication for homidi-shal@corenic-cg.com with cookies...
+2025-10-01 14:07:39 | INFO | Parsed 3 cookies for homidi-shal@corenic-cg.com
+2025-10-01 14:07:39 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 14:07:39 | INFO | Cookie 2: ESTSAUTH = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 14:07:39 | INFO | Cookie 3: ESTSAUTHLIGHT = +008c4259-d974-7650-202c-7a0958aabf7c...
+2025-10-01 14:07:39 | INFO | Testing cookie authentication for homidi-shal@corenic-cg.com
+2025-10-01 14:07:40 | INFO | Using domain: outlook.office.com for email: homidi-shal@corenic-cg.com
+2025-10-01 14:07:40 | INFO | Injected 6 cookies for authentication [ESTSAUTHPERSISTENT@login.microsoftonline.com, ESTSAUTHPERSISTENT@outlook.office.com, ESTSAUTH@login.microsoftonline.com, ESTSAUTH@outlook.office.com, ESTSAUTHLIGHT@login.microsoftonline.com, ESTSAUTHLIGHT@outlook.office.com]
+2025-10-01 14:07:40 | INFO | Visiting Microsoft login domain to establish auth context
+2025-10-01 14:08:00 | WARNING | Login domain navigation failed: Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to "https://login.microsoftonline.com/common/oauth2/v2.0/authorize", waiting until "domcontentloaded"
+
+2025-10-01 14:08:00 | INFO | Navigating to Outlook mail: https://outlook.office.com/mail/
+2025-10-01 14:08:06 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-10-01 14:08:06 | INFO | Successfully authenticated - valid Outlook URL: https://outlook.office.com/mail/
+2025-10-01 14:08:11 | INFO | Found Outlook interface element: [role="main"]
+2025-10-01 14:08:44 | INFO | Found compose element with selector: [role="button"]
+2025-10-01 14:08:44 | INFO | Cookie authentication successful for homidi-shal@corenic-cg.com - compose interface found
+2025-10-01 14:08:44 | INFO | Saved browser session to: E:\a_Work\tele\New folder - Copy\sessions\office365_homidi-shal_at_corenic-cg_com.json
+2025-10-01 14:08:45 | INFO | Authentication successful for homidi-shal@corenic-cg.com, saving account...
+2025-10-01 14:08:45 | INFO | Added paid Office 365 account to database: homidi-shal@corenic-cg.com
+2025-10-01 14:09:11 | INFO | Using user-selected account: homidi-shal@corenic-cg.com
+2025-10-01 14:09:11 | INFO | 📁 Session file: sessions\office365_homidi-shal_at_corenic-cg_com.json
+2025-10-01 14:09:11 | INFO | 📁 Session file size: 91869 bytes
+2025-10-01 14:09:11 | INFO | 📁 Session file age: 0:00:26.219431
+2025-10-01 14:09:11 | INFO | 🚀 FAST SEND: homidi-shal@corenic-cg.com → ['lion0692121@outlook.com'] | Hi !!!!
+2025-10-01 14:09:11 | INFO | 🔧 Loading session from: sessions\office365_homidi-shal_at_corenic-cg_com.json
+2025-10-01 14:09:11 | INFO | 🔍 Testing authentication status...
+2025-10-01 14:09:42 | ERROR | ❌ Send failed with unexpected error
+Traceback (most recent call last):
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 995, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001D9BF3AC7C0>
+    └ <Thread(Thread-10 (process_request_thread), started daemon 69568)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001D9BF3AC4A0>
+    └ <Thread(Thread-10 (process_request_thread), started daemon 69568)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-10 (process_request_thread), started daemon 69568)>
+    │    │        │    └ (<socket.socket fd=1640, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 62662)>, ('127.0.0.1', 626...
+    │    │        └ <Thread(Thread-10 (process_request_thread), started daemon 69568)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x000001D9C46AD250>>
+    └ <Thread(Thread-10 (process_request_thread), started daemon 69568)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 62662)
+    │    │              └ <socket.socket fd=1640, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 62662)>
+    │    └ <function BaseServer.finish_request at 0x000001D9C14DC220>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x000001D9C46AD250>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x000001D9C46AD250>
+    │    │                   │        └ ('127.0.0.1', 62662)
+    │    │                   └ <socket.socket fd=1640, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 62662)>
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x000001D9C46AD250>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001D9C1F9CB80>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x000001D9C4B49450>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 398, in handle
+    super().handle()
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 431, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x000001D9C1E64220>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x000001D9C4B49450>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 419, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x000001D9C4B49450>>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <Flask 'main'>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x000001D9C46AD250>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x000001D9C4B49450>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x000001D9C4B6D760>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+                       │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x000001D9C4B6DEE0>
+                       │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1640>, 'wsgi.errors': <_io.TextIOW...
+                       └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x000001D9C4B6DEE0>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1640>, 'wsgi.errors': <_io.TextIOW...
+           │    └ <function Flask.wsgi_app at 0x000001D9C244A2A0>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x000001D9C24499E0>
+               └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x000001D9C2449940>
+         └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'send_compose'
+           │    │           │    │              └ <Rule '/compose/send' (POST, OPTIONS) -> send_compose>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x000001D9C3FBE700>, 'dashboard': <function dashboard at 0x000001D9C...
+           │    │           └ <Flask 'main'>
+           │    └ <function Flask.ensure_sync at 0x000001D9C2449BC0>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           │                       │      │       └ {}
+           │                       │      └ ()
+           │                       └ <function send_compose at 0x000001D9C4666A20>
+           └ <Flask 'main'>
+
+  File "E:\a_Work\tele\New folder - Copy\main.py", line 792, in send_compose
+    success = fast_send_email(
+              └ <function fast_send_email at 0x000001D9C4548F40>
+
+> File "E:\a_Work\tele\New folder - Copy\automation\office365_fast.py", line 530, in fast_send_email
+    page.goto(f"https://{host_for_nav}/mail/")
+    │    └ <function Page.goto at 0x000001D9C451C0E0>
+    └ <Page url='about:blank'>
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\sync_api\_generated.py", line 9019, in goto
+    self._sync(
+    │    └ <function SyncBase._sync at 0x000001D9C44EF420>
+    └ <Page url='about:blank'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           │    └ <method 'result' of '_asyncio.Task' objects>
+           └ <Task finished name='Task-45' coro=<Page.goto() done, defined at C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\s...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+                 │    │           │      └ <function locals_to_params at 0x000001D9C43E8B80>
+                 │    │           └ <function Frame.goto at 0x000001D9C44A1300>
+                 │    └ <Frame name= url='about:blank'>
+                 └ <Page url='about:blank'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+          │    │        └ <function Channel.send at 0x000001D9C43E9760>
+          │    └ <playwright._impl._connection.Channel object at 0x000001D9C4BB1DD0>
+          └ <Frame name= url='about:blank'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+                 │    │           └ <function Connection.wrap_api_call at 0x000001D9C43EB7E0>
+                 │    └ <playwright._impl._connection.Connection object at 0x000001D9C4AAC710>
+                 └ <playwright._impl._connection.Channel object at 0x000001D9C4BB1DD0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+          └ <function rewrite_error at 0x000001D9C43072E0>
+
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "load"
+
+2025-10-01 14:14:00 | INFO | Using user-selected account: homidi-shal@corenic-cg.com
+2025-10-01 14:14:00 | INFO | 📁 Session file: sessions\office365_homidi-shal_at_corenic-cg_com.json
+2025-10-01 14:14:00 | INFO | 📁 Session file size: 91869 bytes
+2025-10-01 14:14:00 | INFO | 📁 Session file age: 0:05:15.557010
+2025-10-01 14:14:00 | INFO | 🚀 FAST SEND: homidi-shal@corenic-cg.com → ['lion0692121@outlook.com'] | Hi 
+2025-10-01 14:14:01 | INFO | 🔧 Loading session from: sessions\office365_homidi-shal_at_corenic-cg_com.json
+2025-10-01 14:14:01 | INFO | 🔍 Testing authentication status...
+2025-10-01 14:14:01 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-01 14:14:03 | INFO | ✅ Navigation successful
+2025-10-01 14:14:03 | INFO | 🔍 Auth test URL: https://outlook.office.com/mail/
+2025-10-01 14:14:04 | INFO | 📸 Auth test screenshot saved
+2025-10-01 14:14:04 | INFO | ✅ Authentication appears successful - no sign in button
+2025-10-01 14:14:04 | INFO | 🔗 Generated compose URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20&body=FFFFFFFFFFFFFFFFFFFFF
+2025-10-01 14:14:04 | INFO | 📧 Opening compose...
+2025-10-01 14:14:05 | INFO | ⏳ Waiting for platform to finish loading...
+2025-10-01 14:14:50 | WARNING | ⚠️ networkidle timeout; using domcontentloaded fallback
+2025-10-01 14:14:50 | INFO | ✅ DOM content loaded
+2025-10-01 14:14:52 | INFO | 🔍 Current URL after navigation: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20&body=FFFFFFFFFFFFFFFFFFFFF
+2025-10-01 14:14:52 | INFO | ✅ Compose page URL confirmed
+2025-10-01 14:14:52 | INFO | ✅ Compose UI visible with selector: button:has-text('Send')
+2025-10-01 14:14:52 | INFO | ✅ Compose UI visible with selector: button:has-text('Send')
+2025-10-01 14:14:52 | INFO | ✅ Send button is visible
+2025-10-01 14:14:54 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-10-01 14:14:54 | INFO | ⚡ Checking if fields are pre-filled...
+2025-10-01 14:14:54 | INFO | Current URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20&body=FFFFFFFFFFFFFFFFFFFFF
+2025-10-01 14:14:54 | INFO | 📝 Prefill missing; filling fields manually
+2025-10-01 14:15:19 | INFO | Email fields filled successfully
+2025-10-01 14:15:19 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-10-01 14:15:22 | INFO | 🔍 Looking for Send button...
+2025-10-01 14:15:22 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 2 elements)
+2025-10-01 14:15:22 | INFO |   Element 1: visible, text='Send a component that everyone in the mail can edit inline.'
+2025-10-01 14:15:22 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-10-01 14:15:22 | INFO | ✅ Send button detection successful
+2025-10-01 14:15:22 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-10-01 14:15:22 | INFO | 📤 Sending email...
+2025-10-01 14:15:22 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-01 14:15:22 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-01 14:15:22 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-01 14:15:22 | INFO | ⏳ Ensuring all attachments finished uploading...
+2025-10-01 14:15:22 | INFO | 🔄 Send button is ready - clicking...
+2025-10-01 14:15:37 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-01 14:15:37 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-01 14:15:41 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-01 14:15:41 | INFO | 🔍 Verifying send confirmation...
+2025-10-01 14:16:01 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-01 14:19:19 | INFO | Testing authentication for homidi-shal@corenic-cg.com with cookies...
+2025-10-01 14:19:19 | INFO | Parsed 3 cookies for homidi-shal@corenic-cg.com
+2025-10-01 14:19:19 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 14:19:19 | INFO | Cookie 2: ESTSAUTH = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 14:19:19 | INFO | Cookie 3: ESTSAUTHLIGHT = +008c4259-d974-7650-202c-7a0958aabf7c...
+2025-10-01 14:19:19 | INFO | Testing cookie authentication for homidi-shal@corenic-cg.com
+2025-10-01 14:19:20 | INFO | Using domain: outlook.office.com for email: homidi-shal@corenic-cg.com
+2025-10-01 14:19:20 | INFO | Injected 6 cookies for authentication [ESTSAUTHPERSISTENT@login.microsoftonline.com, ESTSAUTHPERSISTENT@outlook.office.com, ESTSAUTH@login.microsoftonline.com, ESTSAUTH@outlook.office.com, ESTSAUTHLIGHT@login.microsoftonline.com, ESTSAUTHLIGHT@outlook.office.com]
+2025-10-01 14:19:20 | INFO | Visiting Microsoft login domain to establish auth context
+2025-10-01 14:19:25 | INFO | Still on login page - cookies may need time to take effect
+2025-10-01 14:19:27 | INFO | Attempting to access protected resource to trigger authentication
+2025-10-01 14:19:32 | INFO | Navigating to Outlook mail: https://outlook.office.com/mail/
+2025-10-01 14:19:37 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-10-01 14:19:37 | INFO | Successfully authenticated - valid Outlook URL: https://outlook.office.com/mail/
+2025-10-01 14:19:40 | INFO | Found Outlook interface element: [role="main"]
+2025-10-01 14:20:13 | INFO | Found compose element with selector: [role="button"]
+2025-10-01 14:20:13 | INFO | Cookie authentication successful for homidi-shal@corenic-cg.com - compose interface found
+2025-10-01 14:20:13 | INFO | Saved browser session to: E:\a_Work\tele\New folder - Copy\sessions\office365_homidi-shal_at_corenic-cg_com.json
+2025-10-01 14:20:14 | INFO | Authentication successful for homidi-shal@corenic-cg.com, saving account...
+2025-10-01 14:20:14 | INFO | Added paid Office 365 account to database: homidi-shal@corenic-cg.com
+2025-10-01 14:24:04 | ERROR | Delete campaign error: Object '<EmailCampaign at 0x20f94532ed0>' is already attached to session '18' (this is '20')
+2025-10-01 14:30:23 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-10-01 14:30:23 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-10-01 14:30:23 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-10-01 14:30:23 | INFO | Cookie 2: ESTSAUTH = 1.AQgAo0-4YaazY0ebj8Ot2M1kdyC_mZE_oQdBhdwCEUeH70gB...
+2025-10-01 14:30:23 | INFO | Cookie 3: ESTSAUTHLIGHT = +008dc8f9-40f4-cdf1-bfe3-d119ba68d663...
+2025-10-01 14:30:23 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-10-01 14:30:23 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-10-01 14:30:23 | INFO | Injected 6 cookies for authentication [ESTSAUTHPERSISTENT@login.microsoftonline.com, ESTSAUTHPERSISTENT@outlook.office.com, ESTSAUTH@login.microsoftonline.com, ESTSAUTH@outlook.office.com, ESTSAUTHLIGHT@login.microsoftonline.com, ESTSAUTHLIGHT@outlook.office.com]
+2025-10-01 14:30:24 | INFO | Visiting Microsoft login domain to establish auth context
+2025-10-01 14:30:29 | INFO | Still on login page - cookies may need time to take effect
+2025-10-01 14:30:31 | INFO | Attempting to access protected resource to trigger authentication
+2025-10-01 14:30:36 | INFO | Navigating to Outlook mail: https://outlook.office.com/mail/
+2025-10-01 14:30:42 | INFO | Current URL after navigation: https://outlook.office.com/mail/?bo=4&msalauthredirect=true
+2025-10-01 14:30:42 | INFO | Successfully authenticated - valid Outlook URL: https://outlook.office.com/mail/?bo=4&msalauthredirect=true
+2025-10-01 14:30:45 | INFO | Found Outlook interface element: [role="main"]
+2025-10-01 14:31:18 | INFO | Found compose element with selector: [role="button"]
+2025-10-01 14:31:18 | INFO | Cookie authentication successful for tracy@altitudemanagement.com - compose interface found
+2025-10-01 14:31:18 | INFO | Saved browser session to: E:\a_Work\tele\New folder - Copy\sessions\office365_tracy_at_altitudemanagement_com.json
+2025-10-01 14:31:18 | INFO | Authentication successful for tracy@altitudemanagement.com, saving account...
+2025-10-01 14:31:18 | INFO | Added paid Office 365 account to database: tracy@altitudemanagement.com
+2025-10-01 14:32:36 | INFO | Testing authentication for homidi-shal@corenic-cg.com with cookies...
+2025-10-01 14:32:36 | INFO | Parsed 3 cookies for homidi-shal@corenic-cg.com
+2025-10-01 14:32:36 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 14:32:36 | INFO | Cookie 2: ESTSAUTH = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 14:32:36 | INFO | Cookie 3: ESTSAUTHLIGHT = +008c4259-d974-7650-202c-7a0958aabf7c...
+2025-10-01 14:32:36 | INFO | Testing cookie authentication for homidi-shal@corenic-cg.com
+2025-10-01 14:32:37 | INFO | Using domain: outlook.office.com for email: homidi-shal@corenic-cg.com
+2025-10-01 14:32:37 | INFO | Injected 6 cookies for authentication [ESTSAUTHPERSISTENT@login.microsoftonline.com, ESTSAUTHPERSISTENT@outlook.office.com, ESTSAUTH@login.microsoftonline.com, ESTSAUTH@outlook.office.com, ESTSAUTHLIGHT@login.microsoftonline.com, ESTSAUTHLIGHT@outlook.office.com]
+2025-10-01 14:32:37 | INFO | Visiting Microsoft login domain to establish auth context
+2025-10-01 14:32:42 | INFO | Still on login page - cookies may need time to take effect
+2025-10-01 14:32:44 | INFO | Attempting to access protected resource to trigger authentication
+2025-10-01 14:32:48 | INFO | Navigating to Outlook mail: https://outlook.office.com/mail/
+2025-10-01 14:32:54 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-10-01 14:32:54 | INFO | Successfully authenticated - valid Outlook URL: https://outlook.office.com/mail/
+2025-10-01 14:32:57 | INFO | Found Outlook interface element: [role="main"]
+2025-10-01 14:33:30 | INFO | Found compose element with selector: [role="button"]
+2025-10-01 14:33:30 | INFO | Cookie authentication successful for homidi-shal@corenic-cg.com - compose interface found
+2025-10-01 14:33:30 | INFO | Saved browser session to: E:\a_Work\tele\New folder - Copy\sessions\office365_homidi-shal_at_corenic-cg_com.json
+2025-10-01 14:33:30 | INFO | Authentication successful for homidi-shal@corenic-cg.com, saving account...
+2025-10-01 14:33:30 | INFO | Added paid Office 365 account to database: homidi-shal@corenic-cg.com
+2025-10-01 14:46:51 | INFO | Testing authentication for tracy@altitudemanagement.com with cookies...
+2025-10-01 14:46:51 | INFO | Parsed 3 cookies for tracy@altitudemanagement.com
+2025-10-01 14:46:51 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 14:46:51 | INFO | Cookie 2: ESTSAUTH = 1.AW8AVBSpVGuOJ0S5pH0q1A40MSC_mZE_oQdBhdwCEUeH70hk...
+2025-10-01 14:46:51 | INFO | Cookie 3: ESTSAUTHLIGHT = +008c4259-d974-7650-202c-7a0958aabf7c...
+2025-10-01 14:46:51 | INFO | Testing cookie authentication for tracy@altitudemanagement.com
+2025-10-01 14:46:52 | INFO | Using domain: outlook.office.com for email: tracy@altitudemanagement.com
+2025-10-01 14:46:52 | INFO | Injected 6 cookies for authentication [ESTSAUTHPERSISTENT@login.microsoftonline.com, ESTSAUTHPERSISTENT@outlook.office.com, ESTSAUTH@login.microsoftonline.com, ESTSAUTH@outlook.office.com, ESTSAUTHLIGHT@login.microsoftonline.com, ESTSAUTHLIGHT@outlook.office.com]
+2025-10-01 14:46:52 | INFO | Visiting Microsoft login domain to establish auth context
+2025-10-01 14:46:57 | INFO | Still on login page - cookies may need time to take effect
+2025-10-01 14:46:59 | INFO | Attempting to access protected resource to trigger authentication
+2025-10-01 14:47:04 | INFO | Navigating to Outlook mail: https://outlook.office.com/mail/
+2025-10-01 14:47:09 | INFO | Current URL after navigation: https://outlook.office.com/mail/?bo=4&msalauthredirect=true
+2025-10-01 14:47:09 | INFO | Successfully authenticated - valid Outlook URL: https://outlook.office.com/mail/?bo=4&msalauthredirect=true
+2025-10-01 14:47:12 | INFO | Found Outlook interface element: [role="main"]
+2025-10-01 14:47:45 | INFO | Found compose element with selector: [role="button"]
+2025-10-01 14:47:45 | INFO | Cookie authentication successful for tracy@altitudemanagement.com - compose interface found
+2025-10-01 14:47:45 | INFO | Saved browser session to: E:\a_Work\tele\New folder - Copy\sessions\office365_tracy_at_altitudemanagement_com.json
+2025-10-01 14:47:45 | INFO | Authentication successful for tracy@altitudemanagement.com, saving account...
+2025-10-01 14:47:46 | INFO | Added paid Office 365 account to database: tracy@altitudemanagement.com
+2025-10-01 15:55:25 | INFO | Using user-selected account: tracy@altitudemanagement.com
+2025-10-01 15:55:25 | INFO | 📁 Session file: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-10-01 15:55:25 | INFO | 📁 Session file size: 92294 bytes
+2025-10-01 15:55:25 | INFO | 📁 Session file age: 1:07:39.875807
+2025-10-01 15:55:25 | INFO | 🚀 FAST SEND: tracy@altitudemanagement.com → ['lion0692121@outlook.com'] | Hi !!!!!123
+2025-10-01 15:55:26 | INFO | 🔧 Loading session from: sessions\office365_tracy_at_altitudemanagement_com.json
+2025-10-01 15:55:26 | INFO | 🔍 Testing authentication status...
+2025-10-01 15:55:26 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-01 15:55:28 | INFO | ✅ Navigation successful
+2025-10-01 15:55:28 | INFO | 🔍 Auth test URL: https://outlook.office.com/mail/
+2025-10-01 15:55:29 | INFO | 📸 Auth test screenshot saved
+2025-10-01 15:55:29 | INFO | ✅ Authentication appears successful - no sign in button
+2025-10-01 15:55:29 | INFO | 🔗 Generated compose URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20%21%21%21%21%21123&body=there%3F
+2025-10-01 15:55:29 | INFO | 📧 Opening compose...
+2025-10-01 15:55:30 | INFO | ⏳ Waiting for platform to finish loading...
+2025-10-01 15:56:15 | WARNING | ⚠️ networkidle timeout; using domcontentloaded fallback
+2025-10-01 15:56:15 | INFO | ✅ DOM content loaded
+2025-10-01 15:56:16 | INFO | 🔍 Current URL after navigation: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20%21%21%21%21%21123&body=there%3F
+2025-10-01 15:56:16 | INFO | ✅ Compose page URL confirmed
+2025-10-01 15:56:16 | INFO | ✅ Compose UI visible with selector: button:has-text('Send')
+2025-10-01 15:56:16 | INFO | ✅ Compose UI visible with selector: button:has-text('Send')
+2025-10-01 15:56:16 | INFO | ✅ Send button is visible
+2025-10-01 15:56:18 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-10-01 15:56:18 | INFO | ⚡ Checking if fields are pre-filled...
+2025-10-01 15:56:18 | INFO | Current URL: https://outlook.office.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Hi%20%21%21%21%21%21123&body=there%3F
+2025-10-01 15:56:18 | INFO | 📝 Prefill missing; filling fields manually
+2025-10-01 15:56:44 | INFO | Email fields filled successfully
+2025-10-01 15:56:44 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-10-01 15:56:44 | INFO | 📎 Processing 1 attachment(s)...
+2025-10-01 15:56:44 | INFO | 📎 Attaching file 1/1: image.png (438155 bytes)
+2025-10-01 15:56:44 | INFO | ✅ Found attachment button: button[aria-label*='Attach']
+2025-10-01 15:56:44 | INFO | ✅ Found file input: input[type='file']
+2025-10-01 15:56:44 | INFO | ✅ File attached via input: image.png
+2025-10-01 15:57:14 | WARNING | ⚠️ No clear confirmation for: image.png
+2025-10-01 15:57:14 | INFO | ✅ Attachment upload phase finished for: image.png
+2025-10-01 15:57:14 | INFO | 🖼️ Attempting inline insert for uploads/image.png
+2025-10-01 15:57:16 | INFO | 🖼️ Inserted inline image
+2025-10-01 15:57:16 | INFO | ✅ All attachments processed and upload settled
+2025-10-01 15:57:19 | INFO | 🔍 Looking for Send button...
+2025-10-01 15:57:19 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-10-01 15:57:19 | INFO |   Element 1: visible, text='Send'
+2025-10-01 15:57:19 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-10-01 15:57:19 | INFO | ✅ Send button detection successful
+2025-10-01 15:57:19 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-10-01 15:57:19 | INFO | 📤 Sending email...
+2025-10-01 15:57:19 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-01 15:57:19 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-01 15:57:19 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-01 15:57:19 | INFO | ⏳ Ensuring all attachments finished uploading...
+2025-10-01 15:57:19 | INFO | 🔄 Send button is ready - clicking...
+2025-10-01 15:57:35 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-01 15:57:35 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-01 15:57:39 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-01 15:57:39 | INFO | 🔍 Verifying send confirmation...
+2025-10-01 15:57:59 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.

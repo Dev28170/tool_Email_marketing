@@ -1,0 +1,7 @@
+ID,Email,Name,Campaign ID,Campaign Name,Campaign Subject,Status,Sent At,Error Message,Account Used,Created At,Custom Data
+1,test1@example.com,Test User 1,1,Test Campaign for Export,Test Subject,sent,2025-10-13T02:09:21.509076,,test@example.com,2025-10-13T02:09:21.362262,"{""company"": ""Test Corp"", ""role"": ""Manager""}"
+2,test2@gmail.com,Test User 2,1,Test Campaign for Export,Test Subject,sent,2025-10-13T01:09:21.509076,,test@gmail.com,2025-10-13T02:09:21.362262,"{""company"": ""Gmail Corp"", ""role"": ""Developer""}"
+3,test3@outlook.com,Test User 3,1,Test Campaign for Export,Test Subject,failed,,Invalid email address,,2025-10-13T02:09:21.362262,"{""company"": ""Outlook Corp"", ""role"": ""Designer""}"
+6,test1@example.com,Test User 1,2,Test Campaign for Export,Test Subject,sent,2025-10-13T02:09:52.402980,,test@example.com,2025-10-13T02:09:52.028771,"{""company"": ""Test Corp"", ""role"": ""Manager""}"
+7,test2@gmail.com,Test User 2,2,Test Campaign for Export,Test Subject,sent,2025-10-13T01:09:52.402980,,test@gmail.com,2025-10-13T02:09:52.028771,"{""company"": ""Gmail Corp"", ""role"": ""Developer""}"
+8,test3@outlook.com,Test User 3,2,Test Campaign for Export,Test Subject,failed,,Invalid email address,,2025-10-13T02:09:52.028771,"{""company"": ""Outlook Corp"", ""role"": ""Designer""}"

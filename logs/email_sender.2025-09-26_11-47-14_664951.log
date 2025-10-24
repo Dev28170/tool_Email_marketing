@@ -1,0 +1,23 @@
+2025-09-26 11:47:14 | ERROR | Automation login UI error: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("[aria-label=\"New mail\"], button:has-text(\"New mail\")").first to be visible
+
+2025-09-26 11:54:41 | ERROR | Automation login UI error: Locator.wait_for: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("[aria-label=\"New mail\"], button:has-text(\"New mail\")").first to be visible
+
+2025-09-26 21:25:50 | ERROR | Automation login UI error: Locator.wait_for: Target page, context or browser has been closed
+2025-09-26 21:44:11 | ERROR | Automation login UI error: Locator.wait_for: Target page, context or browser has been closed
+2025-09-27 03:30:30 | ERROR | Accounts page error: 'int object' has no attribute 'startswith'
+2025-09-27 04:35:20 | INFO | Added paid Office 365 account: cfenimore@craneguys.com
+2025-09-27 04:35:20 | ERROR | Accounts page error: 'int object' has no attribute 'startswith'
+2025-09-27 04:47:20 | WARNING | Added to cookie manager but failed to add to database: (sqlite3.IntegrityError) UNIQUE constraint failed: email_accounts.email
+[SQL: INSERT INTO email_accounts (email, provider, access_token, refresh_token, token_expires_at, is_active, is_verified, last_used, success_count, error_count, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('cfenimore@craneguys.com', 'office365', None, None, None, 1, 0, None, 0, 0, '2025-09-26 20:47:20.138094', '2025-09-26 20:47:20.138094')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-27 04:47:20 | ERROR | Accounts page error: No filter named 'string.startswith' found.
+2025-09-27 05:00:02 | INFO | Office 365 account already exists in database: cfenimore@craneguys.com
+2025-09-27 05:00:02 | ERROR | Accounts page error: '__main__.MockAccount object' has no attribute 'created_at'
+2025-09-27 09:01:48 | INFO | Testing authentication for cfenimore@craneguys.com with cookies...
+2025-09-27 09:01:48 | INFO | Testing cookie authentication for cfenimore@craneguys.com
+2025-09-27 09:02:08 | ERROR | Cookie authentication test failed for cfenimore@craneguys.com: BrowserContext.add_cookies: cookies[0].sameSite: expected one of (Strict|Lax|None)

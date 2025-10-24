@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container" style="max-width:560px;margin:20px auto;">
+    <h2>Office365 Browser Login (No OAuth)</h2>
+    <p>Use this to sign in via a real browser and save the session for BCC sending.</p>
+    <form method="post">
+      <div class="form-group" style="margin-bottom:12px;">
+        <label>Email</label>
+        <input type="email" name="email" class="form-control" required>
+      </div>
+      <div class="form-group" style="margin-bottom:12px;">
+        <label>Password</label>
+        <input type="password" name="password" class="form-control" required>
+      </div>
+      <div class="form-group" style="margin-bottom:12px;">
+        <label><input type="checkbox" name="show_browser"> Show browser (disable headless)</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Login in Browser</button>
+    </form>
+  </div>
+{% endblock %}
+
+

@@ -1,0 +1,21 @@
+2025-10-08 02:21:06 | INFO | Testing authentication for accounts@performanceelevator.org with cookies...
+2025-10-08 02:21:06 | INFO | Parsed 3 cookies for accounts@performanceelevator.org
+2025-10-08 02:21:06 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AW8BjZve1uCd5EC0EY5P6OwWwSC_mZE_oQdBhdwCEUeH70jn...
+2025-10-08 02:21:06 | INFO | Cookie 2: ESTSAUTH = 1.AW8BjZve1uCd5EC0EY5P6OwWwSC_mZE_oQdBhdwCEUeH70jn...
+2025-10-08 02:21:06 | INFO | Cookie 3: ESTSAUTHLIGHT = +009988c9-c365-a3e8-4cf8-54b38fee3cd5...
+2025-10-08 02:21:06 | INFO | Testing cookie authentication for accounts@performanceelevator.org
+2025-10-08 02:21:12 | INFO | Using domain: outlook.office.com for email: accounts@performanceelevator.org
+2025-10-08 02:21:12 | INFO | Injected 6 cookies for authentication [ESTSAUTHPERSISTENT@login.microsoftonline.com, ESTSAUTHPERSISTENT@outlook.office.com, ESTSAUTH@login.microsoftonline.com, ESTSAUTH@outlook.office.com, ESTSAUTHLIGHT@login.microsoftonline.com, ESTSAUTHLIGHT@outlook.office.com]
+2025-10-08 02:21:15 | INFO | Visiting Microsoft login domain to establish auth context
+2025-10-08 02:21:35 | WARNING | Login domain navigation failed: Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to "https://login.microsoftonline.com/common/oauth2/v2.0/authorize", waiting until "domcontentloaded"
+
+2025-10-08 02:21:35 | INFO | Navigating to Outlook mail: https://outlook.office.com/mail/
+2025-10-08 02:21:45 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-10-08 02:21:45 | INFO | Successfully authenticated - valid Outlook URL: https://outlook.office.com/mail/
+2025-10-08 02:21:48 | INFO | Outlook interface elements not found, but on valid Outlook URL - assuming authenticated
+2025-10-08 02:22:28 | INFO | Cookie authentication successful for accounts@performanceelevator.org - compose page accessible
+2025-10-08 02:22:28 | INFO | Saved browser session to: E:\a_Work\tele\New folder - Copy\sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-08 02:22:29 | INFO | Authentication successful for accounts@performanceelevator.org, saving account...
+2025-10-08 02:22:29 | INFO | Added paid Office 365 account to database: accounts@performanceelevator.org

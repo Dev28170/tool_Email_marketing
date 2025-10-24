@@ -1,0 +1,18 @@
+Name:Dimas Putra
+Age:26
+
+
+
+Street:  Jl Cisanggiri III 10, Jakarta
+
+City:   Jakarta
+
+State/province/area:    Jakarta
+
+Phone number:  0-21-726-1075
+
+Zip code:  12170
+
+Country calling code:  +62
+
+Country:  Indonesia

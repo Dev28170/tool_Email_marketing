@@ -1,0 +1,400 @@
+{% extends "base.html" %}
+
+{% block title %}Add Account - Email Mass Sender{% endblock %}
+{% block page_title %}Add Email Account{% endblock %}
+
+{% block page_actions %}
+<div class="btn-toolbar mb-2 mb-md-0">
+    <div class="btn-group me-2">
+        <a href="{{ url_for('accounts') }}" class="btn btn-outline-secondary">
+            <i class="fas fa-arrow-left me-2"></i>
+            Back to Accounts
+        </a>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="m-0 font-weight-bold text-primary">
+                    <i class="fas fa-user-plus me-2"></i>
+                    Add New Email Account
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle me-2"></i>
+                    <strong>How it works:</strong> For Office365, we use a real browser (Playwright) to sign in and save the session. 
+                    Click Office365 to open the browser-login page. No OAuth/app registration is required.
+                </div>
+                
+                <div class="row">
+                    <!-- Office365 Free -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 provider-card" onclick="goToOffice365Free()">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <i class="fas fa-building fa-3x text-primary"></i>
+                                </div>
+                                <h5 class="card-title">Office365 (Free)</h5>
+                                <p class="card-text text-muted">
+                                    Free Office365 accounts with browser login
+                                </p>
+                                <div class="btn btn-primary">
+                                    <i class="fas fa-robot me-2"></i>
+                                    Browser Login
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Office365 Paid -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 provider-card" onclick="showOffice365PaidModal()">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <i class="fas fa-building fa-3x text-success"></i>
+                                </div>
+                                <h5 class="card-title">Office365 (Paid)</h5>
+                                <p class="card-text text-muted">
+                                    Paid Office365 accounts with cookie authentication
+                                </p>
+                                <div class="btn btn-success">
+                                    <i class="fas fa-cookie-bite me-2"></i>
+                                    Cookie Login
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Gmail -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 provider-card" onclick="authenticateProvider('gmail')">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <i class="fas fa-envelope fa-3x text-danger"></i>
+                                </div>
+                                <h5 class="card-title">Gmail</h5>
+                                <p class="card-text text-muted">
+                                    Google Gmail and Google Workspace accounts
+                                </p>
+                                <div class="btn btn-danger">
+                                    <i class="fas fa-ban me-2"></i>
+                                    Disabled (OAuth)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Yahoo -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 provider-card" onclick="authenticateProvider('yahoo')">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <i class="fas fa-at fa-3x text-warning"></i>
+                                </div>
+                                <h5 class="card-title">Yahoo Mail</h5>
+                                <p class="card-text text-muted">
+                                    Yahoo Mail and Yahoo business accounts
+                                </p>
+                                <div class="btn btn-warning">
+                                    <i class="fas fa-ban me-2"></i>
+                                    Disabled (OAuth)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hotmail -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 provider-card" onclick="authenticateProvider('hotmail')">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <i class="fas fa-globe fa-3x text-info"></i>
+                                </div>
+                                <h5 class="card-title">Hotmail/Outlook</h5>
+                                <p class="card-text text-muted">
+                                    Hotmail, Outlook.com, and personal Microsoft accounts
+                                </p>
+                                <div class="btn btn-info">
+                                    <i class="fas fa-ban me-2"></i>
+                                    Disabled (OAuth)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <h6 class="text-primary mb-3">
+                            <i class="fas fa-question-circle me-2"></i>
+                            Frequently Asked Questions
+                        </h6>
+                        
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" 
+                                            data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        Is my email account secure?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        For Office365 we sign in via a real browser (Playwright) and store a session file locally under <code>sessions/</code>. Your credentials are not stored in the database; you can delete the session at any time.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" 
+                                            data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        What permissions are required?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        No OAuth permissions are requested for Office365 browser mode. We automate Outlook Web to compose and send with BCC using your existing mailbox interface.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" 
+                                            data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        Can I remove an account later?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes. Deleting an account removes it from the app, and you can also delete the corresponding session file under <code>sessions/</code> to fully sign out.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" 
+                                            data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        What if I have 2FA enabled?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Two-factor authentication (2FA) is supported. Use the Office365 browser login with "Show browser" enabled the first time, complete the MFA challenge, and the session will be saved for reuse.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Office365 Paid Account Modal -->
+<div class="modal fade" id="office365PaidModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="fas fa-building me-2"></i>Add Paid Office 365 Account
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form id="office365PaidForm">
+                <div class="modal-body">
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>How to get cookies:</strong>
+                        <ol class="mb-0 mt-2">
+                            <li>Log in to <a href="https://outlook.office.com" target="_blank">Outlook</a> in your browser</li>
+                            <li>Open Developer Tools (F12)</li>
+                            <li>Go to Application/Storage → Cookies → https://login.microsoftonline.com</li>
+                            <li>Copy the cookie values for ESTSAUTHPERSISTENT, ESTSAUTH, and ESTSAUTHLIGHT</li>
+                            <li>Format as JSON array and paste below</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="paidEmail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="paidEmail" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Cookie Data</label>
+                        <div class="alert alert-info mb-3">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>Single field format:</strong> <code>ESTSAUTHPERSISTENT###ESTSAUTH###ESTSAUTHLIGHT</code><br>
+                            Paste three values separated by <strong>###</strong>. NAME=VALUE is also accepted.
+                        </div>
+                        <textarea id="cookieCombined" class="form-control" rows="3" placeholder="ESTSAUTHPERSISTENT_VALUE###ESTSAUTH_VALUE###ESTSAUTHLIGHT_VALUE" required></textarea>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <button type="button" class="btn btn-outline-secondary btn-sm" onclick="document.getElementById('cookieCombined').value = ''">
+                                <i class="fas fa-eraser me-1"></i>Clear
+                            </button>
+                            <button type="button" class="btn btn-outline-info btn-sm" onclick="showCookieFormatHelp()">
+                                <i class="fas fa-question-circle me-1"></i>Format Help
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-save me-1"></i>Add Account
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.provider-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.provider-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-color: #667eea;
+}
+
+.provider-card .btn {
+    pointer-events: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f8f9fa;
+    color: #667eea;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+function authenticateProvider(provider) {
+    if (provider === 'office365') {
+        window.location.href = `{{ url_for('automation_o365_login_ui') }}`;
+        return;
+    }
+    showAlert('warning', 'This provider via OAuth is disabled in this build. Use Office365 browser login.');
+}
+
+function goToOffice365Free() {
+    window.location.href = '{{ url_for("automation_o365_login_ui") }}';
+}
+
+function showOffice365PaidModal() {
+    new bootstrap.Modal(document.getElementById('office365PaidModal')).show();
+}
+
+// Office365 Paid Account Form
+document.getElementById('office365PaidForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('paidEmail').value;
+    const cookieCombined = document.getElementById('cookieCombined').value;
+    if (!email || !cookieCombined) {
+        showAlert('danger', 'Please fill in all required fields');
+        return;
+    }
+    // Send raw combined string; server parser supports VAL1###VAL2###VAL3
+    const cookieData = cookieCombined;
+    
+    try {
+        const response = await fetch('/accounts/office365/paid', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email: email,
+                cookie_data: cookieData
+            })
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            showAlert('success', 'Paid Office 365 account added successfully!');
+            // Close modal and redirect to accounts page
+            bootstrap.Modal.getInstance(document.getElementById('office365PaidModal')).hide();
+            window.location.href = '{{ url_for("accounts") }}';
+        } else {
+            showAlert('danger', result.message || 'Failed to add account');
+        }
+    } catch (error) {
+        showAlert('danger', 'Error adding account: ' + error.message);
+    }
+});
+
+// Helper functions for cookie fields
+function clearCookieFields() {
+    document.getElementById('cookiePersistent').value = '';
+    document.getElementById('cookieAuth').value = '';
+    document.getElementById('cookieLight').value = '';
+}
+
+function showCookieFormatHelp() {
+    const helpText = `
+<strong>How to get cookies:</strong>
+<ol>
+    <li>Login to <a href="https://outlook.office.com" target="_blank">Outlook</a> in your browser</li>
+    <li>Press <strong>F12</strong> to open Developer Tools</li>
+    <li>Go to <strong>Application</strong> → <strong>Storage</strong> → <strong>Cookies</strong> → <strong>https://login.microsoftonline.com</strong></li>
+    <li>Copy the <strong>Value</strong> for each cookie:</li>
+    <ul>
+        <li><strong>ESTSAUTHPERSISTENT</strong> - Main authentication token</li>
+        <li><strong>ESTSAUTH</strong> - Session token</li>
+        <li><strong>ESTSAUTHLIGHT</strong> - Light authentication token</li>
+    </ul>
+    <li>Paste each value in the corresponding field above</li>
+</ol>
+<strong>Note:</strong> Cookies expire after 1-24 hours, so you may need to refresh them periodically.
+    `;
+    
+    showAlert('info', helpText);
+}
+
+function showAlert(type, message) {
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
+    alertDiv.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    
+    document.body.insertBefore(alertDiv, document.body.firstChild);
+    
+    // Auto remove after 5 seconds
+    setTimeout(() => {
+        if (alertDiv.parentNode) {
+            alertDiv.parentNode.removeChild(alertDiv);
+        }
+    }, 5000);
+}
+
+$(document).ready(function() {
+    // no-op
+});
+</script>
+{% endblock %}

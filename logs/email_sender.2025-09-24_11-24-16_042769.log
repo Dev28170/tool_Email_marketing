@@ -1,0 +1,1025 @@
+2025-09-24 11:24:16 | INFO | 📁 Session file: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 11:24:16 | INFO | 📁 Session file size: 21659 bytes
+2025-09-24 11:24:16 | INFO | 📁 Session file age: 1:07:14.972662
+2025-09-24 11:24:16 | INFO | 🚀 FAST SEND: lion0692124@outlook.com → ['lion0692121@outlook.com'] | there?
+2025-09-24 11:24:16 | INFO | 🔧 Loading session from: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 11:24:16 | INFO | 🔍 Testing authentication status...
+2025-09-24 11:24:23 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 11:24:23 | INFO | 📸 Auth test screenshot saved
+2025-09-24 11:24:23 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 11:24:23 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=there%3F&body=there%3F
+2025-09-24 11:24:23 | INFO | 📧 Opening compose...
+2025-09-24 11:24:25 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 11:24:26 | INFO | ✅ Network idle - no more requests
+2025-09-24 11:24:41 | ERROR | ❌ Send failed with unexpected error
+Traceback (most recent call last):
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 995, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002254EE7C360>
+    └ <Thread(Thread-5 (process_request_thread), started daemon 53268)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000002254EE7C040>
+    └ <Thread(Thread-5 (process_request_thread), started daemon 53268)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-5 (process_request_thread), started daemon 53268)>
+    │    │        │    └ (<socket.socket fd=1324, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 64156)>, ('127.0.0.1', 641...
+    │    │        └ <Thread(Thread-5 (process_request_thread), started daemon 53268)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x00000225545351D0>>
+    └ <Thread(Thread-5 (process_request_thread), started daemon 53268)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 64156)
+    │    │              └ <socket.socket fd=1324, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 64156)>
+    │    └ <function BaseServer.finish_request at 0x0000022550D77D80>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000225545351D0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000225545351D0>
+    │    │                   │        └ ('127.0.0.1', 64156)
+    │    │                   └ <socket.socket fd=1324, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 64156)>
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000225545351D0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x0000022551698720>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x0000022554636A90>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 398, in handle
+    super().handle()
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 431, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x00000225515559E0>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x0000022554636A90>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 419, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x0000022554636A90>>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <Flask 'main'>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000225545351D0>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x0000022554636A90>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x0000022554626DE0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+                       │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x00000225546244A0>
+                       │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1324>, 'wsgi.errors': <_io.TextIOW...
+                       └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x00000225546244A0>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1324>, 'wsgi.errors': <_io.TextIOW...
+           │    └ <function Flask.wsgi_app at 0x0000022552345E40>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x0000022552345580>
+               └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x00000225523454E0>
+         └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'send_compose'
+           │    │           │    │              └ <Rule '/compose/send' (POST, OPTIONS) -> send_compose>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x0000022552E971A0>, 'dashboard': <function dashboard at 0x000002255...
+           │    │           └ <Flask 'main'>
+           │    └ <function Flask.ensure_sync at 0x0000022552345760>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           │                       │      │       └ {}
+           │                       │      └ ()
+           │                       └ <function send_compose at 0x00000225544FBEC0>
+           └ <Flask 'main'>
+
+  File "E:\a_Work\tele\New folder - Copy\main.py", line 572, in send_compose
+    success = fast_send_email(
+              └ <function fast_send_email at 0x000002255448A660>
+
+> File "E:\a_Work\tele\New folder - Copy\automation\office365_fast.py", line 131, in fast_send_email
+    page.wait_for_url(f"**/deeplink/compose*", timeout=15000)
+    │    └ <function Page.wait_for_url at 0x00000225544616C0>
+    └ <Page url='https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fma...
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\sync_api\_generated.py", line 9162, in wait_for_url
+    self._sync(
+    │    └ <function SyncBase._sync at 0x0000022554440860>
+    └ <Page url='https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fma...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           │    └ <method 'result' of '_asyncio.Task' objects>
+           └ <Task finished name='Task-18' coro=<Page.wait_for_url() done, defined at C:\Users\TIGER\AppData\Local\Programs\Python\Python3...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_page.py", line 584, in wait_for_url
+    return await self._main_frame.wait_for_url(**locals_to_params(locals()))
+                 │    │           │              └ <function locals_to_params at 0x00000225542E9F80>
+                 │    │           └ <function Frame.wait_for_url at 0x00000225543BE980>
+                 │    └ <Frame name= url='https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplin...
+                 └ <Page url='https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fma...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_frame.py", line 263, in wait_for_url
+    async with self.expect_navigation(
+               │    └ <function Frame.expect_navigation at 0x00000225543BE8E0>
+               └ <Frame name= url='https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplin...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_event_context_manager.py", line 33, in __aexit__
+    await self._future
+          │    └ <Task finished name='Task-20' coro=<Frame.expect_navigation.<locals>.continuation() done, defined at C:\Users\TIGER\AppData\L...
+          └ <playwright._impl._event_context_manager.EventContextManagerImpl object at 0x0000022554A59250>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_frame.py", line 239, in continuation
+    event = await waiter.result()
+                  │      └ <function Waiter.result at 0x0000022554359E40>
+                  └ <playwright._impl._waiter.Waiter object at 0x000002255468FF10>
+
+playwright._impl._errors.TimeoutError: Timeout 15000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "**/deeplink/compose*" until 'load'
+  navigated to "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fto%3dlion0692121%2540outlook.com%26subject%3dthere%253F%26body%3dthere%253F%26nlp%3d0&sdf=0"
+============================================================
+2025-09-24 11:28:24 | INFO | 📁 Session file: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 11:28:24 | INFO | 📁 Session file size: 21659 bytes
+2025-09-24 11:28:24 | INFO | 📁 Session file age: 1:11:23.333128
+2025-09-24 11:28:24 | INFO | 🚀 FAST SEND: lion0692124@outlook.com → ['lion0692121@outlook.com'] | A@
+2025-09-24 11:28:24 | INFO | 🔧 Loading session from: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 11:28:25 | INFO | 🔍 Testing authentication status...
+2025-09-24 11:28:28 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 11:28:28 | INFO | 📸 Auth test screenshot saved
+2025-09-24 11:28:28 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 11:28:28 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=A%40&body=A%21
+2025-09-24 11:28:28 | INFO | 📧 Opening compose...
+2025-09-24 11:28:28 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 11:28:30 | INFO | ✅ Network idle - no more requests
+2025-09-24 11:28:30 | INFO | 🔍 Current URL after navigation: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=A%40&body=A%21
+2025-09-24 11:28:30 | INFO | ✅ Compose page URL confirmed
+2025-09-24 11:28:40 | WARNING | ⚠️ Send button not found, but continuing...
+2025-09-24 11:28:50 | WARNING | ⚠️ Compose form elements not found, but continuing...
+2025-09-24 11:28:52 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 11:28:52 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 11:28:52 | INFO | Current URL: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fto%3dlion0692121%2540outlook.com%26subject%3dA%2540%26body%3dA!%26nlp%3d0&sdf=0
+2025-09-24 11:28:53 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 11:28:56 | INFO | 🔍 Looking for Send button...
+2025-09-24 11:28:56 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 11:28:56 | INFO | 🔍 Trying selector 2: button[aria-label='Send'] (found 0 elements)
+2025-09-24 11:28:56 | INFO | 🔍 Trying selector 3: button[data-icon-name='Send'] (found 0 elements)
+2025-09-24 11:28:56 | INFO | 🔍 Trying selector 4: button[name='Send'] (found 0 elements)
+2025-09-24 11:28:56 | INFO | 🔍 Trying selector 5: div[role='button']:has-text('Send') (found 0 elements)
+2025-09-24 11:28:57 | INFO | 🔍 Trying selector 6: span:has-text('Send') (found 3 elements)
+2025-09-24 11:28:57 | INFO | 🔍 Trying selector 7: button (found 329 elements)
+2025-09-24 11:28:57 | INFO |   Element 6: visible, text='Products'
+2025-09-24 11:28:57 | INFO |   Element 7: visible, text='Plans and pricing'
+2025-09-24 11:28:57 | INFO |   Element 8: visible, text='Resources'
+2025-09-24 11:28:57 | INFO |   Element 10: visible, text='Search
+                                        Search Microsoft 365'
+2025-09-24 11:28:57 | INFO |   Element 21: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 22: visible, text='Key benefits'
+2025-09-24 11:28:57 | INFO |   Element 23: visible, text='Get more from Outlook'
+2025-09-24 11:28:57 | INFO |   Element 24: visible, text='Copilot in Outlook'
+2025-09-24 11:28:57 | INFO |   Element 27: visible, text='Together in one place'
+2025-09-24 11:28:57 | INFO |   Element 28: visible, text='Connect your accounts'
+2025-09-24 11:28:57 | INFO |   Element 29: visible, text='Write more effective emails'
+2025-09-24 11:28:57 | INFO |   Element 30: visible, text='Easily access your files'
+2025-09-24 11:28:57 | INFO |   Element 43: visible, text='Yearly'
+2025-09-24 11:28:57 | INFO |   Element 44: visible, text='Monthly'
+2025-09-24 11:28:57 | INFO |   Element 47: visible, text='For Home'
+2025-09-24 11:28:57 | INFO |   Element 48: visible, text='For Business'
+2025-09-24 11:28:57 | INFO |   Element 51: visible, text='Previous Slide'
+2025-09-24 11:28:57 | INFO |   Element 52: visible, text='Next Slide'
+2025-09-24 11:28:57 | INFO |   Element 53: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 55: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 57: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 59: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 61: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 63: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 65: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 67: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 69: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 71: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 73: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 75: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 77: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 79: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 81: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 83: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 85: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 87: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 89: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 91: visible, text=''
+2025-09-24 11:28:57 | INFO |   Element 93: visible, text=''
+2025-09-24 11:28:59 | INFO |   Element 299: visible, text='More information'
+2025-09-24 11:28:59 | INFO |   Element 301: visible, text='Previous Slide'
+2025-09-24 11:28:59 | INFO |   Element 302: visible, text='Next Slide'
+2025-09-24 11:28:59 | INFO |   Element 303: visible, text='What’s new'
+2025-09-24 11:28:59 | INFO |   Element 304: visible, text='For personal'
+2025-09-24 11:28:59 | INFO |   Element 305: visible, text='For work'
+2025-09-24 11:28:59 | INFO |   Element 306: visible, text='Tips & tricks'
+2025-09-24 11:28:59 | INFO |   Element 309: visible, text='Previous Slide'
+2025-09-24 11:28:59 | INFO |   Element 310: visible, text='Next Slide'
+2025-09-24 11:28:59 | INFO |   Element 317: visible, text='Expand all'
+2025-09-24 11:28:59 | INFO |   Element 318: visible, text='Collapse all'
+2025-09-24 11:28:59 | INFO |   Element 319: visible, text='01/       How do I create an Outlook.com account?'
+2025-09-24 11:28:59 | INFO |   Element 320: visible, text='02/       I have a Hotmail.com, Live.com, or MSN.com email account. Is that the same as Outlook?'
+2025-09-24 11:28:59 | INFO |   Element 321: visible, text='03/       I don’t have an Outlook.com account. Can I still use Outlook apps?'
+2025-09-24 11:28:59 | INFO |   Element 322: visible, text='04/       How does mailbox storage / Microsoft storage work for Outlook?'
+2025-09-24 11:28:59 | INFO |   Element 323: visible, text='05/       Why do I see ads in my Outlook inbox?'
+2025-09-24 11:28:59 | INFO |   Element 324: visible, text='06/       What do I get for Outlook with a Microsoft 365 subscription?'
+2025-09-24 11:28:59 | INFO |   Element 325: visible, text='07/       If I have a personal Office (one-time) license, will I be able to access desktop apps and have an ad-free Outlook experience?'
+2025-09-24 11:28:59 | INFO |   Element 326: visible, text='Feedback'
+2025-09-24 11:28:59 | WARNING | ⚠️ No send button found with any selector
+2025-09-24 11:28:59 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 11:28:59 | INFO | 📤 Sending email...
+2025-09-24 11:28:59 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 11:28:59 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 11:29:09 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']
+2025-09-24 11:29:19 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']
+2025-09-24 11:29:29 | INFO | 🔍 Waiting for Send button: div[role='button']:has-text('Send')
+2025-09-24 11:29:39 | INFO | 🔍 Waiting for Send button: button[title='Send']
+2025-09-24 11:29:49 | INFO | 🔍 Waiting for Send button: button[type='submit']
+2025-09-24 11:30:04 | WARNING | ⚠️ Send button click failed: Locator.wait_for: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("button[type='submit']").first
+
+2025-09-24 11:30:04 | INFO | 🔄 Trying Ctrl+Enter...
+2025-09-24 11:30:08 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 11:30:09 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 11:30:09 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 11:30:11 | INFO | URL after send attempt: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fto%3dlion0692121%2540outlook.com%26subject%3dA%2540%26body%3dA!%26nlp%3d0&sdf=0
+2025-09-24 11:30:11 | INFO | ✅ Send confirmed - no longer on compose page
+2025-09-24 11:30:12 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 11:33:49 | ERROR | Automation login UI error: Locator.wait_for: Target page, context or browser has been closed
+2025-09-24 11:36:44 | ERROR | Automation login UI error: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("[aria-label=\"New mail\"], button:has-text(\"New mail\")").first to be visible
+
+2025-09-24 11:37:52 | ERROR | Automation login UI error: Locator.wait_for: Target page, context or browser has been closed
+2025-09-24 11:39:22 | ERROR | Automation login UI error: Locator.wait_for: Target page, context or browser has been closed
+2025-09-24 11:40:23 | ERROR | Automation login UI error: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("[aria-label=\"New mail\"], button:has-text(\"New mail\")").first to be visible
+
+2025-09-24 11:40:26 | ERROR | Automation login UI error: Locator.wait_for: Target page, context or browser has been closed
+2025-09-24 11:41:31 | INFO | 📁 Session file: sessions\office365_lion0692125_at_outlook_com.json
+2025-09-24 11:41:31 | INFO | 📁 Session file size: 12406 bytes
+2025-09-24 11:41:31 | INFO | 📁 Session file age: 0:00:29.243897
+2025-09-24 11:41:31 | INFO | 🚀 FAST SEND: lion0692125@outlook.com → ['lion0692121@outlook.com'] | qwedd@
+2025-09-24 11:41:31 | INFO | 🔧 Loading session from: sessions\office365_lion0692125_at_outlook_com.json
+2025-09-24 11:41:32 | INFO | 🔍 Testing authentication status...
+2025-09-24 11:41:34 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 11:41:34 | INFO | 📸 Auth test screenshot saved
+2025-09-24 11:41:34 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 11:41:34 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=qwedd%40&body=qwedd%40
+2025-09-24 11:41:34 | INFO | 📧 Opening compose...
+2025-09-24 11:41:35 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 11:41:36 | INFO | ✅ Network idle - no more requests
+2025-09-24 11:41:36 | INFO | 🔍 Current URL after navigation: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=qwedd%40&body=qwedd%40
+2025-09-24 11:41:36 | INFO | ✅ Compose page URL confirmed
+2025-09-24 11:41:44 | INFO | ✅ Send button is visible
+2025-09-24 11:41:45 | INFO | ✅ Compose form elements are ready
+2025-09-24 11:41:47 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 11:41:47 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 11:41:47 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=qwedd%40&body=qwedd%40
+2025-09-24 11:41:47 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 11:41:50 | INFO | 🔍 Looking for Send button...
+2025-09-24 11:41:50 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 11:41:50 | INFO |   Element 1: visible, text='Send'
+2025-09-24 11:41:50 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-24 11:41:50 | INFO | ✅ Send button detection successful
+2025-09-24 11:41:50 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 11:41:50 | INFO | 📤 Sending email...
+2025-09-24 11:41:50 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 11:41:50 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 11:41:50 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-24 11:41:50 | INFO | 🔄 Send button is ready - clicking...
+2025-09-24 11:41:50 | INFO | ✅ Sent via Send button
+2025-09-24 11:41:50 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 11:41:50 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 11:41:52 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=qwedd%40&body=qwedd%40
+2025-09-24 11:42:12 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 11:47:48 | INFO | 📁 Session file: sessions\office365_lion0692125_at_outlook_com.json
+2025-09-24 11:47:48 | INFO | 📁 Session file size: 12406 bytes
+2025-09-24 11:47:48 | INFO | 📁 Session file age: 0:06:46.375477
+2025-09-24 11:47:48 | INFO | 🚀 FAST SEND: lion0692125@outlook.com → ['lion0692121@outlook.com'] | Second Test^&*
+2025-09-24 11:47:48 | INFO | 🔧 Loading session from: sessions\office365_lion0692125_at_outlook_com.json
+2025-09-24 11:47:49 | INFO | 🔍 Testing authentication status...
+2025-09-24 11:47:52 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 11:47:52 | INFO | 📸 Auth test screenshot saved
+2025-09-24 11:47:52 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 11:47:52 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test%5E%26%2A&body=Second%20Test%5E%26%2A
+2025-09-24 11:47:52 | INFO | 📧 Opening compose...
+2025-09-24 11:47:53 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 11:47:54 | INFO | ✅ Network idle - no more requests
+2025-09-24 11:47:54 | INFO | 🔍 Current URL after navigation: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test%5E%26%2A&body=Second%20Test%5E%26%2A
+2025-09-24 11:47:54 | INFO | ✅ Compose page URL confirmed
+2025-09-24 11:48:00 | INFO | ✅ Send button is visible
+2025-09-24 11:48:00 | INFO | ✅ Compose form elements are ready
+2025-09-24 11:48:02 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 11:48:02 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 11:48:02 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test%5E%26%2A&body=Second%20Test%5E%26%2A
+2025-09-24 11:48:02 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 11:48:05 | INFO | 🔍 Looking for Send button...
+2025-09-24 11:48:05 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 11:48:05 | INFO |   Element 1: visible, text='Send'
+2025-09-24 11:48:05 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-24 11:48:05 | INFO | ✅ Send button detection successful
+2025-09-24 11:48:05 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 11:48:05 | INFO | 📤 Sending email...
+2025-09-24 11:48:05 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 11:48:05 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 11:48:05 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-24 11:48:05 | INFO | 🔄 Send button is ready - clicking...
+2025-09-24 11:48:05 | INFO | ✅ Sent via Send button
+2025-09-24 11:48:05 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 11:48:05 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 11:48:07 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test%5E%26%2A&body=Second%20Test%5E%26%2A
+2025-09-24 11:48:28 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 18:44:26 | INFO | 📁 Session file: sessions\office365_lion0692125_at_outlook_com.json
+2025-09-24 18:44:26 | INFO | 📁 Session file size: 12406 bytes
+2025-09-24 18:44:26 | INFO | 📁 Session file age: 7:03:24.112274
+2025-09-24 18:44:26 | INFO | 🚀 FAST SEND: lion0692125@outlook.com → ['lion0692121@outlook.com'] | 123
+2025-09-24 18:44:26 | INFO | 🔧 Loading session from: sessions\office365_lion0692125_at_outlook_com.json
+2025-09-24 18:44:26 | INFO | 🔍 Testing authentication status...
+2025-09-24 18:44:28 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 18:44:28 | INFO | 📸 Auth test screenshot saved
+2025-09-24 18:44:28 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 18:44:28 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=123&body=123
+2025-09-24 18:44:28 | INFO | 📧 Opening compose...
+2025-09-24 18:44:29 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 18:44:30 | INFO | ✅ Network idle - no more requests
+2025-09-24 18:44:30 | INFO | 🔍 Current URL after navigation: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=123&body=123
+2025-09-24 18:44:30 | INFO | ✅ Compose page URL confirmed
+2025-09-24 18:44:36 | INFO | ✅ Send button is visible
+2025-09-24 18:44:36 | INFO | ✅ Compose form elements are ready
+2025-09-24 18:44:38 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 18:44:38 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 18:44:38 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=123&body=123
+2025-09-24 18:44:39 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 18:44:39 | INFO | 📎 Processing 1 attachment(s)...
+2025-09-24 18:44:39 | INFO | 📎 Attaching file 1/1: 1e6562b1-a02c-43a9-9460-935938da83d7.png (85146 bytes)
+2025-09-24 18:44:39 | INFO | ✅ Found attachment button: button[aria-label*='Attach']
+2025-09-24 18:44:39 | INFO | 🔄 Clicking attachment button...
+2025-09-24 18:44:40 | INFO | 📎 Setting file path: uploads\1e6562b1-a02c-43a9-9460-935938da83d7.png
+2025-09-24 18:45:10 | WARNING | ⚠️ Failed to attach file uploads\1e6562b1-a02c-43a9-9460-935938da83d7.png: Locator.set_input_files: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[aria-label*='file']").first
+
+2025-09-24 18:45:12 | INFO | ✅ All attachments processed
+2025-09-24 18:45:15 | INFO | 🔍 Looking for Send button...
+2025-09-24 18:45:15 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 18:45:15 | INFO |   Element 1: visible, text='Send'
+2025-09-24 18:45:15 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-24 18:45:15 | INFO | ✅ Send button detection successful
+2025-09-24 18:45:15 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 18:45:15 | WARNING | ⚠️ Could not attach: uploads\1e6562b1-a02c-43a9-9460-935938da83d7.png
+2025-09-24 18:45:15 | INFO | 📤 Sending email...
+2025-09-24 18:45:15 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 18:45:15 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 18:45:15 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-24 18:45:15 | INFO | 🔄 Send button is ready - clicking...
+2025-09-24 18:45:15 | INFO | ✅ Sent via Send button
+2025-09-24 18:45:15 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 18:45:15 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 18:45:17 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=123&body=123
+2025-09-24 18:45:37 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 18:45:38 | INFO | Cleaned up attachment: uploads\1e6562b1-a02c-43a9-9460-935938da83d7.png
+2025-09-24 18:58:45 | INFO | 📁 Session file: sessions\office365_lion0692125_at_outlook_com.json
+2025-09-24 18:58:45 | INFO | 📁 Session file size: 12406 bytes
+2025-09-24 18:58:45 | INFO | 📁 Session file age: 7:17:43.409027
+2025-09-24 18:58:45 | INFO | 🚀 FAST SEND: lion0692125@outlook.com → ['lion0692121@outlook.com'] | Second Test123
+2025-09-24 18:58:45 | INFO | 🔧 Loading session from: sessions\office365_lion0692125_at_outlook_com.json
+2025-09-24 18:58:46 | INFO | 🔍 Testing authentication status...
+2025-09-24 18:58:48 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 18:58:48 | INFO | 📸 Auth test screenshot saved
+2025-09-24 18:58:48 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 18:58:48 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test123&body=FFFFFFFFFFFF
+2025-09-24 18:58:48 | INFO | 📧 Opening compose...
+2025-09-24 18:58:48 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 18:58:49 | INFO | ✅ Network idle - no more requests
+2025-09-24 18:58:49 | INFO | 🔍 Current URL after navigation: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test123&body=FFFFFFFFFFFF
+2025-09-24 18:58:49 | INFO | ✅ Compose page URL confirmed
+2025-09-24 18:58:56 | INFO | ✅ Send button is visible
+2025-09-24 18:59:06 | WARNING | ⚠️ Compose form elements not found, but continuing...
+2025-09-24 18:59:08 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 18:59:08 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 18:59:08 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test123&body=FFFFFFFFFFFF
+2025-09-24 18:59:08 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 18:59:08 | INFO | 📎 Processing 1 attachment(s)...
+2025-09-24 18:59:08 | INFO | 📎 Attaching file 1/1: 00f94cee-d050-4dfa-a386-ec70b7e0b124.txt (6864 bytes)
+2025-09-24 18:59:08 | INFO | ✅ Found attachment button: button[aria-label*='Attach']
+2025-09-24 18:59:08 | INFO | 🔄 Clicking attachment button...
+2025-09-24 18:59:09 | INFO | 📎 Setting file path: uploads\00f94cee-d050-4dfa-a386-ec70b7e0b124.txt
+2025-09-24 18:59:39 | WARNING | ⚠️ Failed to attach file uploads\00f94cee-d050-4dfa-a386-ec70b7e0b124.txt: Locator.set_input_files: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[aria-label*='file']").first
+
+2025-09-24 18:59:41 | INFO | ✅ All attachments processed
+2025-09-24 18:59:44 | INFO | 🔍 Looking for Send button...
+2025-09-24 18:59:44 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 18:59:44 | INFO |   Element 1: visible, text='Send'
+2025-09-24 18:59:44 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-24 18:59:44 | INFO | ✅ Send button detection successful
+2025-09-24 18:59:44 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 18:59:44 | WARNING | ⚠️ Could not attach: uploads\00f94cee-d050-4dfa-a386-ec70b7e0b124.txt
+2025-09-24 18:59:44 | INFO | 📤 Sending email...
+2025-09-24 18:59:44 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 18:59:44 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 18:59:44 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-24 18:59:45 | INFO | 🔄 Send button is ready - clicking...
+2025-09-24 18:59:45 | INFO | ✅ Sent via Send button
+2025-09-24 18:59:45 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 18:59:45 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 18:59:47 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test123&body=FFFFFFFFFFFF
+2025-09-24 19:00:07 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 19:00:07 | INFO | Cleaned up attachment: uploads\00f94cee-d050-4dfa-a386-ec70b7e0b124.txt
+2025-09-24 22:25:06 | INFO | 📁 Session file: sessions\office365_lion0692125_at_outlook_com.json
+2025-09-24 22:25:06 | INFO | 📁 Session file size: 12406 bytes
+2025-09-24 22:25:06 | INFO | 📁 Session file age: 10:44:04.785445
+2025-09-24 22:25:06 | INFO | 🚀 FAST SEND: lion0692125@outlook.com → ['lion0692121@outlook.com'] | GGG
+2025-09-24 22:25:07 | INFO | 🔧 Loading session from: sessions\office365_lion0692125_at_outlook_com.json
+2025-09-24 22:25:07 | INFO | 🔍 Testing authentication status...
+2025-09-24 22:25:09 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 22:25:09 | INFO | 📸 Auth test screenshot saved
+2025-09-24 22:25:09 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 22:25:09 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=GGG&body=GGG
+2025-09-24 22:25:09 | INFO | 📧 Opening compose...
+2025-09-24 22:25:10 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 22:25:11 | INFO | ✅ Network idle - no more requests
+2025-09-24 22:25:11 | INFO | 🔍 Current URL after navigation: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=GGG&body=GGG
+2025-09-24 22:25:11 | INFO | ✅ Compose page URL confirmed
+2025-09-24 22:25:17 | INFO | ✅ Send button is visible
+2025-09-24 22:25:17 | INFO | ✅ Compose form elements are ready
+2025-09-24 22:25:19 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 22:25:19 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 22:25:19 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=GGG&body=GGG
+2025-09-24 22:25:19 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 22:25:19 | INFO | 📎 Processing 1 attachment(s)...
+2025-09-24 22:25:19 | INFO | 📎 Attaching file 1/1: c310e32b-5607-4214-a38e-1cd976e40f1b.txt (6864 bytes)
+2025-09-24 22:25:19 | INFO | ✅ Found attachment button: button[aria-label*='Attach']
+2025-09-24 22:25:32 | INFO | ✅ Found file input: input[type='file']
+2025-09-24 22:25:32 | INFO | 📎 Setting file path: uploads\c310e32b-5607-4214-a38e-1cd976e40f1b.txt
+2025-09-24 22:25:33 | INFO | ✅ File attached via input: c310e32b-5607-4214-a38e-1cd976e40f1b.txt
+2025-09-24 22:25:35 | INFO | ✅ All attachments processed
+2025-09-24 22:25:38 | INFO | 🔍 Looking for Send button...
+2025-09-24 22:25:38 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 22:25:38 | INFO |   Element 1: visible, text='Send'
+2025-09-24 22:25:38 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-24 22:25:38 | INFO | ✅ Send button detection successful
+2025-09-24 22:25:38 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 22:25:39 | WARNING | ⚠️ Could not attach: uploads\c310e32b-5607-4214-a38e-1cd976e40f1b.txt
+2025-09-24 22:25:39 | INFO | 📤 Sending email...
+2025-09-24 22:25:39 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 22:25:39 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 22:25:39 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-24 22:25:39 | INFO | 🔄 Send button is ready - clicking...
+2025-09-24 22:25:39 | INFO | ✅ Sent via Send button
+2025-09-24 22:25:39 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 22:25:39 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 22:25:41 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=GGG&body=GGG
+2025-09-24 22:26:01 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 22:26:01 | INFO | Cleaned up attachment: uploads\c310e32b-5607-4214-a38e-1cd976e40f1b.txt
+2025-09-24 22:33:51 | ERROR | Automation login UI error: Locator.wait_for: Target page, context or browser has been closed
+2025-09-24 22:38:55 | ERROR | Campaigns page error: campaigns.html
+2025-09-24 22:39:22 | INFO | 📁 Session file: sessions\office365_lion0692129_at_outlook_com.json
+2025-09-24 22:39:22 | INFO | 📁 Session file size: 12423 bytes
+2025-09-24 22:39:22 | INFO | 📁 Session file age: 0:00:39.679226
+2025-09-24 22:39:22 | INFO | 🚀 FAST SEND: lion0692129@outlook.com → ['lion0692121@outlook.com'] | asdf!@#
+2025-09-24 22:39:23 | INFO | 🔧 Loading session from: sessions\office365_lion0692129_at_outlook_com.json
+2025-09-24 22:39:23 | INFO | 🔍 Testing authentication status...
+2025-09-24 22:39:26 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 22:39:26 | INFO | 📸 Auth test screenshot saved
+2025-09-24 22:39:26 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 22:39:26 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=asdf%21%40%23&body=asdf%21%40%23
+2025-09-24 22:39:26 | INFO | 📧 Opening compose...
+2025-09-24 22:39:26 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 22:39:27 | INFO | ✅ Network idle - no more requests
+2025-09-24 22:39:27 | INFO | 🔍 Current URL after navigation: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=asdf%21%40%23&body=asdf%21%40%23
+2025-09-24 22:39:27 | INFO | ✅ Compose page URL confirmed
+2025-09-24 22:39:37 | INFO | ✅ Send button is visible
+2025-09-24 22:39:37 | INFO | ✅ Compose form elements are ready
+2025-09-24 22:39:39 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 22:39:39 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 22:39:39 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=asdf%21%40%23&body=asdf%21%40%23
+2025-09-24 22:39:39 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 22:39:39 | INFO | 📎 Processing 1 attachment(s)...
+2025-09-24 22:39:39 | INFO | 📎 Attaching file 1/1: 27482c66-2cd3-43ba-b67e-c5c9bbc31abd.png (66642 bytes)
+2025-09-24 22:39:39 | INFO | ✅ Found attachment button: button[aria-label*='Attach']
+2025-09-24 22:39:52 | INFO | ✅ Found file input: input[type='file']
+2025-09-24 22:39:52 | INFO | 📎 Setting file path: uploads\27482c66-2cd3-43ba-b67e-c5c9bbc31abd.png
+2025-09-24 22:40:01 | WARNING | ⚠️ set_input_files failed: Locator.wait_for: Timeout 8000ms exceeded.
+Call log:
+  - waiting for locator("text=27482c66-2cd3-43ba-b67e-c5c9bbc31abd.png").first to be visible
+
+2025-09-24 22:40:03 | INFO | ✅ File attached via temporary input: 27482c66-2cd3-43ba-b67e-c5c9bbc31abd.png
+2025-09-24 22:40:05 | INFO | ✅ All attachments processed
+2025-09-24 22:40:08 | INFO | 🔍 Looking for Send button...
+2025-09-24 22:40:08 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 22:40:08 | INFO |   Element 1: visible, text='Send'
+2025-09-24 22:40:08 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-24 22:40:08 | INFO | ✅ Send button detection successful
+2025-09-24 22:40:08 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 22:40:11 | WARNING | ⚠️ Could not attach: uploads\27482c66-2cd3-43ba-b67e-c5c9bbc31abd.png
+2025-09-24 22:40:11 | INFO | 📤 Sending email...
+2025-09-24 22:40:11 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 22:40:11 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 22:40:11 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-24 22:40:11 | INFO | 🔄 Send button is ready - clicking...
+2025-09-24 22:40:11 | INFO | ✅ Sent via Send button
+2025-09-24 22:40:11 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 22:40:11 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 22:40:13 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=asdf%21%40%23&body=asdf%21%40%23
+2025-09-24 22:40:33 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 22:40:33 | INFO | Cleaned up attachment: uploads\27482c66-2cd3-43ba-b67e-c5c9bbc31abd.png
+2025-09-24 23:24:38 | INFO | 📁 Session file: sessions\office365_lion0692129_at_outlook_com.json
+2025-09-24 23:24:38 | INFO | 📁 Session file size: 12423 bytes
+2025-09-24 23:24:38 | INFO | 📁 Session file age: 0:45:55.459361
+2025-09-24 23:24:38 | INFO | 🚀 FAST SEND: lion0692129@outlook.com → ['lion0692121@outlook.com'] | Image test
+2025-09-24 23:24:39 | INFO | 🔧 Loading session from: sessions\office365_lion0692129_at_outlook_com.json
+2025-09-24 23:24:39 | INFO | 🔍 Testing authentication status...
+2025-09-24 23:24:42 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 23:24:42 | INFO | 📸 Auth test screenshot saved
+2025-09-24 23:24:42 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 23:24:42 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Image%20test&body=there%3F
+2025-09-24 23:24:42 | INFO | 📧 Opening compose...
+2025-09-24 23:24:43 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 23:24:44 | INFO | ✅ Network idle - no more requests
+2025-09-24 23:24:44 | INFO | 🔍 Current URL after navigation: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Image%20test&body=there%3F
+2025-09-24 23:24:44 | INFO | ✅ Compose page URL confirmed
+2025-09-24 23:24:51 | INFO | ✅ Send button is visible
+2025-09-24 23:25:01 | WARNING | ⚠️ Compose form elements not found, but continuing...
+2025-09-24 23:25:03 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 23:25:03 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 23:25:03 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Image%20test&body=there%3F
+2025-09-24 23:25:03 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 23:25:03 | INFO | 📎 Processing 1 attachment(s)...
+2025-09-24 23:25:03 | INFO | 📎 Attaching file 1/1: 2e564032-733c-403c-87dd-9dfcd86f6887.png (85146 bytes)
+2025-09-24 23:25:03 | INFO | ✅ Found attachment button: button[aria-label*='Attach']
+2025-09-24 23:25:16 | INFO | ✅ File chooser opened via: button:has-text('Browse this computer')
+2025-09-24 23:25:16 | INFO | 📎 Selecting file via chooser: uploads\2e564032-733c-403c-87dd-9dfcd86f6887.png
+2025-09-24 23:25:46 | INFO | ✅ Attachment upload phase finished for: 2e564032-733c-403c-87dd-9dfcd86f6887.png
+2025-09-24 23:25:47 | INFO | ✅ All attachments processed and upload settled
+2025-09-24 23:25:50 | INFO | 🔍 Looking for Send button...
+2025-09-24 23:25:50 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 23:25:50 | INFO |   Element 1: visible, text='Send'
+2025-09-24 23:25:50 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-24 23:25:50 | INFO | ✅ Send button detection successful
+2025-09-24 23:25:50 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 23:25:50 | WARNING | ⚠️ Could not attach: uploads\2e564032-733c-403c-87dd-9dfcd86f6887.png
+2025-09-24 23:25:50 | INFO | 📤 Sending email...
+2025-09-24 23:25:50 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 23:25:50 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 23:25:50 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-24 23:25:50 | INFO | 🔄 Send button is ready - clicking...
+2025-09-24 23:25:50 | INFO | ✅ Sent via Send button
+2025-09-24 23:25:50 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 23:25:50 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 23:25:52 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Image%20test&body=there%3F
+2025-09-24 23:26:12 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 23:26:12 | INFO | Cleaned up attachment: uploads\2e564032-733c-403c-87dd-9dfcd86f6887.png
+2025-09-24 23:42:47 | ERROR | Campaigns page error: campaigns.html
+2025-09-24 23:46:36 | ERROR | Campaigns page error: campaigns.html
+2025-09-24 23:52:37 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 00:04:24 | INFO | 📁 Session file: sessions\office365_lion0692129_at_outlook_com.json
+2025-09-25 00:04:24 | INFO | 📁 Session file size: 12423 bytes
+2025-09-25 00:04:24 | INFO | 📁 Session file age: 1:25:41.334741
+2025-09-25 00:04:24 | INFO | 🚀 FAST SEND: lion0692129@outlook.com → ['lion0692121@outlook.com'] | Second Test123321
+2025-09-25 00:04:25 | INFO | 🔧 Loading session from: sessions\office365_lion0692129_at_outlook_com.json
+2025-09-25 00:04:25 | INFO | 🔍 Testing authentication status...
+2025-09-25 00:04:28 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-25 00:04:28 | INFO | 📸 Auth test screenshot saved
+2025-09-25 00:04:28 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-25 00:04:28 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test123321&body=adsfasdfasdfasdfasdf
+2025-09-25 00:04:28 | INFO | 📧 Opening compose...
+2025-09-25 00:04:29 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-25 00:04:30 | INFO | ✅ Network idle - no more requests
+2025-09-25 00:04:30 | INFO | 🔍 Current URL after navigation: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test123321&body=adsfasdfasdfasdfasdf
+2025-09-25 00:04:30 | INFO | ✅ Compose page URL confirmed
+2025-09-25 00:04:30 | WARNING | ⚠️ Send button not found, but continuing...
+2025-09-25 00:04:30 | WARNING | ⚠️ Compose form elements not found, but continuing...
+2025-09-25 00:05:08 | INFO | 📁 Session file: sessions\office365_lion0692129_at_outlook_com.json
+2025-09-25 00:05:08 | INFO | 📁 Session file size: 12423 bytes
+2025-09-25 00:05:08 | INFO | 📁 Session file age: 1:26:25.010913
+2025-09-25 00:05:08 | INFO | 🚀 FAST SEND: lion0692129@outlook.com → ['lion0692121@outlook.com'] | Second Test!#@
+2025-09-25 00:05:09 | INFO | 🔧 Loading session from: sessions\office365_lion0692129_at_outlook_com.json
+2025-09-25 00:05:09 | INFO | 🔍 Testing authentication status...
+2025-09-25 00:05:12 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-25 00:05:13 | INFO | 📸 Auth test screenshot saved
+2025-09-25 00:05:13 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-25 00:05:13 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test%21%23%40&body=adfadf
+2025-09-25 00:05:13 | INFO | 📧 Opening compose...
+2025-09-25 00:05:14 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-25 00:05:15 | INFO | ✅ Network idle - no more requests
+2025-09-25 00:05:15 | INFO | 🔍 Current URL after navigation: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test%21%23%40&body=adfadf
+2025-09-25 00:05:15 | INFO | ✅ Compose page URL confirmed
+2025-09-25 00:05:25 | WARNING | ⚠️ Send button not found, but continuing...
+2025-09-25 00:05:28 | INFO | ✅ Compose form elements are ready
+2025-09-25 00:05:30 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-25 00:05:30 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-25 00:05:30 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test%21%23%40&body=adfadf
+2025-09-25 00:05:30 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-25 00:05:30 | INFO | 📎 Processing 1 attachment(s)...
+2025-09-25 00:05:30 | INFO | 📎 Attaching file 1/1: 88ccae03-9b78-4fe1-922c-313f761a63cd.png (104404 bytes)
+2025-09-25 00:05:30 | INFO | ✅ Found attachment button: button[aria-label*='Attach']
+2025-09-25 00:05:49 | INFO | ✅ Found file input: input[type='file']
+2025-09-25 00:05:49 | INFO | 📎 Setting file path: uploads\88ccae03-9b78-4fe1-922c-313f761a63cd.png
+2025-09-25 00:06:19 | INFO | ✅ Attachment upload phase finished for: 88ccae03-9b78-4fe1-922c-313f761a63cd.png
+2025-09-25 00:06:19 | INFO | ✅ All attachments processed and upload settled
+2025-09-25 00:06:22 | INFO | 🔍 Looking for Send button...
+2025-09-25 00:06:22 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-25 00:06:22 | INFO |   Element 1: visible, text='Send'
+2025-09-25 00:06:22 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-25 00:06:22 | INFO | ✅ Send button detection successful
+2025-09-25 00:06:22 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-25 00:06:25 | WARNING | ⚠️ Could not attach: uploads\88ccae03-9b78-4fe1-922c-313f761a63cd.png
+2025-09-25 00:06:25 | INFO | 📤 Sending email...
+2025-09-25 00:06:25 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-25 00:06:25 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-25 00:06:25 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-25 00:06:25 | INFO | 🔄 Send button is ready - clicking...
+2025-09-25 00:06:25 | INFO | ✅ Sent via Send button
+2025-09-25 00:06:25 | INFO | 🔍 Verifying send confirmation...
+2025-09-25 00:06:25 | INFO | ✅ Network idle after send - platform processed
+2025-09-25 00:06:27 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test%21%23%40&body=adfadf
+2025-09-25 00:06:48 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-25 00:06:48 | INFO | Cleaned up attachment: uploads\88ccae03-9b78-4fe1-922c-313f761a63cd.png
+2025-09-25 00:34:28 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 00:59:05 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 02:09:39 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 02:09:40 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 02:09:40 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 02:09:40 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 02:09:40 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 02:09:41 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 02:09:41 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 02:09:41 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 02:18:39 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 02:24:16 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 02:24:59 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 02:25:19 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 02:31:01 | ERROR | Campaigns page error: campaigns.html
+2025-09-25 05:26:35 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 05:26:35 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:26:36 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 05:26:36 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:26:36 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 05:26:37 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:26:37 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 05:26:37 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:26:37 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 05:26:39 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:26:39 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 05:26:39 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:26:39 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 05:26:43 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:26:43 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 05:26:43 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:26:43 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 05:26:51 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:26:51 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:27:44 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 05:27:44 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:27:44 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 05:27:44 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:27:44 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 05:27:45 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:27:45 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 05:27:45 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:27:45 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 05:27:47 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:27:47 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 05:27:47 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:27:48 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 05:27:51 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:27:52 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 05:27:52 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:27:52 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 05:29:19 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 05:29:19 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:29:19 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 05:29:19 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:29:20 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 05:29:21 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:29:21 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 05:29:21 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:29:21 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 05:29:23 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:29:23 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 05:29:23 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:29:23 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 05:29:27 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:29:27 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 05:29:27 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:29:27 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 05:29:35 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:29:35 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:32:53 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 05:32:53 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:32:53 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 05:32:53 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:32:53 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 05:32:54 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:32:54 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 05:32:54 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:32:54 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 05:32:56 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:32:56 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 05:32:56 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:32:57 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 05:33:00 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:33:01 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 05:33:01 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:33:01 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 05:33:09 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 05:33:09 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:34:54 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 09:34:54 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:34:55 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 09:34:55 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:34:55 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 09:34:56 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:34:56 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 09:34:56 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:34:56 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 09:34:58 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:34:58 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 09:34:58 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:34:58 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 09:35:02 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:35:02 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 09:35:02 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:35:03 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 09:35:10 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:35:11 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:53:37 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 09:53:37 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:53:37 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 09:53:37 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:53:37 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 09:53:38 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:53:38 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 09:53:38 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:53:38 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 09:53:40 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:53:40 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 09:53:40 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:53:40 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 09:53:44 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:53:44 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 09:53:44 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:53:45 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 09:53:52 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:53:53 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:56:51 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 09:56:51 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:56:51 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 09:56:51 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:56:52 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 09:56:52 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:56:52 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 09:56:53 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:56:53 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 09:56:54 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:56:55 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 09:56:55 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:56:55 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 09:56:59 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:56:59 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 09:56:59 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 09:56:59 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 10:02:02 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 10:02:02 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:02:03 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:02:03 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:02:03 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:02:04 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:02:04 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 10:02:04 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:02:04 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 10:02:06 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:02:06 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 10:02:06 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:02:07 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 10:02:10 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:02:10 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 10:02:11 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:02:11 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 10:02:18 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:02:19 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:08:23 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 10:08:23 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:08:23 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:08:23 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:08:23 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:08:24 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:08:24 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 10:08:24 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:08:24 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 10:08:26 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:08:26 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 10:08:26 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:08:27 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 10:08:30 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:08:30 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 10:08:31 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:08:31 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 10:08:38 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:08:39 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:12 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 10:14:12 | INFO | EmailAccount available: True
+2025-09-25 10:14:12 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:12 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:12 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:14:12 | INFO | EmailAccount available: True
+2025-09-25 10:14:12 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:12 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:12 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:14:13 | INFO | EmailAccount available: True
+2025-09-25 10:14:13 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:13 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:13 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 10:14:13 | INFO | EmailAccount available: True
+2025-09-25 10:14:13 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:13 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:14 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 10:14:15 | INFO | EmailAccount available: True
+2025-09-25 10:14:15 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:15 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:16 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 10:14:16 | INFO | EmailAccount available: True
+2025-09-25 10:14:16 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:16 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:16 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 10:14:20 | INFO | EmailAccount available: True
+2025-09-25 10:14:20 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:20 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:20 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 10:14:20 | INFO | EmailAccount available: True
+2025-09-25 10:14:20 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:20 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:20 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 10:14:28 | INFO | EmailAccount available: True
+2025-09-25 10:14:28 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:28 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:28 | INFO | EmailAccount available: True
+2025-09-25 10:14:28 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:28 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:47 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 10:14:47 | INFO | EmailAccount available: True
+2025-09-25 10:14:47 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:47 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:47 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:14:47 | INFO | EmailAccount available: True
+2025-09-25 10:14:47 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:47 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:47 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:14:48 | INFO | EmailAccount available: True
+2025-09-25 10:14:48 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:48 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:48 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 10:14:49 | INFO | EmailAccount available: True
+2025-09-25 10:14:49 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:49 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:49 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-25 10:14:51 | INFO | EmailAccount available: True
+2025-09-25 10:14:51 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:51 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:51 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 10:14:51 | INFO | EmailAccount available: True
+2025-09-25 10:14:51 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:51 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:51 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-25 10:14:55 | INFO | EmailAccount available: True
+2025-09-25 10:14:55 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:55 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:55 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 10:14:55 | INFO | EmailAccount available: True
+2025-09-25 10:14:55 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:14:55 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:14:55 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-25 10:15:03 | INFO | EmailAccount available: True
+2025-09-25 10:15:03 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:15:03 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:15:03 | INFO | EmailAccount available: True
+2025-09-25 10:15:03 | INFO | EmailAccount type: <class 'sqlalchemy.orm.decl_api.DeclarativeMeta'>
+2025-09-25 10:15:03 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-25 10:15:34 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 10:15:34 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:15:34 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:15:39 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 10:15:39 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:15:49 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 10:16:13 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 10:16:13 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:16:13 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:16:35 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 10:16:35 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:29:31 | ERROR | Campaign report error: type object 'EmailRecipient' has no attribute 'created_at'
+2025-09-25 10:29:34 | ERROR | Campaign report error: type object 'EmailRecipient' has no attribute 'created_at'
+2025-09-25 10:30:14 | ERROR | Monitoring page error: monitoring.html
+2025-09-25 10:30:19 | ERROR | Monitoring page error: monitoring.html
+2025-09-25 10:30:22 | INFO | Starting campaign 1 with 2 emails
+2025-09-25 10:30:22 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-25 10:42:19 | ERROR | Campaign detail error: type object 'EmailRecipient' has no attribute 'created_at'
+2025-09-25 10:42:23 | ERROR | Campaign detail error: type object 'EmailRecipient' has no attribute 'created_at'
+2025-09-25 10:42:57 | ERROR | Campaign detail error: type object 'EmailRecipient' has no attribute 'created_at'
+2025-09-25 10:55:07 | ERROR | Campaign status error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ?]
+[parameters: (2,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:55:22 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (2,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:55:24 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:55:25 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:55:25 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:55:25 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:55:25 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:55:25 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:55:26 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:55:26 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:55:26 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:55:26 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:55:26 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:55:26 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:55:26 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:57:39 | ERROR | Campaign detail error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ? ORDER BY email_recipients.created_at DESC]
+[parameters: (2,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-25 10:58:27 | ERROR | Campaign status error: (sqlite3.OperationalError) no such column: email_recipients.created_at
+[SQL: SELECT email_recipients.id AS email_recipients_id, email_recipients.campaign_id AS email_recipients_campaign_id, email_recipients.email AS email_recipients_email, email_recipients.name AS email_recipients_name, email_recipients.custom_data AS email_recipients_custom_data, email_recipients.status AS email_recipients_status, email_recipients.sent_at AS email_recipients_sent_at, email_recipients.error_message AS email_recipients_error_message, email_recipients.account_used AS email_recipients_account_used, email_recipients.created_at AS email_recipients_created_at 
+FROM email_recipients 
+WHERE email_recipients.campaign_id = ?]
+[parameters: (2,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

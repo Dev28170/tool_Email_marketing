@@ -1,0 +1,25 @@
+{
+  "export_info": {
+    "exported_at": "2025-10-13T02:31:01.996203",
+    "total_leads": 1,
+    "format": "json"
+  },
+  "leads": [
+    {
+      "id": 1,
+      "campaign_id": 1,
+      "email": "tom069211@outlook.com",
+      "name": null,
+      "custom_data": null,
+      "status": "pending",
+      "sent_at": null,
+      "error_message": null,
+      "account_used": null,
+      "created_at": "2025-10-03T05:45:23.394875",
+      "campaign_name": "campaign",
+      "campaign_subject": "Hi @@@@@@",
+      "campaign_status": "draft",
+      "campaign_created_at": "2025-10-03T05:45:23.183442"
+    }
+  ]
+}

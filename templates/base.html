@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Email Mass Sender{% endblock %}</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .sidebar {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .sidebar .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            margin: 0.25rem 0;
+            transition: all 0.3s ease;
+        }
+        .sidebar .nav-link:hover,
+        .sidebar .nav-link.active {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateX(5px);
+        }
+        .main-content {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+        }
+        .card {
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .stat-card .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0.5rem 1rem rgba(102, 126, 234, 0.4);
+        }
+        .alert {
+            border: none;
+            border-radius: 0.75rem;
+        }
+        .table {
+            border-radius: 0.75rem;
+            overflow: hidden;
+        }
+        .badge {
+            border-radius: 0.5rem;
+            padding: 0.5rem 0.75rem;
+        }
+        .loading {
+            display: none;
+        }
+        .loading.show {
+            display: block;
+        }
+    </style>
+    
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <div class="text-center mb-4">
+                        <h4 class="text-white">
+                            <i class="fas fa-envelope-open-text me-2"></i>
+                            Email Sender
+                        </h4>
+                    </div>
+                    
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.endpoint == 'dashboard' %}active{% endif %}" 
+                               href="{{ url_for('dashboard') }}">
+                                <i class="fas fa-tachometer-alt me-2"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.endpoint == 'accounts' %}active{% endif %}" 
+                               href="{{ url_for('accounts') }}">
+                                <i class="fas fa-users me-2"></i>
+                                Accounts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.endpoint == 'direct_send' %}active{% endif %}" 
+                               href="{{ url_for('direct_send') }}">
+                                <i class="fas fa-paper-plane me-2"></i>
+                                Send Mass Email
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.endpoint == 'settings' %}active{% endif %}" 
+                               href="{{ url_for('settings') }}">
+                                <i class="fas fa-cog me-2"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <hr class="text-white-50">
+                    
+                    <div class="text-center">
+                        <a href="{{ url_for('logout') }}" class="btn btn-outline-light btn-sm">
+                            <i class="fas fa-sign-out-alt me-2"></i>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- Main content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-content">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">{% block page_title %}Dashboard{% endblock %}</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        {% block page_actions %}{% endblock %}
+                    </div>
+                </div>
+                
+                <!-- Flash messages -->
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ 'danger' if category == 'error' else category }} alert-dismissible fade show" role="alert">
+                                <i class="fas fa-{{ 'exclamation-triangle' if category == 'error' else 'check-circle' if category == 'success' else 'info-circle' }} me-2"></i>
+                                {{ message }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                
+                <!-- Page content -->
+                {% block content %}{% endblock %}
+            </main>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Auto-hide alerts after 5 seconds
+        setTimeout(function() {
+            $('.alert').fadeOut();
+        }, 5000);
+        
+        // Loading state management
+        function showLoading(element) {
+            $(element).addClass('loading show');
+            $(element).find('button').prop('disabled', true);
+        }
+        
+        function hideLoading(element) {
+            $(element).removeClass('loading show');
+            $(element).find('button').prop('disabled', false);
+        }
+        
+        // AJAX error handling
+        function handleAjaxError(xhr, status, error) {
+            let errorMessage = 'An error occurred';
+            if (xhr.responseJSON && xhr.responseJSON.error) {
+                errorMessage = xhr.responseJSON.error;
+            }
+            showAlert('error', errorMessage);
+        }
+        
+        // Show alert
+        function showAlert(type, message) {
+            const alertClass = type === 'error' ? 'danger' : type;
+            const iconClass = type === 'error' ? 'exclamation-triangle' : 
+                            type === 'success' ? 'check-circle' : 'info-circle';
+            
+            const alertHtml = `
+                <div class="alert alert-${alertClass} alert-dismissible fade show" role="alert">
+                    <i class="fas fa-${iconClass} me-2"></i>
+                    ${message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            `;
+            
+            $('.main-content').prepend(alertHtml);
+            
+            // Auto-hide after 5 seconds
+            setTimeout(function() {
+                $('.alert').fadeOut();
+            }, 5000);
+        }
+    </script>
+    
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

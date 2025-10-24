@@ -1,0 +1,523 @@
+{% extends "base.html" %}
+
+{% block title %}New Campaign - Email Mass Sender{% endblock %}
+{% block page_title %}Create New Campaign{% endblock %}
+
+{% block page_actions %}
+<div class="btn-toolbar mb-2 mb-md-0">
+    <div class="btn-group me-2">
+        <a href="{{ url_for('campaigns') }}" class="btn btn-outline-secondary">
+            <i class="fas fa-arrow-left me-2"></i>
+            Back to Campaigns
+        </a>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="m-0 font-weight-bold text-primary">
+                    <i class="fas fa-bullhorn me-2"></i>
+                    Campaign Details
+                </h6>
+            </div>
+            <div class="card-body">
+                <form id="campaignForm">
+                    <div class="mb-3">
+                        <label for="campaign_name" class="form-label">Campaign Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="campaign_name" name="campaign_name" 
+                               placeholder="Enter campaign name" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Email Subject <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="subject" name="subject" 
+                               placeholder="Enter email subject" value="{{ default_subject|safe }}" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="body_html" class="form-label">Email Content <span class="text-danger">*</span></label>
+                        <textarea class="form-control" id="body_html" name="body_html" rows="12" 
+                                  placeholder="Enter your email content here..." required>{{ default_body|safe }}</textarea>
+                        <div class="form-text">
+                            You can use HTML formatting and AI placeholders like [PROJECT_DETAILS]
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="max_concurrent" class="form-label">Max Concurrent Sends</label>
+                                <input type="number" class="form-control" id="max_concurrent" name="max_concurrent" 
+                                       value="50" min="1" max="200">
+                                <div class="form-text">Number of emails to send simultaneously</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="schedule_time" class="form-label">Schedule Send</label>
+                                <input type="datetime-local" class="form-control" id="schedule_time" name="schedule_time">
+                                <div class="form-text">Leave empty to send immediately</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="btn btn-outline-secondary" onclick="saveDraft()">
+                            <i class="fas fa-save me-2"></i>
+                            Save Draft
+                        </button>
+                        <div>
+                            <button type="button" class="btn btn-outline-primary me-2" onclick="previewCampaign()">
+                                <i class="fas fa-eye me-2"></i>
+                                Preview
+                            </button>
+                            <button type="button" class="btn btn-outline-success me-2" onclick="addRecipients()">
+                                <i class="fas fa-users me-2"></i>
+                                Add Recipients
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-rocket me-2"></i>
+                                Create Campaign
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4">
+        <!-- AI Placeholder Helper -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h6 class="m-0 font-weight-bold text-primary">
+                    <i class="fas fa-magic me-2"></i>
+                    AI Placeholders
+                </h6>
+            </div>
+            <div class="card-body">
+                <p class="text-muted small">Click to insert placeholders:</p>
+                <div class="mb-2">
+                    <button class="btn btn-outline-primary btn-sm" onclick="insertPlaceholder('PROJECT_DETAILS')">
+                        [PROJECT_DETAILS]
+                    </button>
+                    <small class="text-muted d-block">AI-generated project updates</small>
+                </div>
+                <div class="mb-2">
+                    <button class="btn btn-outline-primary btn-sm" onclick="insertPlaceholder('CLIENT_NAME')">
+                        [CLIENT_NAME]
+                    </button>
+                    <small class="text-muted d-block">Recipient's name</small>
+                </div>
+                <div class="mb-2">
+                    <button class="btn btn-outline-primary btn-sm" onclick="insertPlaceholder('COMPANY_NAME')">
+                        [COMPANY_NAME]
+                    </button>
+                    <small class="text-muted d-block">Company name</small>
+                </div>
+                <div class="mb-2">
+                    <button class="btn btn-outline-primary btn-sm" onclick="insertPlaceholder('DEADLINE')">
+                        [DEADLINE]
+                    </button>
+                    <small class="text-muted d-block">Project deadline</small>
+                </div>
+                <div class="mb-2">
+                    <button class="btn btn-outline-primary btn-sm" onclick="insertPlaceholder('BUDGET')">
+                        [BUDGET]
+                    </button>
+                    <small class="text-muted d-block">Budget information</small>
+                </div>
+                
+                <hr>
+                
+                <button class="btn btn-success btn-sm w-100" onclick="testAI()">
+                    <i class="fas fa-robot me-2"></i>
+                    Test AI Connection
+                </button>
+            </div>
+        </div>
+        
+        <!-- Campaign Templates -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h6 class="m-0 font-weight-bold text-primary">
+                    <i class="fas fa-file-alt me-2"></i>
+                    Campaign Templates
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="mb-2">
+                    <button class="btn btn-outline-secondary btn-sm w-100" onclick="loadTemplate('newsletter')">
+                        Newsletter
+                    </button>
+                </div>
+                <div class="mb-2">
+                    <button class="btn btn-outline-secondary btn-sm w-100" onclick="loadTemplate('product_launch')">
+                        Product Launch
+                    </button>
+                </div>
+                <div class="mb-2">
+                    <button class="btn btn-outline-secondary btn-sm w-100" onclick="loadTemplate('event_invite')">
+                        Event Invitation
+                    </button>
+                </div>
+                <div class="mb-2">
+                    <button class="btn btn-outline-secondary btn-sm w-100" onclick="loadTemplate('follow_up')">
+                        Follow-up Campaign
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Campaign Tips -->
+        <div class="card">
+            <div class="card-header">
+                <h6 class="m-0 font-weight-bold text-primary">
+                    <i class="fas fa-lightbulb me-2"></i>
+                    Campaign Tips
+                </h6>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled small">
+                    <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>
+                        Use clear, compelling subject lines
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>
+                        Personalize with AI placeholders
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>
+                        Test with small groups first
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>
+                        Monitor delivery rates
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>
+                        Respect rate limits
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Recipients Modal -->
+<div class="modal fade" id="recipientsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="fas fa-users me-2"></i>
+                    Add Recipients
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">Add Recipients</label>
+                    <textarea class="form-control" id="recipientsText" rows="8" 
+                              placeholder="Enter email addresses, one per line:&#10;john@example.com&#10;jane@example.com&#10;bob@example.com"></textarea>
+                    <div class="form-text">Enter one email address per line</div>
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label">Or Upload CSV File</label>
+                    <input type="file" class="form-control" id="csvFile" accept=".csv">
+                    <div class="form-text">CSV format: email,name,company</div>
+                </div>
+                
+                <div id="recipientsPreview" class="mt-3" style="display: none;">
+                    <h6>Recipients Preview:</h6>
+                    <div id="recipientsList" class="border p-3 bg-light" style="max-height: 200px; overflow-y: auto;"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="saveRecipients()">Add Recipients</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Preview Modal -->
+<div class="modal fade" id="previewModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="fas fa-eye me-2"></i>
+                    Campaign Preview
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="previewContent">
+                    <!-- Preview content will be loaded here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Campaign templates
+const templates = {
+    newsletter: {
+        name: "Monthly Newsletter",
+        subject: "Monthly Newsletter - [COMPANY_NAME]",
+        body: `<h2>Monthly Newsletter</h2>
+        <p>Hello [CLIENT_NAME],</p>
+        <p>Welcome to our monthly newsletter! Here's what's happening at [COMPANY_NAME]:</p>
+        <h3>Project Updates</h3>
+        <p>[PROJECT_DETAILS]</p>
+        <h3>Important Dates</h3>
+        <p>Don't forget about our upcoming deadline: [DEADLINE]</p>
+        <p>Thank you for your continued support!</p>
+        <p>Best regards,<br>The [COMPANY_NAME] Team</p>`
+    },
+    product_launch: {
+        name: "Product Launch Announcement",
+        subject: "Exciting News: New Product Launch!",
+        body: `<h2>Exciting News!</h2>
+        <p>Hello [CLIENT_NAME],</p>
+        <p>We're thrilled to announce the launch of our new product!</p>
+        <h3>What's New</h3>
+        <p>[PROJECT_DETAILS]</p>
+        <h3>Special Offer</h3>
+        <p>For a limited time, you can get early access with a special discount.</p>
+        <p>Don't miss out - this offer expires on [DEADLINE]!</p>
+        <p>Best regards,<br>The [COMPANY_NAME] Team</p>`
+    },
+    event_invite: {
+        name: "Event Invitation",
+        subject: "You're Invited: [PROJECT_DETAILS]",
+        body: `<h2>You're Invited!</h2>
+        <p>Hello [CLIENT_NAME],</p>
+        <p>We would love to invite you to our upcoming event:</p>
+        <h3>Event Details</h3>
+        <p><strong>Event:</strong> [PROJECT_DETAILS]</p>
+        <p><strong>Date:</strong> [DEADLINE]</p>
+        <p><strong>Location:</strong> [COMPANY_NAME] Headquarters</p>
+        <p>Please RSVP by replying to this email.</p>
+        <p>We look forward to seeing you there!</p>
+        <p>Best regards,<br>The [COMPANY_NAME] Team</p>`
+    },
+    follow_up: {
+        name: "Follow-up Campaign",
+        subject: "Following Up: [PROJECT_DETAILS]",
+        body: `<p>Hello [CLIENT_NAME],</p>
+        <p>I wanted to follow up on our recent discussion about [PROJECT_DETAILS].</p>
+        <p>As we discussed, the next steps are:</p>
+        <ul>
+            <li>Review the proposal</li>
+            <li>Provide feedback by [DEADLINE]</li>
+            <li>Schedule next meeting</li>
+        </ul>
+        <p>Please let me know if you have any questions.</p>
+        <p>Best regards,<br>The [COMPANY_NAME] Team</p>`
+    }
+};
+
+let campaignRecipients = [];
+
+function insertPlaceholder(placeholder) {
+    const textarea = document.getElementById('body_html');
+    const cursorPos = textarea.selectionStart;
+    const textBefore = textarea.value.substring(0, cursorPos);
+    const textAfter = textarea.value.substring(cursorPos);
+    
+    textarea.value = textBefore + `[${placeholder}]` + textAfter;
+    textarea.focus();
+    textarea.setSelectionRange(cursorPos + placeholder.length + 2, cursorPos + placeholder.length + 2);
+}
+
+function loadTemplate(templateName) {
+    if (templates[templateName]) {
+        document.getElementById('campaign_name').value = templates[templateName].name;
+        document.getElementById('subject').value = templates[templateName].subject;
+        document.getElementById('body_html').value = templates[templateName].body;
+        showAlert('success', 'Template loaded successfully!');
+    }
+}
+
+function testAI() {
+    $.ajax({
+        url: '/ai/test',
+        method: 'POST',
+        success: function(response) {
+            if (response.success) {
+                showAlert('success', 'AI connection is working!');
+            } else {
+                showAlert('error', response.error || 'AI connection failed');
+            }
+        },
+        error: handleAjaxError
+    });
+}
+
+function previewCampaign() {
+    const formData = {
+        name: document.getElementById('campaign_name').value,
+        subject: document.getElementById('subject').value,
+        body_html: document.getElementById('body_html').value
+    };
+    
+    if (!formData.name || !formData.subject || !formData.body_html) {
+        showAlert('error', 'Please fill in all required fields');
+        return;
+    }
+    
+    // Show preview content
+    document.getElementById('previewContent').innerHTML = `
+        <div class="border p-3 rounded">
+            <div class="mb-3">
+                <strong>Campaign Name:</strong> ${formData.name}
+            </div>
+            <div class="mb-3">
+                <strong>Subject:</strong> ${formData.subject}
+            </div>
+            <div class="mb-3">
+                <strong>Content:</strong>
+            </div>
+            <div class="border p-3 bg-light">
+                ${formData.body_html.replace(/\n/g, '<br>')}
+            </div>
+        </div>
+    `;
+    
+    $('#previewModal').modal('show');
+}
+
+function addRecipients() {
+    $('#recipientsModal').modal('show');
+}
+
+function saveRecipients() {
+    const recipientsText = document.getElementById('recipientsText').value;
+    const csvFile = document.getElementById('csvFile').files[0];
+    
+    if (!recipientsText && !csvFile) {
+        showAlert('error', 'Please add recipients or upload a CSV file');
+        return;
+    }
+    
+    if (recipientsText) {
+        const emails = recipientsText.split('\n')
+            .map(email => email.trim())
+            .filter(email => email && email.includes('@'));
+        
+        campaignRecipients = emails.map(email => ({ email: email }));
+    }
+    
+    if (csvFile) {
+        // Handle CSV file upload
+        showAlert('info', 'CSV upload functionality will be implemented');
+    }
+    
+    // Show preview
+    if (campaignRecipients.length > 0) {
+        document.getElementById('recipientsList').innerHTML = 
+            campaignRecipients.map(r => `<div>${r.email}</div>`).join('');
+        document.getElementById('recipientsPreview').style.display = 'block';
+    }
+    
+    $('#recipientsModal').modal('hide');
+    showAlert('success', `Added ${campaignRecipients.length} recipients`);
+}
+
+function saveDraft() {
+    // Implement draft saving functionality
+    showAlert('info', 'Draft saving functionality will be implemented');
+}
+
+// Form submission
+document.getElementById('campaignForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = {
+        name: document.getElementById('campaign_name').value,
+        subject: document.getElementById('subject').value,
+        body_html: document.getElementById('body_html').value,
+        body_text: document.getElementById('body_html').value.replace(/<[^>]*>/g, ''), // Strip HTML
+        template_data: {}
+    };
+    
+    if (!formData.name || !formData.subject || !formData.body_html) {
+        showAlert('error', 'Please fill in all required fields');
+        return;
+    }
+    
+    if (campaignRecipients.length === 0) {
+        showAlert('error', 'Please add at least one recipient');
+        return;
+    }
+    
+    // Show loading
+    showLoading($('body'));
+    
+    $.ajax({
+        url: '/campaigns/create',
+        method: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(formData),
+        success: function(response) {
+            if (response.success) {
+                // Add recipients to campaign
+                $.ajax({
+                    url: `/campaigns/${response.campaign_id}/recipients`,
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ recipients: campaignRecipients }),
+                    success: function(recipientResponse) {
+                        hideLoading($('body'));
+                        if (recipientResponse.success) {
+                            showAlert('success', 'Campaign created successfully!');
+                            setTimeout(() => {
+                                window.location.href = '/campaigns';
+                            }, 2000);
+                        } else {
+                            showAlert('error', recipientResponse.error || 'Failed to add recipients');
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        hideLoading($('body'));
+                        handleAjaxError(xhr, status, error);
+                    }
+                });
+            } else {
+                hideLoading($('body'));
+                showAlert('error', response.error || 'Failed to create campaign');
+            }
+        },
+        error: function(xhr, status, error) {
+            hideLoading($('body'));
+            handleAjaxError(xhr, status, error);
+        }
+    });
+});
+
+// Auto-save draft every 30 seconds
+setInterval(function() {
+    const name = document.getElementById('campaign_name').value;
+    const subject = document.getElementById('subject').value;
+    const body = document.getElementById('body_html').value;
+    
+    if (name || subject || body) {
+        // Auto-save functionality would go here
+    }
+}, 30000);
+</script>
+{% endblock %}

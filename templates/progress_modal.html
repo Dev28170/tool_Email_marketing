@@ -1,0 +1,372 @@
+<!-- Progress Tracking Modal -->
+<div class="modal fade" id="progressModal" tabindex="-1" aria-labelledby="progressModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="progressModalLabel">
+                    <i class="fas fa-paper-plane me-2"></i>Email Sending Progress
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Progress Overview -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <h3 class="card-title text-primary" id="progressPercentage">0%</h3>
+                                <p class="card-text">Progress</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <h3 class="card-title text-success" id="currentSpeed">0</h3>
+                                <p class="card-text">Emails/Min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="fw-bold">Overall Progress</span>
+                        <span class="text-muted" id="progressText">0 of 0 emails</span>
+                    </div>
+                    <div class="progress" style="height: 25px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" 
+                             role="progressbar" 
+                             id="progressBar" 
+                             style="width: 0%"
+                             aria-valuenow="0" 
+                             aria-valuemin="0" 
+                             aria-valuemax="100">
+                            <span id="progressBarText">0%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistics Cards -->
+                <div class="row mb-4">
+                    <div class="col-md-3">
+                        <div class="card bg-success text-white">
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="sentCount">0</h4>
+                                <p class="card-text">Sent</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-danger text-white">
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="failedCount">0</h4>
+                                <p class="card-text">Failed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-warning text-white">
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="pendingCount">0</h4>
+                                <p class="card-text">Pending</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-info text-white">
+                            <div class="card-body text-center">
+                                <h4 class="card-title" id="currentBatch">0</h4>
+                                <p class="card-text">Batch</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Status and Timing -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <i class="fas fa-info-circle me-2"></i>Status
+                                </h6>
+                                <p class="card-text">
+                                    <span class="badge bg-primary" id="statusBadge">Starting...</span>
+                                </p>
+                                <small class="text-muted" id="statusMessage">Initializing email sending...</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <i class="fas fa-clock me-2"></i>Timing
+                                </h6>
+                                <p class="card-text">
+                                    <strong>Started:</strong> <span id="startTime">-</span><br>
+                                    <strong>ETA:</strong> <span id="estimatedCompletion">-</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Error Display -->
+                <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                    <h6 class="alert-heading">
+                        <i class="fas fa-exclamation-triangle me-2"></i>Error
+                    </h6>
+                    <p id="errorMessage"></p>
+                </div>
+
+                <!-- Success Display -->
+                <div class="alert alert-success d-none" id="successAlert" role="alert">
+                    <h6 class="alert-heading">
+                        <i class="fas fa-check-circle me-2"></i>Completed Successfully
+                    </h6>
+                    <p id="successMessage"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="cancelBtn" onclick="cancelSending()">
+                    <i class="fas fa-stop me-2"></i>Cancel Sending
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="closeBtn">
+                    <i class="fas fa-times me-2"></i>Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+let currentSessionId = null;
+let progressEventSource = null;
+
+function showProgressModal(sessionId) {
+    currentSessionId = sessionId;
+    
+    // Reset modal state
+    resetProgressModal();
+    
+    // Show modal
+    $('#progressModal').modal('show');
+    
+    // Start progress tracking
+    startProgressTracking(sessionId);
+}
+
+function resetProgressModal() {
+    // Reset all values
+    document.getElementById('progressPercentage').textContent = '0%';
+    document.getElementById('currentSpeed').textContent = '0';
+    document.getElementById('progressText').textContent = '0 of 0 emails';
+    document.getElementById('progressBar').style.width = '0%';
+    document.getElementById('progressBar').setAttribute('aria-valuenow', '0');
+    document.getElementById('progressBarText').textContent = '0%';
+    
+    document.getElementById('sentCount').textContent = '0';
+    document.getElementById('failedCount').textContent = '0';
+    document.getElementById('pendingCount').textContent = '0';
+    document.getElementById('currentBatch').textContent = '0';
+    
+    document.getElementById('statusBadge').textContent = 'Starting...';
+    document.getElementById('statusBadge').className = 'badge bg-primary';
+    document.getElementById('statusMessage').textContent = 'Initializing email sending...';
+    document.getElementById('startTime').textContent = '-';
+    document.getElementById('estimatedCompletion').textContent = '-';
+    
+    // Hide alerts
+    document.getElementById('errorAlert').classList.add('d-none');
+    document.getElementById('successAlert').classList.add('d-none');
+    
+    // Show cancel button
+    document.getElementById('cancelBtn').style.display = 'inline-block';
+}
+
+function startProgressTracking(sessionId) {
+    // Close existing connection
+    if (progressEventSource) {
+        progressEventSource.close();
+    }
+    
+    // Create new EventSource connection
+    progressEventSource = new EventSource(`/progress/${sessionId}/stream`);
+    
+    progressEventSource.onmessage = function(event) {
+        try {
+            const data = JSON.parse(event.data);
+            
+            if (data.error) {
+                showError(data.error);
+                return;
+            }
+            
+            if (data.progress) {
+                updateProgress(data.progress);
+            }
+            
+            if (data.completed) {
+                progressEventSource.close();
+                showCompletion(data.progress);
+            }
+            
+        } catch (e) {
+            console.error('Error parsing progress data:', e);
+        }
+    };
+    
+    progressEventSource.onerror = function(event) {
+        console.error('Progress stream error:', event);
+        showError('Connection lost. Please refresh to check progress.');
+    };
+}
+
+function updateProgress(progress) {
+    // Update progress percentage
+    const percentage = Math.round(progress.progress_percentage || 0);
+    document.getElementById('progressPercentage').textContent = `${percentage}%`;
+    document.getElementById('progressBar').style.width = `${percentage}%`;
+    document.getElementById('progressBar').setAttribute('aria-valuenow', percentage);
+    document.getElementById('progressBarText').textContent = `${percentage}%`;
+    
+    // Update counts
+    document.getElementById('sentCount').textContent = progress.sent_count || 0;
+    document.getElementById('failedCount').textContent = progress.failed_count || 0;
+    document.getElementById('pendingCount').textContent = progress.pending_count || 0;
+    document.getElementById('currentBatch').textContent = progress.current_batch || 0;
+    
+    // Update progress text
+    const total = progress.total_emails || 0;
+    const completed = (progress.sent_count || 0) + (progress.failed_count || 0);
+    document.getElementById('progressText').textContent = `${completed} of ${total} emails`;
+    
+    // Update speed
+    const speed = Math.round(progress.current_speed || 0);
+    document.getElementById('currentSpeed').textContent = speed;
+    
+    // Update status
+    updateStatus(progress.status);
+    
+    // Update timing
+    if (progress.start_time) {
+        const startTime = new Date(progress.start_time);
+        document.getElementById('startTime').textContent = startTime.toLocaleTimeString();
+    }
+    
+    if (progress.estimated_completion) {
+        const eta = new Date(progress.estimated_completion);
+        document.getElementById('estimatedCompletion').textContent = eta.toLocaleTimeString();
+    }
+}
+
+function updateStatus(status) {
+    const statusBadge = document.getElementById('statusBadge');
+    const statusMessage = document.getElementById('statusMessage');
+    
+    switch(status) {
+        case 'pending':
+            statusBadge.textContent = 'Pending';
+            statusBadge.className = 'badge bg-secondary';
+            statusMessage.textContent = 'Waiting to start...';
+            break;
+        case 'running':
+            statusBadge.textContent = 'Running';
+            statusBadge.className = 'badge bg-primary';
+            statusMessage.textContent = 'Sending emails...';
+            break;
+        case 'completed':
+            statusBadge.textContent = 'Completed';
+            statusBadge.className = 'badge bg-success';
+            statusMessage.textContent = 'All emails sent successfully!';
+            break;
+        case 'failed':
+            statusBadge.textContent = 'Failed';
+            statusBadge.className = 'badge bg-danger';
+            statusMessage.textContent = 'Sending failed. Check error details.';
+            break;
+        case 'cancelled':
+            statusBadge.textContent = 'Cancelled';
+            statusBadge.className = 'badge bg-warning';
+            statusMessage.textContent = 'Sending was cancelled.';
+            break;
+        default:
+            statusBadge.textContent = 'Unknown';
+            statusBadge.className = 'badge bg-secondary';
+            statusMessage.textContent = 'Status unknown';
+    }
+}
+
+function showCompletion(progress) {
+    // Hide cancel button
+    document.getElementById('cancelBtn').style.display = 'none';
+    
+    if (progress.status === 'completed') {
+        // Show success alert
+        const successAlert = document.getElementById('successAlert');
+        const successMessage = document.getElementById('successMessage');
+        
+        const sent = progress.sent_count || 0;
+        const failed = progress.failed_count || 0;
+        
+        successMessage.textContent = `Successfully sent ${sent} emails. ${failed > 0 ? `${failed} emails failed.` : 'All emails sent successfully!'}`;
+        successAlert.classList.remove('d-none');
+    } else if (progress.status === 'failed') {
+        // Show error alert
+        showError(progress.error_message || 'Sending failed');
+    } else if (progress.status === 'cancelled') {
+        // Show cancellation message
+        showError('Sending was cancelled');
+    }
+}
+
+function showError(message) {
+    const errorAlert = document.getElementById('errorAlert');
+    const errorMessage = document.getElementById('errorMessage');
+    
+    errorMessage.textContent = message;
+    errorAlert.classList.remove('d-none');
+    
+    // Hide cancel button
+    document.getElementById('cancelBtn').style.display = 'none';
+}
+
+function cancelSending() {
+    if (currentSessionId) {
+        // Send cancel request
+        fetch(`/progress/${currentSessionId}/cancel`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                showError('Sending cancelled');
+            } else {
+                showError('Failed to cancel sending: ' + (data.error || 'Unknown error'));
+            }
+        })
+        .catch(error => {
+            console.error('Error cancelling:', error);
+            showError('Failed to cancel sending');
+        });
+    }
+}
+
+// Clean up when modal is closed
+$('#progressModal').on('hidden.bs.modal', function() {
+    if (progressEventSource) {
+        progressEventSource.close();
+        progressEventSource = null;
+    }
+    currentSessionId = null;
+});
+</script>
+
+
+

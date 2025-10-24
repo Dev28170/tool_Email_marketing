@@ -1,0 +1,1858 @@
+2025-09-22 20:25:29 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:25:35 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:25:36 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:25:36 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:25:36 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:25:37 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:25:37 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:25:37 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:25:37 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:25:38 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:25:38 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:25:38 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:25:38 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:26:45 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:27:02 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:27:06 | ERROR | Dashboard error: 'sessionmaker' object has no attribute 'get_session'
+2025-09-22 20:34:09 | ERROR | Campaigns page error: campaigns.html
+2025-09-22 20:34:16 | ERROR | Monitoring page error: monitoring.html
+2025-09-22 20:38:01 | ERROR | Campaigns page error: campaigns.html
+2025-09-23 00:57:30 | ERROR | Automation login UI error: Locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_label("Enter password")
+    - waiting for" https://login.live.com/oauth20_authorize.srf?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default+openid+profile+offline_access&redirect_uri=https%3a%2f%2f…" navigation to finish...
+    - navigated to "https://login.live.com/oauth20_authorize.srf?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default+openid+profile+offline_access&redirect_uri=https%3a%2f%2f…"
+    - waiting for" https://login.live.com/ppsecure/post.srf?username=lion0692118%40outlook.com&client_id=9199bf20-a13f-4107-85dc-02114787ef48&contextid=BE8CC743165C475A&opid=1C358770378526C0&bk=1758560236&uaid=f1a7c031…" navigation to finish...
+    - navigated to "https://login.live.com/ppsecure/post.srf?username=lion0692118%40outlook.com&client_id=9199bf20-a13f-4107-85dc-02114787ef48&contextid=BE8CC743165C475A&opid=1C358770378526C0&bk=1758560236&uaid=f1a7c031…"
+
+2025-09-23 01:48:23 | ERROR | Campaigns page error: campaigns.html
+2025-09-23 02:07:59 | ERROR | Automation login UI error: Locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_label("Enter password")
+
+2025-09-23 02:09:08 | ERROR | Automation login UI error: Locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_label("Enter password")
+    - waiting for" https://login.live.com/oauth20_authorize.srf?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default+openid+profile+offline_access&redirect_uri=https%3a%2f%2f…" navigation to finish...
+    - navigated to "https://login.live.com/oauth20_authorize.srf?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default+openid+profile+offline_access&redirect_uri=https%3a%2f%2f…"
+
+2025-09-23 02:16:14 | ERROR | Automation login UI error: Locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_label("Enter password")
+    - waiting for" https://login.live.com/oauth20_authorize.srf?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default+openid+profile+offline_access&redirect_uri=https%3a%2f%2f…" navigation to finish...
+    - navigated to "https://login.live.com/oauth20_authorize.srf?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default+openid+profile+offline_access&redirect_uri=https%3a%2f%2f…"
+
+2025-09-23 02:17:19 | ERROR | Automation login UI error: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#idSIButton9")
+    - locator resolved to <input disabled value="Next" type="submit" id="idSIButton9" data-report-value="Submit" data-report-trigger="click" data-report-event="Signin_Submit" class="win-button button_primary high-contrast-overrides button ext-button primary ext-primary" data-bind="↵                attr: primaryButtonAttributes,↵                css: { 'high-contrast-overrides': true },↵                externalCss: {↵                    'button': true,↵                    'primary': true },↵                value: primaryButtonT…/>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is not stable
+  - retrying click action
+    - waiting 500ms
+  - element was detached from the DOM, retrying
+    - waiting for" https://login.live.com/oauth20_authorize.srf?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default+openid+profile+offline_access&redirect_uri=https%3a%2f%2f…" navigation to finish...
+    - navigated to "https://login.live.com/oauth20_authorize.srf?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3a%2f%2foutlook.office.com%2f.default+openid+profile+offline_access&redirect_uri=https%3a%2f%2f…"
+
+2025-09-23 02:29:32 | ERROR | Campaigns page error: campaigns.html
+2025-09-23 02:31:41 | INFO | Starting bulk send with 1 emails
+2025-09-23 02:31:41 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 02:31:42 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-23 02:31:43 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 02:31:43 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-23 02:31:45 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 02:31:45 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-23 02:31:49 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 02:31:49 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-23 02:31:57 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 02:32:58 | ERROR | Campaigns page error: campaigns.html
+2025-09-23 02:47:55 | INFO | Starting bulk send with 1 emails
+2025-09-23 02:47:55 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 02:47:55 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-23 02:47:56 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 02:47:56 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-23 02:47:58 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 02:47:59 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-23 02:48:03 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 02:48:03 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-23 02:48:11 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 02:50:30 | ERROR | Monitoring page error: monitoring.html
+2025-09-23 02:50:33 | ERROR | Campaigns page error: campaigns.html
+2025-09-23 02:51:03 | ERROR | Campaigns page error: campaigns.html
+2025-09-23 02:51:10 | ERROR | Campaigns page error: campaigns.html
+2025-09-23 03:12:23 | INFO | Starting bulk send with 1 emails
+2025-09-23 03:12:23 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 03:12:23 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-09-23 03:12:24 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 03:12:24 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-09-23 03:12:26 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 03:12:27 | INFO | Failed, waiting 4.0 seconds before retry 3
+2025-09-23 03:12:31 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 03:12:31 | INFO | Failed, waiting 8.0 seconds before retry 4
+2025-09-23 03:12:39 | ERROR | Unexpected error sending email: Unexpected error: name 'EmailAccount' is not defined
+2025-09-23 03:24:53 | ERROR | Send compose error: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("button", name="New mail")
+
+2025-09-23 03:36:49 | ERROR | Send compose error: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("textbox", name="To") to be visible
+
+2025-09-23 03:47:12 | ERROR | Send compose error: Unable to locate 'To' field in Outlook compose UI
+2025-09-23 03:49:14 | ERROR | Send compose error: Unable to locate 'To' field in Outlook compose UI
+2025-09-23 04:10:25 | ERROR | Send compose error: sequence item 0: expected str instance, NoneType found
+2025-09-23 04:19:59 | ERROR | Send compose error: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input, div[contenteditable='true']").first
+
+2025-09-23 08:22:51 | ERROR | Send compose error: Locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("textbox", name="Subject")
+
+2025-09-23 08:40:31 | INFO | Starting email send from lion0692118@outlook.com to ['lion0692121@outlook.com'] with subject: Project
+2025-09-23 08:44:59 | ERROR | Send compose error: Locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("div[contenteditable=\"true\"]").first
+
+2025-09-23 09:04:12 | INFO | Starting email send from lion0692118@outlook.com to ['lion0692121@outlook.com'] with subject: Second Test
+2025-09-23 09:04:28 | WARNING | Compose window may not be fully loaded, proceeding anyway
+2025-09-23 09:08:20 | ERROR | Send compose error: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input, div[contenteditable='true']").first
+
+2025-09-23 09:12:53 | INFO | Starting email send from lion0692118@outlook.com to ['lion0692121@outlook.com'] with subject: Project
+2025-09-23 09:13:05 | WARNING | Compose window may not be fully loaded, proceeding anyway
+2025-09-23 09:15:02 | INFO | Starting email send from lion0692118@outlook.com to ['lion0692121@outlook.com'] with subject: Second Test
+2025-09-23 09:15:14 | WARNING | Compose window may not be fully loaded, proceeding anyway
+2025-09-23 09:18:56 | INFO | Starting email send from lion0692118@outlook.com to ['lion0692121@outlook.com'] with subject: Second Test
+2025-09-23 09:19:08 | WARNING | Compose window may not be fully loaded, proceeding anyway
+2025-09-23 09:23:33 | INFO | Attempting to fill email body...
+2025-09-23 09:23:35 | INFO | Body filled via keyboard typing
+2025-09-23 09:23:35 | INFO | Attempting to send email...
+2025-09-23 09:23:35 | INFO | Email sent via Ctrl+Enter
+2025-09-23 09:23:52 | WARNING | Could not confirm email send, but attempt was made
+2025-09-23 09:24:14 | INFO | Starting email send from lion0692118@outlook.com to ['lion0692121@outlook.com'] with subject: First Test
+2025-09-23 09:24:27 | WARNING | Compose window may not be fully loaded, proceeding anyway
+2025-09-23 09:26:51 | INFO | Starting email send from lion0692118@outlook.com to ['lion0692121@outlook.com'] with subject: Second Test
+2025-09-23 09:27:03 | WARNING | Compose window may not be fully loaded, proceeding anyway
+2025-09-23 09:30:28 | INFO | Attempting to fill email body...
+2025-09-23 09:30:30 | INFO | Body filled via keyboard typing
+2025-09-23 09:30:30 | INFO | Attempting to send email...
+2025-09-23 09:30:30 | INFO | Email sent via Ctrl+Enter
+2025-09-23 09:30:50 | WARNING | Could not confirm email send, but attempt was made
+2025-09-23 09:42:21 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-23 09:42:21 | INFO | 📧 Opening compose...
+2025-09-23 09:42:23 | INFO | ⚡ Quick field check...
+2025-09-23 09:42:23 | INFO | 📤 Sending email...
+2025-09-23 09:42:23 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-23 09:42:34 | WARNING | ⚠️ Could not confirm send
+2025-09-23 09:43:23 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | qwqwTest
+2025-09-23 09:43:24 | INFO | 📧 Opening compose...
+2025-09-23 09:43:26 | INFO | ⚡ Quick field check...
+2025-09-23 09:43:26 | INFO | 📤 Sending email...
+2025-09-23 09:43:26 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-23 09:43:36 | WARNING | ⚠️ Could not confirm send
+2025-09-23 09:47:43 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-23 09:47:44 | INFO | 📧 Opening compose...
+2025-09-23 09:47:46 | INFO | ⚡ Quick field check...
+2025-09-23 09:47:46 | INFO | 📤 Sending email...
+2025-09-23 09:47:46 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-23 09:47:55 | WARNING | ⚠️ Could not confirm in Sent Items; send likely succeeded
+2025-09-23 09:49:36 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | dfasdfasdfasdf
+2025-09-23 09:49:37 | INFO | 📧 Opening compose...
+2025-09-23 09:49:39 | INFO | ⚡ Quick field check...
+2025-09-23 09:49:39 | INFO | 📤 Sending email...
+2025-09-23 09:49:39 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-23 09:49:48 | WARNING | ⚠️ Could not confirm in Sent Items; send likely succeeded
+2025-09-23 09:55:54 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | First Test
+2025-09-23 09:55:55 | INFO | 📧 Opening compose...
+2025-09-23 09:55:57 | INFO | ⚡ Quick field check...
+2025-09-23 09:55:58 | INFO | 📤 Sending email...
+2025-09-23 09:55:58 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-23 09:56:08 | WARNING | ⚠️ Could not confirm in Sent Items; send likely succeeded
+2025-09-23 10:10:02 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | First Test
+2025-09-23 10:10:02 | INFO | 📧 Opening compose...
+2025-09-23 10:10:05 | INFO | ⚡ Quick field check...
+2025-09-23 10:10:05 | INFO | 📤 Sending email...
+2025-09-23 10:10:05 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-23 10:10:22 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-23 10:16:53 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-23 10:16:53 | ERROR | ❌ Send failed: 
+2025-09-23 10:18:19 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-23 10:18:19 | ERROR | ❌ Send failed: 
+2025-09-23 10:18:54 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-23 10:18:54 | ERROR | ❌ Send failed with unexpected error
+Traceback (most recent call last):
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 995, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001D427A48220>
+    └ <Thread(Thread-3 (process_request_thread), started daemon 24200)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001D427A23EC0>
+    └ <Thread(Thread-3 (process_request_thread), started daemon 24200)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-3 (process_request_thread), started daemon 24200)>
+    │    │        │    └ (<socket.socket fd=884, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 62948)>, ('127.0.0.1', 62948))
+    │    │        └ <Thread(Thread-3 (process_request_thread), started daemon 24200)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x000001D42D04F450>>
+    └ <Thread(Thread-3 (process_request_thread), started daemon 24200)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 62948)
+    │    │              └ <socket.socket fd=884, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 62948)>
+    │    └ <function BaseServer.finish_request at 0x000001D4298FBC40>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x000001D42D04F450>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x000001D42D04F450>
+    │    │                   │        └ ('127.0.0.1', 62948)
+    │    │                   └ <socket.socket fd=884, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 62948)>
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x000001D42D04F450>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001D42A1805E0>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x000001D42D090C90>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 398, in handle
+    super().handle()
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 431, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x000001D42A0018A0>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x000001D42D090C90>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 419, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x000001D42D090C90>>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <Flask 'main'>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x000001D42D04F450>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x000001D42D090C90>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x000001D42D043740>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+                       │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x000001D42D043600>
+                       │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=884>, 'wsgi.errors': <_io.TextIOWr...
+                       └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x000001D42D043600>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=884>, 'wsgi.errors': <_io.TextIOWr...
+           │    └ <function Flask.wsgi_app at 0x000001D42AE2DD00>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x000001D42AE2D440>
+               └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x000001D42AE2D3A0>
+         └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'send_compose'
+           │    │           │    │              └ <Rule '/compose/send' (OPTIONS, POST) -> send_compose>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x000001D42CFB6200>, 'dashboard': <function dashboard at 0x000001D42...
+           │    │           └ <Flask 'main'>
+           │    └ <function Flask.ensure_sync at 0x000001D42AE2D620>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           │                       │      │       └ {}
+           │                       │      └ ()
+           │                       └ <function send_compose at 0x000001D42D026D40>
+           └ <Flask 'main'>
+
+  File "E:\a_Work\tele\New folder\main.py", line 413, in send_compose
+    success = fast_send_email(
+              └ <function fast_send_email at 0x000001D42CFB5EE0>
+
+> File "E:\a_Work\tele\New folder\automation\office365_fast.py", line 55, in fast_send_email
+    with sync_playwright() as p:
+         └ <function sync_playwright at 0x000001D42CD8C2C0>
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\sync_api\_context_manager.py", line 77, in __enter__
+    dispatcher_fiber.switch()
+    │                └ <method 'switch' of 'greenlet.greenlet' objects>
+    └ <MainGreenlet object at 0x000001D42D18AE40 (otid=0x000001D42D0DB600) dead>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\sync_api\_context_manager.py", line 56, in greenlet_main
+    self._loop.run_until_complete(self._connection.run_as_sync())
+    │    │     │                  │    │           └ <function Connection.run_as_sync at 0x000001D42CE682C0>
+    │    │     │                  │    └ <playwright._impl._connection.Connection object at 0x000001D42D18B710>
+    │    │     │                  └ <playwright.sync_api._context_manager.PlaywrightContextManager object at 0x000001D42D090350>
+    │    │     └ <function BaseEventLoop.run_until_complete at 0x000001D42981F380>
+    │    └ <_WindowsSelectorEventLoop running=False closed=False debug=False>
+    └ <playwright.sync_api._context_manager.PlaywrightContextManager object at 0x000001D42D090350>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 650, in run_until_complete
+    return future.result()
+           │      └ <method 'result' of '_asyncio.Task' objects>
+           └ <Task finished name='Task-1' coro=<Connection.run_as_sync() done, defined at C:\Users\TIGER\AppData\Local\Programs\Python\Pyt...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py", line 301, in run_as_sync
+    await self.run()
+          │    └ <function Connection.run at 0x000001D42CE68360>
+          └ <playwright._impl._connection.Connection object at 0x000001D42D18B710>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py", line 310, in run
+    await self._transport.connect()
+          │    │          └ <function PipeTransport.connect at 0x000001D42CE0F4C0>
+          │    └ <playwright._impl._transport.PipeTransport object at 0x000001D42D18BB10>
+          └ <playwright._impl._connection.Connection object at 0x000001D42D18B710>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+    │                  │       └ <function create_subprocess_exec at 0x000001D42983DC60>
+    │                  └ <module 'asyncio' from 'C:\\Users\\TIGER\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+    └ <playwright._impl._transport.PipeTransport object at 0x000001D42D18BB10>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 218, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                                │    └ <function BaseEventLoop.subprocess_exec at 0x000001D429824C20>
+                                └ <_WindowsSelectorEventLoop running=False closed=False debug=False>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1680, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                      │    └ <function BaseEventLoop._make_subprocess_transport at 0x000001D42981EC00>
+                      └ <_WindowsSelectorEventLoop running=False closed=False debug=False>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 502, in _make_subprocess_transport
+    raise NotImplementedError
+
+NotImplementedError
+2025-09-23 10:22:12 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-23 10:22:13 | INFO | 📧 Opening compose...
+2025-09-23 10:22:32 | ERROR | ❌ Send failed with unexpected error
+Traceback (most recent call last):
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 995, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000019AE2808220>
+    └ <Thread(Thread-3 (process_request_thread), started daemon 43876)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x0000019AE27E3EC0>
+    └ <Thread(Thread-3 (process_request_thread), started daemon 43876)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-3 (process_request_thread), started daemon 43876)>
+    │    │        │    └ (<socket.socket fd=1136, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 63117)>, ('127.0.0.1', 631...
+    │    │        └ <Thread(Thread-3 (process_request_thread), started daemon 43876)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x0000019AE7E1ED10>>
+    └ <Thread(Thread-3 (process_request_thread), started daemon 43876)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 63117)
+    │    │              └ <socket.socket fd=1136, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 63117)>
+    │    └ <function BaseServer.finish_request at 0x0000019AE46CBC40>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x0000019AE7E1ED10>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x0000019AE7E1ED10>
+    │    │                   │        └ ('127.0.0.1', 63117)
+    │    │                   └ <socket.socket fd=1136, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 63117)>
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x0000019AE7E1ED10>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x0000019AE4F605E0>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x0000019AE67A99D0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 398, in handle
+    super().handle()
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 431, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x0000019AE4D818A0>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x0000019AE67A99D0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 419, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x0000019AE67A99D0>>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <Flask 'main'>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x0000019AE7E1ED10>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x0000019AE67A99D0>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x0000019AE7E136A0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+                       │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x0000019AE7E13560>
+                       │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1136>, 'wsgi.errors': <_io.TextIOW...
+                       └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x0000019AE7E13560>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1136>, 'wsgi.errors': <_io.TextIOW...
+           │    └ <function Flask.wsgi_app at 0x0000019AE5C0DD00>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x0000019AE5C0D440>
+               └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x0000019AE5C0D3A0>
+         └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'send_compose'
+           │    │           │    │              └ <Rule '/compose/send' (POST, OPTIONS) -> send_compose>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x0000019AE67C5F80>, 'dashboard': <function dashboard at 0x0000019AE...
+           │    │           └ <Flask 'main'>
+           │    └ <function Flask.ensure_sync at 0x0000019AE5C0D620>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           │                       │      │       └ {}
+           │                       │      └ ()
+           │                       └ <function send_compose at 0x0000019AE7DF6CA0>
+           └ <Flask 'main'>
+
+  File "E:\a_Work\tele\New folder\main.py", line 409, in send_compose
+    success = fast_send_email(
+              └ <function fast_send_email at 0x0000019AE7D85EE0>
+
+> File "E:\a_Work\tele\New folder\automation\office365_fast.py", line 80, in fast_send_email
+    page.wait_for_load_state('networkidle', timeout=10000)
+    │    └ <function Page.wait_for_load_state at 0x0000019AE7D594E0>
+    └ <Page url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&bcc=&subject=Second%20Test&body=Hel...
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\sync_api\_generated.py", line 9117, in wait_for_load_state
+    self._sync(self._impl_obj.wait_for_load_state(state=state, timeout=timeout))
+    │    │     │    │         │                         │              └ 10000
+    │    │     │    │         │                         └ 'networkidle'
+    │    │     │    │         └ <function Page.wait_for_load_state at 0x0000019AE7D00B80>
+    │    │     │    └ <Page url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&bcc=&subject=Second%20Test&body=Hel...
+    │    │     └ <Page url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&bcc=&subject=Second%20Test&body=Hel...
+    │    └ <function SyncBase._sync at 0x0000019AE7D34720>
+    └ <Page url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&bcc=&subject=Second%20Test&body=Hel...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           │    └ <method 'result' of '_asyncio.Task' objects>
+           └ <Task finished name='Task-8' coro=<Page.wait_for_load_state() done, defined at C:\Users\TIGER\AppData\Local\Programs\Python\P...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_page.py", line 576, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+                 │    │           │                     └ <function locals_to_params at 0x0000019AE7BDDE40>
+                 │    │           └ <function Frame.wait_for_load_state at 0x0000019AE7CB28E0>
+                 │    └ <Frame name= url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&bcc=&subject=Second%20Test&b...
+                 └ <Page url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&bcc=&subject=Second%20Test&body=Hel...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_frame.py", line 273, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+                 │    │                         │      └ 10000
+                 │    │                         └ 'networkidle'
+                 │    └ <function Frame._wait_for_load_state_impl at 0x0000019AE7CB2980>
+                 └ <Frame name= url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&bcc=&subject=Second%20Test&b...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_frame.py", line 301, in _wait_for_load_state_impl
+    await waiter.result()
+          │      └ <function Waiter.result at 0x0000019AE7C49D00>
+          └ <playwright._impl._waiter.Waiter object at 0x0000019AE7F5DB50>
+
+playwright._impl._errors.TimeoutError: Timeout 10000ms exceeded.
+2025-09-23 10:30:54 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-23 10:30:55 | INFO | 📧 Opening compose...
+2025-09-23 10:31:14 | WARNING | ⚠️ Compose UI not detected; retrying deeplink once
+2025-09-23 10:31:30 | WARNING | ⚠️ Compose UI still not detected; proceeding with fallbacks
+2025-09-23 10:31:30 | INFO | ⚡ Quick field check...
+2025-09-23 10:31:30 | INFO | 📤 Sending email...
+2025-09-23 10:31:30 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-23 10:31:54 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-23 10:42:07 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-23 10:42:08 | INFO | 📧 Opening compose...
+2025-09-23 10:42:31 | WARNING | ⚠️ Compose UI not detected; retrying deeplink once
+2025-09-23 10:42:47 | WARNING | ⚠️ Compose UI still not detected; using Inbox → New mail fallback
+2025-09-23 10:43:07 | WARNING | ⚠️ Could not open compose via fallback; continuing but send may fail
+2025-09-23 10:43:07 | INFO | ⚡ Quick field check...
+2025-09-23 10:43:07 | WARNING | ⚠️ To field issue
+2025-09-23 10:43:07 | WARNING | ⚠️ Subject field issue
+2025-09-23 10:43:07 | WARNING | ⚠️ Body field issue
+2025-09-23 10:43:07 | INFO | 📤 Sending email...
+2025-09-23 10:45:14 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | Project
+2025-09-23 10:45:15 | INFO | 📧 Opening compose...
+2025-09-23 10:45:25 | INFO | ✅ Compose UI detected
+2025-09-23 10:45:25 | INFO | ⚡ Quick field check...
+2025-09-23 10:45:25 | INFO | 📤 Sending email...
+2025-09-23 10:45:25 | INFO | ✅ Sent via Send button
+2025-09-23 10:45:37 | INFO | ✅ Send confirmed in Sent Items
+2025-09-23 10:47:52 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | Project
+2025-09-23 10:47:52 | INFO | 📧 Opening compose...
+2025-09-23 10:48:05 | INFO | ✅ Compose UI detected
+2025-09-23 10:48:05 | INFO | ⚡ Quick field check...
+2025-09-23 10:48:05 | INFO | 📤 Sending email...
+2025-09-23 10:48:05 | INFO | ✅ Sent via Send button
+2025-09-23 10:48:16 | INFO | ✅ Send confirmed in Sent Items
+2025-09-24 03:16:37 | INFO | 🚀 FAST SEND: lion0692118@outlook.com → ['lion0692121@outlook.com'] | Second Test123
+2025-09-24 03:16:38 | INFO | 📧 Opening compose...
+2025-09-24 03:16:55 | WARNING | ⚠️ Compose UI not detected; retrying deeplink once
+2025-09-24 03:17:10 | WARNING | ⚠️ Compose UI still not detected; using Inbox → New mail fallback
+2025-09-24 03:17:32 | WARNING | ⚠️ Could not open compose via fallback; continuing but send may fail
+2025-09-24 03:17:32 | INFO | ⚡ Quick field check...
+2025-09-24 03:17:32 | INFO | 📤 Sending email...
+2025-09-24 03:17:33 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 03:17:49 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 03:29:51 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-24 03:29:52 | INFO | 📧 Opening compose...
+2025-09-24 03:30:09 | WARNING | ⚠️ Compose UI not detected; retrying deeplink once
+2025-09-24 03:30:18 | INFO | ✅ Compose UI detected on retry
+2025-09-24 03:30:18 | INFO | ⚡ Quick field check...
+2025-09-24 03:30:18 | INFO | 📤 Sending email...
+2025-09-24 03:30:18 | INFO | ✅ Sent via Send button
+2025-09-24 03:30:35 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 03:31:21 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test222
+2025-09-24 03:31:22 | INFO | 📧 Opening compose...
+2025-09-24 03:31:43 | WARNING | ⚠️ Compose UI not detected; retrying deeplink once
+2025-09-24 03:32:18 | WARNING | ⚠️ Compose UI still not detected; using Inbox → New mail fallback
+2025-09-24 03:32:42 | WARNING | ⚠️ Could not open compose via fallback; continuing but send may fail
+2025-09-24 03:32:42 | INFO | ⚡ Quick field check...
+2025-09-24 03:32:42 | INFO | 📤 Sending email...
+2025-09-24 03:32:43 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 03:33:01 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 03:34:20 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test123
+2025-09-24 03:34:21 | INFO | 📧 Opening compose...
+2025-09-24 03:34:42 | WARNING | ⚠️ Compose UI not detected; retrying deeplink once
+2025-09-24 03:34:52 | INFO | ✅ Compose UI detected on retry
+2025-09-24 03:34:52 | INFO | ⚡ Quick field check...
+2025-09-24 03:34:52 | INFO | 📤 Sending email...
+2025-09-24 03:34:53 | INFO | ✅ Sent via Send button
+2025-09-24 03:35:01 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | First Test333
+2025-09-24 03:35:02 | INFO | 📧 Opening compose...
+2025-09-24 03:35:12 | INFO | ✅ Send confirmed in Sent Items
+2025-09-24 03:35:21 | WARNING | ⚠️ Compose UI not detected; retrying deeplink once
+2025-09-24 03:35:33 | INFO | ✅ Compose UI detected on retry
+2025-09-24 03:35:33 | INFO | ⚡ Quick field check...
+2025-09-24 03:35:33 | INFO | 📤 Sending email...
+2025-09-24 03:35:33 | INFO | ✅ Sent via Send button
+2025-09-24 03:35:51 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 03:36:28 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test@@@
+2025-09-24 03:36:29 | INFO | 📧 Opening compose...
+2025-09-24 03:36:50 | WARNING | ⚠️ Compose UI not detected; retrying deeplink once
+2025-09-24 03:37:06 | INFO | ✅ Compose UI detected on retry
+2025-09-24 03:37:06 | INFO | ⚡ Quick field check...
+2025-09-24 03:37:06 | INFO | 📤 Sending email...
+2025-09-24 03:37:06 | INFO | ✅ Sent via Send button
+2025-09-24 03:37:24 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 03:55:30 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test345
+2025-09-24 03:55:31 | INFO | 📧 Opening compose...
+2025-09-24 03:55:49 | WARNING | ⚠️ Compose UI not detected; retrying deeplink once
+2025-09-24 03:55:55 | INFO | ✅ Compose UI detected on retry
+2025-09-24 03:55:55 | INFO | ⚡ Quick field check...
+2025-09-24 03:55:55 | INFO | 📤 Sending email...
+2025-09-24 03:55:55 | INFO | ✅ Sent via Send button
+2025-09-24 03:56:15 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 03:56:50 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-24 03:56:51 | INFO | 📧 Opening compose...
+2025-09-24 03:57:12 | INFO | ⚡ Quick field check...
+2025-09-24 03:57:12 | INFO | 📤 Sending email...
+2025-09-24 03:57:12 | INFO | ✅ Sent via Send button
+2025-09-24 03:57:25 | INFO | ✅ Send confirmed in Sent Items
+2025-09-24 04:00:28 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test123
+2025-09-24 04:00:29 | INFO | 📧 Opening compose...
+2025-09-24 04:00:46 | INFO | ⚡ Quick field check...
+2025-09-24 04:00:46 | INFO | 📤 Sending email...
+2025-09-24 04:00:46 | INFO | ✅ Sent via Send button
+2025-09-24 04:01:02 | INFO | ✅ Send confirmed in Sent Items
+2025-09-24 04:08:59 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test444
+2025-09-24 04:09:00 | INFO | 📧 Opening compose...
+2025-09-24 04:09:17 | INFO | ⚡ Quick field check...
+2025-09-24 04:09:17 | INFO | 📤 Sending email...
+2025-09-24 04:09:17 | INFO | ✅ Sent via Send button
+2025-09-24 04:09:35 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 04:10:22 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-24 04:10:23 | INFO | 📧 Opening compose...
+2025-09-24 04:10:48 | INFO | ⚡ Quick field check...
+2025-09-24 04:10:48 | INFO | 📤 Sending email...
+2025-09-24 04:10:48 | INFO | ✅ Sent via Send button
+2025-09-24 04:11:04 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 04:12:38 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test0000
+2025-09-24 04:12:39 | INFO | 📧 Opening compose...
+2025-09-24 04:13:04 | INFO | ⚡ Quick field check...
+2025-09-24 04:13:04 | INFO | 📤 Sending email...
+2025-09-24 04:13:04 | INFO | ✅ Sent via Send button
+2025-09-24 04:13:21 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 04:14:17 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test!@$
+2025-09-24 04:14:17 | INFO | 📧 Opening compose...
+2025-09-24 04:14:53 | WARNING | ⚠️ Compose UI not detected; retrying deeplink
+2025-09-24 04:16:01 | WARNING | ⚠️ Compose UI still not detected; using Inbox → New mail fallback
+2025-09-24 04:16:22 | WARNING | ⚠️ Could not open compose via fallback; continuing but send may fail
+2025-09-24 04:16:22 | INFO | ⚡ Quick field check...
+2025-09-24 04:16:22 | INFO | 📤 Sending email...
+2025-09-24 04:16:23 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 04:16:39 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 04:17:08 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | First Test876
+2025-09-24 04:17:09 | INFO | 📧 Opening compose...
+2025-09-24 04:17:46 | WARNING | ⚠️ Compose UI not detected; retrying deeplink
+2025-09-24 04:18:53 | WARNING | ⚠️ Compose UI still not detected; using Inbox → New mail fallback
+2025-09-24 04:19:14 | WARNING | ⚠️ Could not open compose via fallback; continuing but send may fail
+2025-09-24 04:19:14 | INFO | ⚡ Quick field check...
+2025-09-24 04:19:14 | INFO | 📤 Sending email...
+2025-09-24 04:19:15 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 04:19:30 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 04:20:13 | ERROR | Monitoring page error: monitoring.html
+2025-09-24 04:20:17 | ERROR | Campaigns page error: campaigns.html
+2025-09-24 04:20:19 | ERROR | Campaigns page error: campaigns.html
+2025-09-24 04:20:51 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second TestFD
+2025-09-24 04:20:52 | INFO | 📧 Opening compose...
+2025-09-24 04:21:29 | WARNING | ⚠️ Compose UI not detected; retrying deeplink
+2025-09-24 04:22:36 | WARNING | ⚠️ Compose UI still not detected; using Inbox → New mail fallback
+2025-09-24 04:23:28 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test%$#
+2025-09-24 04:23:29 | INFO | 📧 Opening compose...
+2025-09-24 04:24:11 | WARNING | ⚠️ Compose UI not detected; retrying deeplink
+2025-09-24 04:25:18 | WARNING | ⚠️ Compose UI still not detected; using Inbox → New mail fallback
+2025-09-24 04:25:46 | WARNING | ⚠️ Could not open compose via fallback; continuing but send may fail
+2025-09-24 04:25:46 | INFO | ⚡ Quick field check...
+2025-09-24 04:25:46 | INFO | 📤 Sending email...
+2025-09-24 04:25:47 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 04:26:02 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 04:49:54 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | First Test777
+2025-09-24 04:49:55 | INFO | 📧 Opening compose...
+2025-09-24 04:50:30 | WARNING | ⚠️ Compose UI not detected; retrying deeplink
+2025-09-24 04:51:38 | WARNING | ⚠️ Compose UI still not detected; using Inbox → New mail fallback
+2025-09-24 04:51:59 | WARNING | ⚠️ Could not open compose via fallback; continuing but send may fail
+2025-09-24 04:51:59 | INFO | ⚡ Quick field check...
+2025-09-24 04:51:59 | INFO | 📤 Sending email...
+2025-09-24 04:52:00 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 04:52:16 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 05:21:22 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test45
+2025-09-24 05:21:23 | INFO | 📧 Opening compose...
+2025-09-24 05:21:25 | INFO | 🔍 Detecting compose UI...
+2025-09-24 05:23:01 | WARNING | ❌ No compose UI elements detected
+2025-09-24 05:23:01 | WARNING | ⚠️ Compose UI not detected; retrying deeplink
+2025-09-24 05:23:02 | INFO | 🔍 Detecting compose UI...
+2025-09-24 05:24:37 | WARNING | ❌ No compose UI elements detected
+2025-09-24 05:24:38 | INFO | 🔍 Detecting compose UI...
+2025-09-24 05:26:13 | WARNING | ❌ No compose UI elements detected
+2025-09-24 05:26:13 | WARNING | ⚠️ Compose UI still not detected; using Inbox → New mail fallback
+2025-09-24 05:26:13 | INFO | 🔄 Attempting fallback: Inbox → New mail
+2025-09-24 05:26:18 | INFO | ✅ Opened compose via N key
+2025-09-24 05:26:21 | INFO | 🔍 Detecting compose UI...
+2025-09-24 05:27:07 | WARNING | ❌ No compose UI elements detected
+2025-09-24 05:27:07 | WARNING | ⚠️ Compose opened but UI not detected
+2025-09-24 05:27:07 | INFO | ⚡ Quick field check...
+2025-09-24 05:27:07 | WARNING | ⚠️ To field issue
+2025-09-24 05:27:07 | WARNING | ⚠️ Subject field issue
+2025-09-24 05:37:05 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | NIce
+2025-09-24 05:37:05 | INFO | 📧 Opening compose...
+2025-09-24 05:37:17 | WARNING | ⚠️ Compose deeplink URL not detected, continuing...
+2025-09-24 05:37:19 | INFO | 🔍 Detecting compose UI...
+2025-09-24 05:38:54 | WARNING | ❌ No compose UI elements detected
+2025-09-24 05:38:54 | WARNING | ⚠️ Compose UI not detected; retrying deeplink
+2025-09-24 05:38:56 | INFO | 🔍 Detecting compose UI...
+2025-09-24 05:40:31 | WARNING | ❌ No compose UI elements detected
+2025-09-24 05:40:32 | INFO | 🔍 Detecting compose UI...
+2025-09-24 05:41:41 | WARNING | ❌ No compose UI elements detected
+2025-09-24 05:41:41 | WARNING | ⚠️ Compose UI still not detected; using Inbox → New mail fallback
+2025-09-24 05:41:41 | INFO | 🔄 Attempting fallback: Inbox → New mail
+2025-09-24 05:42:07 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | First Test
+2025-09-24 05:42:07 | INFO | 📧 Opening compose...
+2025-09-24 05:42:19 | WARNING | ⚠️ Compose deeplink URL not detected, continuing...
+2025-09-24 05:42:21 | INFO | 🔍 Detecting compose UI...
+2025-09-24 05:43:39 | WARNING | ❌ No compose UI elements detected
+2025-09-24 05:43:39 | WARNING | ⚠️ Compose UI not detected; retrying deeplink
+2025-09-24 05:47:09 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-24 05:47:09 | INFO | 📧 Opening compose...
+2025-09-24 05:47:21 | WARNING | ⚠️ Compose deeplink URL not detected, continuing...
+2025-09-24 05:47:23 | INFO | 🔍 Detecting compose UI...
+2025-09-24 05:47:23 | WARNING | ❌ Detection error: name 'time' is not defined
+2025-09-24 05:47:23 | WARNING | ⚠️ Compose UI not detected; retrying deeplink
+2025-09-24 05:47:23 | INFO | 🔄 Retry attempt 1
+2025-09-24 05:47:53 | INFO | 🔄 Retry attempt 2
+2025-09-24 05:47:56 | INFO | 🔍 Detecting compose UI...
+2025-09-24 05:47:56 | WARNING | ❌ Detection error: name 'time' is not defined
+2025-09-24 05:47:56 | WARNING | ⚠️ Compose UI detection failed, but proceeding with field filling...
+2025-09-24 05:47:56 | INFO | ⚡ Attempting field filling...
+2025-09-24 05:47:57 | WARNING | ⚠️ To field not filled
+2025-09-24 05:47:57 | WARNING | ⚠️ Subject field not filled
+2025-09-24 05:47:57 | WARNING | ⚠️ Body field not filled
+2025-09-24 05:47:57 | INFO | 📤 Sending email...
+2025-09-24 05:47:58 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 05:48:18 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 05:52:12 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-24 05:52:13 | INFO | 📧 Opening compose...
+2025-09-24 05:52:25 | WARNING | ⚠️ Compose deeplink URL not detected, continuing...
+2025-09-24 05:52:27 | INFO | 🔍 Detecting compose UI...
+2025-09-24 05:52:44 | WARNING | ❌ No compose UI elements detected within timeout
+2025-09-24 05:52:44 | WARNING | ⚠️ Compose UI not detected; retrying deeplink
+2025-09-24 05:52:44 | INFO | 🔄 Retry attempt 1
+2025-09-24 05:52:47 | INFO | 🔍 Detecting compose UI...
+2025-09-24 05:52:47 | INFO | ✅ Compose detected by URL
+2025-09-24 05:52:47 | INFO | ✅ Compose UI detected on retry
+2025-09-24 05:52:47 | INFO | ⚡ Attempting field filling...
+2025-09-24 05:52:48 | WARNING | ⚠️ To field not filled
+2025-09-24 05:52:48 | WARNING | ⚠️ Subject field not filled
+2025-09-24 05:52:48 | WARNING | ⚠️ Body field not filled
+2025-09-24 05:52:48 | INFO | 📤 Sending email...
+2025-09-24 05:52:49 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 05:53:07 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 06:04:54 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-24 06:04:54 | INFO | 📧 Opening compose...
+2025-09-24 06:05:06 | WARNING | ⚠️ Compose deeplink URL not detected, continuing...
+2025-09-24 06:05:08 | INFO | 🔍 Detecting compose UI...
+2025-09-24 06:05:25 | WARNING | ❌ No compose UI elements detected within timeout
+2025-09-24 06:05:25 | WARNING | ⚠️ Compose UI not detected; retrying deeplink
+2025-09-24 06:05:25 | INFO | 🔄 Retry attempt 1
+2025-09-24 06:05:28 | INFO | 🔍 Detecting compose UI...
+2025-09-24 06:05:39 | WARNING | ❌ No compose UI elements detected within timeout
+2025-09-24 06:05:39 | INFO | 🔄 Retry attempt 2
+2025-09-24 06:05:42 | INFO | 🔍 Detecting compose UI...
+2025-09-24 06:05:52 | WARNING | ❌ No compose UI elements detected within timeout
+2025-09-24 06:05:52 | WARNING | ⚠️ Compose UI detection failed, but proceeding with field filling...
+2025-09-24 06:05:52 | INFO | ⚡ Attempting field filling...
+2025-09-24 06:05:53 | WARNING | ⚠️ To field not filled
+2025-09-24 06:05:53 | WARNING | ⚠️ Subject field not filled
+2025-09-24 06:05:53 | WARNING | ⚠️ Body field not filled
+2025-09-24 06:05:53 | INFO | 📤 Sending email...
+2025-09-24 06:05:54 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 06:06:10 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 06:07:58 | ERROR | Automation login UI error: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "load"
+
+2025-09-24 06:08:22 | ERROR | Automation login UI error: Locator.wait_for: Target page, context or browser has been closed
+2025-09-24 06:09:43 | ERROR | Automation login UI error: Locator.wait_for: Target page, context or browser has been closed
+2025-09-24 07:19:38 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-24 07:19:39 | INFO | 📧 Opening compose...
+2025-09-24 07:19:50 | WARNING | ⚠️ Compose deeplink URL not detected, continuing...
+2025-09-24 07:19:52 | INFO | 🔍 Detecting compose UI...
+2025-09-24 07:20:08 | WARNING | ❌ No compose UI elements detected within timeout
+2025-09-24 07:20:08 | WARNING | ⚠️ Compose UI not detected; retrying deeplink
+2025-09-24 07:20:08 | INFO | 🔄 Retry attempt 1
+2025-09-24 07:20:12 | INFO | 🔍 Detecting compose UI...
+2025-09-24 07:20:22 | WARNING | ❌ No compose UI elements detected within timeout
+2025-09-24 07:20:22 | INFO | 🔄 Retry attempt 2
+2025-09-24 07:20:26 | INFO | 🔍 Detecting compose UI...
+2025-09-24 07:20:36 | WARNING | ❌ No compose UI elements detected within timeout
+2025-09-24 07:20:36 | WARNING | ⚠️ Compose UI detection failed, but proceeding with field filling...
+2025-09-24 07:20:36 | INFO | ⚡ Attempting field filling...
+2025-09-24 07:20:38 | INFO | 🔍 Looking for To field with 8 selectors...
+2025-09-24 07:20:38 | INFO |    Trying selector 1: input[aria-label='To']
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 2: div[role='combobox'][aria-label='To']
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 3: input[aria-label*='To' i]
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 4: input[placeholder*='To' i]
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 5: input[name='to']
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 6: .ms-Compose-recipientTo input
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 7: [data-automation-id='ToRecipientWell'] input
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 8: input[type='text']
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | WARNING | ⚠️ To field not filled - trying generic approach
+2025-09-24 07:20:38 | INFO | 🔍 Looking for Subject field with 9 selectors...
+2025-09-24 07:20:38 | INFO |    Trying selector 1: input[placeholder='Add a subject']
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 2: input[aria-label='Subject']
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 3: input[aria-label*='subject' i]
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 4: input[name='subject']
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 5: [data-automation-id='SubjectField']
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 6: .ms-Compose-subject input
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 7: #subject
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 8: input[placeholder*='Subject' i]
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | INFO |    Trying selector 9: input[type='text']
+2025-09-24 07:20:38 | INFO |    Field not visible
+2025-09-24 07:20:38 | WARNING | ⚠️ Subject field not filled - trying generic approach
+2025-09-24 07:20:39 | INFO | ✅ Subject filled via keyboard navigation
+2025-09-24 07:20:39 | INFO | 🔍 Looking for Body field...
+2025-09-24 07:20:39 | INFO |    Trying 6 iframe selectors...
+2025-09-24 07:20:39 | INFO |    Trying iframe 1: iframe[title*="Message body" i]
+2025-09-24 07:20:39 | INFO |    Iframe body not visible
+2025-09-24 07:20:39 | INFO |    Trying iframe 2: iframe[title*="Correo" i]
+2025-09-24 07:20:39 | INFO |    Iframe body not visible
+2025-09-24 07:20:39 | INFO |    Trying iframe 3: iframe[title*="Mensaje" i]
+2025-09-24 07:20:39 | INFO |    Iframe body not visible
+2025-09-24 07:20:39 | INFO |    Trying iframe 4: iframe[title*="Rich Text" i]
+2025-09-24 07:20:39 | INFO |    Iframe body not visible
+2025-09-24 07:20:39 | INFO |    Trying iframe 5: .ms-Compose-body iframe
+2025-09-24 07:20:39 | INFO |    Iframe body not visible
+2025-09-24 07:20:39 | INFO |    Trying iframe 6: iframe[data-automation-id*="body" i]
+2025-09-24 07:20:39 | INFO |    Iframe body not visible
+2025-09-24 07:20:39 | INFO |    Trying 4 contenteditable selectors...
+2025-09-24 07:20:39 | INFO |    Trying contenteditable 1: div[contenteditable="true"]
+2025-09-24 07:20:39 | INFO |    Contenteditable body not visible
+2025-09-24 07:20:39 | INFO |    Trying contenteditable 2: [contenteditable="true"]
+2025-09-24 07:20:39 | INFO |    Contenteditable body not visible
+2025-09-24 07:20:39 | INFO |    Trying contenteditable 3: .rooster-editor
+2025-09-24 07:20:39 | INFO |    Contenteditable body not visible
+2025-09-24 07:20:39 | INFO |    Trying contenteditable 4: [data-automation-id*="body" i]
+2025-09-24 07:20:39 | INFO |    Contenteditable body not visible
+2025-09-24 07:20:39 | WARNING | ⚠️ Body field not filled - trying keyboard typing
+2025-09-24 07:20:40 | INFO | ✅ Body filled via keyboard typing
+2025-09-24 07:20:40 | INFO | 📤 Sending email...
+2025-09-24 07:20:41 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 07:20:59 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 08:11:29 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test55
+2025-09-24 08:11:30 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test55&body=FFFFFFFF
+2025-09-24 08:11:30 | INFO | 📧 Opening compose...
+2025-09-24 08:11:55 | WARNING | ⚠️ Compose deeplink URL not detected, continuing...
+2025-09-24 08:12:03 | WARNING | ⚠️ No compose elements detected, but proceeding...
+2025-09-24 08:12:03 | INFO | ⚡ Verifying pre-filled fields...
+2025-09-24 08:12:04 | INFO | 🔍 Checking To field with 8 selectors...
+2025-09-24 08:12:04 | INFO |    Trying selector 1: input[aria-label='To']
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 2: div[role='combobox'][aria-label='To']
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 3: input[aria-label*='To' i]
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 4: input[placeholder*='To' i]
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 5: input[name='to']
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 6: .ms-Compose-recipientTo input
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 7: [data-automation-id='ToRecipientWell'] input
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 8: input[type='text']
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | WARNING | ⚠️ To field not filled - trying generic approach
+2025-09-24 08:12:04 | INFO | 🔍 Checking Subject field with 9 selectors...
+2025-09-24 08:12:04 | INFO |    Trying selector 1: input[placeholder='Add a subject']
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 2: input[aria-label='Subject']
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 3: input[aria-label*='subject' i]
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 4: input[name='subject']
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 5: [data-automation-id='SubjectField']
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 6: .ms-Compose-subject input
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 7: #subject
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 8: input[placeholder*='Subject' i]
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | INFO |    Trying selector 9: input[type='text']
+2025-09-24 08:12:04 | INFO |    Field not visible
+2025-09-24 08:12:04 | WARNING | ⚠️ Subject field not filled - trying generic approach
+2025-09-24 08:12:04 | INFO | ✅ Subject filled via keyboard navigation
+2025-09-24 08:12:04 | INFO | 🔍 Checking Body field...
+2025-09-24 08:12:04 | INFO |    Trying 6 iframe selectors...
+2025-09-24 08:12:04 | INFO |    Trying iframe 1: iframe[title*="Message body" i]
+2025-09-24 08:12:04 | INFO |    Iframe body not visible
+2025-09-24 08:12:04 | INFO |    Trying iframe 2: iframe[title*="Correo" i]
+2025-09-24 08:12:04 | INFO |    Iframe body not visible
+2025-09-24 08:12:04 | INFO |    Trying iframe 3: iframe[title*="Mensaje" i]
+2025-09-24 08:12:04 | INFO |    Iframe body not visible
+2025-09-24 08:12:04 | INFO |    Trying iframe 4: iframe[title*="Rich Text" i]
+2025-09-24 08:12:04 | INFO |    Iframe body not visible
+2025-09-24 08:12:04 | INFO |    Trying iframe 5: .ms-Compose-body iframe
+2025-09-24 08:12:04 | INFO |    Iframe body not visible
+2025-09-24 08:12:04 | INFO |    Trying iframe 6: iframe[data-automation-id*="body" i]
+2025-09-24 08:12:04 | INFO |    Iframe body not visible
+2025-09-24 08:12:04 | INFO |    Trying 4 contenteditable selectors...
+2025-09-24 08:12:04 | INFO |    Trying contenteditable 1: div[contenteditable="true"]
+2025-09-24 08:12:04 | INFO |    Contenteditable body not visible
+2025-09-24 08:12:04 | INFO |    Trying contenteditable 2: [contenteditable="true"]
+2025-09-24 08:12:04 | INFO |    Contenteditable body not visible
+2025-09-24 08:12:04 | INFO |    Trying contenteditable 3: .rooster-editor
+2025-09-24 08:12:04 | INFO |    Contenteditable body not visible
+2025-09-24 08:12:04 | INFO |    Trying contenteditable 4: [data-automation-id*="body" i]
+2025-09-24 08:12:04 | INFO |    Contenteditable body not visible
+2025-09-24 08:12:04 | WARNING | ⚠️ Body field not filled - trying keyboard typing
+2025-09-24 08:12:04 | INFO | ✅ Body filled via keyboard typing
+2025-09-24 08:12:04 | INFO | 📤 Sending email...
+2025-09-24 08:12:05 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 08:12:26 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 08:17:55 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-24 08:17:56 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test&body=alkdfasjdfalsjkdf%3Blasjdfjasdfjlka%3Bsjdf%3Balsjkdf%3Basldk
+2025-09-24 08:17:56 | INFO | 📧 Opening compose...
+2025-09-24 08:18:07 | INFO | ✅ Proceeding with field verification...
+2025-09-24 08:18:07 | INFO | ⚡ Using keyboard navigation for fields...
+2025-09-24 08:18:07 | INFO | ✅ To field filled via keyboard
+2025-09-24 08:18:08 | INFO | ✅ Subject field filled via keyboard
+2025-09-24 08:18:09 | INFO | ✅ Body field filled via keyboard
+2025-09-24 08:18:09 | INFO | 📤 Sending email...
+2025-09-24 08:18:10 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 08:18:29 | WARNING | ⚠️ Could not confirm send; please check recipient inbox and Sent Items
+2025-09-24 08:27:25 | INFO | 🚀 FAST SEND: lion0692120@outlook.com → ['lion0692121@outlook.com'] | Second Test000
+2025-09-24 08:27:25 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test000&body=Hello%2C%20are%20you%20around%3F
+2025-09-24 08:27:25 | INFO | 📧 Opening compose...
+2025-09-24 08:27:38 | INFO | ✅ Proceeding with field verification...
+2025-09-24 08:27:38 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 08:27:38 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test000&body=Hello%2C%20are%20you%20around%3F
+2025-09-24 08:27:38 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 08:27:41 | WARNING | ⚠️ Send button not visible
+2025-09-24 08:27:41 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 08:27:41 | INFO | 📤 Sending email...
+2025-09-24 08:27:42 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 08:27:43 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 08:27:46 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test000&body=Hello%2C%20are%20you%20around%3F
+2025-09-24 08:27:58 | WARNING | ⚠️ No clear send confirmation found
+2025-09-24 08:28:04 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 08:42:42 | INFO | 📁 Session file: sessions\office365_lion0692122_at_outlook_com.json
+2025-09-24 08:42:42 | INFO | 📁 Session file size: 59538 bytes
+2025-09-24 08:42:42 | INFO | 📁 Session file age: 2:30:37.671417
+2025-09-24 08:42:42 | INFO | 🚀 FAST SEND: lion0692122@outlook.com → ['lion0692121@outlook.com'] | Second Test098
+2025-09-24 08:42:42 | INFO | 🔧 Loading session from: sessions\office365_lion0692122_at_outlook_com.json
+2025-09-24 08:42:42 | INFO | 🔍 Testing authentication status...
+2025-09-24 08:42:52 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 08:42:52 | INFO | 📸 Auth test screenshot saved
+2025-09-24 08:42:53 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 08:42:53 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test098&body=sdfsdfgsdfgsdfg
+2025-09-24 08:42:53 | INFO | 📧 Opening compose...
+2025-09-24 08:42:58 | INFO | ✅ Proceeding with field verification...
+2025-09-24 08:42:58 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 08:42:58 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test098&body=sdfsdfgsdfgsdfg
+2025-09-24 08:42:58 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 08:43:01 | WARNING | ⚠️ Send button not visible
+2025-09-24 08:43:01 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 08:43:01 | INFO | 📤 Sending email...
+2025-09-24 08:43:02 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 08:43:02 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 08:43:05 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test098&body=sdfsdfgsdfgsdfg
+2025-09-24 08:43:17 | WARNING | ⚠️ No clear send confirmation found
+2025-09-24 08:43:17 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 08:57:20 | INFO | 📁 Session file: sessions\office365_lion0692122_at_outlook_com.json
+2025-09-24 08:57:20 | INFO | 📁 Session file size: 59538 bytes
+2025-09-24 08:57:20 | INFO | 📁 Session file age: 2:45:16.375834
+2025-09-24 08:57:20 | INFO | 🚀 FAST SEND: lion0692122@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-24 08:57:21 | INFO | 🔧 Loading session from: sessions\office365_lion0692122_at_outlook_com.json
+2025-09-24 08:57:21 | INFO | 🔍 Testing authentication status...
+2025-09-24 08:57:31 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 08:57:31 | INFO | 📸 Auth test screenshot saved
+2025-09-24 08:57:31 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 08:57:31 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test&body=Hello%20world
+2025-09-24 08:57:31 | INFO | 📧 Opening compose...
+2025-09-24 08:57:38 | INFO | ✅ Proceeding with field verification...
+2025-09-24 08:57:38 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 08:57:38 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test&body=Hello%20world
+2025-09-24 08:57:39 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 08:57:42 | WARNING | ⚠️ Send button not visible
+2025-09-24 08:57:42 | WARNING | ⚠️ No send button found with any selector
+2025-09-24 08:57:42 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 08:57:42 | INFO | 📤 Sending email...
+2025-09-24 08:57:42 | INFO | 🔄 Trying Ctrl+Enter...
+2025-09-24 08:57:46 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 08:57:46 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 08:57:49 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test&body=Hello%20world
+2025-09-24 08:58:09 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 09:06:33 | INFO | 📁 Session file: sessions\office365_lion0692122_at_outlook_com.json
+2025-09-24 09:06:33 | INFO | 📁 Session file size: 59538 bytes
+2025-09-24 09:06:33 | INFO | 📁 Session file age: 2:54:28.711073
+2025-09-24 09:06:33 | INFO | 🚀 FAST SEND: lion0692122@outlook.com → ['lion0692121@outlook.com'] | Nice
+2025-09-24 09:06:33 | INFO | 🔧 Loading session from: sessions\office365_lion0692122_at_outlook_com.json
+2025-09-24 09:06:33 | INFO | 🔍 Testing authentication status...
+2025-09-24 09:06:43 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 09:06:43 | INFO | 📸 Auth test screenshot saved
+2025-09-24 09:06:43 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 09:06:43 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Nice&body=I%20am%20looking%20for%20client
+2025-09-24 09:06:43 | INFO | 📧 Opening compose...
+2025-09-24 09:06:50 | INFO | ✅ Proceeding with field verification...
+2025-09-24 09:06:50 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 09:06:50 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Nice&body=I%20am%20looking%20for%20client
+2025-09-24 09:06:50 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 09:06:53 | INFO | 🔍 Looking for Send button...
+2025-09-24 09:06:53 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 0 elements)
+2025-09-24 09:06:53 | INFO | 🔍 Trying selector 2: button[aria-label='Send'] (found 0 elements)
+2025-09-24 09:06:53 | INFO | 🔍 Trying selector 3: button[data-icon-name='Send'] (found 0 elements)
+2025-09-24 09:06:53 | INFO | 🔍 Trying selector 4: button[name='Send'] (found 0 elements)
+2025-09-24 09:06:53 | INFO | 🔍 Trying selector 5: div[role='button']:has-text('Send') (found 0 elements)
+2025-09-24 09:06:53 | INFO | 🔍 Trying selector 6: span:has-text('Send') (found 0 elements)
+2025-09-24 09:06:53 | INFO | 🔍 Trying selector 7: button (found 0 elements)
+2025-09-24 09:06:53 | WARNING | ⚠️ No send button found with any selector
+2025-09-24 09:06:53 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 09:06:53 | INFO | 📤 Sending email...
+2025-09-24 09:06:53 | INFO | 🔄 Method 1: Looking for Send button to click...
+2025-09-24 09:06:53 | INFO | 🔄 Trying Ctrl+Enter...
+2025-09-24 09:06:57 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 09:06:57 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 09:07:00 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Nice&body=I%20am%20looking%20for%20client
+2025-09-24 09:07:20 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 09:17:07 | INFO | 📁 Session file: sessions\office365_lion0692122_at_outlook_com.json
+2025-09-24 09:17:07 | INFO | 📁 Session file size: 59538 bytes
+2025-09-24 09:17:07 | INFO | 📁 Session file age: 3:05:03.409123
+2025-09-24 09:17:07 | INFO | 🚀 FAST SEND: lion0692122@outlook.com → ['lion0692121@outlook.com'] | Second Test
+2025-09-24 09:17:08 | INFO | 🔧 Loading session from: sessions\office365_lion0692122_at_outlook_com.json
+2025-09-24 09:17:08 | INFO | 🔍 Testing authentication status...
+2025-09-24 09:17:18 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 09:17:18 | INFO | 📸 Auth test screenshot saved
+2025-09-24 09:17:18 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 09:17:18 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test&body=Hello%20there%3F
+2025-09-24 09:17:18 | INFO | 📧 Opening compose...
+2025-09-24 09:17:23 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 09:17:54 | ERROR | ❌ Send failed with unexpected error
+Traceback (most recent call last):
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 995, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002557ADFC360>
+    └ <Thread(Thread-3 (process_request_thread), started daemon 52388)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000002557ADFC040>
+    └ <Thread(Thread-3 (process_request_thread), started daemon 52388)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-3 (process_request_thread), started daemon 52388)>
+    │    │        │    └ (<socket.socket fd=1284, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 64672)>, ('127.0.0.1', 646...
+    │    │        └ <Thread(Thread-3 (process_request_thread), started daemon 52388)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x00000255004451D0>>
+    └ <Thread(Thread-3 (process_request_thread), started daemon 52388)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 64672)
+    │    │              └ <socket.socket fd=1284, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 64672)>
+    │    └ <function BaseServer.finish_request at 0x000002557CCB7D80>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000255004451D0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000255004451D0>
+    │    │                   │        └ ('127.0.0.1', 64672)
+    │    │                   └ <socket.socket fd=1284, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 64672)>
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000255004451D0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000002557D5B8720>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x0000025500493D10>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 398, in handle
+    super().handle()
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 431, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x000002557D3D59E0>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x0000025500493D10>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 419, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x0000025500493D10>>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <Flask 'main'>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x00000255004451D0>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x0000025500493D10>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x00000255004847C0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+                       │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x0000025500484680>
+                       │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1284>, 'wsgi.errors': <_io.TextIOW...
+                       └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x0000025500484680>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=1284>, 'wsgi.errors': <_io.TextIOW...
+           │    └ <function Flask.wsgi_app at 0x000002557E265E40>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x000002557E265580>
+               └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x000002557E2654E0>
+         └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'send_compose'
+           │    │           │    │              └ <Rule '/compose/send' (OPTIONS, POST) -> send_compose>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x000002557EDB71A0>, 'dashboard': <function dashboard at 0x000002550...
+           │    │           └ <Flask 'main'>
+           │    └ <function Flask.ensure_sync at 0x000002557E265760>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           │                       │      │       └ {}
+           │                       │      └ ()
+           │                       └ <function send_compose at 0x000002550040BE20>
+           └ <Flask 'main'>
+
+  File "E:\a_Work\tele\New folder - Copy\main.py", line 572, in send_compose
+    success = fast_send_email(
+              └ <function fast_send_email at 0x000002550039A5C0>
+
+> File "E:\a_Work\tele\New folder - Copy\automation\office365_fast.py", line 127, in fast_send_email
+    page.wait_for_load_state('networkidle', timeout=30000)
+    │    └ <function Page.wait_for_load_state at 0x0000025500371620>
+    └ <Page url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test&body=Hello%20...
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\sync_api\_generated.py", line 9117, in wait_for_load_state
+    self._sync(self._impl_obj.wait_for_load_state(state=state, timeout=timeout))
+    │    │     │    │         │                         │              └ 30000
+    │    │     │    │         │                         └ 'networkidle'
+    │    │     │    │         └ <function Page.wait_for_load_state at 0x000002550031CCC0>
+    │    │     │    └ <Page url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test&body=Hello%20...
+    │    │     └ <Page url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test&body=Hello%20...
+    │    └ <function SyncBase._sync at 0x0000025500350860>
+    └ <Page url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test&body=Hello%20...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           │    └ <method 'result' of '_asyncio.Task' objects>
+           └ <Task finished name='Task-13' coro=<Page.wait_for_load_state() done, defined at C:\Users\TIGER\AppData\Local\Programs\Python\...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_page.py", line 576, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+                 │    │           │                     └ <function locals_to_params at 0x00000255001F9F80>
+                 │    │           └ <function Frame.wait_for_load_state at 0x00000255002CEA20>
+                 │    └ <Frame name= url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test&body=H...
+                 └ <Page url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test&body=Hello%20...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_frame.py", line 273, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+                 │    │                         │      └ 30000
+                 │    │                         └ 'networkidle'
+                 │    └ <function Frame._wait_for_load_state_impl at 0x00000255002CEAC0>
+                 └ <Frame name= url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test&body=H...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_frame.py", line 301, in _wait_for_load_state_impl
+    await waiter.result()
+          │      └ <function Waiter.result at 0x0000025500269E40>
+          └ <playwright._impl._waiter.Waiter object at 0x0000025500919310>
+
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+2025-09-24 09:25:17 | ERROR | Automation login UI error: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[name='loginfmt'], input[type='email']").first to be visible
+    - waiting for" https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3A%2F%2Foutlook.office.com%2F.default%20openid%20profile%20offline_access&red…" navigation to finish...
+
+2025-09-24 09:26:52 | ERROR | Automation login UI error: Locator.wait_for: Target page, context or browser has been closed
+2025-09-24 09:29:32 | ERROR | Automation login UI error: Locator.wait_for: Target page, context or browser has been closed
+2025-09-24 09:55:35 | INFO | 📁 Session file: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 09:55:35 | INFO | 📁 Session file size: 12456 bytes
+2025-09-24 09:55:35 | INFO | 📁 Session file age: 0:19:30.187605
+2025-09-24 09:55:35 | INFO | 🚀 FAST SEND: lion0692124@outlook.com → ['lion0692121@outlook.com'] | Second Test!
+2025-09-24 09:55:35 | INFO | 🔧 Loading session from: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 09:55:35 | INFO | 🔍 Testing authentication status...
+2025-09-24 09:55:38 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 09:55:38 | INFO | 📸 Auth test screenshot saved
+2025-09-24 09:55:38 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 09:55:38 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test%21&body=123
+2025-09-24 09:55:38 | INFO | 📧 Opening compose...
+2025-09-24 09:55:39 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 09:55:40 | INFO | ✅ Network idle - no more requests
+2025-09-24 09:55:56 | ERROR | ❌ Send failed with unexpected error
+Traceback (most recent call last):
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 995, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000020388A2C360>
+    └ <Thread(Thread-7 (process_request_thread), started daemon 54256)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1038, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x0000020388A2C040>
+    └ <Thread(Thread-7 (process_request_thread), started daemon 54256)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 975, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-7 (process_request_thread), started daemon 54256)>
+    │    │        │    └ (<socket.socket fd=312, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 54950)>, ('127.0.0.1', 54950))
+    │    │        └ <Thread(Thread-7 (process_request_thread), started daemon 54256)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x000002038E0F52D0>>
+    └ <Thread(Thread-7 (process_request_thread), started daemon 54256)>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 54950)
+    │    │              └ <socket.socket fd=312, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 54950)>
+    │    └ <function BaseServer.finish_request at 0x000002038A937D80>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x000002038E0F52D0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x000002038E0F52D0>
+    │    │                   │        └ ('127.0.0.1', 54950)
+    │    │                   └ <socket.socket fd=312, family=2, type=1, proto=0, laddr=('127.0.0.1', 8080), raddr=('127.0.0.1', 54950)>
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x000002038E0F52D0>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000002038B1C8720>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x000002038E2B3A90>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 398, in handle
+    super().handle()
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 431, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x000002038B0859E0>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x000002038E2B3A90>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 419, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x000002038E2B3A90>>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <Flask 'main'>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x000002038E0F52D0>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x000002038E2B3A90>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x000002038E1E6A20>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+                       │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x000002038E1E6AC0>
+                       │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=312>, 'wsgi.errors': <_io.TextIOWr...
+                       └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x000002038E1E6AC0>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=312>, 'wsgi.errors': <_io.TextIOWr...
+           │    └ <function Flask.wsgi_app at 0x000002038BEB5E40>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x000002038BEB5580>
+               └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x000002038BEB54E0>
+         └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'send_compose'
+           │    │           │    │              └ <Rule '/compose/send' (OPTIONS, POST) -> send_compose>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x000002038E04A5C0>, 'dashboard': <function dashboard at 0x000002038...
+           │    │           └ <Flask 'main'>
+           │    └ <function Flask.ensure_sync at 0x000002038BEB5760>
+           └ <Flask 'main'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           │                       │      │       └ {}
+           │                       │      └ ()
+           │                       └ <function send_compose at 0x000002038E0D8040>
+           └ <Flask 'main'>
+
+  File "E:\a_Work\tele\New folder - Copy\main.py", line 572, in send_compose
+    success = fast_send_email(
+              └ <function fast_send_email at 0x000002038E04A7A0>
+
+> File "E:\a_Work\tele\New folder - Copy\automation\office365_fast.py", line 131, in fast_send_email
+    page.wait_for_url(f"**/deeplink/compose*", timeout=15000)
+    │    └ <function Page.wait_for_url at 0x000002038E0216C0>
+    └ <Page url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test%21&body=123'>
+
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\sync_api\_generated.py", line 9162, in wait_for_url
+    self._sync(
+    │    └ <function SyncBase._sync at 0x000002038E000860>
+    └ <Page url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test%21&body=123'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           │    └ <method 'result' of '_asyncio.Task' objects>
+           └ <Task finished name='Task-18' coro=<Page.wait_for_url() done, defined at C:\Users\TIGER\AppData\Local\Programs\Python\Python3...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_page.py", line 584, in wait_for_url
+    return await self._main_frame.wait_for_url(**locals_to_params(locals()))
+                 │    │           │              └ <function locals_to_params at 0x000002038DEA9F80>
+                 │    │           └ <function Frame.wait_for_url at 0x000002038DF7E980>
+                 │    └ <Frame name= url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test%21&bod...
+                 └ <Page url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test%21&body=123'>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_frame.py", line 263, in wait_for_url
+    async with self.expect_navigation(
+               │    └ <function Frame.expect_navigation at 0x000002038DF7E8E0>
+               └ <Frame name= url='https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test%21&bod...
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_event_context_manager.py", line 33, in __aexit__
+    await self._future
+          │    └ <Task finished name='Task-20' coro=<Frame.expect_navigation.<locals>.continuation() done, defined at C:\Users\TIGER\AppData\L...
+          └ <playwright._impl._event_context_manager.EventContextManagerImpl object at 0x000002038E676590>
+  File "C:\Users\TIGER\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_frame.py", line 239, in continuation
+    event = await waiter.result()
+                  │      └ <function Waiter.result at 0x000002038DF19E40>
+                  └ <playwright._impl._waiter.Waiter object at 0x000002038E674B50>
+
+playwright._impl._errors.TimeoutError: Timeout 15000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "**/deeplink/compose*" until 'load'
+============================================================
+2025-09-24 09:57:40 | INFO | 📁 Session file: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 09:57:40 | INFO | 📁 Session file size: 12456 bytes
+2025-09-24 09:57:40 | INFO | 📁 Session file age: 0:21:35.809325
+2025-09-24 09:57:40 | INFO | 🚀 FAST SEND: lion0692124@outlook.com → ['lion0692121@outlook.com'] | Second Test@
+2025-09-24 09:57:41 | INFO | 🔧 Loading session from: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 09:57:41 | INFO | 🔍 Testing authentication status...
+2025-09-24 09:57:43 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 09:57:43 | INFO | 📸 Auth test screenshot saved
+2025-09-24 09:57:43 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 09:57:43 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test%40&body=1234
+2025-09-24 09:57:43 | INFO | 📧 Opening compose...
+2025-09-24 09:57:44 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 09:57:45 | INFO | ✅ Network idle - no more requests
+2025-09-24 09:57:45 | INFO | ✅ Compose page URL confirmed
+2025-09-24 09:57:52 | INFO | ✅ Send button is visible
+2025-09-24 09:57:52 | INFO | ✅ Compose form elements are ready
+2025-09-24 09:57:52 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 09:57:52 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 09:57:52 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test%40&body=1234
+2025-09-24 09:57:53 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 09:57:56 | INFO | 🔍 Looking for Send button...
+2025-09-24 09:57:56 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 09:57:56 | INFO |   Element 1: visible, text='Send'
+2025-09-24 09:57:56 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-24 09:57:56 | INFO | ✅ Send button detection successful
+2025-09-24 09:57:56 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 09:57:56 | INFO | 📤 Sending email...
+2025-09-24 09:57:56 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 09:57:56 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 09:57:56 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-24 09:57:56 | INFO | 🔄 Send button is ready - clicking...
+2025-09-24 09:57:56 | INFO | ✅ Sent via Send button
+2025-09-24 09:57:56 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 09:57:56 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 09:57:58 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test%40&body=1234
+2025-09-24 09:58:18 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 10:01:00 | INFO | 📁 Session file: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 10:01:00 | INFO | 📁 Session file size: 12456 bytes
+2025-09-24 10:01:00 | INFO | 📁 Session file age: 0:24:55.321920
+2025-09-24 10:01:00 | INFO | 🚀 FAST SEND: lion0692124@outlook.com → ['lion0692121@outlook.com'] | Second Test@
+2025-09-24 10:01:00 | INFO | 🔧 Loading session from: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 10:01:01 | INFO | 🔍 Testing authentication status...
+2025-09-24 10:01:04 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 10:01:04 | INFO | 📸 Auth test screenshot saved
+2025-09-24 10:01:04 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 10:01:04 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test%40&body=Hello%20Nice%20to%20meet%20you
+2025-09-24 10:01:04 | INFO | 📧 Opening compose...
+2025-09-24 10:01:05 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 10:01:07 | INFO | ✅ Network idle - no more requests
+2025-09-24 10:01:07 | INFO | ✅ Compose page URL confirmed
+2025-09-24 10:01:16 | INFO | ✅ Send button is visible
+2025-09-24 10:01:17 | INFO | ✅ Compose form elements are ready
+2025-09-24 10:01:17 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 10:01:17 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 10:01:17 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test%40&body=Hello%20Nice%20to%20meet%20you
+2025-09-24 10:01:17 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 10:01:20 | INFO | 🔍 Looking for Send button...
+2025-09-24 10:01:20 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 10:01:20 | INFO |   Element 1: visible, text='Send'
+2025-09-24 10:01:20 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-24 10:01:20 | INFO | ✅ Send button detection successful
+2025-09-24 10:01:20 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 10:01:20 | INFO | 📤 Sending email...
+2025-09-24 10:01:20 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 10:01:20 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 10:01:20 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-24 10:01:20 | INFO | 🔄 Send button is ready - clicking...
+2025-09-24 10:01:20 | INFO | ✅ Sent via Send button
+2025-09-24 10:01:20 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 10:01:20 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 10:01:22 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test%40&body=Hello%20Nice%20to%20meet%20you
+2025-09-24 10:01:42 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 10:02:24 | INFO | 📁 Session file: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 10:02:24 | INFO | 📁 Session file size: 12456 bytes
+2025-09-24 10:02:24 | INFO | 📁 Session file age: 0:26:19.783868
+2025-09-24 10:02:24 | INFO | 🚀 FAST SEND: lion0692124@outlook.com → ['lion0692121@outlook.com'] | Second Test#
+2025-09-24 10:02:25 | INFO | 🔧 Loading session from: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 10:02:25 | INFO | 🔍 Testing authentication status...
+2025-09-24 10:02:30 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 10:02:30 | INFO | 📸 Auth test screenshot saved
+2025-09-24 10:02:30 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 10:02:30 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test%23&body=Hi%0AHow%20are%20you%3F
+2025-09-24 10:02:30 | INFO | 📧 Opening compose...
+2025-09-24 10:02:31 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 10:02:32 | INFO | ✅ Network idle - no more requests
+2025-09-24 10:02:32 | INFO | ✅ Compose page URL confirmed
+2025-09-24 10:02:42 | WARNING | ⚠️ Send button not found, but continuing...
+2025-09-24 10:02:43 | INFO | ✅ Compose form elements are ready
+2025-09-24 10:02:43 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 10:02:43 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 10:02:43 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test%23&body=Hi%0AHow%20are%20you%3F
+2025-09-24 10:02:43 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 10:02:46 | INFO | 🔍 Looking for Send button...
+2025-09-24 10:02:46 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 10:02:46 | INFO |   Element 1: visible, text='Send'
+2025-09-24 10:02:46 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-24 10:02:46 | INFO | ✅ Send button detection successful
+2025-09-24 10:02:46 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 10:02:46 | INFO | 📤 Sending email...
+2025-09-24 10:02:46 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 10:02:46 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 10:02:46 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-24 10:02:46 | INFO | 🔄 Send button is ready - clicking...
+2025-09-24 10:02:47 | INFO | ✅ Sent via Send button
+2025-09-24 10:02:47 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 10:02:47 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 10:02:49 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test%23&body=Hi%0AHow%20are%20you%3F
+2025-09-24 10:03:09 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 10:04:22 | INFO | 📁 Session file: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 10:04:22 | INFO | 📁 Session file size: 12456 bytes
+2025-09-24 10:04:22 | INFO | 📁 Session file age: 0:28:17.223881
+2025-09-24 10:04:22 | INFO | 🚀 FAST SEND: lion0692124@outlook.com → ['lion0692121@outlook.com'] | Second Test%@@
+2025-09-24 10:04:22 | INFO | 🔧 Loading session from: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 10:04:22 | INFO | 🔍 Testing authentication status...
+2025-09-24 10:04:27 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 10:04:27 | INFO | 📸 Auth test screenshot saved
+2025-09-24 10:04:27 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 10:04:27 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=Second%20Test%25%40%40&body=Hi%0AHow%20are%20you%3F
+2025-09-24 10:04:27 | INFO | 📧 Opening compose...
+2025-09-24 10:04:27 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 10:04:29 | INFO | ✅ Network idle - no more requests
+2025-09-24 10:04:29 | INFO | ✅ Compose page URL confirmed
+2025-09-24 10:04:39 | WARNING | ⚠️ Send button not found, but continuing...
+2025-09-24 10:04:49 | WARNING | ⚠️ Compose form elements not found, but continuing...
+2025-09-24 10:04:49 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 10:04:49 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 10:04:49 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test%25%40%40&body=Hi%0AHow%20are%20you%3F
+2025-09-24 10:04:49 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 10:04:52 | INFO | 🔍 Looking for Send button...
+2025-09-24 10:04:52 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 10:04:52 | INFO |   Element 1: visible, text='Send'
+2025-09-24 10:04:52 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-24 10:04:52 | INFO | ✅ Send button detection successful
+2025-09-24 10:04:52 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 10:04:52 | INFO | 📤 Sending email...
+2025-09-24 10:04:52 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 10:04:52 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 10:04:52 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-24 10:04:52 | INFO | 🔄 Send button is ready - clicking...
+2025-09-24 10:04:52 | INFO | ✅ Sent via Send button
+2025-09-24 10:04:52 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 10:04:52 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 10:04:54 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=Second%20Test%25%40%40&body=Hi%0AHow%20are%20you%3F
+2025-09-24 10:05:14 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 10:22:08 | INFO | 📁 Session file: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 10:22:08 | INFO | 📁 Session file size: 21659 bytes
+2025-09-24 10:22:08 | INFO | 📁 Session file age: 0:05:07.406871
+2025-09-24 10:22:08 | INFO | 🚀 FAST SEND: lion0692124@outlook.com → ['lion0692121@outlook.com'] | attachment!
+2025-09-24 10:22:09 | INFO | 🔧 Loading session from: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 10:22:09 | INFO | 🔍 Testing authentication status...
+2025-09-24 10:22:12 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 10:22:12 | INFO | 📸 Auth test screenshot saved
+2025-09-24 10:22:12 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 10:22:12 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=attachment%21&body=Hi%20this%20is%20attachement
+2025-09-24 10:22:12 | INFO | 📧 Opening compose...
+2025-09-24 10:22:13 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 10:22:14 | INFO | ✅ Network idle - no more requests
+2025-09-24 10:22:14 | INFO | ✅ Compose page URL confirmed
+2025-09-24 10:22:22 | INFO | ✅ Send button is visible
+2025-09-24 10:22:23 | INFO | ✅ Compose form elements are ready
+2025-09-24 10:22:23 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 10:22:23 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 10:22:23 | INFO | Current URL: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=attachment%21&body=Hi%20this%20is%20attachement
+2025-09-24 10:22:23 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 10:22:26 | INFO | 🔍 Looking for Send button...
+2025-09-24 10:22:26 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 10:22:26 | INFO |   Element 1: visible, text='Send'
+2025-09-24 10:22:26 | INFO | ✅ Send button found: button:has-text('Send') (element 1)
+2025-09-24 10:22:26 | INFO | ✅ Send button detection successful
+2025-09-24 10:22:26 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 10:22:26 | INFO | 📤 Sending email...
+2025-09-24 10:22:26 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 10:22:26 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 10:22:26 | INFO | ✅ Send button found and visible: button:has-text('Send')
+2025-09-24 10:22:26 | INFO | 🔄 Send button is ready - clicking...
+2025-09-24 10:22:26 | INFO | ✅ Sent via Send button
+2025-09-24 10:22:26 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 10:22:26 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 10:22:28 | INFO | URL after send attempt: https://outlook.live.com/mail/0/deeplink/compose/?to=lion0692121%40outlook.com&subject=attachment%21&body=Hi%20this%20is%20attachement
+2025-09-24 10:22:48 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 10:23:55 | INFO | 📁 Session file: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 10:23:55 | INFO | 📁 Session file size: 21659 bytes
+2025-09-24 10:23:55 | INFO | 📁 Session file age: 0:06:54.746075
+2025-09-24 10:23:55 | INFO | 🚀 FAST SEND: lion0692124@outlook.com → ['lion0692121@outlook.com'] | attachment!
+2025-09-24 10:23:56 | INFO | 🔧 Loading session from: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 10:23:56 | INFO | 🔍 Testing authentication status...
+2025-09-24 10:23:58 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 10:23:58 | INFO | 📸 Auth test screenshot saved
+2025-09-24 10:23:58 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 10:23:58 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=attachment%21&body=sdfsdfsdfsdf
+2025-09-24 10:23:58 | INFO | 📧 Opening compose...
+2025-09-24 10:23:59 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 10:24:00 | INFO | ✅ Network idle - no more requests
+2025-09-24 10:24:00 | INFO | ✅ Compose page URL confirmed
+2025-09-24 10:24:10 | WARNING | ⚠️ Send button not found, but continuing...
+2025-09-24 10:24:20 | WARNING | ⚠️ Compose form elements not found, but continuing...
+2025-09-24 10:24:20 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 10:24:20 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 10:24:20 | INFO | Current URL: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fto%3dlion0692121%2540outlook.com%26subject%3dattachment!%26body%3dsdfsdfsdfsdf%26nlp%3d0&sdf=0
+2025-09-24 10:24:22 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 10:24:25 | INFO | 🔍 Looking for Send button...
+2025-09-24 10:24:25 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 10:24:25 | INFO | 🔍 Trying selector 2: button[aria-label='Send'] (found 0 elements)
+2025-09-24 10:24:25 | INFO | 🔍 Trying selector 3: button[data-icon-name='Send'] (found 0 elements)
+2025-09-24 10:24:25 | INFO | 🔍 Trying selector 4: button[name='Send'] (found 0 elements)
+2025-09-24 10:24:25 | INFO | 🔍 Trying selector 5: div[role='button']:has-text('Send') (found 0 elements)
+2025-09-24 10:24:25 | INFO | 🔍 Trying selector 6: span:has-text('Send') (found 3 elements)
+2025-09-24 10:24:25 | INFO | 🔍 Trying selector 7: button (found 329 elements)
+2025-09-24 10:24:25 | INFO |   Element 6: visible, text='Products'
+2025-09-24 10:24:25 | INFO |   Element 7: visible, text='Plans and pricing'
+2025-09-24 10:24:25 | INFO |   Element 8: visible, text='Resources'
+2025-09-24 10:24:25 | INFO |   Element 10: visible, text='Search
+                                        Search Microsoft 365'
+2025-09-24 10:24:25 | INFO |   Element 21: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 22: visible, text='Key benefits'
+2025-09-24 10:24:25 | INFO |   Element 23: visible, text='Get more from Outlook'
+2025-09-24 10:24:25 | INFO |   Element 24: visible, text='Copilot in Outlook'
+2025-09-24 10:24:25 | INFO |   Element 27: visible, text='Together in one place'
+2025-09-24 10:24:25 | INFO |   Element 28: visible, text='Connect your accounts'
+2025-09-24 10:24:25 | INFO |   Element 29: visible, text='Write more effective emails'
+2025-09-24 10:24:25 | INFO |   Element 30: visible, text='Easily access your files'
+2025-09-24 10:24:25 | INFO |   Element 43: visible, text='Yearly'
+2025-09-24 10:24:25 | INFO |   Element 44: visible, text='Monthly'
+2025-09-24 10:24:25 | INFO |   Element 47: visible, text='For Home'
+2025-09-24 10:24:25 | INFO |   Element 48: visible, text='For Business'
+2025-09-24 10:24:25 | INFO |   Element 51: visible, text='Previous Slide'
+2025-09-24 10:24:25 | INFO |   Element 52: visible, text='Next Slide'
+2025-09-24 10:24:25 | INFO |   Element 53: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 55: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 57: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 59: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 61: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 63: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 65: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 67: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 69: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 71: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 73: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 75: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 77: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 79: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 81: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 83: visible, text=''
+2025-09-24 10:24:25 | INFO |   Element 85: visible, text=''
+2025-09-24 10:24:26 | INFO |   Element 87: visible, text=''
+2025-09-24 10:24:26 | INFO |   Element 89: visible, text=''
+2025-09-24 10:24:26 | INFO |   Element 91: visible, text=''
+2025-09-24 10:24:26 | INFO |   Element 93: visible, text=''
+2025-09-24 10:24:27 | INFO |   Element 299: visible, text='More information'
+2025-09-24 10:24:27 | INFO |   Element 301: visible, text='Previous Slide'
+2025-09-24 10:24:27 | INFO |   Element 302: visible, text='Next Slide'
+2025-09-24 10:24:27 | INFO |   Element 303: visible, text='What’s new'
+2025-09-24 10:24:27 | INFO |   Element 304: visible, text='For personal'
+2025-09-24 10:24:27 | INFO |   Element 305: visible, text='For work'
+2025-09-24 10:24:27 | INFO |   Element 306: visible, text='Tips & tricks'
+2025-09-24 10:24:27 | INFO |   Element 309: visible, text='Previous Slide'
+2025-09-24 10:24:27 | INFO |   Element 310: visible, text='Next Slide'
+2025-09-24 10:24:27 | INFO |   Element 317: visible, text='Expand all'
+2025-09-24 10:24:27 | INFO |   Element 318: visible, text='Collapse all'
+2025-09-24 10:24:27 | INFO |   Element 319: visible, text='01/       How do I create an Outlook.com account?'
+2025-09-24 10:24:27 | INFO |   Element 320: visible, text='02/       I have a Hotmail.com, Live.com, or MSN.com email account. Is that the same as Outlook?'
+2025-09-24 10:24:27 | INFO |   Element 321: visible, text='03/       I don’t have an Outlook.com account. Can I still use Outlook apps?'
+2025-09-24 10:24:27 | INFO |   Element 322: visible, text='04/       How does mailbox storage / Microsoft storage work for Outlook?'
+2025-09-24 10:24:27 | INFO |   Element 323: visible, text='05/       Why do I see ads in my Outlook inbox?'
+2025-09-24 10:24:27 | INFO |   Element 324: visible, text='06/       What do I get for Outlook with a Microsoft 365 subscription?'
+2025-09-24 10:24:27 | INFO |   Element 325: visible, text='07/       If I have a personal Office (one-time) license, will I be able to access desktop apps and have an ad-free Outlook experience?'
+2025-09-24 10:24:27 | INFO |   Element 326: visible, text='Feedback'
+2025-09-24 10:24:27 | WARNING | ⚠️ No send button found with any selector
+2025-09-24 10:24:27 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 10:24:27 | INFO | 📤 Sending email...
+2025-09-24 10:24:27 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 10:24:27 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 10:24:37 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']
+2025-09-24 10:24:47 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']
+2025-09-24 10:24:49 | INFO | 🔍 Waiting for Send button: div[role='button']:has-text('Send')
+2025-09-24 10:24:49 | WARNING | ⚠️ Send button click failed: Locator.wait_for: Target page, context or browser has been closed
+2025-09-24 10:24:49 | INFO | 🔄 Trying Ctrl+Enter...
+2025-09-24 10:24:49 | WARNING | ⚠️ Ctrl+Enter failed: Keyboard.press: Target page, context or browser has been closed
+2025-09-24 10:24:49 | INFO | 🔄 Trying force send...
+2025-09-24 10:27:12 | INFO | 📁 Session file: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 10:27:12 | INFO | 📁 Session file size: 21659 bytes
+2025-09-24 10:27:12 | INFO | 📁 Session file age: 0:10:10.955904
+2025-09-24 10:27:12 | INFO | 🚀 FAST SEND: lion0692124@outlook.com → ['lion0692121@outlook.com'] | cba111
+2025-09-24 10:27:12 | INFO | 🔧 Loading session from: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 10:27:12 | INFO | 🔍 Testing authentication status...
+2025-09-24 10:27:16 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 10:27:16 | INFO | 📸 Auth test screenshot saved
+2025-09-24 10:27:16 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 10:27:16 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=cba111&body=there%3F
+2025-09-24 10:27:16 | INFO | 📧 Opening compose...
+2025-09-24 10:27:17 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 10:27:18 | INFO | ✅ Network idle - no more requests
+2025-09-24 10:27:18 | INFO | ✅ Compose page URL confirmed
+2025-09-24 10:27:28 | WARNING | ⚠️ Send button not found, but continuing...
+2025-09-24 10:27:38 | WARNING | ⚠️ Compose form elements not found, but continuing...
+2025-09-24 10:27:38 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 10:27:38 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 10:27:38 | INFO | Current URL: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fto%3dlion0692121%2540outlook.com%26subject%3dcba111%26body%3dthere%253F%26nlp%3d0&sdf=0
+2025-09-24 10:27:39 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 10:27:42 | INFO | 🔍 Looking for Send button...
+2025-09-24 10:27:42 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 10:27:42 | INFO | 🔍 Trying selector 2: button[aria-label='Send'] (found 0 elements)
+2025-09-24 10:27:42 | INFO | 🔍 Trying selector 3: button[data-icon-name='Send'] (found 0 elements)
+2025-09-24 10:27:42 | INFO | 🔍 Trying selector 4: button[name='Send'] (found 0 elements)
+2025-09-24 10:27:42 | INFO | 🔍 Trying selector 5: div[role='button']:has-text('Send') (found 0 elements)
+2025-09-24 10:27:42 | INFO | 🔍 Trying selector 6: span:has-text('Send') (found 3 elements)
+2025-09-24 10:27:42 | INFO | 🔍 Trying selector 7: button (found 329 elements)
+2025-09-24 10:27:42 | INFO |   Element 6: visible, text='Products'
+2025-09-24 10:27:42 | INFO |   Element 7: visible, text='Plans and pricing'
+2025-09-24 10:27:42 | INFO |   Element 8: visible, text='Resources'
+2025-09-24 10:27:42 | INFO |   Element 10: visible, text='Search
+                                        Search Microsoft 365'
+2025-09-24 10:27:42 | INFO |   Element 21: visible, text=''
+2025-09-24 10:27:42 | INFO |   Element 22: visible, text='Key benefits'
+2025-09-24 10:27:42 | INFO |   Element 23: visible, text='Get more from Outlook'
+2025-09-24 10:27:42 | INFO |   Element 24: visible, text='Copilot in Outlook'
+2025-09-24 10:27:42 | INFO |   Element 27: visible, text='Together in one place'
+2025-09-24 10:27:42 | INFO |   Element 28: visible, text='Connect your accounts'
+2025-09-24 10:27:42 | INFO |   Element 29: visible, text='Write more effective emails'
+2025-09-24 10:27:42 | INFO |   Element 30: visible, text='Easily access your files'
+2025-09-24 10:27:42 | INFO |   Element 43: visible, text='Yearly'
+2025-09-24 10:27:42 | INFO |   Element 44: visible, text='Monthly'
+2025-09-24 10:27:42 | INFO |   Element 47: visible, text='For Home'
+2025-09-24 10:27:42 | INFO |   Element 48: visible, text='For Business'
+2025-09-24 10:27:42 | INFO |   Element 51: visible, text='Previous Slide'
+2025-09-24 10:27:42 | INFO |   Element 52: visible, text='Next Slide'
+2025-09-24 10:27:42 | INFO |   Element 53: visible, text=''
+2025-09-24 10:27:42 | INFO |   Element 55: visible, text=''
+2025-09-24 10:27:42 | INFO |   Element 57: visible, text=''
+2025-09-24 10:27:42 | INFO |   Element 59: visible, text=''
+2025-09-24 10:27:42 | INFO |   Element 61: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 63: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 65: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 67: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 69: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 71: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 73: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 75: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 77: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 79: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 81: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 83: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 85: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 87: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 89: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 91: visible, text=''
+2025-09-24 10:27:43 | INFO |   Element 93: visible, text=''
+2025-09-24 10:27:44 | INFO |   Element 299: visible, text='More information'
+2025-09-24 10:27:44 | INFO |   Element 301: visible, text='Previous Slide'
+2025-09-24 10:27:44 | INFO |   Element 302: visible, text='Next Slide'
+2025-09-24 10:27:44 | INFO |   Element 303: visible, text='What’s new'
+2025-09-24 10:27:44 | INFO |   Element 304: visible, text='For personal'
+2025-09-24 10:27:44 | INFO |   Element 305: visible, text='For work'
+2025-09-24 10:27:44 | INFO |   Element 306: visible, text='Tips & tricks'
+2025-09-24 10:27:44 | INFO |   Element 309: visible, text='Previous Slide'
+2025-09-24 10:27:44 | INFO |   Element 310: visible, text='Next Slide'
+2025-09-24 10:27:44 | INFO |   Element 317: visible, text='Expand all'
+2025-09-24 10:27:44 | INFO |   Element 318: visible, text='Collapse all'
+2025-09-24 10:27:44 | INFO |   Element 319: visible, text='01/       How do I create an Outlook.com account?'
+2025-09-24 10:27:44 | INFO |   Element 320: visible, text='02/       I have a Hotmail.com, Live.com, or MSN.com email account. Is that the same as Outlook?'
+2025-09-24 10:27:44 | INFO |   Element 321: visible, text='03/       I don’t have an Outlook.com account. Can I still use Outlook apps?'
+2025-09-24 10:27:44 | INFO |   Element 322: visible, text='04/       How does mailbox storage / Microsoft storage work for Outlook?'
+2025-09-24 10:27:44 | INFO |   Element 323: visible, text='05/       Why do I see ads in my Outlook inbox?'
+2025-09-24 10:27:44 | INFO |   Element 324: visible, text='06/       What do I get for Outlook with a Microsoft 365 subscription?'
+2025-09-24 10:27:44 | INFO |   Element 325: visible, text='07/       If I have a personal Office (one-time) license, will I be able to access desktop apps and have an ad-free Outlook experience?'
+2025-09-24 10:27:44 | INFO |   Element 326: visible, text='Feedback'
+2025-09-24 10:27:44 | WARNING | ⚠️ No send button found with any selector
+2025-09-24 10:27:44 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 10:27:44 | INFO | 📤 Sending email...
+2025-09-24 10:27:44 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 10:27:44 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 10:27:54 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']
+2025-09-24 10:28:04 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']
+2025-09-24 10:28:14 | INFO | 🔍 Waiting for Send button: div[role='button']:has-text('Send')
+2025-09-24 10:28:30 | WARNING | ⚠️ Send button click failed: Locator.wait_for: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div[role='button']:has-text('Send')").first
+
+2025-09-24 10:28:30 | INFO | 🔄 Trying Ctrl+Enter...
+2025-09-24 10:28:34 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 10:28:35 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 10:28:35 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 10:28:37 | INFO | URL after send attempt: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fto%3dlion0692121%2540outlook.com%26subject%3dcba111%26body%3dthere%253F%26nlp%3d0&sdf=0
+2025-09-24 10:28:37 | INFO | ✅ Send confirmed - no longer on compose page
+2025-09-24 10:28:38 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 10:32:50 | INFO | 📁 Session file: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 10:32:50 | INFO | 📁 Session file size: 21659 bytes
+2025-09-24 10:32:50 | INFO | 📁 Session file age: 0:15:49.075648
+2025-09-24 10:32:50 | INFO | 🚀 FAST SEND: lion0692124@outlook.com → ['lion0692121@outlook.com'] | a!
+2025-09-24 10:32:50 | INFO | 🔧 Loading session from: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 10:32:50 | INFO | 🔍 Testing authentication status...
+2025-09-24 10:32:54 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 10:32:54 | INFO | 📸 Auth test screenshot saved
+2025-09-24 10:32:54 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 10:32:54 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/deeplink/compose?to=lion0692121%40outlook.com&subject=a%21&body=wonderful
+2025-09-24 10:32:54 | INFO | 📧 Opening compose...
+2025-09-24 10:32:55 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 10:32:56 | INFO | ✅ Network idle - no more requests
+2025-09-24 10:32:56 | INFO | ✅ Compose page URL confirmed
+2025-09-24 10:33:06 | WARNING | ⚠️ Send button not found, but continuing...
+2025-09-24 10:33:16 | WARNING | ⚠️ Compose form elements not found, but continuing...
+2025-09-24 10:33:16 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 10:33:16 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 10:33:16 | INFO | Current URL: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fto%3dlion0692121%2540outlook.com%26subject%3da!%26body%3dwonderful%26nlp%3d0&sdf=0
+2025-09-24 10:33:17 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 10:33:20 | INFO | 🔍 Looking for Send button...
+2025-09-24 10:33:20 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 10:33:20 | INFO | 🔍 Trying selector 2: button[aria-label='Send'] (found 0 elements)
+2025-09-24 10:33:20 | INFO | 🔍 Trying selector 3: button[data-icon-name='Send'] (found 0 elements)
+2025-09-24 10:33:20 | INFO | 🔍 Trying selector 4: button[name='Send'] (found 0 elements)
+2025-09-24 10:33:20 | INFO | 🔍 Trying selector 5: div[role='button']:has-text('Send') (found 0 elements)
+2025-09-24 10:33:20 | INFO | 🔍 Trying selector 6: span:has-text('Send') (found 3 elements)
+2025-09-24 10:33:20 | INFO | 🔍 Trying selector 7: button (found 329 elements)
+2025-09-24 10:33:20 | INFO |   Element 6: visible, text='Products'
+2025-09-24 10:33:20 | INFO |   Element 7: visible, text='Plans and pricing'
+2025-09-24 10:33:20 | INFO |   Element 8: visible, text='Resources'
+2025-09-24 10:33:21 | INFO |   Element 10: visible, text='Search
+                                        Search Microsoft 365'
+2025-09-24 10:33:21 | INFO |   Element 21: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 22: visible, text='Key benefits'
+2025-09-24 10:33:21 | INFO |   Element 23: visible, text='Get more from Outlook'
+2025-09-24 10:33:21 | INFO |   Element 24: visible, text='Copilot in Outlook'
+2025-09-24 10:33:21 | INFO |   Element 27: visible, text='Together in one place'
+2025-09-24 10:33:21 | INFO |   Element 28: visible, text='Connect your accounts'
+2025-09-24 10:33:21 | INFO |   Element 29: visible, text='Write more effective emails'
+2025-09-24 10:33:21 | INFO |   Element 30: visible, text='Easily access your files'
+2025-09-24 10:33:21 | INFO |   Element 43: visible, text='Yearly'
+2025-09-24 10:33:21 | INFO |   Element 44: visible, text='Monthly'
+2025-09-24 10:33:21 | INFO |   Element 47: visible, text='For Home'
+2025-09-24 10:33:21 | INFO |   Element 48: visible, text='For Business'
+2025-09-24 10:33:21 | INFO |   Element 51: visible, text='Previous Slide'
+2025-09-24 10:33:21 | INFO |   Element 52: visible, text='Next Slide'
+2025-09-24 10:33:21 | INFO |   Element 53: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 55: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 57: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 59: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 61: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 63: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 65: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 67: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 69: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 71: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 73: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 75: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 77: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 79: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 81: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 83: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 85: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 87: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 89: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 91: visible, text=''
+2025-09-24 10:33:21 | INFO |   Element 93: visible, text=''
+2025-09-24 10:33:23 | INFO |   Element 299: visible, text='More information'
+2025-09-24 10:33:23 | INFO |   Element 301: visible, text='Previous Slide'
+2025-09-24 10:33:23 | INFO |   Element 302: visible, text='Next Slide'
+2025-09-24 10:33:23 | INFO |   Element 303: visible, text='What’s new'
+2025-09-24 10:33:23 | INFO |   Element 304: visible, text='For personal'
+2025-09-24 10:33:23 | INFO |   Element 305: visible, text='For work'
+2025-09-24 10:33:23 | INFO |   Element 306: visible, text='Tips & tricks'
+2025-09-24 10:33:23 | INFO |   Element 309: visible, text='Previous Slide'
+2025-09-24 10:33:23 | INFO |   Element 310: visible, text='Next Slide'
+2025-09-24 10:33:23 | INFO |   Element 317: visible, text='Expand all'
+2025-09-24 10:33:23 | INFO |   Element 318: visible, text='Collapse all'
+2025-09-24 10:33:23 | INFO |   Element 319: visible, text='01/       How do I create an Outlook.com account?'
+2025-09-24 10:33:23 | INFO |   Element 320: visible, text='02/       I have a Hotmail.com, Live.com, or MSN.com email account. Is that the same as Outlook?'
+2025-09-24 10:33:23 | INFO |   Element 321: visible, text='03/       I don’t have an Outlook.com account. Can I still use Outlook apps?'
+2025-09-24 10:33:23 | INFO |   Element 322: visible, text='04/       How does mailbox storage / Microsoft storage work for Outlook?'
+2025-09-24 10:33:23 | INFO |   Element 323: visible, text='05/       Why do I see ads in my Outlook inbox?'
+2025-09-24 10:33:23 | INFO |   Element 324: visible, text='06/       What do I get for Outlook with a Microsoft 365 subscription?'
+2025-09-24 10:33:23 | INFO |   Element 325: visible, text='07/       If I have a personal Office (one-time) license, will I be able to access desktop apps and have an ad-free Outlook experience?'
+2025-09-24 10:33:23 | INFO |   Element 326: visible, text='Feedback'
+2025-09-24 10:33:23 | WARNING | ⚠️ No send button found with any selector
+2025-09-24 10:33:23 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 10:33:23 | INFO | 📤 Sending email...
+2025-09-24 10:33:23 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 10:33:23 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 10:33:33 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']
+2025-09-24 10:33:43 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']
+2025-09-24 10:33:53 | INFO | 🔍 Waiting for Send button: div[role='button']:has-text('Send')
+2025-09-24 10:34:08 | WARNING | ⚠️ Send button click failed: Locator.wait_for: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div[role='button']:has-text('Send')").first
+
+2025-09-24 10:34:08 | INFO | 🔄 Trying Ctrl+Enter...
+2025-09-24 10:34:12 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 10:34:13 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 10:34:13 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 10:34:15 | INFO | URL after send attempt: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fto%3dlion0692121%2540outlook.com%26subject%3da!%26body%3dwonderful%26nlp%3d0&sdf=0
+2025-09-24 10:34:15 | INFO | ✅ Send confirmed - no longer on compose page
+2025-09-24 10:34:16 | INFO | 📸 Final screenshot saved to logs/after_send.png
+2025-09-24 11:19:19 | INFO | 📁 Session file: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 11:19:19 | INFO | 📁 Session file size: 21659 bytes
+2025-09-24 11:19:19 | INFO | 📁 Session file age: 1:02:18.766167
+2025-09-24 11:19:19 | INFO | 🚀 FAST SEND: lion0692124@outlook.com → ['lion0692121@outlook.com'] | 3!@
+2025-09-24 11:19:20 | INFO | 🔧 Loading session from: sessions\office365_lion0692124_at_outlook_com.json
+2025-09-24 11:19:20 | INFO | 🔍 Testing authentication status...
+2025-09-24 11:19:26 | INFO | 🔍 Auth test URL: https://outlook.live.com/mail/0/
+2025-09-24 11:19:26 | INFO | 📸 Auth test screenshot saved
+2025-09-24 11:19:26 | INFO | ✅ Authentication appears successful - no sign in button
+2025-09-24 11:19:26 | INFO | 🔗 Generated compose URL: https://outlook.live.com/mail/0/deeplink/compose?to=lion0692121%40outlook.com&subject=3%21%40&body=there%3F
+2025-09-24 11:19:26 | INFO | 📧 Opening compose...
+2025-09-24 11:19:27 | INFO | ⏳ Waiting for platform to finish loading...
+2025-09-24 11:19:28 | INFO | ✅ Network idle - no more requests
+2025-09-24 11:19:28 | INFO | ✅ Compose page URL confirmed
+2025-09-24 11:19:38 | WARNING | ⚠️ Send button not found, but continuing...
+2025-09-24 11:19:48 | WARNING | ⚠️ Compose form elements not found, but continuing...
+2025-09-24 11:19:48 | INFO | ✅ Platform loading complete - proceeding with detection...
+2025-09-24 11:19:48 | INFO | ⚡ Checking if fields are pre-filled...
+2025-09-24 11:19:48 | INFO | Current URL: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fto%3dlion0692121%2540outlook.com%26subject%3d3!%2540%26body%3dthere%253F%26nlp%3d0&sdf=0
+2025-09-24 11:19:49 | INFO | 📸 Screenshot saved to logs/compose_page.png
+2025-09-24 11:19:52 | INFO | 🔍 Looking for Send button...
+2025-09-24 11:19:52 | INFO | 🔍 Trying selector 1: button:has-text('Send') (found 1 elements)
+2025-09-24 11:19:52 | INFO | 🔍 Trying selector 2: button[aria-label='Send'] (found 0 elements)
+2025-09-24 11:19:52 | INFO | 🔍 Trying selector 3: button[data-icon-name='Send'] (found 0 elements)
+2025-09-24 11:19:52 | INFO | 🔍 Trying selector 4: button[name='Send'] (found 0 elements)
+2025-09-24 11:19:52 | INFO | 🔍 Trying selector 5: div[role='button']:has-text('Send') (found 0 elements)
+2025-09-24 11:19:52 | INFO | 🔍 Trying selector 6: span:has-text('Send') (found 3 elements)
+2025-09-24 11:19:52 | INFO | 🔍 Trying selector 7: button (found 329 elements)
+2025-09-24 11:19:52 | INFO |   Element 6: visible, text='Products'
+2025-09-24 11:19:52 | INFO |   Element 7: visible, text='Plans and pricing'
+2025-09-24 11:19:52 | INFO |   Element 8: visible, text='Resources'
+2025-09-24 11:19:52 | INFO |   Element 10: visible, text='Search
+                                        Search Microsoft 365'
+2025-09-24 11:19:52 | INFO |   Element 21: visible, text=''
+2025-09-24 11:19:52 | INFO |   Element 22: visible, text='Key benefits'
+2025-09-24 11:19:52 | INFO |   Element 23: visible, text='Get more from Outlook'
+2025-09-24 11:19:52 | INFO |   Element 24: visible, text='Copilot in Outlook'
+2025-09-24 11:19:52 | INFO |   Element 27: visible, text='Together in one place'
+2025-09-24 11:19:52 | INFO |   Element 28: visible, text='Connect your accounts'
+2025-09-24 11:19:52 | INFO |   Element 29: visible, text='Write more effective emails'
+2025-09-24 11:19:52 | INFO |   Element 30: visible, text='Easily access your files'
+2025-09-24 11:19:53 | INFO |   Element 43: visible, text='Yearly'
+2025-09-24 11:19:53 | INFO |   Element 44: visible, text='Monthly'
+2025-09-24 11:19:53 | INFO |   Element 47: visible, text='For Home'
+2025-09-24 11:19:53 | INFO |   Element 48: visible, text='For Business'
+2025-09-24 11:19:53 | INFO |   Element 51: visible, text='Previous Slide'
+2025-09-24 11:19:53 | INFO |   Element 52: visible, text='Next Slide'
+2025-09-24 11:19:53 | INFO |   Element 53: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 55: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 57: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 59: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 61: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 63: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 65: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 67: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 69: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 71: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 73: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 75: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 77: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 79: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 81: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 83: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 85: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 87: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 89: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 91: visible, text=''
+2025-09-24 11:19:53 | INFO |   Element 93: visible, text=''
+2025-09-24 11:19:54 | INFO |   Element 299: visible, text='More information'
+2025-09-24 11:19:54 | INFO |   Element 301: visible, text='Previous Slide'
+2025-09-24 11:19:54 | INFO |   Element 302: visible, text='Next Slide'
+2025-09-24 11:19:54 | INFO |   Element 303: visible, text='What’s new'
+2025-09-24 11:19:54 | INFO |   Element 304: visible, text='For personal'
+2025-09-24 11:19:54 | INFO |   Element 305: visible, text='For work'
+2025-09-24 11:19:54 | INFO |   Element 306: visible, text='Tips & tricks'
+2025-09-24 11:19:55 | INFO |   Element 309: visible, text='Previous Slide'
+2025-09-24 11:19:55 | INFO |   Element 310: visible, text='Next Slide'
+2025-09-24 11:19:55 | INFO |   Element 317: visible, text='Expand all'
+2025-09-24 11:19:55 | INFO |   Element 318: visible, text='Collapse all'
+2025-09-24 11:19:55 | INFO |   Element 319: visible, text='01/       How do I create an Outlook.com account?'
+2025-09-24 11:19:55 | INFO |   Element 320: visible, text='02/       I have a Hotmail.com, Live.com, or MSN.com email account. Is that the same as Outlook?'
+2025-09-24 11:19:55 | INFO |   Element 321: visible, text='03/       I don’t have an Outlook.com account. Can I still use Outlook apps?'
+2025-09-24 11:19:55 | INFO |   Element 322: visible, text='04/       How does mailbox storage / Microsoft storage work for Outlook?'
+2025-09-24 11:19:55 | INFO |   Element 323: visible, text='05/       Why do I see ads in my Outlook inbox?'
+2025-09-24 11:19:55 | INFO |   Element 324: visible, text='06/       What do I get for Outlook with a Microsoft 365 subscription?'
+2025-09-24 11:19:55 | INFO |   Element 325: visible, text='07/       If I have a personal Office (one-time) license, will I be able to access desktop apps and have an ad-free Outlook experience?'
+2025-09-24 11:19:55 | INFO |   Element 326: visible, text='Feedback'
+2025-09-24 11:19:55 | WARNING | ⚠️ No send button found with any selector
+2025-09-24 11:19:55 | INFO | ℹ️ Skipping field filling - URL should have pre-filled everything
+2025-09-24 11:19:55 | INFO | 📤 Sending email...
+2025-09-24 11:19:55 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-09-24 11:19:55 | INFO | 🔍 Waiting for Send button: button:has-text('Send')
+2025-09-24 11:20:05 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']
+2025-09-24 11:20:15 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']
+2025-09-24 11:20:25 | INFO | 🔍 Waiting for Send button: div[role='button']:has-text('Send')
+2025-09-24 11:20:40 | WARNING | ⚠️ Send button click failed: Locator.wait_for: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("div[role='button']:has-text('Send')").first
+
+2025-09-24 11:20:40 | INFO | 🔄 Trying Ctrl+Enter...
+2025-09-24 11:20:44 | INFO | ✅ Sent via Ctrl+Enter
+2025-09-24 11:20:45 | INFO | 🔍 Verifying send confirmation...
+2025-09-24 11:20:45 | INFO | ✅ Network idle after send - platform processed
+2025-09-24 11:20:47 | INFO | URL after send attempt: https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fmail%2f0%2f%3fto%3dlion0692121%2540outlook.com%26subject%3d3!%2540%26body%3dthere%253F%26nlp%3d0&sdf=0
+2025-09-24 11:20:47 | INFO | ✅ Send confirmed - no longer on compose page
+2025-09-24 11:20:48 | INFO | 📸 Final screenshot saved to logs/after_send.png

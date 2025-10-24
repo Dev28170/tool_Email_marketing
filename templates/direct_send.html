@@ -1,0 +1,833 @@
+{% extends "base.html" %}
+
+{% block title %}Direct Send Mass Email{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2><i class="fas fa-paper-plane me-2"></i>Direct Send Mass Email</h2>
+                <div>
+                    <a href="{{ url_for('dashboard') }}" class="btn btn-outline-secondary">
+                        <i class="fas fa-arrow-left me-1"></i>Back to Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-upload me-2"></i>Email List & Configuration
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <form id="directSendForm" enctype="multipart/form-data">
+                        <!-- Email List File Upload -->
+                        <div class="mb-4">
+                            <label for="emailListFile" class="form-label">
+                                <i class="fas fa-file-upload me-1"></i>Email List File <span class="text-danger">*</span>
+                            </label>
+                            <input type="file" class="form-control" id="emailListFile" name="emailListFile" 
+                                   accept=".txt,.csv,.xlsx,.xls" required>
+                            <div class="form-text">
+                                <i class="fas fa-info-circle me-1"></i>
+                                Upload a file containing email addresses (one per line or CSV format). 
+                                Supported formats: TXT, CSV, XLSX, XLS
+                            </div>
+                        </div>
+
+                        <!-- Email Subject -->
+                        <div class="mb-4">
+                            <label for="emailSubject" class="form-label">
+                                <i class="fas fa-envelope me-1"></i>Email Subject <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="emailSubject" name="emailSubject" 
+                                   placeholder="Enter email subject" value="{{ default_subject|safe }}" required>
+                        </div>
+
+                        <!-- Email Body (WYSIWYG + HTML + Preview) -->
+                        <div class="mb-4">
+                            <label class="form-label">
+                                <i class="fas fa-edit me-1"></i>Email Body <span class="text-danger">*</span>
+                            </label>
+                            <!-- Hidden field used for form submission -->
+                            <textarea id="emailBody" name="emailBody" class="d-none" required></textarea>
+
+                            <div class="row g-3">
+                            <div class="col-md-6">
+                                    <div class="border rounded" style="min-height: 420px;">
+                                        <textarea id="wysiwygEditor"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="tab-html" data-bs-toggle="tab" data-bs-target="#pane-html" type="button" role="tab">HTML</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="tab-preview" data-bs-toggle="tab" data-bs-target="#pane-preview" type="button" role="tab">Preview</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="tab-variables" data-bs-toggle="tab" data-bs-target="#pane-variables" type="button" role="tab">Variables</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content border border-top-0 rounded-bottom" style="min-height: 420px;">
+                                        <div class="tab-pane fade show active" id="pane-html" role="tabpanel" aria-labelledby="tab-html">
+                                            <textarea id="htmlSource" class="form-control border-0" style="height: 418px; font-family: 'Courier New', monospace;">{{ default_body|safe }}</textarea>
+                                        </div>
+                                        <div class="tab-pane fade" id="pane-preview" role="tabpanel" aria-labelledby="tab-preview">
+                                            <iframe id="htmlPreview" style="width: 100%; height: 418px; border: 0;"></iframe>
+                                        </div>
+                                        <div class="tab-pane fade" id="pane-variables" role="tabpanel" aria-labelledby="tab-variables">
+                                            <div class="p-3">
+                                                <h6 class="mb-3"><i class="fas fa-magic me-2"></i>Available Variables</h6>
+                                                <div class="mb-3">
+                                                    <div class="card border-primary">
+                                                        <div class="card-body p-2">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div>
+                                                                    <code class="text-primary">[DATE]</code>
+                                                                    <small class="text-muted d-block">Current Date and Time</small>
+                                                                </div>
+                                                                <button type="button" class="btn btn-sm btn-outline-primary" onclick="insertVariable('[DATE]')">
+                                                                    <i class="fas fa-plus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="card border-success">
+                                                        <div class="card-body p-2">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div>
+                                                                    <code class="text-success">[RAND]</code>
+                                                                    <small class="text-muted d-block">Random 5 digits number</small>
+                                                                </div>
+                                                                <button type="button" class="btn btn-sm btn-outline-success" onclick="insertVariable('[RAND]')">
+                                                                    <i class="fas fa-plus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="card border-info">
+                                                        <div class="card-body p-2">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div>
+                                                                    <code class="text-info">[PROJECT_AI]</code>
+                                                                    <small class="text-muted d-block">AI generated text</small>
+                                                                </div>
+                                                                <button type="button" class="btn btn-sm btn-outline-info" onclick="insertVariable('[PROJECT_AI]')">
+                                                                    <i class="fas fa-plus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="alert alert-info mt-3 mb-0">
+                                                    <small>
+                                                        <i class="fas fa-info-circle me-1"></i>
+                                                        Click the <i class="fas fa-plus"></i> button to insert variables into your email content.
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-text mt-2">
+                                Side-by-side editor like <a href="https://wysiwyghtml.com/" target="_blank">wysiwyghtml.com</a> — edit visually on the left, HTML/Preview/Variables on the right.
+                            </div>
+                        </div>
+
+                        <!-- To-field mode locked to sender; selector removed by request -->
+                        
+
+                        <!-- Send Button -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg" id="sendMassEmailBtn">
+                                <i class="fas fa-paper-plane me-2"></i>Send Mass Email
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <!-- Test Email Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-flask me-2"></i>Test Email
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="testEmailAddress" class="form-label">
+                            <i class="fas fa-envelope me-1"></i>Test Email Address
+                        </label>
+                        <input type="email" class="form-control" id="testEmailAddress" 
+                               placeholder="Enter email address to send test to" required>
+                        <div class="form-text">
+                            <i class="fas fa-info-circle me-1"></i>
+                            Send a test email to verify your content before mass sending
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-outline-primary" id="sendTestEmailBtn">
+                            <i class="fas fa-paper-plane me-2"></i>Send Test
+                        </button>
+                    </div>
+                    <div id="testEmailResult" class="mt-3" style="display: none;"></div>
+                </div>
+            </div>
+
+            <!-- Instructions Card -->
+            <!-- <div class="card mt-3">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-question-circle me-2"></i>How to Use
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <ol class="mb-0">
+                        <li>Upload an email list file (TXT/CSV)</li>
+                        <li>Enter email subject and body</li>
+                        <li>Set batch size (emails per batch)</li>
+                        <li>Select sending accounts</li>
+                        <li>Click "Send Mass Email"</li>
+                    </ol>
+                </div>
+            </div> -->
+            <!-- Account Selection (moved to sidebar) -->
+            <div class="card mt-3">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-users me-2"></i>Select Sending Accounts
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-text mb-2">Choose which accounts to use for sending emails:</div>
+                    <div id="accountSelection" class="border rounded p-3" style="max-height: 260px; overflow-y: auto;">
+                        <div class="text-center text-muted">
+                            <i class="fas fa-spinner fa-spin me-2"></i>
+                            Loading accounts...
+                        </div>
+                    </div>
+                    <div class="mt-2 d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-primary" id="selectAllAccounts">
+                            <i class="fas fa-check-square me-1"></i>Select All
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="deselectAllAccounts">
+                            <i class="fas fa-square me-1"></i>Deselect All
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Moved: Attachments / Batch / Max Concurrent / Proxy -->
+            <div class="card mt-3">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-sliders-h me-2"></i>Sending Options
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <!-- Attachments -->
+                    <div class="mb-3">
+                        <label for="attachments" class="form-label">
+                            <i class="fas fa-paperclip me-1"></i>Attachments
+                        </label>
+                        <input type="file" class="form-control" id="attachments" name="attachments" multiple
+                               accept=".txt,.pdf,.png,.jpg,.jpeg,.gif,.doc,.docx,.xls,.xlsx">
+                        <div id="attachmentList" class="mt-2 small text-muted"></div>
+                        <div class="form-text">Optional. Maximum supported by Outlook is ~25MB per file.</div>
+                    </div>
+                    <!-- Batch / Max Concurrent -->
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="batchSize" class="form-label">
+                                    <i class="fas fa-layer-group me-1"></i>Batch Size
+                                </label>
+                                <input type="number" class="form-control" id="batchSize" name="batchSize"
+                                       value="50" min="1" max="500" required>
+                                <div class="form-text">Emails per batch (1-500)</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="maxConcurrent" class="form-label">
+                                    <i class="fas fa-tachometer-alt me-1"></i>Max Concurrent
+                                </label>
+                                <input type="number" class="form-control" id="maxConcurrent" name="maxConcurrent"
+                                       value="10" min="1" max="50" required>
+                                <div class="form-text">Batches in parallel (1-50)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proxy -->
+                    <div class="mb-1">
+                        <label for="proxy" class="form-label">
+                            <i class="fas fa-globe me-1"></i>Proxy (Optional)
+                        </label>
+                        <input type="text" class="form-control" id="proxy" name="proxy"
+                               placeholder="socks5://user:pass@host:port or http://host:port">
+                        <div class="form-text"><i class="fas fa-info-circle me-1"></i>Use only if needed</div>
+                    </div>
+                </div>
+            </div>
+
+         
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Load available accounts
+    loadAccounts();
+    initEditors();
+    // Prefill hidden body value from default_body
+    (function prefillDefaults(){
+        try {
+            const hidden = document.getElementById('emailBody');
+            const htmlSource = document.getElementById('htmlSource');
+            hidden.value = htmlSource.value || '';
+            renderPreview(hidden.value);
+        } catch(e) {}
+    })();
+    
+    // Handle form submission
+    document.getElementById('directSendForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData();
+        const emailListFile = document.getElementById('emailListFile').files[0];
+        const subject = document.getElementById('emailSubject').value;
+        const body = document.getElementById('emailBody').value;
+        const batchSize = document.getElementById('batchSize').value;
+        const maxConcurrent = document.getElementById('maxConcurrent').value;
+        const proxy = document.getElementById('proxy').value.trim();
+        const selectedAccounts = Array.from(document.querySelectorAll('#accountSelection input[type="checkbox"]:checked'))
+            .map(checkbox => checkbox.value);
+        const attachFiles = document.getElementById('attachments').files;
+        
+        // Validation
+        if (!emailListFile) {
+            alert('Please select an email list file.');
+            return;
+        }
+        
+        if (!subject.trim()) {
+            alert('Please enter an email subject.');
+            return;
+        }
+        
+        if (!body.trim()) {
+            alert('Please enter email body content.');
+            return;
+        }
+        
+        if (selectedAccounts.length === 0) {
+            alert('Please select at least one sending account.');
+            return;
+        }
+        
+        // Upload attachments first (if any)
+        const uploadedPaths = [];
+        if (attachFiles && attachFiles.length > 0) {
+            for (let i = 0; i < attachFiles.length; i++) {
+                const f = attachFiles[i];
+                const fd = new FormData();
+                fd.append('file', f);
+                try {
+                    const res = await fetch('/uploads', { method: 'POST', body: fd });
+                    const up = await res.json();
+                    if (!up.success) throw new Error(up.error || ('Failed to upload: ' + f.name));
+                    uploadedPaths.push(up.path);
+                } catch (err) {
+                    alert('Attachment upload failed: ' + err.message);
+                    return;
+                }
+            }
+        }
+
+        // Prepare form data
+        formData.append('email_list_file', emailListFile);
+        formData.append('subject', subject);
+        formData.append('body', body);
+        // To-field mode locked to sender; no parameter needed
+        formData.append('batch_size', parseInt(batchSize));
+        formData.append('max_concurrent', parseInt(maxConcurrent));
+        formData.append('selected_accounts', JSON.stringify(selectedAccounts));
+        formData.append('proxy', proxy || '');
+        formData.append('attachments', JSON.stringify(uploadedPaths));
+        
+        // Update UI
+        const sendBtn = document.getElementById('sendMassEmailBtn');
+        const originalText = sendBtn.innerHTML;
+        sendBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+        sendBtn.disabled = true;
+        
+        try {
+            const response = await fetch('/send-mass-email', {
+                method: 'POST',
+                body: formData
+            });
+            
+            const data = await response.json();
+            
+            if (data.success) {
+                // Show progress modal if session_id is provided
+                if (data.session_id) {
+                    showProgressModal(data.session_id);
+                } else {
+                    // Fallback: show success message
+                showProgress('success', data.message);
+                }
+                
+                // Do NOT reset subject/body so values persist for next open
+                // Refresh accounts list only
+                document.getElementById('accountSelection').innerHTML = '<div class="text-center text-muted"><i class="fas fa-spinner fa-spin me-2"></i>Loading accounts...</div>';
+                loadAccounts();
+            } else {
+                alert('Error: ' + data.error);
+            }
+        } catch (error) {
+            console.error('Error sending mass email:', error);
+            alert('Error sending mass email. Please try again.');
+        } finally {
+            sendBtn.innerHTML = originalText;
+            sendBtn.disabled = false;
+        }
+    });
+    
+    // Select/Deselect All buttons
+    document.getElementById('selectAllAccounts').addEventListener('click', function() {
+        document.querySelectorAll('#accountSelection input[type="checkbox"]').forEach(checkbox => {
+            checkbox.checked = true;
+        });
+    });
+    
+    document.getElementById('deselectAllAccounts').addEventListener('click', function() {
+        document.querySelectorAll('#accountSelection input[type="checkbox"]').forEach(checkbox => {
+            checkbox.checked = false;
+        });
+    });
+
+    // Show attachment names
+    document.getElementById('attachments').addEventListener('change', function() {
+        const list = document.getElementById('attachmentList');
+        const files = Array.from(this.files || []);
+        list.textContent = files.length ? files.map(f => f.name).join(', ') : '';
+    });
+
+    // Test Email functionality
+    document.getElementById('sendTestEmailBtn').addEventListener('click', async function() {
+        const testEmail = document.getElementById('testEmailAddress').value.trim();
+        const subject = document.getElementById('emailSubject').value.trim();
+        const body = document.getElementById('emailBody').value.trim();
+        const testBtn = document.getElementById('sendTestEmailBtn');
+        const resultDiv = document.getElementById('testEmailResult');
+        
+        // Validation
+        if (!testEmail) {
+            showTestResult('error', 'Please enter a test email address.');
+            return;
+        }
+        
+        if (!subject.trim()) {
+            showTestResult('error', 'Please enter an email subject.');
+            return;
+        }
+        
+        if (!body.trim()) {
+            showTestResult('error', 'Please enter email body content.');
+            return;
+        }
+        
+        // Get selected accounts
+        const selectedAccounts = Array.from(document.querySelectorAll('#accountSelection input[type="checkbox"]:checked'))
+            .map(checkbox => checkbox.value);
+        
+        if (selectedAccounts.length === 0) {
+            showTestResult('error', 'Please select at least one sending account.');
+            return;
+        }
+        
+        // Update button state
+        const originalText = testBtn.innerHTML;
+        testBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending Test...';
+        testBtn.disabled = true;
+        
+        try {
+            // Upload attachments first (if any)
+            const uploadedPaths = [];
+            const attachFiles = document.getElementById('attachments').files;
+            if (attachFiles && attachFiles.length > 0) {
+                for (let i = 0; i < attachFiles.length; i++) {
+                    const f = attachFiles[i];
+                    const fd = new FormData();
+                    fd.append('file', f);
+                    try {
+                        const res = await fetch('/uploads', { method: 'POST', body: fd });
+                        const up = await res.json();
+                        if (!up.success) throw new Error(up.error || ('Failed to upload: ' + f.name));
+                        uploadedPaths.push(up.path);
+                    } catch (err) {
+                        showTestResult('error', 'Attachment upload failed: ' + err.message);
+                        return;
+                    }
+                }
+            }
+            
+            // Send test email
+            const response = await fetch('/send-test-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    test_email: testEmail,
+                    subject: subject,
+                    body: body,
+                    selected_accounts: selectedAccounts,
+                    attachments: uploadedPaths
+                })
+            });
+            
+            const data = await response.json();
+            
+            if (data.success) {
+                showTestResult('success', `Test email sent successfully to ${testEmail}`);
+            } else {
+                showTestResult('error', 'Error: ' + data.error);
+            }
+        } catch (error) {
+            console.error('Error sending test email:', error);
+            showTestResult('error', 'Error sending test email. Please try again.');
+        } finally {
+            testBtn.innerHTML = originalText;
+            testBtn.disabled = false;
+        }
+    });
+});
+
+function initEditors() {
+    // TinyMCE CDN
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/tinymce@6.8.3/tinymce.min.js';
+    script.referrerPolicy = 'origin';
+    script.onload = () => {
+        tinymce.init({
+            selector: '#wysiwygEditor',
+            menubar: 'file edit view format table tools',
+            plugins: 'lists link table code image preview advlist',
+            toolbar: 'undo redo | styles | bold italic underline forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image table | removeformat | code preview',
+            height: 420,
+            branding: false,
+            convert_urls: false,
+            content_style: 'body{font-family:Arial,Helvetica,sans-serif; font-size:14px}',
+            setup: (editor) => {
+                const syncToHtml = () => {
+                    const html = editor.getContent();
+                    const htmlSource = document.getElementById('htmlSource');
+                    const hidden = document.getElementById('emailBody');
+                    htmlSource.value = html;
+                    hidden.value = html;
+                    renderPreview(html);
+                };
+                // Do NOT sync on 'init' to avoid wiping prefilled content
+                editor.on('keyup change paste input Undo Redo', syncToHtml);
+
+                // On init, seed editor from prefilled HTML source
+                editor.on('init', () => {
+                    try {
+                        const initialHtml = (document.getElementById('htmlSource')?.value || '');
+                        if (initialHtml) {
+                            editor.setContent(initialHtml);
+                            const hidden = document.getElementById('emailBody');
+                            hidden.value = initialHtml;
+                            renderPreview(initialHtml);
+                        }
+                    } catch (e) {}
+                });
+            }
+        }).then(() => {
+            // Initialize HTML textarea change -> WYSIWYG + preview
+            const htmlSource = document.getElementById('htmlSource');
+            htmlSource.addEventListener('input', () => {
+                const html = htmlSource.value;
+                const hidden = document.getElementById('emailBody');
+                hidden.value = html;
+                const ed = tinymce.get('wysiwygEditor');
+                if (ed && ed.getContent() !== html) {
+                    ed.setContent(html);
+                }
+                renderPreview(html);
+            });
+
+            // Ensure preview reflects any prefilled HTML even if editor didn't fire yet
+            try { renderPreview(document.getElementById('htmlSource')?.value || ''); } catch(e) {}
+        });
+    };
+    document.head.appendChild(script);
+}
+
+function renderPreview(html) {
+    const iframe = document.getElementById('htmlPreview');
+    if (!iframe) return;
+    const doc = iframe.contentDocument || iframe.contentWindow.document;
+    doc.open();
+    doc.write('<!doctype html><html><head><meta charset="utf-8"></head><body>' + (html || '') + '</body></html>');
+    doc.close();
+}
+
+function showAlert(type, message) {
+    const alertClass = type === 'success' ? 'alert-success' : 'alert-danger';
+    const alertHtml = `
+        <div class="alert ${alertClass} alert-dismissible fade show" role="alert">
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    `;
+    
+    // Insert at the top of the form
+    const form = document.getElementById('directSendForm');
+    form.insertAdjacentHTML('afterbegin', alertHtml);
+    
+    // Auto-dismiss after 3 seconds
+    setTimeout(() => {
+        const alert = form.querySelector('.alert');
+        if (alert) {
+            alert.remove();
+        }
+    }, 3000);
+}
+
+function insertVariable(variable) {
+    // Prevent form submission
+    event.preventDefault();
+    event.stopPropagation();
+    
+    const editor = tinymce.get('wysiwygEditor');
+    if (editor) {
+        // Insert into TinyMCE editor
+        editor.insertContent(variable);
+        
+        // Sync to HTML source
+        const html = editor.getContent();
+        const htmlSource = document.getElementById('htmlSource');
+        const hidden = document.getElementById('emailBody');
+        htmlSource.value = html;
+        hidden.value = html;
+        renderPreview(html);
+        
+        showAlert('success', `Variable ${variable} inserted successfully`);
+    } else {
+        // Fallback to HTML source if TinyMCE not ready
+        const htmlSource = document.getElementById('htmlSource');
+        const hidden = document.getElementById('emailBody');
+        const start = htmlSource.selectionStart;
+        const end = htmlSource.selectionEnd;
+        const text = htmlSource.value;
+        
+        htmlSource.value = text.substring(0, start) + variable + text.substring(end);
+        hidden.value = htmlSource.value;
+        
+        // Update cursor position
+        const newPos = start + variable.length;
+        htmlSource.setSelectionRange(newPos, newPos);
+        htmlSource.focus();
+        
+        showAlert('success', `Variable ${variable} inserted successfully`);
+    }
+    
+    return false; // Prevent any default behavior
+}
+
+async function loadAccounts() {
+    try {
+        const response = await fetch('/accounts/active');
+        const data = await response.json();
+        
+        if (data.success) {
+            renderAccountSelection(data.accounts);
+        } else {
+            document.getElementById('accountSelection').innerHTML = 
+                '<div class="text-center text-danger"><i class="fas fa-exclamation-triangle me-2"></i>Error loading accounts</div>';
+        }
+    } catch (error) {
+        console.error('Error loading accounts:', error);
+        document.getElementById('accountSelection').innerHTML = 
+            '<div class="text-center text-danger"><i class="fas fa-exclamation-triangle me-2"></i>Error loading accounts</div>';
+    }
+}
+
+function renderAccountSelection(accounts) {
+    const container = document.getElementById('accountSelection');
+    
+    if (accounts.length === 0) {
+        container.innerHTML = '<div class="text-center text-muted"><i class="fas fa-info-circle me-2"></i>No active accounts found</div>';
+        return;
+    }
+    
+    let html = '';
+    accounts.forEach(account => {
+        const accountType = account.type || 'database';
+        const statusClass = account.status === 'active' ? 'text-success' : 'text-warning';
+        
+        html += `
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" value="${account.email}" id="account_${account.email.replace('@', '_at_')}">
+                <label class="form-check-label" for="account_${account.email.replace('@', '_at_')}">
+                    <strong>${account.email}</strong>
+                    <span class="badge bg-secondary ms-2">${accountType}</span>
+                    <span class="badge ${statusClass} ms-1">${account.status}</span>
+                </label>
+            </div>
+        `;
+    });
+    
+    container.innerHTML = html;
+}
+
+function showProgress(type, message) {
+    const container = document.getElementById('progressContainer');
+    const iconClass = type === 'success' ? 'fa-check-circle text-success' : 'fa-exclamation-triangle text-warning';
+    
+    container.innerHTML = `
+        <div class="text-center">
+            <i class="fas ${iconClass} fa-2x mb-2"></i>
+            <p class="mb-0">${message}</p>
+        </div>
+    `;
+}
+
+function showTestResult(type, message) {
+    const resultDiv = document.getElementById('testEmailResult');
+    const alertClass = type === 'success' ? 'alert-success' : 'alert-danger';
+    const iconClass = type === 'success' ? 'fa-check-circle' : 'fa-exclamation-triangle';
+    
+    resultDiv.innerHTML = `
+        <div class="alert ${alertClass} alert-dismissible fade show" role="alert">
+            <i class="fas ${iconClass} me-2"></i>${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    `;
+    resultDiv.style.display = 'block';
+    
+    // Auto-dismiss after 5 seconds for success messages
+    if (type === 'success') {
+        setTimeout(() => {
+            const alert = resultDiv.querySelector('.alert');
+            if (alert) {
+                alert.remove();
+                resultDiv.style.display = 'none';
+            }
+        }, 5000);
+    }
+}
+
+// HTML formatting functions
+function insertHTMLTag(tag, description) {
+    const textarea = document.getElementById('emailBody');
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    const selectedText = textarea.value.substring(start, end);
+    
+    let insertText = '';
+    
+    switch(tag) {
+        case 'strong':
+            insertText = `<strong>${selectedText || 'Bold text'}</strong>`;
+            break;
+        case 'em':
+            insertText = `<em>${selectedText || 'Italic text'}</em>`;
+            break;
+        case 'u':
+            insertText = `<u>${selectedText || 'Underlined text'}</u>`;
+            break;
+        case 'br':
+            insertText = '<br>';
+            break;
+        case 'a':
+            const url = prompt('Enter URL:', 'https://');
+            if (url) {
+                insertText = `<a href="${url}">${selectedText || 'Link text'}</a>`;
+            } else {
+                return; // User cancelled
+            }
+            break;
+        default:
+            insertText = `<${tag}>${selectedText || 'Text'}</${tag}>`;
+    }
+    
+    // Insert the HTML tag
+    textarea.value = textarea.value.substring(0, start) + insertText + textarea.value.substring(end);
+    
+    // Update cursor position
+    const newCursorPos = start + insertText.length;
+    textarea.setSelectionRange(newCursorPos, newCursorPos);
+    textarea.focus();
+    
+    // Show success message
+    showAlert('success', `${description} tag inserted successfully`);
+}
+
+function showAlert(type, message) {
+    const alertClass = type === 'success' ? 'alert-success' : 'alert-danger';
+    const alertHtml = `
+        <div class="alert ${alertClass} alert-dismissible fade show" role="alert">
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    `;
+    
+    // Insert at the top of the form
+    const form = document.getElementById('directSendForm');
+    form.insertAdjacentHTML('afterbegin', alertHtml);
+    
+    // Auto-dismiss after 3 seconds
+    setTimeout(() => {
+        const alert = form.querySelector('.alert');
+        if (alert) {
+            alert.remove();
+        }
+    }, 3000);
+}
+
+// Progress tracking functions
+function showProgressModal(sessionId) {
+    // Include progress modal if not already included
+    if (!document.getElementById('progressModal')) {
+        fetch('/static/progress_modal.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+                // Call the showProgressModal function from the included script
+                window.showProgressModal(sessionId);
+            })
+            .catch(error => {
+                console.error('Error loading progress modal:', error);
+                showProgress('error', 'Failed to load progress modal');
+            });
+    } else {
+        // Call the existing function
+        window.showProgressModal(sessionId);
+    }
+}
+</script>
+
+<!-- Include Progress Modal -->
+{% include 'progress_modal.html' %}
+{% endblock %}
+

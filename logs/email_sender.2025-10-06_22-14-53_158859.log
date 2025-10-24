@@ -1,0 +1,2271 @@
+2025-10-06 22:14:53 | INFO | Testing authentication for accounts@performanceelevator.org with cookies...
+2025-10-06 22:14:53 | INFO | Parsed 3 cookies for accounts@performanceelevator.org
+2025-10-06 22:14:53 | INFO | Cookie 1: ESTSAUTHPERSISTENT = 1.AW8BjZve1uCd5EC0EY5P6OwWwcDmPF4fK4VCjUt17nh4c0bn...
+2025-10-06 22:14:53 | INFO | Cookie 2: ESTSAUTH = 1.AW8BjZve1uCd5EC0EY5P6OwWwcDmPF4fK4VCjUt17nh4c0bn...
+2025-10-06 22:14:53 | INFO | Cookie 3: ESTSAUTHLIGHT = +009988c9-c365-a3e8-4cf8-54b38fee3cd5...
+2025-10-06 22:14:53 | INFO | Testing cookie authentication for accounts@performanceelevator.org
+2025-10-06 22:14:59 | INFO | Using domain: outlook.office.com for email: accounts@performanceelevator.org
+2025-10-06 22:14:59 | INFO | Injected 6 cookies for authentication [ESTSAUTHPERSISTENT@login.microsoftonline.com, ESTSAUTHPERSISTENT@outlook.office.com, ESTSAUTH@login.microsoftonline.com, ESTSAUTH@outlook.office.com, ESTSAUTHLIGHT@login.microsoftonline.com, ESTSAUTHLIGHT@outlook.office.com]
+2025-10-06 22:15:00 | INFO | Visiting Microsoft login domain to establish auth context
+2025-10-06 22:15:20 | WARNING | Login domain navigation failed: Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to "https://login.microsoftonline.com/common/oauth2/v2.0/authorize", waiting until "domcontentloaded"
+
+2025-10-06 22:15:20 | INFO | Navigating to Outlook mail: https://outlook.office.com/mail/
+2025-10-06 22:15:34 | INFO | Current URL after navigation: https://outlook.office.com/mail/
+2025-10-06 22:15:34 | INFO | Successfully authenticated - valid Outlook URL: https://outlook.office.com/mail/
+2025-10-06 22:15:37 | INFO | Outlook interface elements not found, but on valid Outlook URL - assuming authenticated
+2025-10-06 22:16:16 | INFO | Cookie authentication successful for accounts@performanceelevator.org - compose page accessible
+2025-10-06 22:16:17 | INFO | Saved browser session to: E:\a_Work\tele\New folder - Copy\sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-06 22:16:17 | INFO | Authentication successful for accounts@performanceelevator.org, saving account...
+2025-10-06 22:16:17 | INFO | Added paid Office 365 account to database: accounts@performanceelevator.org
+2025-10-06 22:17:52 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-06 22:17:52 | INFO | Mass email request - Subject: Nice, File: emails.txt
+2025-10-06 22:17:52 | INFO | Parsed 3 emails from uploaded file
+2025-10-06 22:17:52 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-06 22:17:52 | INFO | Using 2 accounts: ['accounts@performanceelevator.org', 'accounts@performanceelevator.org']
+2025-10-06 22:17:53 | INFO | Injected cookie: ESTSAUTHPERSISTENT
+2025-10-06 22:17:53 | INFO | Injected cookie: ESTSAUTH
+2025-10-06 22:17:53 | INFO | Injected cookie: ESTSAUTHLIGHT
+2025-10-06 22:17:53 | INFO | Navigating to https://outlook.office.com/mail/
+2025-10-06 22:18:18 | INFO | Navigating to compose: https://outlook.office.com/mail/deeplink/compose
+2025-10-06 22:19:30 | INFO | Basic email fields filled successfully
+2025-10-06 22:19:30 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-06 22:19:30 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-06 22:19:30 | WARNING | Could not find BCC button
+2025-10-06 22:19:30 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-06 22:19:30 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-06 22:19:30 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-06 22:19:30 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-06 22:19:30 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-06 22:19:30 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-06 22:19:30 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-06 22:19:30 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-06 22:19:30 | ERROR | Could not find any BCC input field!
+2025-10-06 22:19:30 | INFO | ❌ BCC failure screenshot saved
+2025-10-06 22:19:55 | ERROR | Send button not found or not enabled
+2025-10-06 22:19:55 | ERROR | Error clicking send button: Send button not found
+2025-10-06 22:19:55 | ERROR | Error in fast_send_email_with_cookies: Send button not found
+2025-10-06 22:19:55 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | Nice
+2025-10-06 22:19:56 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-06 22:19:56 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-06 22:19:58 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-06 22:21:05 | INFO | Basic email fields filled successfully
+2025-10-06 22:21:05 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-06 22:21:05 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-06 22:21:05 | WARNING | Could not find BCC button
+2025-10-06 22:21:05 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-06 22:21:05 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-06 22:21:05 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-06 22:21:05 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-06 22:21:05 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-06 22:21:05 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-06 22:21:05 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-06 22:21:05 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-06 22:21:05 | ERROR | Could not find any BCC input field!
+2025-10-06 22:21:05 | INFO | ❌ BCC failure screenshot saved
+2025-10-06 22:21:05 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-06 22:21:05 | INFO | 📤 Sending email...
+2025-10-06 22:21:05 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-06 22:21:05 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-06 22:21:15 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-06 22:21:25 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']:not([aria-disabled='true'])
+2025-10-06 22:21:35 | INFO | 🔄 Send button is ready - clicking...
+2025-10-06 22:21:45 | WARNING | ⚠️ Send button click failed: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("button[data-icon-name='Send']:not([aria-disabled='true'])").first
+
+2025-10-06 22:21:45 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-06 22:21:48 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-06 22:21:48 | INFO | 🔍 Verifying send confirmation...
+2025-10-06 22:21:48 | INFO | ✅ Network idle after send - platform processed
+2025-10-06 22:21:50 | INFO | URL after send attempt: chrome-error://chromewebdata/
+2025-10-06 22:21:50 | INFO | ✅ Send confirmed - no longer on compose page
+2025-10-06 22:21:51 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-06 22:21:51 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-06 22:30:50 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-06 22:30:50 | INFO | Mass email request - Subject: Hello, File: emails.txt
+2025-10-06 22:30:50 | INFO | Parsed 3 emails from uploaded file
+2025-10-06 22:30:50 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-06 22:30:50 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-06 22:30:50 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | Hello
+2025-10-06 22:30:50 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-06 22:30:50 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-06 22:30:56 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-06 22:32:13 | INFO | Basic email fields filled successfully
+2025-10-06 22:32:13 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-06 22:32:13 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-06 22:32:13 | WARNING | Could not find BCC button
+2025-10-06 22:32:13 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-06 22:32:13 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-06 22:32:13 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-06 22:32:13 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-06 22:32:13 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-06 22:32:13 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-06 22:32:13 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-06 22:32:13 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-06 22:32:13 | ERROR | Could not find any BCC input field!
+2025-10-06 22:32:13 | INFO | ❌ BCC failure screenshot saved
+2025-10-06 22:32:13 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-06 22:32:13 | INFO | 📤 Sending email...
+2025-10-06 22:32:13 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-06 22:32:13 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-06 22:32:23 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-06 22:32:33 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']:not([aria-disabled='true'])
+2025-10-06 22:32:43 | INFO | 🔄 Send button is ready - clicking...
+2025-10-06 22:32:53 | WARNING | ⚠️ Send button click failed: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("button[data-icon-name='Send']:not([aria-disabled='true'])").first
+
+2025-10-06 22:32:53 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-06 22:32:56 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-06 22:32:56 | INFO | 🔍 Verifying send confirmation...
+2025-10-06 22:32:56 | INFO | ✅ Network idle after send - platform processed
+2025-10-06 22:32:58 | INFO | URL after send attempt: chrome-error://chromewebdata/
+2025-10-06 22:32:58 | INFO | ✅ Send confirmed - no longer on compose page
+2025-10-06 22:32:59 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-06 22:32:59 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-06 22:34:07 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-06 22:34:07 | INFO | Mass email request - Subject: FFFF@@@, File: emails.txt
+2025-10-06 22:34:07 | INFO | Parsed 3 emails from uploaded file
+2025-10-06 22:34:07 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-06 22:34:07 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-06 22:34:07 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | FFFF@@@
+2025-10-06 22:34:13 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-06 22:34:14 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-06 22:34:15 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-06 22:34:48 | INFO | Basic email fields filled successfully
+2025-10-06 22:34:48 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-06 22:34:48 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-06 22:34:48 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-06 22:34:49 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-06 22:34:49 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-06 22:34:49 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-06 22:34:49 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-06 22:34:49 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-06 22:34:49 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-06 22:34:49 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-06 22:34:49 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-06 22:34:49 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-06 22:34:49 | INFO | Step 1: Removing ALL content from BCC field
+2025-10-06 22:34:50 | INFO | Step 2: Entering each email individually with Enter/Tab
+2025-10-06 22:34:50 | INFO | Adding BCC recipient 1/3: tom069213@outlook.com
+2025-10-06 22:34:53 | INFO | Pressing Enter for tom069213@outlook.com
+2025-10-06 22:34:55 | INFO | After Enter - BCC chips count: 0
+2025-10-06 22:34:55 | INFO | Enter failed for tom069213@outlook.com, trying Tab
+2025-10-06 22:34:56 | INFO | After Tab - BCC chips count: 0
+2025-10-06 22:34:56 | INFO | Adding BCC recipient 2/3: tom069211@outlook.com
+2025-10-06 22:34:59 | INFO | Pressing Enter for tom069211@outlook.com
+2025-10-06 22:35:00 | INFO | After Enter - BCC chips count: 0
+2025-10-06 22:35:00 | INFO | Enter failed for tom069211@outlook.com, trying Tab
+2025-10-06 22:35:01 | INFO | After Tab - BCC chips count: 0
+2025-10-06 22:35:01 | INFO | Adding BCC recipient 3/3: tom069212@outlook.com
+2025-10-06 22:35:04 | INFO | Pressing Enter for tom069212@outlook.com
+2025-10-06 22:35:05 | INFO | After Enter - BCC chips count: 0
+2025-10-06 22:35:05 | INFO | Enter failed for tom069212@outlook.com, trying Tab
+2025-10-06 22:35:07 | INFO | After Tab - BCC chips count: 0
+2025-10-06 22:35:08 | INFO | Final BCC chips created: 0/3
+2025-10-06 22:35:08 | WARNING | ⚠️ PARTIAL: BCC field filled with 0/3 recipients
+2025-10-06 22:35:08 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-06 22:35:08 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-06 22:35:08 | INFO | 📤 Sending email...
+2025-10-06 22:35:08 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-06 22:35:08 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-06 22:35:08 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-06 22:35:08 | INFO | 🔄 Send button is ready - clicking...
+2025-10-06 22:35:08 | INFO | ✅ Sent via Send button
+2025-10-06 22:35:08 | INFO | 🔍 Verifying send confirmation...
+2025-10-06 22:35:08 | INFO | ✅ Network idle after send - platform processed
+2025-10-06 22:35:10 | INFO | URL after send attempt: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-06 22:35:10 | WARNING | ⚠️ Still on compose page - may indicate failure
+2025-10-06 22:35:10 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-06 22:35:10 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-06 23:00:33 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-06 23:00:33 | INFO | Mass email request - Subject: Wonderful, File: emails.txt
+2025-10-06 23:00:33 | INFO | Parsed 3 emails from uploaded file
+2025-10-06 23:00:33 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-06 23:00:33 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-06 23:00:33 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | Wonderful
+2025-10-06 23:00:33 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-06 23:00:34 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-06 23:00:35 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-06 23:01:49 | INFO | Basic email fields filled successfully
+2025-10-06 23:01:49 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-06 23:01:49 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-06 23:01:49 | WARNING | Could not find BCC button
+2025-10-06 23:01:49 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-06 23:01:49 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-06 23:01:49 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-06 23:01:49 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-06 23:01:49 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-06 23:01:49 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-06 23:01:49 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-06 23:01:49 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-06 23:01:49 | INFO | Final BCC chips created: 0/3
+2025-10-06 23:01:49 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-06 23:01:50 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-06 23:01:50 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-06 23:01:50 | INFO | 📤 Sending email...
+2025-10-06 23:01:50 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-06 23:01:50 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-06 23:02:00 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-06 23:02:10 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']:not([aria-disabled='true'])
+2025-10-06 23:02:20 | INFO | 🔄 Send button is ready - clicking...
+2025-10-06 23:02:30 | WARNING | ⚠️ Send button click failed: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("button[data-icon-name='Send']:not([aria-disabled='true'])").first
+
+2025-10-06 23:02:30 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-06 23:02:33 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-06 23:02:33 | INFO | 🔍 Verifying send confirmation...
+2025-10-06 23:02:53 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-06 23:02:53 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-06 23:02:53 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-06 23:21:48 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-06 23:21:48 | INFO | Mass email request - Subject: there, File: emails.txt
+2025-10-06 23:21:48 | INFO | Parsed 3 emails from uploaded file
+2025-10-06 23:21:48 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-06 23:21:48 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-06 23:21:48 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | there
+2025-10-06 23:21:49 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-06 23:21:49 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-06 23:21:52 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-06 23:22:00 | ERROR | ❌ Send failed with unexpected error: Target page, context or browser has been closed
+2025-10-06 23:25:56 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-06 23:25:56 | INFO | Mass email request - Subject: aaaaaaaaa, File: emails.txt
+2025-10-06 23:25:56 | INFO | Parsed 3 emails from uploaded file
+2025-10-06 23:25:56 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-06 23:25:56 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-06 23:25:56 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | aaaaaaaaa
+2025-10-06 23:25:56 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-06 23:25:56 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-06 23:25:58 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-06 23:26:30 | INFO | Basic email fields filled successfully
+2025-10-06 23:26:30 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-06 23:26:30 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-06 23:26:30 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-06 23:26:31 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-06 23:26:31 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-06 23:26:31 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-06 23:26:31 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-06 23:26:31 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-06 23:26:31 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-06 23:26:31 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-06 23:26:31 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-06 23:26:31 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-06 23:26:32 | INFO | Adding BCC recipient 1/3: tom069213@outlook.com
+2025-10-06 23:26:38 | INFO | Adding BCC recipient 2/3: tom069211@outlook.com
+2025-10-06 23:26:44 | INFO | Adding BCC recipient 3/3: tom069212@outlook.com
+2025-10-06 23:26:50 | INFO | Final BCC chips created: 0/3
+2025-10-06 23:26:50 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-06 23:26:50 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-06 23:26:50 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-06 23:26:50 | INFO | 📤 Sending email...
+2025-10-06 23:26:50 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-06 23:26:50 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-06 23:26:50 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-06 23:26:50 | INFO | 🔄 Send button is ready - clicking...
+2025-10-06 23:27:05 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-06 23:27:05 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-06 23:27:08 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-06 23:27:08 | INFO | 🔍 Verifying send confirmation...
+2025-10-06 23:27:28 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-06 23:27:29 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-06 23:27:29 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-06 23:37:53 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-06 23:37:53 | INFO | Mass email request - Subject: there@@, File: emails.txt
+2025-10-06 23:37:53 | INFO | Parsed 3 emails from uploaded file
+2025-10-06 23:37:53 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-06 23:37:53 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-06 23:37:53 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | there@@
+2025-10-06 23:37:54 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-06 23:37:54 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-06 23:37:57 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-06 23:38:32 | INFO | Basic email fields filled successfully
+2025-10-06 23:38:32 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-06 23:38:32 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-06 23:38:32 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-06 23:38:33 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-06 23:38:33 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-06 23:38:33 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-06 23:38:33 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-06 23:38:33 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-06 23:38:33 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-06 23:38:33 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-06 23:38:33 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-06 23:38:33 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-06 23:38:34 | INFO | Adding BCC recipient 1/3: tom069213@outlook.com
+2025-10-06 23:38:37 | INFO | Adding BCC recipient 2/3: tom069211@outlook.com
+2025-10-06 23:38:39 | INFO | Adding BCC recipient 3/3: tom069212@outlook.com
+2025-10-06 23:38:42 | INFO | Final BCC chips created: 0/3
+2025-10-06 23:38:42 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-06 23:38:42 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-06 23:38:42 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-06 23:38:42 | INFO | 📤 Sending email...
+2025-10-06 23:38:42 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-06 23:38:42 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-06 23:38:42 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-06 23:38:42 | INFO | 🔄 Send button is ready - clicking...
+2025-10-06 23:38:57 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-06 23:38:57 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-06 23:39:00 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-06 23:39:00 | INFO | 🔍 Verifying send confirmation...
+2025-10-06 23:39:20 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-06 23:39:20 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-06 23:39:20 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-06 23:52:57 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-06 23:52:57 | INFO | Mass email request - Subject: there, File: emails.txt
+2025-10-06 23:52:57 | INFO | Parsed 3 emails from uploaded file
+2025-10-06 23:52:57 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-06 23:52:57 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-06 23:52:57 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | there
+2025-10-06 23:52:57 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-06 23:52:58 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-06 23:53:00 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-06 23:53:33 | INFO | Basic email fields filled successfully
+2025-10-06 23:53:33 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-06 23:53:33 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-06 23:53:33 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-06 23:53:34 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-06 23:53:34 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-06 23:53:34 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-06 23:53:34 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-06 23:53:34 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-06 23:53:34 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-06 23:53:34 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-06 23:53:34 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-06 23:53:34 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-06 23:53:35 | INFO | Adding BCC recipient 1/3: tom069213@outlook.com
+2025-10-06 23:53:37 | INFO | Adding BCC recipient 2/3: tom069211@outlook.com
+2025-10-06 23:53:39 | INFO | Adding BCC recipient 3/3: tom069212@outlook.com
+2025-10-06 23:53:42 | INFO | Final BCC chips created: 0/3
+2025-10-06 23:53:42 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-06 23:53:42 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-06 23:53:42 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-06 23:53:42 | INFO | 📤 Sending email...
+2025-10-06 23:53:42 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-06 23:53:42 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-06 23:53:42 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-06 23:53:42 | INFO | 🔄 Send button is ready - clicking...
+2025-10-06 23:53:57 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-06 23:53:57 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-06 23:54:00 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-06 23:54:00 | INFO | 🔍 Verifying send confirmation...
+2025-10-06 23:54:20 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-06 23:54:20 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-06 23:54:20 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 02:05:30 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 02:05:30 | INFO | Mass email request - Subject: NIce@@@@@@@@@@@@@@, File: emails.txt
+2025-10-07 02:05:30 | INFO | Parsed 3 emails from uploaded file
+2025-10-07 02:05:30 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-07 02:05:30 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 02:05:30 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | NIce@@@@@@@@@@@@@@
+2025-10-07 02:05:36 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 02:05:39 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 02:05:41 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 02:06:15 | INFO | Basic email fields filled successfully
+2025-10-07 02:06:15 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 02:06:15 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-07 02:06:15 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 02:06:16 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 02:06:16 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 02:06:16 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 02:06:16 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 02:06:16 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 02:06:16 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 02:06:16 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 02:06:16 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 02:06:16 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 02:06:17 | INFO | Adding BCC recipient 1/3: tom069213@outlook.com
+2025-10-07 02:06:20 | INFO | Adding BCC recipient 2/3: tom069211@outlook.com
+2025-10-07 02:06:22 | INFO | Adding BCC recipient 3/3: tom069212@outlook.com
+2025-10-07 02:06:24 | INFO | Final BCC chips created: 0/3
+2025-10-07 02:06:24 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 02:06:24 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 02:06:24 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 02:06:24 | INFO | 📤 Sending email...
+2025-10-07 02:06:24 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 02:06:24 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 02:06:24 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 02:06:24 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 02:06:28 | INFO | ✅ Sent via Send button
+2025-10-07 02:06:28 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 02:06:28 | INFO | ✅ Network idle after send - platform processed
+2025-10-07 02:06:30 | INFO | URL after send attempt: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 02:06:30 | WARNING | ⚠️ Still on compose page - may indicate failure
+2025-10-07 02:06:31 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-07 02:06:31 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 02:56:42 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 02:56:42 | INFO | Mass email request - Subject: there@@, File: emails.txt
+2025-10-07 02:56:42 | INFO | Parsed 3 emails from uploaded file
+2025-10-07 02:56:42 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-07 02:56:42 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 02:56:42 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | there@@
+2025-10-07 02:56:42 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 02:56:43 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 02:56:46 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 02:57:20 | INFO | Basic email fields filled successfully
+2025-10-07 02:57:20 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 02:57:20 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-07 02:57:20 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 02:57:21 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 02:57:21 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 02:57:21 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 02:57:21 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 02:57:21 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 02:57:21 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 02:57:21 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 02:57:21 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 02:57:21 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 02:57:22 | INFO | Adding BCC recipient 1/3: tom069213@outlook.com
+2025-10-07 02:57:24 | INFO | Adding BCC recipient 2/3: tom069211@outlook.com
+2025-10-07 02:57:27 | INFO | Adding BCC recipient 3/3: tom069212@outlook.com
+2025-10-07 02:57:29 | INFO | Final BCC chips created: 0/3
+2025-10-07 02:57:29 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 02:57:29 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 02:57:29 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 02:57:29 | INFO | 📤 Sending email...
+2025-10-07 02:57:29 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 02:57:29 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 02:57:29 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 02:57:29 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 02:57:29 | INFO | ✅ Sent via Send button
+2025-10-07 02:57:29 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 02:57:29 | INFO | ✅ Network idle after send - platform processed
+2025-10-07 02:57:31 | INFO | URL after send attempt: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 02:57:31 | WARNING | ⚠️ Still on compose page - may indicate failure
+2025-10-07 02:57:31 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-07 02:57:31 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 05:24:16 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 05:24:16 | INFO | Mass email request - Subject: FFFF!@#, File: emails.txt
+2025-10-07 05:24:16 | INFO | Parsed 3 emails from uploaded file
+2025-10-07 05:24:16 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-07 05:24:16 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 05:24:16 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | FFFF!@#
+2025-10-07 05:24:17 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 05:24:17 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 05:24:22 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 05:25:39 | INFO | Basic email fields filled successfully
+2025-10-07 05:25:39 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 05:25:39 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-07 05:25:39 | WARNING | Could not find BCC button
+2025-10-07 05:25:39 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 05:25:39 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 05:25:39 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 05:25:39 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 05:25:39 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 05:25:39 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 05:25:39 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 05:25:39 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 05:25:39 | INFO | Trying BCC input selector: div:has(:text("Bcc")) div[role="textbox"]
+2025-10-07 05:25:39 | INFO | Trying BCC input selector: div:has(:text("Bcc")) [contenteditable="true"]
+2025-10-07 05:25:39 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] input
+2025-10-07 05:25:39 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] [contenteditable="true"]
+2025-10-07 05:25:39 | INFO | Final BCC chips created: 0/3
+2025-10-07 05:25:39 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 05:25:39 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 05:25:39 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 05:25:39 | INFO | 📤 Sending email...
+2025-10-07 05:25:39 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 05:25:39 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 05:25:49 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-07 05:25:59 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']:not([aria-disabled='true'])
+2025-10-07 05:26:09 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 05:26:19 | WARNING | ⚠️ Send button click failed: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("button[data-icon-name='Send']:not([aria-disabled='true'])").first
+
+2025-10-07 05:26:19 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 05:26:19 | WARNING | ⚠️ Ctrl+Enter failed: Keyboard.press: Target page, context or browser has been closed
+2025-10-07 05:26:19 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-07 05:26:48 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 05:26:48 | INFO | Mass email request - Subject: there@@@@@@@@@@@@, File: emails.txt
+2025-10-07 05:26:48 | INFO | Parsed 3 emails from uploaded file
+2025-10-07 05:26:48 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-07 05:26:48 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 05:26:48 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | there@@@@@@@@@@@@
+2025-10-07 05:26:48 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 05:26:48 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 05:26:51 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 05:27:23 | INFO | Basic email fields filled successfully
+2025-10-07 05:27:23 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 05:27:23 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-07 05:27:23 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 05:27:24 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 05:27:24 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 05:27:24 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 05:27:24 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 05:27:24 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 05:27:24 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 05:27:24 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 05:27:24 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 05:27:24 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 05:27:24 | INFO | Adding BCC recipient 1/3: tom069213@outlook.com
+2025-10-07 05:27:27 | INFO | Adding BCC recipient 2/3: tom069211@outlook.com
+2025-10-07 05:27:29 | INFO | Adding BCC recipient 3/3: tom069212@outlook.com
+2025-10-07 05:27:31 | INFO | Final BCC chips created: 0/3
+2025-10-07 05:27:31 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 05:27:32 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 05:27:32 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 05:27:32 | INFO | 📤 Sending email...
+2025-10-07 05:27:32 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 05:27:32 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 05:27:32 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 05:27:32 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 05:27:47 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 05:27:47 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 05:27:50 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 05:27:50 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 05:28:10 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 05:28:10 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-07 05:28:10 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 05:56:31 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 05:56:31 | INFO | Mass email request - Subject: 0-Hello, File: emails.txt
+2025-10-07 05:56:31 | INFO | Parsed 3 emails from uploaded file
+2025-10-07 05:56:31 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-07 05:56:31 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 05:56:31 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | 0-Hello
+2025-10-07 05:56:32 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 05:56:32 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 05:56:35 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 05:57:49 | INFO | Basic email fields filled successfully
+2025-10-07 05:57:49 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 05:57:49 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-07 05:57:49 | WARNING | Could not find BCC button
+2025-10-07 05:57:49 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 05:57:49 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 05:57:49 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 05:57:49 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 05:57:49 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 05:57:49 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 05:57:49 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 05:57:49 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 05:57:49 | INFO | Trying BCC input selector: div:has(:text("Bcc")) div[role="textbox"]
+2025-10-07 05:57:49 | INFO | Trying BCC input selector: div:has(:text("Bcc")) [contenteditable="true"]
+2025-10-07 05:57:49 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] input
+2025-10-07 05:57:49 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] [contenteditable="true"]
+2025-10-07 05:57:49 | INFO | Final BCC chips created: 0/3
+2025-10-07 05:57:49 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 05:57:50 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 05:57:50 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 05:57:50 | INFO | 📤 Sending email...
+2025-10-07 05:57:50 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 05:57:50 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 05:58:00 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-07 05:58:10 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']:not([aria-disabled='true'])
+2025-10-07 05:58:20 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 05:58:30 | WARNING | ⚠️ Send button click failed: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("button[data-icon-name='Send']:not([aria-disabled='true'])").first
+
+2025-10-07 05:58:30 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 05:58:33 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 05:58:33 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 05:58:33 | INFO | ✅ Network idle after send - platform processed
+2025-10-07 05:58:35 | INFO | URL after send attempt: chrome-error://chromewebdata/
+2025-10-07 05:58:35 | INFO | ✅ Send confirmed - no longer on compose page
+2025-10-07 05:58:35 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-07 05:58:35 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 05:59:13 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 05:59:13 | INFO | Mass email request - Subject: 0-Hello, File: emails.txt
+2025-10-07 05:59:13 | INFO | Parsed 3 emails from uploaded file
+2025-10-07 05:59:13 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-07 05:59:13 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 05:59:13 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | 0-Hello
+2025-10-07 05:59:14 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 05:59:14 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 05:59:16 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 05:59:48 | INFO | Basic email fields filled successfully
+2025-10-07 05:59:48 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 05:59:48 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-07 05:59:48 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 05:59:49 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 05:59:49 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 05:59:49 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 05:59:49 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 05:59:49 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 05:59:49 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 05:59:49 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 05:59:49 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 05:59:49 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 05:59:50 | INFO | Adding BCC recipient 1/3: tom069213@outlook.com
+2025-10-07 05:59:50 | INFO | Email tom069213@outlook.com already exists, skipping
+2025-10-07 05:59:50 | INFO | Adding BCC recipient 2/3: tom069211@outlook.com
+2025-10-07 05:59:50 | INFO | Email tom069211@outlook.com already exists, skipping
+2025-10-07 05:59:50 | INFO | Adding BCC recipient 3/3: tom069212@outlook.com
+2025-10-07 05:59:53 | INFO | Successfully added BCC recipient: tom069212@outlook.com
+2025-10-07 05:59:53 | INFO | Final BCC chips created: 1/3
+2025-10-07 05:59:53 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 05:59:53 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 05:59:53 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 05:59:53 | INFO | 📤 Sending email...
+2025-10-07 05:59:53 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 05:59:53 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 05:59:53 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 05:59:53 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 06:00:08 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 06:00:08 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 06:00:11 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 06:00:11 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 06:00:31 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 06:00:32 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-07 06:00:32 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 08:33:03 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 08:33:03 | INFO | Mass email request - Subject: Niced12345678, File: emails.txt
+2025-10-07 08:33:03 | INFO | Parsed 3 emails from uploaded file
+2025-10-07 08:33:03 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-07 08:33:03 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 08:33:03 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | Niced12345678
+2025-10-07 08:33:04 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 08:33:04 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 08:33:06 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 08:33:38 | INFO | Basic email fields filled successfully
+2025-10-07 08:33:38 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 08:33:38 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-07 08:33:38 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 08:33:39 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 08:33:39 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 08:33:39 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 08:33:39 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 08:33:39 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 08:33:39 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 08:33:39 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 08:33:39 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 08:33:39 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 08:33:40 | INFO | Adding BCC recipient 1/3: tom069213@outlook.com
+2025-10-07 08:33:40 | INFO | Force adding email: tom069213@outlook.com
+2025-10-07 08:33:43 | INFO | Successfully added BCC recipient: tom069213@outlook.com
+2025-10-07 08:33:43 | INFO | Adding BCC recipient 2/3: tom069211@outlook.com
+2025-10-07 08:33:44 | INFO | Force adding email: tom069211@outlook.com
+2025-10-07 08:33:47 | INFO | Successfully added BCC recipient: tom069211@outlook.com
+2025-10-07 08:33:47 | INFO | Adding BCC recipient 3/3: tom069212@outlook.com
+2025-10-07 08:33:47 | INFO | Force adding email: tom069212@outlook.com
+2025-10-07 08:33:50 | INFO | Successfully added BCC recipient: tom069212@outlook.com
+2025-10-07 08:33:50 | INFO | Final BCC chips created: 1/3
+2025-10-07 08:33:50 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 08:33:50 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 08:33:50 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 08:33:50 | INFO | 📤 Sending email...
+2025-10-07 08:33:50 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 08:33:50 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 08:33:50 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 08:33:50 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 08:34:05 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 08:34:05 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 08:34:08 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 08:34:08 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 08:34:28 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 08:34:29 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-07 08:34:29 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 08:40:09 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 08:40:09 | INFO | Mass email request - Subject: 0-Hello, File: emails.txt
+2025-10-07 08:40:09 | INFO | Parsed 3 emails from uploaded file
+2025-10-07 08:40:09 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-07 08:40:09 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 08:40:09 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | 0-Hello
+2025-10-07 08:40:09 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 08:40:09 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 08:40:12 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 08:41:20 | INFO | Basic email fields filled successfully
+2025-10-07 08:41:20 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 08:41:20 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-07 08:41:20 | WARNING | Could not find BCC button
+2025-10-07 08:41:20 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 08:41:20 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 08:41:20 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 08:41:20 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 08:41:20 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 08:41:20 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 08:41:20 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 08:41:20 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 08:41:20 | INFO | Trying BCC input selector: div:has(:text("Bcc")) div[role="textbox"]
+2025-10-07 08:41:20 | INFO | Trying BCC input selector: div:has(:text("Bcc")) [contenteditable="true"]
+2025-10-07 08:41:20 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] input
+2025-10-07 08:41:20 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] [contenteditable="true"]
+2025-10-07 08:41:20 | INFO | Final BCC chips created: 0/3
+2025-10-07 08:41:20 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 08:41:20 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 08:41:20 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 08:41:20 | INFO | 📤 Sending email...
+2025-10-07 08:41:20 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 08:41:20 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 08:41:30 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-07 08:41:40 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']:not([aria-disabled='true'])
+2025-10-07 08:41:50 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 08:42:00 | WARNING | ⚠️ Send button click failed: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("button[data-icon-name='Send']:not([aria-disabled='true'])").first
+
+2025-10-07 08:42:00 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 08:42:03 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 08:42:03 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 08:42:03 | INFO | ✅ Network idle after send - platform processed
+2025-10-07 08:42:05 | INFO | URL after send attempt: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 08:42:05 | WARNING | ⚠️ Still on compose page - may indicate failure
+2025-10-07 08:42:05 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-07 08:42:05 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 08:57:11 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 08:57:11 | INFO | Mass email request - Subject: Nice@@@@@@@@@@@@@@@@@, File: emails.txt
+2025-10-07 08:57:11 | INFO | Parsed 3 emails from uploaded file
+2025-10-07 08:57:11 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-07 08:57:11 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 08:57:11 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | Nice@@@@@@@@@@@@@@@@@
+2025-10-07 08:57:11 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 08:57:12 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 08:57:13 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 08:57:45 | INFO | Basic email fields filled successfully
+2025-10-07 08:57:45 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 08:57:45 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-07 08:57:45 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 08:57:47 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 08:57:47 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 08:57:47 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 08:57:47 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 08:57:47 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 08:57:47 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 08:57:47 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 08:57:47 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 08:57:47 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 08:57:47 | INFO | Adding BCC recipient 1/3: tom069213@outlook.com
+2025-10-07 08:57:48 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 08:57:50 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 08:57:50 | INFO | Adding BCC recipient 2/3: tom069211@outlook.com
+2025-10-07 08:57:51 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 08:57:54 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 08:57:54 | INFO | Adding BCC recipient 3/3: tom069212@outlook.com
+2025-10-07 08:57:54 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 08:57:57 | INFO | Committing all 3 BCC emails...
+2025-10-07 08:57:57 | INFO | Successfully committed all 3 BCC recipients
+2025-10-07 08:57:57 | INFO | Final BCC chips created: 22/3
+2025-10-07 08:57:57 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 08:57:57 | INFO | 📤 Sending email...
+2025-10-07 08:57:57 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 08:57:57 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 08:57:57 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 08:57:57 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 08:58:13 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 08:58:13 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 08:58:16 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 08:58:16 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 08:58:36 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 08:58:36 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-07 08:58:36 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 09:04:51 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 09:04:51 | INFO | Mass email request - Subject: Hi , bro, File: emails.txt
+2025-10-07 09:04:51 | INFO | Parsed 3 emails from uploaded file
+2025-10-07 09:04:51 | INFO | Starting mass email sending with 3 recipients in batches of 50
+2025-10-07 09:04:51 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 09:04:51 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 3 recipients | Hi , bro
+2025-10-07 09:04:52 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 09:04:52 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 09:04:56 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 09:05:29 | INFO | Basic email fields filled successfully
+2025-10-07 09:05:29 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 09:05:29 | INFO | Processing 3 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com']
+2025-10-07 09:05:30 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 09:05:31 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 09:05:31 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 09:05:31 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 09:05:31 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 09:05:31 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 09:05:31 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 09:05:31 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 09:05:31 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 09:05:31 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 09:05:32 | INFO | Adding BCC recipient 1/3: tom069213@outlook.com
+2025-10-07 09:05:32 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 09:05:35 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 09:05:35 | INFO | Adding BCC recipient 2/3: tom069211@outlook.com
+2025-10-07 09:05:35 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 09:05:38 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 09:05:38 | INFO | Adding BCC recipient 3/3: tom069212@outlook.com
+2025-10-07 09:05:38 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 09:05:41 | INFO | Committing all 3 BCC emails...
+2025-10-07 09:05:42 | INFO | Successfully committed all 3 BCC recipients
+2025-10-07 09:05:42 | INFO | Final BCC chips created: 22/3
+2025-10-07 09:05:42 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 09:05:42 | INFO | 📤 Sending email...
+2025-10-07 09:05:42 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 09:05:42 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 09:05:42 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 09:05:42 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 09:05:57 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 09:05:57 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 09:06:00 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 09:06:00 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 09:06:20 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 09:06:20 | INFO | Successfully sent batch to accounts@performanceelevator.org with 3 BCC recipients
+2025-10-07 09:06:20 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 10:03:52 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 10:03:52 | INFO | Mass email request - Subject: For test, File: emails.txt
+2025-10-07 10:03:52 | INFO | Parsed 4 emails from uploaded file
+2025-10-07 10:03:52 | INFO | Starting mass email sending with 4 recipients in batches of 50
+2025-10-07 10:03:52 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 10:03:52 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 4 recipients | For test
+2025-10-07 10:03:52 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 10:03:52 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 10:03:56 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 10:04:30 | INFO | Basic email fields filled successfully
+2025-10-07 10:04:30 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 10:04:30 | INFO | Processing 4 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim069217@outlook.com']
+2025-10-07 10:04:30 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 10:04:31 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 10:04:31 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 10:04:31 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 10:04:31 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 10:04:31 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 10:04:31 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 10:04:31 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 10:04:31 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 10:04:31 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 10:04:32 | INFO | Adding BCC recipient 1/4: tom069213@outlook.com
+2025-10-07 10:04:32 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 10:04:35 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 10:04:35 | INFO | Adding BCC recipient 2/4: tom069211@outlook.com
+2025-10-07 10:04:36 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 10:04:39 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 10:04:39 | INFO | Adding BCC recipient 3/4: tom069212@outlook.com
+2025-10-07 10:04:39 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 10:04:42 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 10:04:42 | INFO | Adding BCC recipient 4/4: tim069217@outlook.com
+2025-10-07 10:04:42 | INFO | Adding email: tim069217@outlook.com
+2025-10-07 10:04:45 | INFO | Committing all 4 BCC emails...
+2025-10-07 10:04:46 | INFO | Successfully committed all 4 BCC recipients
+2025-10-07 10:04:46 | INFO | Final BCC chips created: 22/4
+2025-10-07 10:04:46 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 10:04:46 | INFO | 📤 Sending email...
+2025-10-07 10:04:46 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 10:04:46 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 10:04:46 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 10:04:46 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 10:05:01 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 10:05:01 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 10:05:04 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 10:05:04 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 10:05:24 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 10:05:24 | INFO | Successfully sent batch to accounts@performanceelevator.org with 4 BCC recipients
+2025-10-07 10:05:24 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 10:18:40 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 10:18:40 | INFO | Mass email request - Subject: there@@@@@@@@@@@@!, File: emails.txt
+2025-10-07 10:18:40 | INFO | Parsed 4 emails from uploaded file
+2025-10-07 10:18:40 | INFO | Starting mass email sending with 4 recipients in batches of 50
+2025-10-07 10:18:40 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 10:18:40 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 4 recipients | there@@@@@@@@@@@@!
+2025-10-07 10:18:41 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 10:18:41 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 10:18:43 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 10:19:16 | INFO | Basic email fields filled successfully
+2025-10-07 10:19:16 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 10:19:16 | INFO | Processing 4 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim069217@outlook.com']
+2025-10-07 10:19:16 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 10:19:17 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 10:19:17 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 10:19:17 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 10:19:17 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 10:19:17 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 10:19:17 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 10:19:17 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 10:19:17 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 10:19:17 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 10:19:18 | INFO | Adding BCC recipient 1/4: tom069213@outlook.com
+2025-10-07 10:19:18 | INFO | Force adding email: tom069213@outlook.com
+2025-10-07 10:19:18 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 10:19:21 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 10:19:21 | INFO | Adding BCC recipient 2/4: tom069211@outlook.com
+2025-10-07 10:19:21 | INFO | Force adding email: tom069211@outlook.com
+2025-10-07 10:19:21 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 10:19:24 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 10:19:24 | INFO | Adding BCC recipient 3/4: tom069212@outlook.com
+2025-10-07 10:19:24 | INFO | Force adding email: tom069212@outlook.com
+2025-10-07 10:19:24 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 10:19:27 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 10:19:27 | INFO | Adding BCC recipient 4/4: tim069217@outlook.com
+2025-10-07 10:19:27 | INFO | Force adding email: tim069217@outlook.com
+2025-10-07 10:19:28 | INFO | Adding email: tim069217@outlook.com
+2025-10-07 10:19:30 | INFO | Committing all 4 BCC emails...
+2025-10-07 10:19:31 | INFO | Successfully committed all 4 BCC recipients
+2025-10-07 10:19:31 | INFO | Final BCC chips created: 22/4
+2025-10-07 10:19:31 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 10:19:31 | INFO | 📤 Sending email...
+2025-10-07 10:19:31 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 10:19:31 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 10:19:31 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 10:19:31 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 10:19:46 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 10:19:46 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 10:19:49 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 10:19:49 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 10:20:09 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 10:20:09 | INFO | Successfully sent batch to accounts@performanceelevator.org with 4 BCC recipients
+2025-10-07 10:20:09 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 10:22:35 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 10:22:35 | INFO | Mass email request - Subject: there1, File: emails.txt
+2025-10-07 10:22:35 | INFO | Parsed 4 emails from uploaded file
+2025-10-07 10:22:35 | INFO | Starting mass email sending with 4 recipients in batches of 50
+2025-10-07 10:22:35 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 10:22:35 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 4 recipients | there1
+2025-10-07 10:22:36 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 10:22:36 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 10:23:06 | ERROR | ❌ Send failed with unexpected error: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-10-07 10:23:06 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-07 10:23:06 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-10-07 10:23:07 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 4 recipients | there1
+2025-10-07 10:23:08 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 10:23:08 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 10:23:15 | ERROR | ❌ Send failed with unexpected error: Page.goto: net::ERR_ABORTED at https://outlook.office.com/mail/
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-10-07 10:23:15 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-07 10:23:49 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 10:23:49 | INFO | Mass email request - Subject: there@@@@@!, File: emails.txt
+2025-10-07 10:23:49 | INFO | Parsed 4 emails from uploaded file
+2025-10-07 10:23:49 | INFO | Starting mass email sending with 4 recipients in batches of 50
+2025-10-07 10:23:49 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 10:23:49 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 4 recipients | there@@@@@!
+2025-10-07 10:23:50 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 10:23:50 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 10:24:20 | ERROR | ❌ Send failed with unexpected error: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-10-07 10:24:20 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-07 10:24:20 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-10-07 10:24:21 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 4 recipients | there@@@@@!
+2025-10-07 10:24:22 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 10:24:22 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 10:24:52 | ERROR | ❌ Send failed with unexpected error: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-10-07 10:24:52 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-07 10:24:52 | INFO | Failed, waiting 2.0 seconds before retry 2
+2025-10-07 10:24:54 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 4 recipients | there@@@@@!
+2025-10-07 10:24:55 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 10:24:55 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 10:25:02 | ERROR | ❌ Send failed with unexpected error: Page.goto: net::ERR_ABORTED at https://outlook.office.com/mail/
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-10-07 10:25:02 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-07 10:27:59 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 10:27:59 | INFO | Mass email request - Subject: there@@@@@@1, File: emails.txt
+2025-10-07 10:27:59 | INFO | Parsed 4 emails from uploaded file
+2025-10-07 10:27:59 | INFO | Starting mass email sending with 4 recipients in batches of 50
+2025-10-07 10:27:59 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 10:27:59 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 4 recipients | there@@@@@@1
+2025-10-07 10:27:59 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 10:28:00 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 10:28:03 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 10:29:11 | INFO | Basic email fields filled successfully
+2025-10-07 10:29:11 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 10:29:11 | INFO | Processing 4 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com']
+2025-10-07 10:29:11 | WARNING | Could not find BCC button
+2025-10-07 10:29:11 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 10:29:11 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 10:29:11 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 10:29:11 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 10:29:11 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 10:29:11 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 10:29:11 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 10:29:11 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 10:29:11 | INFO | Trying BCC input selector: div:has(:text("Bcc")) div[role="textbox"]
+2025-10-07 10:29:11 | INFO | Trying BCC input selector: div:has(:text("Bcc")) [contenteditable="true"]
+2025-10-07 10:29:11 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] input
+2025-10-07 10:29:11 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] [contenteditable="true"]
+2025-10-07 10:29:11 | INFO | Final BCC chips created: 0/4
+2025-10-07 10:29:11 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 10:29:11 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 10:29:11 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 10:29:11 | INFO | 📤 Sending email...
+2025-10-07 10:29:11 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 10:29:11 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 10:29:21 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-07 10:29:31 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']:not([aria-disabled='true'])
+2025-10-07 10:29:41 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 10:29:51 | WARNING | ⚠️ Send button click failed: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("button[data-icon-name='Send']:not([aria-disabled='true'])").first
+
+2025-10-07 10:29:51 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 10:29:54 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 10:29:54 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 10:29:54 | INFO | ✅ Network idle after send - platform processed
+2025-10-07 10:29:56 | INFO | URL after send attempt: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 10:29:56 | WARNING | ⚠️ Still on compose page - may indicate failure
+2025-10-07 10:29:56 | INFO | Successfully sent batch to accounts@performanceelevator.org with 4 BCC recipients
+2025-10-07 10:29:56 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 10:32:40 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 10:32:40 | INFO | Mass email request - Subject: there22222222222222222222, File: emails.txt
+2025-10-07 10:32:40 | INFO | Parsed 4 emails from uploaded file
+2025-10-07 10:32:40 | INFO | Starting mass email sending with 4 recipients in batches of 50
+2025-10-07 10:32:40 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 10:32:40 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 4 recipients | there22222222222222222222
+2025-10-07 10:32:41 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 10:32:41 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 10:32:49 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 10:34:06 | INFO | Basic email fields filled successfully
+2025-10-07 10:34:06 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 10:34:06 | INFO | Processing 4 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com']
+2025-10-07 10:34:06 | WARNING | Could not find BCC button
+2025-10-07 10:34:06 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 10:34:06 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 10:34:06 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 10:34:06 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 10:34:06 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 10:34:06 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 10:34:06 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 10:34:06 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 10:34:06 | INFO | Trying BCC input selector: div:has(:text("Bcc")) div[role="textbox"]
+2025-10-07 10:34:06 | INFO | Trying BCC input selector: div:has(:text("Bcc")) [contenteditable="true"]
+2025-10-07 10:34:06 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] input
+2025-10-07 10:34:06 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] [contenteditable="true"]
+2025-10-07 10:34:06 | INFO | Final BCC chips created: 23/4
+2025-10-07 10:34:06 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 10:34:06 | INFO | 📤 Sending email...
+2025-10-07 10:34:06 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 10:34:06 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 10:34:16 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-07 10:34:26 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']:not([aria-disabled='true'])
+2025-10-07 10:34:36 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 10:34:46 | WARNING | ⚠️ Send button click failed: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("button[data-icon-name='Send']:not([aria-disabled='true'])").first
+
+2025-10-07 10:34:46 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 10:34:49 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 10:34:49 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 10:35:09 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+2025-10-07 10:35:10 | INFO | Successfully sent batch to accounts@performanceelevator.org with 4 BCC recipients
+2025-10-07 10:35:10 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 10:44:30 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 10:44:30 | INFO | Mass email request - Subject: there434333333333333333, File: emails.txt
+2025-10-07 10:44:30 | INFO | Parsed 4 emails from uploaded file
+2025-10-07 10:44:30 | INFO | Starting mass email sending with 4 recipients in batches of 50
+2025-10-07 10:44:30 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 10:44:30 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 4 recipients | there434333333333333333
+2025-10-07 10:44:31 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 10:44:31 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 10:44:33 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 10:45:06 | INFO | Basic email fields filled successfully
+2025-10-07 10:45:06 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 10:45:06 | INFO | Processing 4 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com']
+2025-10-07 10:45:06 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 10:45:07 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 10:45:07 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 10:45:07 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 10:45:07 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 10:45:07 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 10:45:07 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 10:45:07 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 10:45:07 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 10:45:07 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 10:45:08 | INFO | Adding BCC recipient 1/4: tom069213@outlook.com
+2025-10-07 10:45:08 | INFO | Force adding email: tom069213@outlook.com
+2025-10-07 10:45:08 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 10:45:11 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 10:45:11 | INFO | Adding BCC recipient 2/4: tom069211@outlook.com
+2025-10-07 10:45:11 | INFO | Force adding email: tom069211@outlook.com
+2025-10-07 10:45:11 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 10:45:14 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 10:45:14 | INFO | Adding BCC recipient 3/4: tom069212@outlook.com
+2025-10-07 10:45:14 | INFO | Force adding email: tom069212@outlook.com
+2025-10-07 10:45:14 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 10:45:17 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 10:45:17 | INFO | Adding BCC recipient 4/4: tim0692117@outlook.com
+2025-10-07 10:45:17 | INFO | Force adding email: tim0692117@outlook.com
+2025-10-07 10:45:17 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 10:45:20 | INFO | Committing all 4 BCC emails...
+2025-10-07 10:45:21 | INFO | Successfully committed all 4 BCC recipients
+2025-10-07 10:45:21 | INFO | Final BCC chips created: 22/4
+2025-10-07 10:45:21 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 10:45:21 | INFO | 📤 Sending email...
+2025-10-07 10:45:21 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 10:45:21 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 10:45:21 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 10:45:21 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 10:45:36 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 10:45:36 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 10:45:39 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 10:45:39 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 10:45:59 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 10:46:00 | INFO | Successfully sent batch to accounts@performanceelevator.org with 4 BCC recipients
+2025-10-07 10:46:00 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 13:14:21 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 13:14:21 | INFO | Mass email request - Subject: Hello, File: emails.txt
+2025-10-07 13:14:21 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 13:14:21 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 13:14:21 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 13:14:22 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | Hello
+2025-10-07 13:14:28 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 13:14:29 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 13:14:31 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 13:15:04 | INFO | Basic email fields filled successfully
+2025-10-07 13:15:04 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 13:15:04 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 13:15:04 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 13:15:05 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 13:15:05 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 13:15:05 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 13:15:05 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 13:15:05 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 13:15:05 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 13:15:05 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 13:15:05 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 13:15:05 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 13:15:06 | INFO | Adding BCC recipient 1/5: tom069213@outlook.com
+2025-10-07 13:15:06 | INFO | Email tom069213@outlook.com already exists as chip, skipping
+2025-10-07 13:15:06 | INFO | Adding BCC recipient 2/5: tom069211@outlook.com
+2025-10-07 13:15:06 | INFO | Email tom069211@outlook.com already exists as chip, skipping
+2025-10-07 13:15:06 | INFO | Adding BCC recipient 3/5: tom069212@outlook.com
+2025-10-07 13:15:06 | INFO | Force adding email: tom069212@outlook.com
+2025-10-07 13:15:06 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 13:15:09 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 13:15:09 | INFO | Adding BCC recipient 4/5: tim0692117@outlook.com
+2025-10-07 13:15:09 | INFO | Force adding email: tim0692117@outlook.com
+2025-10-07 13:15:09 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 13:15:12 | INFO | Added email tim0692117@outlook.com to BCC list (will commit all at end)
+2025-10-07 13:15:12 | INFO | Adding BCC recipient 5/5: tom0692112@outlook.com
+2025-10-07 13:15:12 | INFO | Force adding email: tom0692112@outlook.com
+2025-10-07 13:15:13 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 13:15:15 | INFO | Committing all 5 BCC emails...
+2025-10-07 13:15:16 | INFO | Successfully committed all 5 BCC recipients
+2025-10-07 13:15:16 | INFO | Final BCC chips created: 22/5
+2025-10-07 13:15:16 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 13:15:16 | INFO | 📤 Sending email...
+2025-10-07 13:15:16 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 13:15:16 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 13:15:16 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 13:15:16 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 13:15:31 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 13:15:31 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 13:15:34 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 13:15:34 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 13:15:54 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 13:15:55 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 13:15:55 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 13:30:50 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 13:30:50 | INFO | Mass email request - Subject: there, File: emails.txt
+2025-10-07 13:30:50 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 13:30:50 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 13:30:50 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 13:30:50 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | there
+2025-10-07 13:30:50 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 13:30:51 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 13:30:52 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 13:31:25 | INFO | Basic email fields filled successfully
+2025-10-07 13:31:25 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 13:31:25 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 13:31:25 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 13:31:26 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 13:31:26 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 13:31:26 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 13:31:26 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 13:31:26 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 13:31:26 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 13:31:26 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 13:31:26 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 13:31:26 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 13:31:27 | INFO | Adding BCC recipient 1/5: tom069213@outlook.com
+2025-10-07 13:31:27 | INFO | Email tom069213@outlook.com already exists as chip, skipping
+2025-10-07 13:31:27 | INFO | Adding BCC recipient 2/5: tom069211@outlook.com
+2025-10-07 13:31:27 | INFO | Email tom069211@outlook.com already exists as chip, skipping
+2025-10-07 13:31:27 | INFO | Adding BCC recipient 3/5: tom069212@outlook.com
+2025-10-07 13:31:27 | INFO | Force adding email: tom069212@outlook.com
+2025-10-07 13:31:27 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 13:31:30 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 13:31:30 | INFO | Adding BCC recipient 4/5: tim0692117@outlook.com
+2025-10-07 13:31:30 | INFO | Force adding email: tim0692117@outlook.com
+2025-10-07 13:31:30 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 13:31:33 | INFO | Added email tim0692117@outlook.com to BCC list (will commit all at end)
+2025-10-07 13:31:33 | INFO | Adding BCC recipient 5/5: tom0692112@outlook.com
+2025-10-07 13:31:33 | INFO | Force adding email: tom0692112@outlook.com
+2025-10-07 13:31:34 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 13:31:36 | INFO | Committing all 5 BCC emails...
+2025-10-07 13:31:41 | WARNING | Only 3/5 BCC recipients were committed
+2025-10-07 13:31:41 | INFO | Final BCC chips created: 3/5
+2025-10-07 13:31:41 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 13:31:41 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 13:31:41 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 13:31:41 | INFO | 📤 Sending email...
+2025-10-07 13:31:41 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 13:31:41 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 13:31:41 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 13:31:41 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 13:31:56 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 13:31:56 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 13:31:59 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 13:31:59 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 13:32:19 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 13:32:19 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 13:32:19 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 13:49:58 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 13:49:58 | INFO | Mass email request - Subject: there, File: emails.txt
+2025-10-07 13:49:58 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 13:49:58 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 13:49:58 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 13:49:58 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | there
+2025-10-07 13:49:59 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 13:49:59 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 13:50:02 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 13:50:32 | INFO | Basic email fields filled successfully
+2025-10-07 13:50:32 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 13:50:32 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 13:50:32 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 13:50:33 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 13:50:33 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 13:50:33 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 13:50:33 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 13:50:33 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 13:50:33 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 13:50:33 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 13:50:33 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 13:50:33 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 13:50:34 | INFO | Adding BCC recipient 1/5: tom069213@outlook.com
+2025-10-07 13:50:34 | INFO | Email tom069213@outlook.com already exists as chip, skipping
+2025-10-07 13:50:34 | INFO | Adding BCC recipient 2/5: tom069211@outlook.com
+2025-10-07 13:50:34 | INFO | Email tom069211@outlook.com already exists as chip, skipping
+2025-10-07 13:50:34 | INFO | Adding BCC recipient 3/5: tom069212@outlook.com
+2025-10-07 13:50:34 | INFO | Force adding email: tom069212@outlook.com
+2025-10-07 13:50:34 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 13:50:37 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 13:50:37 | INFO | Adding BCC recipient 4/5: tim0692117@outlook.com
+2025-10-07 13:50:37 | INFO | Force adding email: tim0692117@outlook.com
+2025-10-07 13:50:38 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 13:50:40 | INFO | Added email tim0692117@outlook.com to BCC list (will commit all at end)
+2025-10-07 13:50:40 | INFO | Adding BCC recipient 5/5: tom0692112@outlook.com
+2025-10-07 13:50:40 | INFO | Force adding email: tom0692112@outlook.com
+2025-10-07 13:50:41 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 13:50:43 | INFO | Committing all 5 BCC emails...
+2025-10-07 13:50:48 | WARNING | Only 3/5 BCC recipients were committed
+2025-10-07 13:50:48 | INFO | Final BCC chips created: 3/5
+2025-10-07 13:50:48 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 13:50:48 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 13:50:48 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 13:50:48 | INFO | 📤 Sending email...
+2025-10-07 13:50:48 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 13:50:48 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 13:50:48 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 13:50:48 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 13:51:03 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 13:51:03 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 13:51:06 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 13:51:06 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 13:51:26 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 13:51:27 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 13:51:27 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 14:29:24 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 14:29:24 | INFO | Mass email request - Subject: there@@@@@@@@@!!!!!!!!!!!!!, File: emails.txt
+2025-10-07 14:29:24 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 14:29:24 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 14:29:24 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 14:29:24 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | there@@@@@@@@@!!!!!!!!!!!!!
+2025-10-07 14:29:25 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 14:29:25 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 14:29:28 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 14:30:03 | INFO | Basic email fields filled successfully
+2025-10-07 14:30:03 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 14:30:03 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 14:30:03 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 14:30:05 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 14:30:05 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 14:30:05 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 14:30:05 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 14:30:05 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 14:30:05 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 14:30:05 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 14:30:05 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 14:30:05 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 14:30:06 | INFO | Adding BCC recipient 1/5: tom069213@outlook.com
+2025-10-07 14:30:06 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 14:30:06 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 14:30:09 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 14:30:09 | INFO | Adding BCC recipient 2/5: tom069211@outlook.com
+2025-10-07 14:30:09 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 14:30:09 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 14:30:12 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 14:30:12 | INFO | Adding BCC recipient 3/5: tom069212@outlook.com
+2025-10-07 14:30:12 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 14:30:12 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 14:30:15 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 14:30:15 | INFO | Adding BCC recipient 4/5: tim0692117@outlook.com
+2025-10-07 14:30:15 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 14:30:15 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 14:30:18 | INFO | Added email tim0692117@outlook.com to BCC list (will commit all at end)
+2025-10-07 14:30:18 | INFO | Adding BCC recipient 5/5: tom0692112@outlook.com
+2025-10-07 14:30:18 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 14:30:19 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 14:30:21 | INFO | Committing all 5 BCC emails...
+2025-10-07 14:30:26 | WARNING | Only 3/5 BCC recipients were committed
+2025-10-07 14:30:26 | INFO | Initial BCC attempt: 3/5 emails added
+2025-10-07 14:30:26 | INFO | Retrying to add missing emails...
+2025-10-07 14:30:26 | INFO | Missing emails: ['tom069212@outlook.com', 'tim0692117@outlook.com']
+2025-10-07 14:30:26 | INFO | Retry adding: tom069212@outlook.com
+2025-10-07 14:30:29 | INFO | Retry adding: tim0692117@outlook.com
+2025-10-07 14:30:33 | INFO | Final BCC chips created: 3/5
+2025-10-07 14:30:33 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 14:30:33 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 14:30:33 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 14:30:33 | INFO | 📤 Sending email...
+2025-10-07 14:30:33 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 14:30:33 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 14:30:33 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 14:30:33 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 14:30:33 | INFO | ✅ Sent via Send button
+2025-10-07 14:30:33 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 14:30:33 | INFO | ✅ Network idle after send - platform processed
+2025-10-07 14:30:35 | INFO | URL after send attempt: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 14:30:35 | WARNING | ⚠️ Still on compose page - may indicate failure
+2025-10-07 14:30:36 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 14:30:36 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 14:43:13 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 14:43:13 | INFO | Mass email request - Subject: there123, File: emails.txt
+2025-10-07 14:43:13 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 14:43:13 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 14:43:13 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 14:43:13 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | there123
+2025-10-07 14:43:14 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 14:43:14 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 14:43:16 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 14:43:51 | INFO | Basic email fields filled successfully
+2025-10-07 14:43:51 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 14:43:51 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 14:43:51 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 14:43:52 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 14:43:52 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 14:43:52 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 14:43:52 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 14:43:52 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 14:43:52 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 14:43:52 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 14:43:52 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 14:43:52 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 14:43:53 | INFO | Adding BCC recipient 1/5: tom069213@outlook.com
+2025-10-07 14:43:53 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 14:43:53 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 14:43:56 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 14:43:56 | INFO | Adding BCC recipient 2/5: tom069211@outlook.com
+2025-10-07 14:43:56 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 14:43:56 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 14:43:59 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 14:43:59 | INFO | Adding BCC recipient 3/5: tom069212@outlook.com
+2025-10-07 14:43:59 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 14:43:59 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 14:44:02 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 14:44:02 | INFO | Adding BCC recipient 4/5: tim0692117@outlook.com
+2025-10-07 14:44:02 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 14:44:03 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 14:44:06 | INFO | Added email tim0692117@outlook.com to BCC list (will commit all at end)
+2025-10-07 14:44:06 | INFO | Adding BCC recipient 5/5: tom0692112@outlook.com
+2025-10-07 14:44:06 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 14:44:06 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 14:44:08 | INFO | Committing all 5 BCC emails...
+2025-10-07 14:44:13 | WARNING | Only 3/5 BCC recipients were committed
+2025-10-07 14:44:13 | INFO | Initial BCC attempt: 3/5 emails added
+2025-10-07 14:44:13 | INFO | Retrying to add missing emails...
+2025-10-07 14:44:13 | INFO | Missing emails: ['tom069212@outlook.com', 'tim0692117@outlook.com']
+2025-10-07 14:44:13 | INFO | Retry adding: tom069212@outlook.com
+2025-10-07 14:44:16 | INFO | Retry adding: tim0692117@outlook.com
+2025-10-07 14:44:20 | INFO | Final BCC chips created: 3/5
+2025-10-07 14:44:20 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 14:44:20 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 14:44:20 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 14:44:20 | INFO | 📤 Sending email...
+2025-10-07 14:44:20 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 14:44:20 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 14:44:20 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 14:44:20 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 14:44:35 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 14:44:35 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 14:44:38 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 14:44:38 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 14:44:58 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 14:44:59 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 14:44:59 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 14:54:55 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 14:54:55 | INFO | Mass email request - Subject: 55555555555555555, File: emails.txt
+2025-10-07 14:54:55 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 14:54:55 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 14:54:55 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 14:54:55 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 55555555555555555
+2025-10-07 14:54:55 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 14:54:56 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 14:54:57 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 14:56:12 | INFO | Basic email fields filled successfully
+2025-10-07 14:56:12 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 14:56:12 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 14:56:12 | WARNING | Could not find BCC button
+2025-10-07 14:56:12 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 14:56:12 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 14:56:12 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 14:56:12 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 14:56:12 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 14:56:12 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 14:56:12 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 14:56:12 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 14:56:12 | INFO | Trying BCC input selector: div:has(:text("Bcc")) div[role="textbox"]
+2025-10-07 14:56:12 | INFO | Trying BCC input selector: div:has(:text("Bcc")) [contenteditable="true"]
+2025-10-07 14:56:12 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] input
+2025-10-07 14:56:12 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] [contenteditable="true"]
+2025-10-07 14:56:12 | INFO | Final BCC chips created: 0/5
+2025-10-07 14:56:12 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 14:56:12 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 14:56:12 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 14:56:12 | INFO | 📤 Sending email...
+2025-10-07 14:56:12 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 14:56:12 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 14:56:22 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-07 14:56:32 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']:not([aria-disabled='true'])
+2025-10-07 14:56:42 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 14:56:49 | WARNING | ⚠️ Send button click failed: Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("button[data-icon-name='Send']:not([aria-disabled='true'])").first
+
+2025-10-07 14:56:49 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 14:56:49 | WARNING | ⚠️ Ctrl+Enter failed: Keyboard.press: Target page, context or browser has been closed
+2025-10-07 14:56:50 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-07 14:57:11 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 14:57:11 | INFO | Mass email request - Subject: 123123123, File: emails.txt
+2025-10-07 14:57:11 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 14:57:11 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 14:57:11 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 14:57:11 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 123123123
+2025-10-07 14:57:12 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 14:57:12 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 14:57:14 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 14:57:46 | INFO | Basic email fields filled successfully
+2025-10-07 14:57:46 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 14:57:46 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 14:57:46 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 14:57:47 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 14:57:47 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 14:57:47 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 14:57:47 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 14:57:47 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 14:57:47 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 14:57:47 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 14:57:47 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 14:57:47 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 14:57:48 | INFO | Adding BCC recipient 1/5: tom069213@outlook.com
+2025-10-07 14:57:48 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 14:57:48 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 14:57:51 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 14:57:51 | INFO | Adding BCC recipient 2/5: tom069211@outlook.com
+2025-10-07 14:57:51 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 14:57:51 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 14:57:54 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 14:57:54 | INFO | Adding BCC recipient 3/5: tom069212@outlook.com
+2025-10-07 14:57:54 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 14:57:54 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 14:57:57 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 14:57:57 | INFO | Adding BCC recipient 4/5: tim0692117@outlook.com
+2025-10-07 14:57:57 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 14:57:57 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 14:58:00 | INFO | Added email tim0692117@outlook.com to BCC list (will commit all at end)
+2025-10-07 14:58:00 | INFO | Adding BCC recipient 5/5: tom0692112@outlook.com
+2025-10-07 14:58:00 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 14:58:01 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 14:58:03 | INFO | Committing all 5 BCC emails...
+2025-10-07 14:58:08 | WARNING | Only 3/5 BCC recipients were committed
+2025-10-07 14:58:08 | INFO | Initial BCC attempt: 3/5 emails added
+2025-10-07 14:58:08 | INFO | Retrying to add missing emails...
+2025-10-07 14:58:08 | INFO | Missing emails: ['tom069212@outlook.com', 'tim0692117@outlook.com']
+2025-10-07 14:58:08 | INFO | Retry adding: tom069212@outlook.com
+2025-10-07 14:58:11 | INFO | Retry adding: tim0692117@outlook.com
+2025-10-07 14:58:15 | INFO | Final BCC chips created: 3/5
+2025-10-07 14:58:15 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 14:58:15 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 14:58:15 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 14:58:15 | INFO | 📤 Sending email...
+2025-10-07 14:58:15 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 14:58:15 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 14:58:15 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 14:58:15 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 14:58:30 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 14:58:30 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 14:58:33 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 14:58:33 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 14:58:53 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 14:58:54 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 14:58:54 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 15:12:39 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 15:12:39 | INFO | Mass email request - Subject: FFFF@@@@@@@@@@@@@@, File: emails.txt
+2025-10-07 15:12:39 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 15:12:39 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 15:12:39 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 15:12:39 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | FFFF@@@@@@@@@@@@@@
+2025-10-07 15:12:40 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 15:12:40 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 15:12:42 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 15:13:50 | INFO | Basic email fields filled successfully
+2025-10-07 15:13:50 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 15:13:50 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 15:13:50 | WARNING | Could not find BCC button
+2025-10-07 15:13:50 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 15:13:50 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 15:13:50 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 15:13:50 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 15:13:50 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 15:13:50 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 15:13:50 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 15:13:50 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 15:13:50 | INFO | Trying BCC input selector: div:has(:text("Bcc")) div[role="textbox"]
+2025-10-07 15:13:50 | INFO | Trying BCC input selector: div:has(:text("Bcc")) [contenteditable="true"]
+2025-10-07 15:13:50 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] input
+2025-10-07 15:13:50 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] [contenteditable="true"]
+2025-10-07 15:13:50 | INFO | Final BCC chips created: 0/5
+2025-10-07 15:13:50 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 15:13:50 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 15:13:50 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 15:13:50 | INFO | 📤 Sending email...
+2025-10-07 15:13:50 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 15:13:50 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 15:14:00 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-07 15:14:08 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']:not([aria-disabled='true'])
+2025-10-07 15:14:08 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 15:14:08 | WARNING | ⚠️ Send button click failed: Locator.click: Target page, context or browser has been closed
+2025-10-07 15:14:08 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 15:14:08 | WARNING | ⚠️ Ctrl+Enter failed: Keyboard.press: Target page, context or browser has been closed
+2025-10-07 15:14:09 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-07 15:14:33 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 15:14:33 | INFO | Mass email request - Subject: there, File: emails.txt
+2025-10-07 15:14:33 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 15:14:33 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 15:14:33 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 15:14:33 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | there
+2025-10-07 15:14:33 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 15:14:33 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 15:14:35 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 15:15:06 | INFO | Basic email fields filled successfully
+2025-10-07 15:15:06 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 15:15:06 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 15:15:06 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 15:15:07 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 15:15:07 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 15:15:07 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 15:15:07 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 15:15:07 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 15:15:08 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 15:15:08 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 15:15:08 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 15:15:08 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 15:15:08 | INFO | Adding BCC recipient 1/5: tom069213@outlook.com
+2025-10-07 15:15:08 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 15:15:09 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 15:15:11 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:15:11 | INFO | Adding BCC recipient 2/5: tom069211@outlook.com
+2025-10-07 15:15:11 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 15:15:12 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 15:15:15 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:15:15 | INFO | Adding BCC recipient 3/5: tom069212@outlook.com
+2025-10-07 15:15:15 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 15:15:15 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 15:15:18 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:15:18 | INFO | Adding BCC recipient 4/5: tim0692117@outlook.com
+2025-10-07 15:15:18 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 15:15:18 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 15:15:21 | INFO | Added email tim0692117@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:15:21 | INFO | Adding BCC recipient 5/5: tom0692112@outlook.com
+2025-10-07 15:15:21 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 15:15:21 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 15:15:24 | INFO | Committing all 5 BCC emails...
+2025-10-07 15:15:28 | WARNING | Only 3/5 BCC recipients were committed
+2025-10-07 15:15:28 | INFO | Initial BCC attempt: 3/5 emails added
+2025-10-07 15:15:28 | INFO | Retrying to add missing emails with stabilization passes...
+2025-10-07 15:15:29 | INFO | Stabilization pass 1: missing ['tom069212@outlook.com', 'tim0692117@outlook.com']
+2025-10-07 15:15:35 | INFO | Final BCC chips created: 5/5
+2025-10-07 15:15:35 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 15:15:35 | INFO | 📤 Sending email...
+2025-10-07 15:15:35 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 15:15:35 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 15:15:35 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 15:15:35 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 15:15:50 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 15:15:50 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 15:15:53 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 15:15:53 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 15:16:13 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 15:16:14 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 15:16:14 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 15:29:45 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 15:29:45 | INFO | Mass email request - Subject: hello, bro, File: emails.txt
+2025-10-07 15:29:45 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 15:29:45 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 15:29:45 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 15:29:45 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | hello, bro
+2025-10-07 15:29:46 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 15:29:46 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 15:29:48 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 15:30:20 | INFO | Basic email fields filled successfully
+2025-10-07 15:30:20 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 15:30:20 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 15:30:20 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 15:30:21 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 15:30:21 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 15:30:21 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 15:30:21 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 15:30:21 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 15:30:21 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 15:30:21 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 15:30:21 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 15:30:21 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 15:30:22 | INFO | Adding BCC recipient 1/5: tom069213@outlook.com
+2025-10-07 15:30:22 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 15:30:22 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 15:30:25 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:30:25 | INFO | Adding BCC recipient 2/5: tom069211@outlook.com
+2025-10-07 15:30:25 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 15:30:25 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 15:30:28 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:30:28 | INFO | Adding BCC recipient 3/5: tom069212@outlook.com
+2025-10-07 15:30:28 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 15:30:28 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 15:30:31 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:30:31 | INFO | Adding BCC recipient 4/5: tim0692117@outlook.com
+2025-10-07 15:30:31 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 15:30:32 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 15:30:34 | INFO | Added email tim0692117@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:30:34 | INFO | Adding BCC recipient 5/5: tom0692112@outlook.com
+2025-10-07 15:30:34 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 15:30:35 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 15:30:37 | INFO | Committing all 5 BCC emails...
+2025-10-07 15:30:42 | WARNING | Only 3/5 BCC recipients were committed
+2025-10-07 15:30:42 | INFO | Initial BCC attempt: 3/5 emails added
+2025-10-07 15:30:42 | INFO | Retrying to add missing emails with stabilization passes...
+2025-10-07 15:30:42 | INFO | Stabilization pass 1: missing ['tom069212@outlook.com', 'tim0692117@outlook.com']
+2025-10-07 15:30:48 | INFO | Final BCC chips created: 5/5
+2025-10-07 15:30:48 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 15:30:48 | INFO | 📤 Sending email...
+2025-10-07 15:30:48 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 15:30:48 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 15:30:48 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 15:30:48 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 15:31:03 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 15:31:03 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 15:31:06 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 15:31:06 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 15:31:27 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 15:31:27 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 15:31:27 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 15:36:40 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 15:36:40 | INFO | Mass email request - Subject: [RAND5], File: emails.txt
+2025-10-07 15:36:40 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 15:36:40 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 15:36:40 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 15:36:40 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 95581
+2025-10-07 15:36:41 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 15:36:41 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 15:36:43 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 15:37:16 | INFO | Basic email fields filled successfully
+2025-10-07 15:37:16 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 15:37:16 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 15:37:16 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 15:37:17 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 15:37:17 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 15:37:17 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 15:37:17 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 15:37:17 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 15:37:17 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 15:37:17 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 15:37:17 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 15:37:17 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 15:37:18 | INFO | Adding BCC recipient 1/5: tom069213@outlook.com
+2025-10-07 15:37:18 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 15:37:18 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 15:37:21 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:37:21 | INFO | Adding BCC recipient 2/5: tom069211@outlook.com
+2025-10-07 15:37:21 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 15:37:21 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 15:37:24 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:37:24 | INFO | Adding BCC recipient 3/5: tom069212@outlook.com
+2025-10-07 15:37:24 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 15:37:24 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 15:37:27 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:37:27 | INFO | Adding BCC recipient 4/5: tim0692117@outlook.com
+2025-10-07 15:37:27 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 15:37:27 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 15:37:30 | INFO | Added email tim0692117@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:37:30 | INFO | Adding BCC recipient 5/5: tom0692112@outlook.com
+2025-10-07 15:37:30 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 15:37:31 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 15:37:33 | INFO | Committing all 5 BCC emails...
+2025-10-07 15:37:38 | WARNING | Only 3/5 BCC recipients were committed
+2025-10-07 15:37:38 | INFO | Initial BCC attempt: 3/5 emails added
+2025-10-07 15:37:38 | INFO | Retrying to add missing emails with stabilization passes...
+2025-10-07 15:37:38 | INFO | Stabilization pass 1: missing ['tom069212@outlook.com', 'tim0692117@outlook.com']
+2025-10-07 15:37:44 | INFO | Final BCC chips created: 5/5
+2025-10-07 15:37:44 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 15:37:44 | INFO | 📤 Sending email...
+2025-10-07 15:37:44 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 15:37:44 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 15:37:44 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 15:37:44 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 15:37:59 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 15:37:59 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 15:38:02 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 15:38:02 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 15:38:22 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 15:38:23 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 15:38:23 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 15:48:17 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 15:48:17 | INFO | Mass email request - Subject: [rand5][date], File: emails.txt
+2025-10-07 15:48:17 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 15:48:17 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 15:48:17 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 15:48:17 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 5146010/07/2025 03:48
+2025-10-07 15:48:18 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 15:48:18 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 15:48:20 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 15:48:54 | INFO | Basic email fields filled successfully
+2025-10-07 15:48:54 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 15:48:54 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 15:48:54 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 15:48:55 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 15:48:55 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 15:48:55 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 15:48:55 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 15:48:55 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 15:48:55 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 15:48:55 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 15:48:55 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 15:48:55 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 15:48:56 | INFO | Adding BCC recipient 1/5: tom069213@outlook.com
+2025-10-07 15:48:56 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 15:48:56 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 15:48:59 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:48:59 | INFO | Adding BCC recipient 2/5: tom069211@outlook.com
+2025-10-07 15:48:59 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 15:48:59 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 15:49:02 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:49:02 | INFO | Adding BCC recipient 3/5: tom069212@outlook.com
+2025-10-07 15:49:02 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 15:49:02 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 15:49:05 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:49:05 | INFO | Adding BCC recipient 4/5: tim0692117@outlook.com
+2025-10-07 15:49:05 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 15:49:06 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 15:49:09 | INFO | Added email tim0692117@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:49:09 | INFO | Adding BCC recipient 5/5: tom0692112@outlook.com
+2025-10-07 15:49:09 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 15:49:09 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 15:49:11 | INFO | Committing all 5 BCC emails...
+2025-10-07 15:49:16 | WARNING | Only 3/5 BCC recipients were committed
+2025-10-07 15:49:16 | INFO | Initial BCC attempt: 3/5 emails added
+2025-10-07 15:49:16 | INFO | Retrying to add missing emails with stabilization passes...
+2025-10-07 15:49:16 | INFO | Stabilization pass 1: missing ['tom069212@outlook.com', 'tim0692117@outlook.com']
+2025-10-07 15:49:23 | INFO | Final BCC chips created: 5/5
+2025-10-07 15:49:23 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 15:49:23 | INFO | 📤 Sending email...
+2025-10-07 15:49:23 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 15:49:23 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 15:49:23 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 15:49:23 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 15:49:38 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 15:49:38 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 15:49:41 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 15:49:41 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 15:50:01 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 15:50:01 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 15:50:01 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 15:53:22 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 15:53:22 | INFO | Mass email request - Subject: [rand], File: emails.txt
+2025-10-07 15:53:22 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 15:53:22 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 15:53:22 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 15:53:22 | ERROR | OpenAI API error: 403 - {"error":{"code":"unsupported_country_region_territory","message":"Country, region, or territory not supported","param":null,"type":"request_forbidden"}}
+2025-10-07 15:53:22 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 59005
+2025-10-07 15:53:23 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 15:53:23 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 15:53:25 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 15:53:58 | INFO | Basic email fields filled successfully
+2025-10-07 15:53:58 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 15:53:58 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 15:53:58 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 15:53:59 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 15:53:59 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 15:53:59 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 15:53:59 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 15:53:59 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 15:53:59 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 15:53:59 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 15:53:59 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 15:53:59 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 15:54:00 | INFO | Adding BCC recipient 1/5: tom069213@outlook.com
+2025-10-07 15:54:00 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 15:54:00 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 15:54:03 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:54:03 | INFO | Adding BCC recipient 2/5: tom069211@outlook.com
+2025-10-07 15:54:03 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 15:54:03 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 15:54:06 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:54:06 | INFO | Adding BCC recipient 3/5: tom069212@outlook.com
+2025-10-07 15:54:06 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 15:54:06 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 15:54:09 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:54:09 | INFO | Adding BCC recipient 4/5: tim0692117@outlook.com
+2025-10-07 15:54:09 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 15:54:09 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 15:54:12 | INFO | Added email tim0692117@outlook.com to BCC list (will commit all at end)
+2025-10-07 15:54:12 | INFO | Adding BCC recipient 5/5: tom0692112@outlook.com
+2025-10-07 15:54:12 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 15:54:13 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 15:54:15 | INFO | Committing all 5 BCC emails...
+2025-10-07 15:54:20 | WARNING | Only 3/5 BCC recipients were committed
+2025-10-07 15:54:20 | INFO | Initial BCC attempt: 3/5 emails added
+2025-10-07 15:54:20 | INFO | Retrying to add missing emails with stabilization passes...
+2025-10-07 15:54:20 | INFO | Stabilization pass 1: missing ['tom069212@outlook.com', 'tim0692117@outlook.com']
+2025-10-07 15:54:26 | INFO | Final BCC chips created: 5/5
+2025-10-07 15:54:26 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 15:54:26 | INFO | 📤 Sending email...
+2025-10-07 15:54:26 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 15:54:26 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 15:54:26 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 15:54:26 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 15:54:41 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 15:54:41 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 15:54:44 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 15:54:44 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 15:55:04 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 15:55:05 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 15:55:05 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 16:20:57 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 16:20:57 | INFO | Mass email request - Subject: [rand], File: emails.txt
+2025-10-07 16:20:57 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 16:20:57 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 16:20:57 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 16:20:58 | ERROR | OpenAI API error: 403 - {"error":{"code":"unsupported_country_region_territory","message":"Country, region, or territory not supported","param":null,"type":"request_forbidden"}}
+2025-10-07 16:20:58 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 90132
+2025-10-07 16:20:59 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 16:20:59 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 16:21:30 | ERROR | ❌ Send failed with unexpected error: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://outlook.office.com/mail/", waiting until "domcontentloaded"
+
+2025-10-07 16:21:30 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-07 16:21:30 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-10-07 16:21:31 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 90132
+2025-10-07 16:21:31 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 16:21:32 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 16:21:34 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 16:21:47 | INFO | Basic email fields filled successfully
+2025-10-07 16:21:47 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 16:21:47 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 16:21:47 | WARNING | Could not find BCC button
+2025-10-07 16:21:47 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 16:21:47 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 16:21:47 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 16:21:47 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 16:21:47 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 16:21:47 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 16:21:47 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 16:21:47 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 16:21:47 | INFO | Trying BCC input selector: div:has(:text("Bcc")) div[role="textbox"]
+2025-10-07 16:21:47 | INFO | Trying BCC input selector: div:has(:text("Bcc")) [contenteditable="true"]
+2025-10-07 16:22:51 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 16:22:51 | INFO | Mass email request - Subject: [rand], File: emails.txt
+2025-10-07 16:22:51 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 16:22:51 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 16:22:51 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 16:22:51 | ERROR | OpenAI API error: 403 - {"error":{"code":"unsupported_country_region_territory","message":"Country, region, or territory not supported","param":null,"type":"request_forbidden"}}
+2025-10-07 16:22:51 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 11357
+2025-10-07 16:22:52 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 16:22:52 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 16:22:54 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 16:23:26 | INFO | Basic email fields filled successfully
+2025-10-07 16:23:26 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 16:23:26 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 16:23:26 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 16:23:27 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 16:23:27 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 16:23:27 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 16:23:27 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 16:23:27 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 16:23:27 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 16:23:27 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 16:23:27 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 16:23:27 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 16:23:28 | INFO | Adding BCC recipient 1/5: tom069213@outlook.com
+2025-10-07 16:23:28 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 16:23:28 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 16:23:31 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 16:23:31 | INFO | Adding BCC recipient 2/5: tom069211@outlook.com
+2025-10-07 16:23:31 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 16:23:31 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 16:23:34 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 16:23:34 | INFO | Adding BCC recipient 3/5: tom069212@outlook.com
+2025-10-07 16:23:34 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 16:23:34 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 16:23:37 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 16:23:37 | INFO | Adding BCC recipient 4/5: tim0692117@outlook.com
+2025-10-07 16:23:37 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 16:23:37 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 16:23:40 | INFO | Added email tim0692117@outlook.com to BCC list (will commit all at end)
+2025-10-07 16:23:40 | INFO | Adding BCC recipient 5/5: tom0692112@outlook.com
+2025-10-07 16:23:40 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 16:23:41 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 16:23:43 | INFO | Committing all 5 BCC emails...
+2025-10-07 16:23:48 | WARNING | Only 3/5 BCC recipients were committed
+2025-10-07 16:23:48 | INFO | Initial BCC attempt: 3/5 emails added
+2025-10-07 16:23:48 | INFO | Retrying to add missing emails with stabilization passes...
+2025-10-07 16:23:48 | INFO | Stabilization pass 1: missing ['tom069212@outlook.com', 'tim0692117@outlook.com']
+2025-10-07 16:23:55 | INFO | Final BCC chips created: 5/5
+2025-10-07 16:23:55 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 16:23:55 | INFO | 📤 Sending email...
+2025-10-07 16:23:55 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 16:23:55 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 16:23:55 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 16:23:55 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 16:24:10 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 16:24:10 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 16:24:13 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 16:24:13 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 16:24:33 | WARNING | ⚠️ Send verification error: Timeout 20000ms exceeded.
+2025-10-07 16:24:33 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 16:24:33 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 19:37:59 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 19:37:59 | INFO | Mass email request - Subject: [rand], File: emails.txt
+2025-10-07 19:37:59 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 19:37:59 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 19:37:59 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 19:38:00 | ERROR | OpenAI API error: 403 - {"error":{"code":"unsupported_country_region_territory","message":"Country, region, or territory not supported","param":null,"type":"request_forbidden"}}
+2025-10-07 19:38:00 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 29971
+2025-10-07 19:38:01 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 19:38:01 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 19:38:03 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 19:38:10 | INFO | Basic email fields filled successfully
+2025-10-07 19:38:10 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 19:38:10 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 19:38:10 | WARNING | Could not find BCC button
+2025-10-07 19:38:10 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 19:38:10 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 19:38:11 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 19:38:11 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 19:38:11 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 19:38:11 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 19:38:50 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 19:38:50 | INFO | Mass email request - Subject: [rand], File: emails.txt
+2025-10-07 19:38:50 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 19:38:50 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 19:38:50 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 19:38:51 | ERROR | OpenAI API error: 403 - {"error":{"code":"unsupported_country_region_territory","message":"Country, region, or territory not supported","param":null,"type":"request_forbidden"}}
+2025-10-07 19:38:51 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 47282
+2025-10-07 19:38:52 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 19:38:52 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 19:38:54 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 19:39:26 | INFO | Basic email fields filled successfully
+2025-10-07 19:39:26 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 19:39:26 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 19:39:26 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 19:39:27 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 19:39:27 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 19:39:27 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 19:39:27 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 19:39:27 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 19:39:27 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 19:39:27 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 19:39:27 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 19:39:27 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 19:39:28 | INFO | Adding BCC recipient 1/5: tom069213@outlook.com
+2025-10-07 19:39:28 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 19:39:28 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 19:39:31 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 19:39:31 | INFO | Adding BCC recipient 2/5: tom069211@outlook.com
+2025-10-07 19:39:31 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 19:39:31 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 19:39:34 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 19:39:34 | INFO | Adding BCC recipient 3/5: tom069212@outlook.com
+2025-10-07 19:39:34 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 19:39:34 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 19:39:37 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 19:39:37 | INFO | Adding BCC recipient 4/5: tim0692117@outlook.com
+2025-10-07 19:39:37 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 19:39:37 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 19:39:40 | INFO | Added email tim0692117@outlook.com to BCC list (will commit all at end)
+2025-10-07 19:39:40 | INFO | Adding BCC recipient 5/5: tom0692112@outlook.com
+2025-10-07 19:39:40 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 19:39:40 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 19:39:43 | INFO | Committing all 5 BCC emails...
+2025-10-07 19:39:47 | WARNING | Only 3/5 BCC recipients were committed
+2025-10-07 19:39:47 | INFO | Initial BCC attempt: 3/5 emails added
+2025-10-07 19:39:47 | INFO | Retrying to add missing emails with stabilization passes...
+2025-10-07 19:39:48 | INFO | Stabilization pass 1: missing ['tom069212@outlook.com', 'tim0692117@outlook.com']
+2025-10-07 19:39:54 | INFO | Final BCC chips created: 5/5
+2025-10-07 19:39:54 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 19:39:54 | INFO | 📤 Sending email...
+2025-10-07 19:39:54 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 19:39:54 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 19:39:54 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 19:39:54 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 19:39:54 | INFO | ✅ Sent via Send button
+2025-10-07 19:39:54 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 19:39:54 | INFO | ✅ Network idle after send - platform processed
+2025-10-07 19:39:56 | INFO | URL after send attempt: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 19:39:56 | WARNING | ⚠️ Still on compose page - may indicate failure
+2025-10-07 19:39:57 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 19:39:57 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 19:45:18 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 19:45:18 | INFO | Mass email request - Subject: [rand], File: emails.txt
+2025-10-07 19:45:18 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 19:45:18 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 19:45:18 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 19:45:21 | ERROR | OpenAI API error: 403 - {"error":{"code":"unsupported_country_region_territory","message":"Country, region, or territory not supported","param":null,"type":"request_forbidden"}}
+2025-10-07 19:45:21 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 60413
+2025-10-07 19:45:22 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 19:45:22 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 19:45:26 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 19:45:36 | ERROR | ❌ Send failed with unexpected error: Page.wait_for_timeout: Target page, context or browser has been closed
+2025-10-07 19:47:39 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 19:47:39 | INFO | Mass email request - Subject: [rand], File: emails.txt
+2025-10-07 19:47:39 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 19:47:39 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 19:47:39 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 19:47:40 | ERROR | OpenAI API error: 403 - {"error":{"code":"unsupported_country_region_territory","message":"Country, region, or territory not supported","param":null,"type":"request_forbidden"}}
+2025-10-07 19:47:40 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 01205
+2025-10-07 19:47:41 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 19:47:41 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 19:47:46 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 19:47:55 | ERROR | ❌ Send failed with unexpected error: Target page, context or browser has been closed
+=========================== logs ===========================
+"load" event fired
+============================================================
+2025-10-07 19:47:55 | ERROR | Unexpected error sending email: Unexpected error: Office365 automation send failed (no valid cookies)
+2025-10-07 19:47:55 | INFO | Failed, waiting 1.0 seconds before retry 1
+2025-10-07 19:48:43 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 19:48:43 | INFO | Mass email request - Subject: [rand], File: emails.txt
+2025-10-07 19:48:43 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 19:48:43 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 19:48:43 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 19:48:51 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 53832
+2025-10-07 19:48:52 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 19:48:52 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 19:48:55 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 19:50:10 | INFO | Basic email fields filled successfully
+2025-10-07 19:50:10 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 19:50:10 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 19:50:10 | WARNING | Could not find BCC button
+2025-10-07 19:50:10 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 19:50:10 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 19:50:10 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 19:50:10 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 19:50:10 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 19:50:10 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 19:50:10 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 19:50:10 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 19:50:10 | INFO | Trying BCC input selector: div:has(:text("Bcc")) div[role="textbox"]
+2025-10-07 19:50:10 | INFO | Trying BCC input selector: div:has(:text("Bcc")) [contenteditable="true"]
+2025-10-07 19:50:10 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] input
+2025-10-07 19:50:10 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] [contenteditable="true"]
+2025-10-07 19:50:10 | INFO | Final BCC chips created: 0/5
+2025-10-07 19:50:10 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 19:50:10 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 19:50:10 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 19:50:10 | INFO | 📤 Sending email...
+2025-10-07 19:50:10 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 19:50:10 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 19:50:20 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-07 19:50:30 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']:not([aria-disabled='true'])
+2025-10-07 19:50:40 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 19:50:50 | WARNING | ⚠️ Send button click failed: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("button[data-icon-name='Send']:not([aria-disabled='true'])").first
+
+2025-10-07 19:50:50 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 19:50:53 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 19:50:53 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 19:50:53 | INFO | ✅ Network idle after send - platform processed
+2025-10-07 19:50:55 | INFO | URL after send attempt: chrome-error://chromewebdata/
+2025-10-07 19:50:55 | INFO | ✅ Send confirmed - no longer on compose page
+2025-10-07 19:50:56 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 19:50:56 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 19:51:48 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 19:51:48 | INFO | Mass email request - Subject: [rand], File: emails.txt
+2025-10-07 19:51:48 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 19:51:48 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 19:51:48 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 19:51:48 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 64002
+2025-10-07 19:51:49 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 19:51:49 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 19:51:52 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 19:53:07 | INFO | Basic email fields filled successfully
+2025-10-07 19:53:07 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 19:53:07 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 19:53:07 | WARNING | Could not find BCC button
+2025-10-07 19:53:07 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 19:53:07 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 19:53:07 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 19:53:07 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 19:53:07 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 19:53:07 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 19:53:07 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 19:53:07 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 19:53:07 | INFO | Trying BCC input selector: div:has(:text("Bcc")) div[role="textbox"]
+2025-10-07 19:53:07 | INFO | Trying BCC input selector: div:has(:text("Bcc")) [contenteditable="true"]
+2025-10-07 19:53:07 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] input
+2025-10-07 19:53:07 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] [contenteditable="true"]
+2025-10-07 19:53:07 | INFO | Final BCC chips created: 0/5
+2025-10-07 19:53:07 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 19:53:07 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 19:53:07 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 19:53:07 | INFO | 📤 Sending email...
+2025-10-07 19:53:07 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 19:53:07 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 19:53:17 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-07 19:53:27 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']:not([aria-disabled='true'])
+2025-10-07 19:53:37 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 19:53:47 | WARNING | ⚠️ Send button click failed: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("button[data-icon-name='Send']:not([aria-disabled='true'])").first
+
+2025-10-07 19:53:47 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 19:53:50 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 19:53:50 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 19:53:50 | INFO | ✅ Network idle after send - platform processed
+2025-10-07 19:53:52 | INFO | URL after send attempt: chrome-error://chromewebdata/
+2025-10-07 19:53:52 | INFO | ✅ Send confirmed - no longer on compose page
+2025-10-07 19:53:53 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 19:53:53 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 19:55:08 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 19:55:08 | INFO | Mass email request - Subject: [rand], File: emails.txt
+2025-10-07 19:55:08 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 19:55:08 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 19:55:08 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 19:55:15 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 92521
+2025-10-07 19:55:16 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 19:55:16 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 19:55:20 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 19:56:35 | INFO | Basic email fields filled successfully
+2025-10-07 19:56:35 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 19:56:35 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 19:56:35 | WARNING | Could not find BCC button
+2025-10-07 19:56:35 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 19:56:35 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 19:56:35 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 19:56:35 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 19:56:35 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 19:56:35 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 19:56:35 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 19:56:35 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 19:56:35 | INFO | Trying BCC input selector: div:has(:text("Bcc")) div[role="textbox"]
+2025-10-07 19:56:35 | INFO | Trying BCC input selector: div:has(:text("Bcc")) [contenteditable="true"]
+2025-10-07 19:56:35 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] input
+2025-10-07 19:56:35 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] [contenteditable="true"]
+2025-10-07 19:56:35 | INFO | Final BCC chips created: 0/5
+2025-10-07 19:56:35 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 19:56:35 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 19:56:35 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 19:56:35 | INFO | 📤 Sending email...
+2025-10-07 19:56:35 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 19:56:35 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 19:56:45 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-07 20:04:33 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 20:04:33 | INFO | Mass email request - Subject: [rand], File: emails.txt
+2025-10-07 20:04:33 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 20:04:33 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 20:04:33 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 20:04:39 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 27202
+2025-10-07 20:04:39 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 20:04:39 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 20:04:43 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 20:05:58 | INFO | Basic email fields filled successfully
+2025-10-07 20:05:58 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 20:05:58 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 20:05:58 | WARNING | Could not find BCC button
+2025-10-07 20:05:58 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 20:05:58 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 20:05:58 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 20:05:58 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 20:05:58 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 20:05:58 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 20:05:58 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 20:05:58 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 20:05:58 | INFO | Trying BCC input selector: div:has(:text("Bcc")) div[role="textbox"]
+2025-10-07 20:05:58 | INFO | Trying BCC input selector: div:has(:text("Bcc")) [contenteditable="true"]
+2025-10-07 20:05:58 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] input
+2025-10-07 20:05:58 | INFO | Trying BCC input selector: [data-automationid*="Bcc"] [contenteditable="true"]
+2025-10-07 20:05:58 | INFO | Final BCC chips created: 0/5
+2025-10-07 20:05:58 | WARNING | ⚠️ BCC field did not accept all recipients
+2025-10-07 20:05:58 | INFO | ⚠️ BCC partial screenshot saved
+2025-10-07 20:05:58 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 20:05:58 | INFO | 📤 Sending email...
+2025-10-07 20:05:58 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 20:05:58 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 20:06:08 | INFO | 🔍 Waiting for Send button: button[title='Send']:not([aria-disabled='true'])
+2025-10-07 20:06:18 | INFO | 🔍 Waiting for Send button: button[data-icon-name='Send']:not([aria-disabled='true'])
+2025-10-07 20:06:28 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 20:06:38 | WARNING | ⚠️ Send button click failed: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("button[data-icon-name='Send']:not([aria-disabled='true'])").first
+
+2025-10-07 20:06:38 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 20:06:41 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 20:06:41 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 20:06:41 | INFO | ✅ Network idle after send - platform processed
+2025-10-07 20:06:43 | INFO | URL after send attempt: chrome-error://chromewebdata/
+2025-10-07 20:06:43 | INFO | ✅ Send confirmed - no longer on compose page
+2025-10-07 20:06:44 | INFO | Successfully sent batch to accounts@performanceelevator.org with 5 BCC recipients
+2025-10-07 20:06:44 | INFO | Mass email sending completed: 1 successful batches, 0 failed batches
+2025-10-07 20:07:11 | INFO | === MASS EMAIL SEND STARTED ===
+2025-10-07 20:07:11 | INFO | Mass email request - Subject: [rand], File: emails.txt
+2025-10-07 20:07:11 | INFO | Parsed 5 emails from uploaded file
+2025-10-07 20:07:11 | INFO | Starting mass email sending with 5 recipients in batches of 50
+2025-10-07 20:07:11 | INFO | Using 1 accounts: ['accounts@performanceelevator.org']
+2025-10-07 20:07:12 | ERROR | OpenAI API error: 403 - {"error":{"code":"unsupported_country_region_territory","message":"Country, region, or territory not supported","param":null,"type":"request_forbidden"}}
+2025-10-07 20:07:12 | INFO | 🚀 FAST SEND: accounts@performanceelevator.org → ['accounts@performanceelevator.org'] | BCC: 5 recipients | 35194
+2025-10-07 20:07:13 | INFO | 🔧 Loading session from: sessions\office365_accounts_at_performanceelevator_org.json
+2025-10-07 20:07:13 | INFO | 🌐 Navigating to: https://outlook.office.com/mail/
+2025-10-07 20:07:15 | INFO | 🔗 Navigating to compose: https://outlook.office.com/mail/0/deeplink/compose
+2025-10-07 20:07:46 | INFO | Basic email fields filled successfully
+2025-10-07 20:07:46 | INFO | === YOUR PERFECT BCC APPROACH: Individual email entry with Enter/Tab ===
+2025-10-07 20:07:46 | INFO | Processing 5 BCC recipients: ['tom069213@outlook.com', 'tom069211@outlook.com', 'tom069212@outlook.com', 'tim0692117@outlook.com', 'tom0692112@outlook.com']
+2025-10-07 20:07:46 | INFO | Found BCC button with selector: button:has-text("Bcc")
+2025-10-07 20:07:47 | INFO | Trying BCC input selector: input[aria-label="Bcc"]
+2025-10-07 20:07:47 | INFO | Trying BCC input selector: input[aria-label*="Bcc"]
+2025-10-07 20:07:47 | INFO | Trying BCC input selector: div[aria-label="Bcc"] input
+2025-10-07 20:07:47 | INFO | Trying BCC input selector: div[aria-label*="Bcc"] input
+2025-10-07 20:07:47 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [role="combobox"] input
+2025-10-07 20:07:47 | INFO | Trying BCC input selector: div[aria-label="Bcc"] [contenteditable="true"]
+2025-10-07 20:07:47 | INFO | Trying BCC input selector: [data-testid*="bcc"] input
+2025-10-07 20:07:47 | INFO | Trying BCC input selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 20:07:47 | INFO | Found BCC input with selector: div[role="textbox"][aria-label*="Bcc"]
+2025-10-07 20:07:48 | INFO | Adding BCC recipient 1/5: tom069213@outlook.com
+2025-10-07 20:07:48 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 20:07:48 | INFO | Adding email: tom069213@outlook.com
+2025-10-07 20:07:51 | INFO | Added email tom069213@outlook.com to BCC list (will commit all at end)
+2025-10-07 20:07:51 | INFO | Adding BCC recipient 2/5: tom069211@outlook.com
+2025-10-07 20:07:51 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 20:07:51 | INFO | Adding email: tom069211@outlook.com
+2025-10-07 20:07:54 | INFO | Added email tom069211@outlook.com to BCC list (will commit all at end)
+2025-10-07 20:07:54 | INFO | Adding BCC recipient 3/5: tom069212@outlook.com
+2025-10-07 20:07:54 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 20:07:54 | INFO | Adding email: tom069212@outlook.com
+2025-10-07 20:07:57 | INFO | Added email tom069212@outlook.com to BCC list (will commit all at end)
+2025-10-07 20:07:57 | INFO | Adding BCC recipient 4/5: tim0692117@outlook.com
+2025-10-07 20:07:57 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 20:07:58 | INFO | Adding email: tim0692117@outlook.com
+2025-10-07 20:08:00 | INFO | Added email tim0692117@outlook.com to BCC list (will commit all at end)
+2025-10-07 20:08:00 | INFO | Adding BCC recipient 5/5: tom0692112@outlook.com
+2025-10-07 20:08:00 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 20:08:01 | INFO | Adding email: tom0692112@outlook.com
+2025-10-07 20:08:03 | INFO | Committing all 5 BCC emails...
+2025-10-07 20:08:08 | WARNING | Only 3/5 BCC recipients were committed
+2025-10-07 20:08:08 | INFO | Initial BCC attempt: 3/5 emails added
+2025-10-07 20:08:08 | INFO | Retrying to add missing emails with stabilization passes...
+2025-10-07 20:08:08 | INFO | Stabilization pass 1: missing ['tom069212@outlook.com', 'tim0692117@outlook.com']
+2025-10-07 20:08:14 | INFO | Final BCC chips created: 5/5
+2025-10-07 20:08:14 | INFO | === YOUR PERFECT BCC APPROACH COMPLETED ===
+2025-10-07 20:08:14 | INFO | 📤 Sending email...
+2025-10-07 20:08:14 | INFO | 🔄 Method 1: Waiting for Send button to be ready...
+2025-10-07 20:08:14 | INFO | 🔍 Waiting for Send button: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 20:08:14 | INFO | ✅ Send button found and visible: button[aria-label='Send']:not([aria-disabled='true'])
+2025-10-07 20:08:14 | INFO | 🔄 Send button is ready - clicking...
+2025-10-07 20:08:29 | WARNING | ⚠️ Send button click failed: Timeout 15000ms exceeded.
+2025-10-07 20:08:29 | INFO | 🔄 Trying Ctrl+Enter...
+2025-10-07 20:08:33 | INFO | ✅ Sent via Ctrl+Enter
+2025-10-07 20:08:33 | INFO | 🔍 Verifying send confirmation...
+2025-10-07 20:08:44 | WARNING | ⚠️ Send verification error: Target page, context or browser has been closed

@@ -1,0 +1,28 @@
+This is a test attachment file for the email automation system.
+
+Features implemented:
+- File upload functionality
+- Multiple file support
+- File size validation
+- Attachment preview
+- Automatic cleanup after sending
+
+The attachment system now supports:
+- PDF files
+- Images (PNG, JPG, GIF)
+- Documents (DOC, DOCX)
+- Spreadsheets (XLS, XLSX)
+- Archives (ZIP, RAR)
+- Text files (TXT)
+
+This file will be automatically attached to test emails.
+
+
+
+
+
+
+
+
+
+

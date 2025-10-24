@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container" style="max-width:720px;margin:40px auto;text-align:center;">
+    <h1 style="font-size:42px;margin-bottom:10px;">Page not found</h1>
+    <p style="color:#666;margin-bottom:20px;">The page you requested could not be found.</p>
+    <a href="{{ url_for('dashboard') }}" class="btn btn-primary">Go to Dashboard</a>
+  </div>
+{% endblock %}
+
+
